@@ -5,6 +5,7 @@ import AboutUs from "../components/AboutUs";
 import { graphql } from "gatsby";
 import RotasizGallery from "../components/Gallery";
 import Footer from "../components/Footer";
+import { Whatsapp } from "../components/icons";
 
 const IndexPage = ({ data }) => {
   return (
@@ -14,6 +15,11 @@ const IndexPage = ({ data }) => {
       <AboutUs />
       <RotasizGallery photos={data.allFile} />
       <Footer />
+      <button className="fixed bottom-14 right-5 h-10 z-50">
+        <Whatsapp
+          style={{ "font-size": "4rem" }}
+        />
+      </button>
     </div>
   );
 };

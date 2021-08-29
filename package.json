@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "icon": "svgr src/images/icons -d src/components/icons --icon"
   },
   "dependencies": {
     "@fontsource/bungee": "^4.5.0",
@@ -32,6 +33,7 @@
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
+    "@svgr/cli": "^5.5.0",
     "postcss": "^8.3.6",
     "postcss-nested": "^5.0.5"
   }
