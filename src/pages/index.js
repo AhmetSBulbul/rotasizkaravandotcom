@@ -15,11 +15,14 @@ const IndexPage = ({ data }) => {
       <AboutUs />
       <RotasizGallery photos={data.allFile} />
       <Footer />
-      <button className="fixed bottom-14 right-5 h-10 z-50">
+      <a
+        className="fixed bottom-14 right-5 h-10 z-50"
+        href="https://wa.me/905058777888?text=Merhabalar%2C+ben+Rotas%C4%B1z+Karavan+Web+Sitesi+%C3%BCzerinden+ula%C5%9F%C4%B1yorum.+%C4%B0stedi%C4%9Fim+karavan+hakk%C4%B1nda+bilgi+almak+istiyorum"
+      >
         <Whatsapp
           style={{ "font-size": "4rem" }}
         />
-      </button>
+      </a>
     </div>
   );
 };
