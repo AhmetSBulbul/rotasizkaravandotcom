@@ -6,10 +6,12 @@ import { graphql } from "gatsby";
 import RotasizGallery from "../components/Gallery";
 import Footer from "../components/Footer";
 import { Whatsapp } from "../components/icons";
+import { Helmet } from "react-helmet";
 
 const IndexPage = ({ data }) => {
   return (
     <div className="flex flex-col min-h-screen w-screen overflow-x-hidden">
+      <Helmet title="Rotasız Karavan" />
       <Header />
       <Hero />
       <AboutUs />
