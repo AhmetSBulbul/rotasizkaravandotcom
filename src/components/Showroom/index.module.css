@@ -1,0 +1,32 @@
+.wrapper {
+  @apply overflow-visible relative flex;
+}
+
+.gallery {
+  @apply absolute flex flex-row gap-5 p-5 overflow-scroll;
+}
+
+.photo {
+  @apply rounded-sm w-screen h-56;
+}
+
+.dotsWrapper {
+  @apply flex flex-row mx-auto justify-items-center gap-4;
+  .dot {
+    @apply rounded-full border-yellow-700 border-2 text-2xl p-4;
+  }
+
+  .dotActive {
+    @apply bg-yellow-700;
+  }
+
+  .dotEmpty {
+    @apply bg-white;
+  }
+}
+
+.imageCard {
+}
+
+.imageCardActive {
+}

@@ -8,15 +8,31 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/bungee": "^4.5.0",
+    "@fontsource/fira-sans": "^4.5.0",
+    "@fontsource/montserrat": "^4.5.1",
+    "@fontsource/pt-serif": "^4.5.0",
+    "autoprefixer": "^10.3.1",
+    "classnames": "^2.3.1",
     "gatsby": "^3.11.1",
+    "gatsby-plugin-image": "^1.11.0",
+    "gatsby-plugin-postcss": "^4.11.0",
+    "gatsby-plugin-sharp": "^3.11.0",
+    "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-sharp": "^3.12.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "postcss": "^8.3.6",
+    "postcss-nested": "^5.0.5"
   }
 }

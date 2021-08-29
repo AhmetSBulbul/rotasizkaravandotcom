@@ -1,0 +1,35 @@
+.base {
+  @apply h-screen w-screen relative bg-blue-50;
+}
+
+.background {
+  @apply absolute w-screen h-screen top-0 left-0;
+}
+
+.backgroundImage {
+  @apply w-full h-full;
+}
+
+.innerContainer {
+  @apply absolute w-full h-full top-0 left-0 bg-black bg-opacity-40 flex px-5;
+}
+
+.contentWrapper {
+  @apply flex flex-col mx-auto my-auto gap-5;
+}
+
+.display {
+  @apply font-display text-white text-2xl text-right ml-10;
+}
+
+.buttonWrapper {
+  @apply flex flex-col md:flex-row gap-4;
+}
+
+.primaryBtn {
+  @apply bg-yellow-600 text-white uppercase font-display px-4 py-4 rounded-md transition-colors hover:bg-yellow-500;
+}
+
+.secondaryBtn {
+  @apply border-2 border-white px-4 text-white uppercase font-display py-2 transition-colors hover:bg-white hover:text-yellow-700;
+}

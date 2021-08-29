@@ -1,0 +1,11 @@
+.footerSection {
+  @apply w-screen bg-gray-800 p-5;
+}
+
+.container {
+  @apply flex flex-col justify-end gap-4;
+}
+
+.copyrighted {
+  @apply text-gray-100 text-sm font-body text-center;
+}

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .text-link {
+    @apply uppercase font-display;
+  }
+
+  .row {
+    @apply flex flex-row;
+  }
+
+  .column {
+    @apply flex flex-col;
+  }
+
+  .button-primary {
+    @apply bg-yellow-600 text-white uppercase font-display px-4 py-4 rounded-md;
+  }
+
+  .button-secondary {
+    @apply border-2 border-white px-4 text-white uppercase font-display py-2;
+  }
+}
+
+@layer utilities {
+  .center {
+    @apply mx-auto my-auto;
+  }
+}

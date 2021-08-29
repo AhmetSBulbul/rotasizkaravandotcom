@@ -1,0 +1,15 @@
+.navButton {
+  @apply w-2 h-7 bg-white relative;
+  &::before,
+  &::after {
+    @apply absolute w-2 h-7 top-0 bottom-0 bg-white;
+    content: "";
+  }
+
+  &::before {
+    @apply -left-3;
+  }
+  &::after {
+    @apply -right-3;
+  }
+}

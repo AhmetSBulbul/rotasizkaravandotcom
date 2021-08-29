@@ -1,0 +1,11 @@
+.wrapper {
+  @apply p-5;
+}
+
+.gallery {
+  @apply flex flex-col gap-5;
+}
+
+.photo {
+  @apply rounded-sm;
+}
