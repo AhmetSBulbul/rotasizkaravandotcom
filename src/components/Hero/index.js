@@ -17,7 +17,7 @@ export default function Hero({ children }) {
             İSTEĞİNİZE VE İHTİYAÇLARINIZA ÖZEL
             KARAVANLAR ÜRETİYORUZ.
           </h2>
-          <div className={styles.buttonWrapper}>
+          <div className="responsive-flex">
             <button className={styles.primaryBtn}>
               İŞLERİMİZİ İNCELEYİN
             </button>

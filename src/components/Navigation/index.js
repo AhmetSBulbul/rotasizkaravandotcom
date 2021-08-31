@@ -1,68 +1,73 @@
 import React from "react";
-import ContentCard from "./__contentCard";
+
 import * as styles from "./index.module.css";
+import useToggle from "../../hooks/useToggle";
 import cn from "classnames";
 
-export default function Navigation({ children }) {
+const ExitIcon = () => {
   return (
-    <section className={styles.aboutUsSection}>
-      <div className={styles.container}>
-        <ContentCard
-          subject="Biz Kimiz?"
-          title="Hayalinizdeki Karavana Bugün Kavuşmak İstemez misiniz?"
-        >
-          Rotasız Karavan olarak, istek ve
-          ihtiyaçlarınıza göre, hep hayalini
-          kurduğunuz o karavanı sizin için ve size
-          özel olarak gerçekleştirip
-          hayallerinizin yerini, ev konforunda
-          yaptığınız seyahatler ve onun güzel
-          anılarıyla doldurmak için çalışıyor,
-          çabalıyoruz.
-        </ContentCard>
-        <ContentCard
-          reverse
-          subject="Neden Biz?"
-          title="Ortak Tutku ve Hayallere Sahibiz!"
-        >
-          Rotasız Karavan, sizler ile ortak
-          paylaştığımız hayaller sonucu kurulmuş
-          bir işletmedir.
-          <br />
-          <br />
-          Paylaştığımız bu tutku ve hayaller,
-          işimizi severek yapmamıza, aynı zamanda
-          isteklerinizi ve ihtiyaçlarınızı
-          eksiksiz anlamamıza yardımcı oluyor.
-        </ContentCard>
-        <ContentCard
-          subject="Vizyonumuz"
-          title="Ürettiğimiz Her Karavan, Bizim İçin Bir Karavandan Fazlası..."
-        >
-          Bizim için sadece birer müşteri değil
-          aynı zamanda keşfedebileceğimiz yeni bir
-          yer, dinleyebileceğimiz eşşiz anı ve
-          hatıralarsınız.
-          <br />
-          <br />
-          Ürettiğimiz her karavan bizleri ilk
-          karavanımızmış gibi heyecanlandırıyor.
-          Çünkü biliyoruz ki planlama aşamasından
-          anahtarı sizlere teslim ettiğimiz ana
-          kadar, aracısı olmak için
-          sabırsızlandığımız ve gözümüzde
-          canlandırdığımız, yaşanacak muhteşem
-          anlardan çok daha fazlasını yaşayacak,
-          deneyimleyeceksiniz.
-          <br />
-          <br />
-          İşte bu yüzden bizler için teslim
-          ettiğimiz her karavan, sadece birer araç
-          değil, aynı zamanda dinlemeyi
-          sabırsızlıkla beklediğimiz birer
-          hikaye...
-        </ContentCard>
-      </div>
-    </section>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  );
+};
+
+export default function Navigation({ children }) {
+  const [isMenuActive, setIsMenuActive] =
+    useToggle();
+
+  return (
+    <div className={styles.navigationWrapper}>
+      <button
+        onClick={setIsMenuActive}
+        className={cn([
+          styles.toggleBtn,
+          isMenuActive && styles.toggleBtnActive,
+        ])}
+      >
+        <div />
+        <div />
+        <div />
+        <ExitIcon />
+      </button>
+      <nav
+        className={cn([
+          styles.navigation,
+          isMenuActive && styles.navActive,
+        ])}
+      >
+        <a className={cn([styles.navItemCard])}>
+          <span className={styles.navItemTitle}>
+            Karavan
+          </span>
+        </a>
+        <div className={cn([styles.navItemCard])}>
+          <div className={styles.innerContainer}>
+            <span className={styles.navItemTitle}>
+              Kurumsal
+            </span>
+          </div>
+        </div>
+        <a className={cn([styles.navItemCard])}>
+          <span className={styles.navItemTitle}>
+            Blog
+          </span>
+        </a>
+        <div
+          className={styles.navigationFooter}
+        ></div>
+      </nav>
+    </div>
   );
 }

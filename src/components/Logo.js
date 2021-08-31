@@ -1,14 +1,18 @@
 import React from "react";
+import cn from "classnames";
 
 import { StaticImage } from "gatsby-plugin-image";
 
-export default function Logo() {
+export default function Logo({ className }) {
   return (
-    <StaticImage
-      src="../images/logo-blackless.png"
-      alt="rotasiz karavan logo"
-      height={65}
-      placeholder="none"
-    />
+    <div className="object-contain my-auto">
+      <StaticImage
+        src="../images/logo-blackless.png"
+        alt="rotasiz karavan logo"
+        layout="constrained"
+        placeholder="none"
+        className={className}
+      />
+    </div>
   );
 }

@@ -1,0 +1,18 @@
+.toggleBtn {
+  @apply flex gap-1 my-auto z-50;
+  div {
+    @apply bg-white w-1 h-6 inline-block;
+  }
+  svg {
+    @apply hidden;
+  }
+}
+
+.toggleBtnActive {
+  div {
+    @apply hidden;
+  }
+  svg {
+    @apply inline-block;
+  }
+}

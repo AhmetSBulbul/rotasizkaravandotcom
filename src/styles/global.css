@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 16px;
+  }
+
   body {
     &::-webkit-scrollbar {
       display: none;
@@ -16,6 +20,10 @@
 @layer components {
   .text-link {
     @apply uppercase font-display;
+  }
+
+  .responsive-flex {
+    @apply flex flex-col space-x-5 md:flex-row;
   }
 
   .row {

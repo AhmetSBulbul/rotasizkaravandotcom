@@ -1,28 +1,5 @@
-.navigationWrapper {
-  @apply relative flex;
-}
-
-.toggleBtn {
-  @apply flex gap-1 my-auto z-50 text-white text-lg;
-  div {
-    @apply bg-white w-1 h-6 inline-block;
-  }
-  svg {
-    @apply hidden;
-  }
-}
-
-.toggleBtnActive {
-  div {
-    @apply hidden;
-  }
-  svg {
-    @apply inline-block;
-  }
-}
-
 .navigation {
-  @apply fixed w-screen h-full left-0 pt-20 bg-transparent flex-col hidden;
+  @apply absolute w-screen h-screen left-0 bg-transparent flex-col hidden;
 }
 
 .navActive {
