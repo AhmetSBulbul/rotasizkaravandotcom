@@ -19,11 +19,14 @@ export default function Hero({ children }) {
             KARAVANLAR ÜRETİYORUZ.
           </h2>
           <div className="responsive-flex">
-            <button className={styles.primaryBtn}>
-              İŞLERİMİZİ İNCELEYİN
-            </button>
             <Link
               to="/works"
+              className={styles.primaryBtn}
+            >
+              İŞLERİMİZİ İNCELEYİN
+            </Link>
+            <Link
+              to="/about"
               className={styles.secondaryBtn}
             >
               HAKKIMIZDA

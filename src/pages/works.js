@@ -5,7 +5,7 @@ const WorksPage = () => {
     <>
       <div className="flex min-h-screen w-screen bg-white">
         <h1 className="mx-auto my-auto text-link text-3xl text-black">
-          Works
+          İşlerimiz
         </h1>
       </div>
     </>

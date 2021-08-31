@@ -64,14 +64,18 @@ export default function Navigation({ children }) {
             </span>
           </div>
         </div>
-        <a className={cn([styles.navItemCard])}>
+        <Link
+          to="/blog"
+          onClick={setIsMenuActive}
+          className={cn([styles.navItemCard])}
+        >
           <span className={styles.navItemTitle}>
             Blog
           </span>
-        </a>
-        <div
-          className={styles.navigationFooter}
-        ></div>
+        </Link>
+        <div className={styles.navigationFooter}>
+          Footer
+        </div>
       </nav>
     </div>
   );

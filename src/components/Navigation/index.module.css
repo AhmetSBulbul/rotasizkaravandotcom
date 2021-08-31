@@ -45,6 +45,10 @@
   }
 }
 
+.navigationFooter {
+  @apply h-10 bg-black text-white;
+}
+
 .navItemTitle {
   @apply font-display text-black text-center text-2xl;
 }
