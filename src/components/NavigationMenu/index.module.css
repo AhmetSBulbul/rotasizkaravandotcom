@@ -1,5 +1,9 @@
+.menu {
+  @apply absolute flex-col left-0 hidden;
+}
+
 .navigation {
-  @apply absolute w-screen h-screen left-0 bg-transparent flex-col hidden;
+  @apply w-screen h-screen flex-col flex;
 }
 
 .navActive {

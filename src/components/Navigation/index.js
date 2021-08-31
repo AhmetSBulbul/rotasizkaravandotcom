@@ -3,6 +3,7 @@ import React from "react";
 import * as styles from "./index.module.css";
 import useToggle from "../../hooks/useToggle";
 import cn from "classnames";
+import { Link } from "gatsby";
 
 const ExitIcon = () => {
   return (
@@ -47,11 +48,15 @@ export default function Navigation({ children }) {
           isMenuActive && styles.navActive,
         ])}
       >
-        <a className={cn([styles.navItemCard])}>
+        <Link
+          to="/works"
+          onClick={setIsMenuActive}
+          className={cn([styles.navItemCard])}
+        >
           <span className={styles.navItemTitle}>
             Karavan
           </span>
-        </a>
+        </Link>
         <div className={cn([styles.navItemCard])}>
           <div className={styles.innerContainer}>
             <span className={styles.navItemTitle}>

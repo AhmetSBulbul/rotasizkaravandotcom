@@ -1,6 +1,7 @@
 import React from "react";
 import HeroBackground from "./__heroBackground";
 import * as styles from "./index.module.css";
+import { Link } from "gatsby";
 import cn from "classnames";
 
 export default function Hero({ children }) {
@@ -21,11 +22,12 @@ export default function Hero({ children }) {
             <button className={styles.primaryBtn}>
               İŞLERİMİZİ İNCELEYİN
             </button>
-            <button
+            <Link
+              to="/works"
               className={styles.secondaryBtn}
             >
               HAKKIMIZDA
-            </button>
+            </Link>
           </div>
         </div>
       </div>

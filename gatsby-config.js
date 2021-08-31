@@ -48,5 +48,6 @@ module.exports = {
         icon: `src/images/rotasiz-earth-blackless.png`,
       },
     },
+    `gatsby-plugin-layout`,
   ],
 };
