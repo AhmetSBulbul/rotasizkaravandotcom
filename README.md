@@ -39,6 +39,7 @@
 - [ ] Hero background slide animation
 - [ ] Navigation menu and button animation
 - [ ] Page Transition
+- [ ] Desktop View
 - [ ] SEO
 - [ ] mdx source for blog posts
 - [ ] Re-Factor
