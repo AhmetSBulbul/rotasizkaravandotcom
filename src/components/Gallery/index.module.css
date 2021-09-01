@@ -1,5 +1,5 @@
 .wrapper {
-  @apply p-5;
+  @apply p-5 flex flex-col gap-y-4;
 }
 
 .gallery {
@@ -8,4 +8,12 @@
 
 .photo {
   @apply rounded-sm;
+}
+
+.controllerWrapper {
+  @apply flex space-x-4;
+
+  button {
+    @apply w-14 flex-none;
+  }
 }

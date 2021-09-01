@@ -7,9 +7,12 @@ export default function AboutUs({ children }) {
   return (
     <section className={styles.aboutUsSection}>
       <div className={styles.container}>
+        <h3 className="font-display text-2xl text-left text-black">
+          HAKKIMIZDA
+        </h3>
         <ContentCard
           subject="Biz Kimiz?"
-          title="Hayalinizdeki Karavana Bugün Kavuşmak İstemez misiniz?"
+          title="Hayalİnİzdekİ Karavana Bugün Kavuşmak İstemez mİsİnİz?"
         >
           Rotasız Karavan olarak, istek ve
           ihtiyaçlarınıza göre, hep hayalini
@@ -23,7 +26,7 @@ export default function AboutUs({ children }) {
         <ContentCard
           reverse
           subject="Neden Biz?"
-          title="Ortak Tutku ve Hayallere Sahibiz!"
+          title="Ortak Tutku ve Hayallere Sahİbİz!"
         >
           Rotasız Karavan, sizler ile ortak
           paylaştığımız hayaller sonucu kurulmuş
@@ -37,7 +40,7 @@ export default function AboutUs({ children }) {
         </ContentCard>
         <ContentCard
           subject="Vizyonumuz"
-          title="Ürettiğimiz Her Karavan, Bizim İçin Bir Karavandan Fazlası..."
+          title="Ürettİğİmİz Her Karavan, Bİzİm İçİn Bİr Karavandan Fazlası..."
         >
           Bizim için sadece birer müşteri değil
           aynı zamanda keşfedebileceğimiz yeni bir

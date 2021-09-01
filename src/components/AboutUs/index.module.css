@@ -1,5 +1,5 @@
 .aboutUsSection {
-  @apply flex flex-col relative bg-gray-50;
+  @apply flex flex-col relative bg-gray-50 mb-14;
 }
 
 .aboutUsSection::before {
@@ -13,7 +13,7 @@
 }
 
 .container {
-  @apply flex flex-col px-5 py-4 min-h-screen gap-9;
+  @apply flex flex-col px-5 py-4 min-h-screen gap-y-9;
 }
 
 .contentCard {

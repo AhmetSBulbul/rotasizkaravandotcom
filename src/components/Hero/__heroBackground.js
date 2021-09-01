@@ -9,7 +9,7 @@ export default function HeroBackground({
   return (
     <StaticImage
       className={cn([className])}
-      src="../../images/road.jpg"
+      src="../../images/2012-sprinter.jpg"
       alt="road"
       transformOptions={{ fit: "contain" }}
       layout="constrained"
