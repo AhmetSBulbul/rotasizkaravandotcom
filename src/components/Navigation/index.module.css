@@ -3,45 +3,72 @@
 }
 
 .toggleBtn {
-  @apply flex gap-1 my-auto z-50 text-white text-lg;
+  @apply relative flex gap-1 my-auto z-50 text-white text-lg;
   div {
     @apply bg-white w-1 h-6 inline-block;
+    opacity: 1;
+    transition: transform 0.2s ease-out,
+      opacity 0.3s ease-out;
   }
   svg {
-    @apply hidden;
+    @apply absolute top-0 left-0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
   }
 }
 
 .toggleBtnActive {
   div {
-    @apply hidden;
+    opacity: 0;
+    &:first-child {
+      transform: translateY(70%);
+    }
+    &:nth-last-child(2) {
+      transform: translateY(-70%);
+    }
   }
   svg {
-    @apply inline-block;
+    opacity: 1;
   }
 }
 
 .navigation {
-  @apply fixed w-screen h-full left-0 pt-20 bg-transparent flex-col hidden;
+  @apply fixed w-screen h-full left-0 pt-20 bg-transparent flex-col flex;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out,
+    opacity 0.3s ease-in-out;
+  opacity: 0;
 }
 
 .navActive {
-  @apply flex;
+  transform: translateX(0);
+  opacity: 1;
+  .navItemCard {
+    &:first-child {
+      transform: translateX(0);
+    }
+    &:nth-last-child(2) {
+      transform: translateX(0);
+    }
+  }
 }
 
 .navItemCard {
-  @apply flex flex-col items-center justify-center -translate-x-full flex-1 bg-white;
-  transition: flex 0.1s ease-out;
+  @apply flex flex-col items-center justify-center  flex-1 bg-white;
+  transition: flex 0.1s ease-out,
+    transform 0.5s ease-in-out;
 
   &:hover {
     flex: 2;
   }
 
   &:first-child {
-    @apply bg-blue-500 translate-x-full;
+    @apply bg-blue-500;
+    transform: translateX(-200%);
   }
   &:nth-last-child(2) {
-    @apply bg-yellow-600 translate-x-full;
+    @apply bg-yellow-600;
+    transform: translateX(-200%);
   }
 }
 

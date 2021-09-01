@@ -37,7 +37,8 @@
 - [x] Dynamic images from file system source
 - [x] Routing
 - [ ] Hero background slide animation
-- [ ] Navigation menu and button animation
+- [x] Navigation menu and button animation
+- [ ] Nav Items Background Images
 - [ ] Page Transition
 - [ ] Desktop View
 - [ ] SEO
