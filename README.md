@@ -36,8 +36,10 @@
 - [x] Navigation Menu
 - [x] Dynamic images from file system source
 - [x] Routing
-- [ ] Hero background slide animation
+- [ ] Hero background image slider with lazy load
 - [x] Navigation menu and button animation
+- [ ] Navigation Footer social media links and contact buttons
+- [ ] lockBodyScroll while nav menu is expanded
 - [ ] Nav Items Background Images
 - [ ] Page Transition
 - [ ] Desktop View
