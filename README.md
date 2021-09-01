@@ -47,6 +47,11 @@
 - [ ] Image Gallery
 - [ ] terms of use page
 
+## 🐞 BUGS
+
+- [x] Logo onClick doesn't work while menu is expanded.
+- [ ] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
+
 ---
 
 designed & developed by [@AhmetSBulbul](https://ahmetsafabulbul.com/)
