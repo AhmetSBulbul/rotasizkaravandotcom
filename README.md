@@ -40,8 +40,8 @@
 - [ ] Background image must be dynamic image not static (gatsby-image-plugin)
 - [x] Navigation menu and button animation
 - [ ] Navigation Footer social media links and contact buttons
-- [ ] lockBodyScroll while nav menu is expanded
-- [ ] Nav Items Background Images
+- [x] lockBodyScroll while nav menu is expanded
+- [x] Nav Items Background Images
 - [ ] Page Transition
 - [ ] Desktop View
 - [ ] SEO

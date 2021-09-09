@@ -6,6 +6,7 @@ import cn from "classnames";
 import { Link } from "gatsby";
 import NavItemCard from "../NavItemCard";
 import { StaticImage } from "gatsby-plugin-image";
+import useLockBodyScroll from "../../hooks/useLockBodyScroll";
 
 const ExitIcon = () => {
   return (
@@ -30,6 +31,7 @@ export default function Navigation({ children }) {
   const [isMenuActive, setIsMenuActive] =
     useToggle();
 
+  useLockBodyScroll(isMenuActive);
   return (
     <div className={styles.navigationWrapper}>
       <button
