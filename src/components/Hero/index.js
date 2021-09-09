@@ -33,7 +33,7 @@ export default function Hero({ children }) {
                 childImageSharp {
                   id
                   gatsbyImageData(
-                    layout: FULL_WIDTH
+                    layout: CONSTRAINED
                     transformOptions: {
                       cropFocus: CENTER
                       fit: COVER
@@ -55,16 +55,19 @@ export default function Hero({ children }) {
                 console.log({ currIndex });
                 const image = getImage(node);
                 return (
-                  <GatsbyImage
+                  <div
                     className={cn([
                       styles.backgroundImage,
                       isIt &&
                         styles.backgroundImageActive,
                     ])}
-                    key={node.id}
-                    alt={node.name}
-                    image={image}
-                  />
+                  >
+                    <GatsbyImage
+                      key={node.id}
+                      alt={node.name}
+                      image={image}
+                    />
+                  </div>
                 );
               }
             )}

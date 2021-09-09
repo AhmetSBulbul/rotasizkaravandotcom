@@ -7,15 +7,12 @@
 }
 
 .backgroundImage {
-  @apply absolute w-full h-full left-0 bottom-0;
+  @apply absolute w-full h-screen left-0 top-0 flex;
   opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 0.5s linear,
-    transform 0.7s linear;
+  transition: opacity 0.8s linear;
 }
 
 .backgroundImageActive {
-  transform: translateX(0);
   opacity: 1;
 }
 
