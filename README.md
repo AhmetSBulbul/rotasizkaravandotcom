@@ -49,6 +49,7 @@
 - [ ] Re-Factor
 - [ ] Image Gallery
 - [ ] terms of use page
+- [ ] add hooks section to readme
 
 ## 🐞 BUGS
 
