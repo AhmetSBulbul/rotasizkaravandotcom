@@ -1,0 +1,15 @@
+.cardWrapper {
+  @apply relative w-full h-full;
+}
+
+.background {
+  @apply absolute top-0 left-0 h-full w-full flex;
+}
+
+.foreground {
+  @apply absolute bg-black bg-opacity-40 h-full w-full flex;
+}
+
+.foregroundContent {
+  @apply mx-auto my-auto flex font-display text-white text-3xl;
+}

@@ -4,6 +4,8 @@ import * as styles from "./index.module.css";
 import useToggle from "../../hooks/useToggle";
 import cn from "classnames";
 import { Link } from "gatsby";
+import NavItemCard from "../NavItemCard";
+import { StaticImage } from "gatsby-plugin-image";
 
 const ExitIcon = () => {
   return (
@@ -53,9 +55,32 @@ export default function Navigation({ children }) {
           onClick={setIsMenuActive}
           className={cn([styles.navItemCard])}
         >
-          <span className={styles.navItemTitle}>
-            Karavan
-          </span>
+          <NavItemCard title="İŞLERİMİZ">
+            <StaticImage
+              src="../../images/2012-sprinter.jpg"
+              alt="yellow campervan"
+              transformOptions={{
+                fit: "contain",
+              }}
+              layout="constrained"
+            />
+          </NavItemCard>
+        </Link>
+        <Link
+          to="/blog"
+          onClick={setIsMenuActive}
+          className={cn([styles.navItemCard])}
+        >
+          <NavItemCard title="Blog">
+            <StaticImage
+              src="../../images/yellow-van.jpg"
+              alt="yellow campervan"
+              transformOptions={{
+                fit: "contain",
+              }}
+              layout="constrained"
+            />
+          </NavItemCard>
         </Link>
         <div className={cn([styles.navItemCard])}>
           <div className={styles.innerContainer}>
@@ -64,15 +89,7 @@ export default function Navigation({ children }) {
             </span>
           </div>
         </div>
-        <Link
-          to="/blog"
-          onClick={setIsMenuActive}
-          className={cn([styles.navItemCard])}
-        >
-          <span className={styles.navItemTitle}>
-            Blog
-          </span>
-        </Link>
+
         <div className={styles.navigationFooter}>
           Footer
         </div>
