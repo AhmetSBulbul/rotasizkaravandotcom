@@ -19,12 +19,22 @@ const RotasizGallery = ({ photos }) => {
           {photos.edges.map(({ node }) => {
             const image = getImage(node);
             return (
-              <GatsbyImage
-                className={styles.photo}
+              <div
                 key={node.id}
-                alt={node.name}
-                image={image}
-              />
+                className={styles.photoWrapper}
+              >
+                <button
+                  onClick={() => {
+                    alert("hey");
+                  }}
+                >
+                  <GatsbyImage
+                    className={styles.photo}
+                    alt={node.name}
+                    image={image}
+                  />
+                </button>
+              </div>
             );
           })}
         </ImageCarousel>

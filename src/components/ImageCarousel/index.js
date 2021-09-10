@@ -6,15 +6,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 const ImageCarousel = ({ children }) => {
   const settings = {
-    dots: true,
+    className: "center",
+    centerMode: true,
     infinite: true,
-    speed: 300,
+    centerPadding: "60px",
     slidesToShow: 1,
-    slidesToScroll: 1,
+    speed: 500,
+    dots: true,
   };
   return (
     <div>
-      <h2> Single Item</h2>
       <Slider {...settings}>{children}</Slider>
     </div>
   );
