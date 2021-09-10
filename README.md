@@ -36,8 +36,8 @@
 - [x] Navigation Menu
 - [x] Dynamic images from file system source
 - [x] Routing
-- [ ] Hero background image slider with lazy load
-- [ ] Background image must be dynamic image not static (gatsby-image-plugin)
+- [x] Hero background image slider with lazy load
+- [x] Background image must be dynamic image not static (gatsby-image-plugin)
 - [x] Navigation menu and button animation
 - [ ] Navigation Footer social media links and contact buttons
 - [x] lockBodyScroll while nav menu is expanded
@@ -45,7 +45,7 @@
 - [ ] Page Transition
 - [ ] Desktop View
 - [ ] SEO
-- [ ] mdx source for blog posts
+- [x] mdx source for blog posts
 - [ ] Re-Factor
 - [ ] Image Gallery
 - [ ] terms of use page
@@ -56,16 +56,10 @@
 - [x] Logo onClick doesn't work while menu is expanded.
 - [ ] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
 - [x] Hero Background Images animation bug.
+- [ ] Page layout problem(try sticky instead of fixed on header)
 
 ## 📒 NOTES to Myself
-
-Carousel eklenicek. Staticquery kullanarak pathlari bir objeye doldurup indeks ile dynamic image componentine geciriceksin. carousel controllerlarla birlikte lightbox modaline sifirdan render edilmeden gecebilmeli.
-
-Background slideri da carouseli yaptiktan sonra ayni sistemi useSlider hooku ile kullanarak yapicaksin.
-
-Navigation menusu ile navigasyon butonunu ayri komponentler yapip navigasyon menusune lockbodyscroll hooku ekleyeceksin. Bu hook image carouselin lightbox(model) varyasyonuna da eklenecek.
-
-Gatsby image plugininin boyutlandirmalari cok kotu calisiyor ilk once onlara bak.
+ ...
 
 ---
 

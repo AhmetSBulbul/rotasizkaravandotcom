@@ -15,7 +15,7 @@
 }
 
 .controllerWrapper {
-  @apply flex space-x-4 hidden;
+  @apply space-x-4 hidden;
 
   button {
     @apply w-14 flex-none;

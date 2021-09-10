@@ -1,5 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
+import {
+  GatsbyImage,
+  getImage,
+} from "gatsby-plugin-image";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -11,8 +15,18 @@ export default function Template({
       <div className="my-auto">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
+
+        <GatsbyImage
+          className="rounded-sm"
+          alt={frontmatter.title}
+          image={
+            frontmatter.featureImage
+              .childImageSharp.gatsbyImageData
+          }
+        />
+
         <div
-          className="blog-post-content"
+          className="text-black"
           dangerouslySetInnerHTML={{
             __html: html,
           }}
@@ -28,6 +42,12 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        excerpt
+        featureImage {
+          childImageSharp {
+            gatsbyImageData(height: 600)
+          }
+        }
         slug
         title
       }

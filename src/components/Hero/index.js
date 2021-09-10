@@ -83,13 +83,13 @@ export default function Hero({ children }) {
                 className={styles.buttonWrapper}
               >
                 <Link
-                  to="/works"
+                  to="/islerimiz"
                   className={styles.primaryBtn}
                 >
                   İŞLERİMİZİ İNCELEYİN
                 </Link>
                 <Link
-                  to="/about"
+                  to="/kurumsal"
                   className={styles.secondaryBtn}
                 >
                   HAKKIMIZDA

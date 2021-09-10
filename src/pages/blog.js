@@ -1,15 +1,51 @@
 import React from "react";
+import { graphql } from "gatsby";
+import PostLink from "../components/PageLink";
 
-const BlogPage = () => {
+const BlogPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const Posts = edges
+    .filter(
+      (edge) => !!edge.node.frontmatter.date
+    ) // You can filter your posts based on some criteria
+    .map((edge) => (
+      <PostLink
+        key={edge.node.id}
+        post={edge.node}
+      />
+    ));
+
   return (
-    <>
-      <div className="flex min-h-screen w-screen bg-white">
-        <h1 className="mx-auto my-auto text-link text-3xl text-black">
-          Blog
-        </h1>
-      </div>
-    </>
+    <div className="min-h-screen flex flex-col p-24 justify-items-center">
+      {Posts}
+    </div>
   );
 };
 
 export default BlogPage;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: {
+        order: DESC
+        fields: [frontmatter___date]
+      }
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+          }
+        }
+      }
+    }
+  }
+`;
