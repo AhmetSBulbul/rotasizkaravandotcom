@@ -6,6 +6,7 @@ import {
   GatsbyImage,
   getImage,
 } from "gatsby-plugin-image";
+import ImageCarousel from "../ImageCarousel";
 
 const RotasizGallery = ({ photos }) => {
   return (
@@ -14,25 +15,21 @@ const RotasizGallery = ({ photos }) => {
         İŞLERİMİZ
       </h3>
       <div className={styles.gallery}>
-        {photos.edges.map(({ node }) => {
-          const image = getImage(node);
-          return (
-            <GatsbyImage
-              className={styles.photo}
-              key={node.id}
-              alt={node.name}
-              image={image}
-            />
-          );
-        })}
+        <ImageCarousel>
+          {photos.edges.map(({ node }) => {
+            const image = getImage(node);
+            return (
+              <GatsbyImage
+                className={styles.photo}
+                key={node.id}
+                alt={node.name}
+                image={image}
+              />
+            );
+          })}
+        </ImageCarousel>
       </div>
-      <div className="h-2 w-full bg-blue-300 flex flex-auto">
-        <div className="flex-1" />
-        <div className="bg-yellow-600 flex-1" />
-        <div className="flex-1" />
-        <div className="flex-1" />
-        <div className="flex-1" />
-      </div>
+
       <div className={styles.controllerWrapper}>
         <button className="button-primary bg-green-600">
           <svg

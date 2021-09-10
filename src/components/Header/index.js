@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../Logo";
-import * as styles from "./index.module.css";
+
 import Navigation from "../Navigation";
 
 import { Link } from "gatsby";

@@ -1,12 +1,11 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Header from "../components/Header";
+
 import AboutUs from "../components/AboutUs";
 import { graphql } from "gatsby";
 import RotasizGallery from "../components/Gallery";
-import Footer from "../components/Footer";
+
 import { Whatsapp } from "../components/icons";
-import { Helmet } from "react-helmet";
 
 const IndexPage = ({ data }) => {
   return (

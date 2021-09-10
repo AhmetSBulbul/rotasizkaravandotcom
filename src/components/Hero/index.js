@@ -1,5 +1,5 @@
 import React from "react";
-import HeroBackground from "./__heroBackground";
+
 import * as styles from "./index.module.css";
 import {
   Link,
@@ -13,14 +13,6 @@ import {
 } from "gatsby-plugin-image";
 import cn from "classnames";
 import useSlide from "../../hooks/useSlide";
-
-const headerConsts = [
-  "İsteğinize",
-  "İhtiyaçlarınıza",
-  "Zevkinize",
-  "Konforunuza",
-  "Size",
-];
 
 export default function Hero({ children }) {
   const [currIndex] = useSlide(7000, 7);

@@ -1,7 +1,6 @@
 import React from "react";
 import ContentCard from "./__contentCard";
 import * as styles from "./index.module.css";
-import cn from "classnames";
 
 export default function AboutUs({ children }) {
   return (
