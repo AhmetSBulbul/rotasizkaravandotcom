@@ -53,7 +53,7 @@ export default function Navigation({ children }) {
         ])}
       >
         <Link
-          to="/works"
+          to="/islerimiz"
           onClick={setIsMenuActive}
           className={cn([styles.navItemCard])}
         >
@@ -84,13 +84,22 @@ export default function Navigation({ children }) {
             />
           </NavItemCard>
         </Link>
-        <div className={cn([styles.navItemCard])}>
-          <div className={styles.innerContainer}>
-            <span className={styles.navItemTitle}>
-              Kurumsal
-            </span>
-          </div>
-        </div>
+        <Link
+          to="/kurumsal"
+          onClick={setIsMenuActive}
+          className={cn([styles.navItemCard])}
+        >
+          <NavItemCard title="Kurumsal">
+            <StaticImage
+              src="../../images/falez.jpg"
+              alt="falez karavan"
+              transformOptions={{
+                fit: "contain",
+              }}
+              layout="constrained"
+            />
+          </NavItemCard>
+        </Link>
 
         <div className={styles.navigationFooter}>
           Footer

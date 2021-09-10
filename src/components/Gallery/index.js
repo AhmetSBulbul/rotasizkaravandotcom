@@ -51,7 +51,7 @@ const RotasizGallery = ({ photos }) => {
           </svg>
         </button>
         <Link
-          to="/photoGallery"
+          to="/foto-galeri"
           className="button-primary text-center flex-grow"
         >
           Foto GALERİ

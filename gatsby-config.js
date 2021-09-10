@@ -42,6 +42,13 @@ module.exports = {
         path: `${__dirname}/src/backgrounds`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -56,5 +63,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-layout`,
+    `gatsby-transformer-remark`,
   ],
 };

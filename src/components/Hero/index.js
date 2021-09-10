@@ -14,6 +14,14 @@ import {
 import cn from "classnames";
 import useSlide from "../../hooks/useSlide";
 
+const headerConsts = [
+  "İsteğinize",
+  "İhtiyaçlarınıza",
+  "Zevkinize",
+  "Konforunuza",
+  "Size",
+];
+
 export default function Hero({ children }) {
   const [currIndex] = useSlide(7000, 7);
 
@@ -58,8 +66,7 @@ export default function Hero({ children }) {
                   <div
                     className={cn([
                       styles.backgroundImage,
-                      isIt &&
-                        styles.backgroundImageActive,
+                      isIt && styles.sliderActive,
                     ])}
                   >
                     <GatsbyImage
@@ -77,7 +84,7 @@ export default function Hero({ children }) {
               className={styles.contentWrapper}
             >
               <h2 className={styles.display}>
-                İSTEĞİNİZE VE İHTİYAÇLARINIZA ÖZEL
+                İSTEĞİNİZE VE İHTİYAÇLARINIZA GÖRE
                 KARAVANLAR ÜRETİYORUZ.
               </h2>
               <div
