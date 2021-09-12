@@ -59,13 +59,13 @@
 - [ ] Image alts
 - [ ] Use html meta tags (section, header, etc.)
 - [ ] Contact, Faqs pages.
+- [ ] Storybook
 
 ## 🐞 BUGS
 
 - [x] Logo onClick doesn't work while menu is expanded.
 - [ ] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
 - [x] Hero Background Images animation bug.
-- [ ] Page layout problem(try sticky instead of fixed on header)
 - [ ] Gatsby Images hasn't rendered properly
 
 ## 📒 NOTES to Myself

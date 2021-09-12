@@ -1,7 +1,7 @@
 import React from "react";
 import * as styles from "./index.module.css";
 import { Link } from "gatsby";
-import Lightbox from "../Lightbox";
+//import Lightbox from "../Lightbox";
 import {
   GatsbyImage,
   getImage,
