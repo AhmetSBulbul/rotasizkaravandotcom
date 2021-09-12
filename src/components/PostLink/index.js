@@ -11,6 +11,7 @@ const PostLink = ({ post }) => (
     <div className={styles.container}>
       <div className={styles.featuredImage}>
         <GatsbyImage
+          className="w-full"
           key={post.id}
           image={
             post.frontmatter.featureImage
@@ -20,14 +21,11 @@ const PostLink = ({ post }) => (
         />
       </div>
       <div className={styles.body}>
+        <span className={styles.dateField}>
+          {post.frontmatter.date}
+        </span>
         <h2>{post.frontmatter.title}</h2>
         <p>{post.frontmatter.excerpt}</p>
-        <span className={styles.readMore}>
-          Devamını Oku
-        </span>
-      </div>
-      <div className={styles.dateWrapper}>
-        {post.frontmatter.date}
       </div>
     </div>
   </Link>
