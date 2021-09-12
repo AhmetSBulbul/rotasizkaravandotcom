@@ -1,14 +1,17 @@
 import React from "react";
 import * as styles from "./index.module.css";
 import { Link } from "gatsby";
-//import Lightbox from "../Lightbox";
+import Lightbox from "../Lightbox";
 import {
   GatsbyImage,
   getImage,
 } from "gatsby-plugin-image";
 import ImageCarousel from "../ImageCarousel";
+import useToggle from "../../hooks/useToggle";
 
 const RotasizGallery = ({ photos }) => {
+  const [isModalShow, setIsModalShow] =
+    useToggle(false);
   return (
     <>
       <div className={styles.wrapper}>
@@ -24,7 +27,9 @@ const RotasizGallery = ({ photos }) => {
                   key={node.id}
                   className={styles.photoWrapper}
                 >
-                  <button>
+                  <button
+                    onClick={setIsModalShow}
+                  >
                     <GatsbyImage
                       className={styles.photo}
                       alt={node.name}
@@ -78,6 +83,28 @@ const RotasizGallery = ({ photos }) => {
           </button>
         </div>
       </div>
+
+      {isModalShow && (
+        <Lightbox onClose={setIsModalShow}>
+          <ImageCarousel>
+            {photos.edges.map(({ node }) => {
+              const image = getImage(node);
+              return (
+                <div
+                  key={node.id + "-lightbox"}
+                  className={styles.photoWrapper}
+                >
+                  <GatsbyImage
+                    className={styles.photo}
+                    alt={node.name}
+                    image={image}
+                  />
+                </div>
+              );
+            })}
+          </ImageCarousel>
+        </Lightbox>
+      )}
     </>
   );
 };

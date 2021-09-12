@@ -2,22 +2,27 @@ import React from "react";
 import * as styles from "./index.module.css";
 import cn from "classnames";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
+import ImageCarousel from "../ImageCarousel";
+import {
+  GatsbyImage,
+  getImage,
+} from "gatsby-plugin-image";
 
-const Lightbox = ({
+export default function Lightbox({
   children,
-  isActive = false,
-}) => {
-  useLockBodyScroll(isActive);
+  ...props
+}) {
   return (
-    <div
-      className={cn([
-        styles.container,
-        isActive && styles.visible,
-      ])}
-    >
-      {children}
+    <div className={styles.baseContainer}>
+      <div className={styles.innerContainer}>
+        {children}
+      </div>
+      <button
+        className={styles.exitBtn}
+        onClick={props.onClose}
+      >
+        Kapat
+      </button>
     </div>
   );
-};
-
-export default Lightbox;
+}
