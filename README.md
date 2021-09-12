@@ -46,10 +46,19 @@
 - [ ] Desktop View
 - [ ] SEO
 - [x] mdx source for blog posts
-- [ ] Re-Factor
+- [ ] Re-Factor !!URGENT
 - [ ] Image Gallery
 - [ ] terms of use page
 - [ ] add hooks section to readme
+- [x] Home page last published posts section
+- [ ] Blog search feature
+- [ ] Blog posts tags
+- [ ] Recent published query item limit
+- [ ] Queries file
+- [ ] Design System re-vision
+- [ ] Image alts
+- [ ] Use html meta tags (section, header, etc.)
+- [ ] Contact, Faqs pages.
 
 ## 🐞 BUGS
 
@@ -57,6 +66,7 @@
 - [ ] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
 - [x] Hero Background Images animation bug.
 - [ ] Page layout problem(try sticky instead of fixed on header)
+- [ ] Gatsby Images hasn't rendered properly
 
 ## 📒 NOTES to Myself
  ...

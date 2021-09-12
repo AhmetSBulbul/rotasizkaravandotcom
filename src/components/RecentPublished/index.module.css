@@ -1,0 +1,28 @@
+.container {
+  @apply flex flex-col p-4 gap-y-2;
+}
+
+.sectionTitle {
+  @apply font-display text-black text-xl;
+}
+
+.featuredImage {
+  @apply m-0 h-full object-cover;
+  flex: 2;
+}
+
+.body {
+  @apply my-4 flex flex-col;
+  flex: 5;
+  h2 {
+    @apply font-body text-black font-black;
+  }
+}
+
+.dateWrapper {
+  @apply flex-wrap whitespace-nowrap bg-white absolute right-2 -top-4 rounded-md py-1 px-2 text-sm font-body font-medium text-gray-500;
+}
+
+.readMore {
+  @apply text-xs text-gray-400 text-right ml-auto mr-2 inline-block;
+}

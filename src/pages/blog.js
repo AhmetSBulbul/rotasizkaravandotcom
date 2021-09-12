@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import PostLink from "../components/PageLink";
+import PostLink from "../components/PostLink";
 
 const BlogPage = ({
   data: {
@@ -19,7 +19,7 @@ const BlogPage = ({
     ));
 
   return (
-    <div className="min-h-screen flex flex-col p-24 justify-items-center">
+    <div className="min-h-screen pt-28 px-4">
       {Posts}
     </div>
   );
@@ -40,9 +40,15 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD.MM.YYYY")
             slug
             title
+            excerpt
+            featureImage {
+              childImageSharp {
+                gatsbyImageData(height: 300)
+              }
+            }
           }
         }
       }

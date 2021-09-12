@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import { graphql } from "gatsby";
 import RotasizGallery from "../components/Gallery";
+import RecentPublished from "../components/RecentPublished";
 
 import { Whatsapp } from "../components/icons";
 
@@ -12,6 +13,7 @@ const IndexPage = ({ data }) => {
     <>
       <Hero />
       <AboutUs />
+      <RecentPublished />
       <RotasizGallery photos={data.allFile} />
       <a
         className="fixed bottom-14 right-5 h-10 z-10"
