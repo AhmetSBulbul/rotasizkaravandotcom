@@ -86,16 +86,23 @@ const RotasizGallery = ({ photos }) => {
 
       {isModalShow && (
         <Lightbox onClose={setIsModalShow}>
-          <ImageCarousel>
+          <ImageCarousel
+            settings={{
+              dots: true,
+              slideToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            }}
+          >
             {photos.edges.map(({ node }) => {
               const image = getImage(node);
               return (
                 <div
                   key={node.id + "-lightbox"}
-                  className={styles.photoWrapper}
+                  className="h-full w-full px-2 flex"
                 >
                   <GatsbyImage
-                    className={styles.photo}
+                    className="object-contain"
                     alt={node.name}
                     image={image}
                   />

@@ -8,28 +8,33 @@ export default function Template({
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   return (
-    <div className="min-h-screen flex">
-      <div className="my-auto">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-
+    <>
+      <div className="h-1/4 w-screen flex">
         <GatsbyImage
-          className="rounded-sm"
+          className="rounded-sm object-cover w-full"
           alt={frontmatter.title}
           image={
             frontmatter.featureImage
               .childImageSharp.gatsbyImageData
           }
         />
+      </div>
+      <div className="flex flex-col mt-4 px-4 gap-y-4">
+        <span className="font-body text-gray-500 text-left">
+          {frontmatter.date}
+        </span>
+        <h1 className="font-display text-xl text-center">
+          {frontmatter.title}
+        </h1>
 
         <div
-          className="text-black"
+          className="text-black font-body font-medium text-justify"
           dangerouslySetInnerHTML={{
             __html: html,
           }}
         />
       </div>
-    </div>
+    </>
   );
 }
 

@@ -60,16 +60,18 @@
 - [ ] Use html meta tags (section, header, etc.)
 - [ ] Contact, Faqs pages.
 - [ ] Storybook
+- [ ] Lightbox will be at a different dynamic page
 
 ## 🐞 BUGS
 
 - [x] Logo onClick doesn't work while menu is expanded.
 - [ ] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
 - [x] Hero Background Images animation bug.
-- [ ] Gatsby Images hasn't rendered properly
+- [ ] Gatsby Images hasn't rendered properly!!!!
 
 ## 📒 NOTES to Myself
  ...
+ react-slick active slide hook'una callback fonksiyon atilicak. active slide lightboxtaki active slidei da degistiricek.
 
 ---
 

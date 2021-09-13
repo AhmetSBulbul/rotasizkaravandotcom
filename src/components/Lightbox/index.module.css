@@ -1,12 +1,12 @@
 .baseContainer {
-  @apply fixed w-screen h-screen top-0 left-0 bg-black flex;
+  @apply fixed w-screen h-screen top-0 left-0 bg-black bg-opacity-90;
   z-index: 999;
 }
 
 .innerContainer {
-  @apply my-auto mx-auto w-full p-10 bg-blue-100;
+  @apply my-auto mx-auto w-full h-full;
 }
 
 .exitBtn {
-  @apply fixed top-10 right-10 h-10 w-24;
+  @apply fixed top-10 right-10 h-10 w-24 bg-white;
 }

@@ -4,8 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ImageCarousel = ({ children }) => {
-  const settings = {
+const ImageCarousel = ({
+  children,
+  ...props
+}) => {
+  const settings = props.settings ?? {
     className: "center",
     centerMode: true,
     infinite: true,
