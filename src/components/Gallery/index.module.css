@@ -21,3 +21,7 @@
     @apply w-14 flex-none;
   }
 }
+
+.gridContainer {
+  @apply grid grid-cols-4 gap-4;
+}

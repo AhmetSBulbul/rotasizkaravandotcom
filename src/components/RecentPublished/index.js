@@ -40,9 +40,6 @@ export default function RecentPublished({
       `}
       render={(data) => (
         <div className={styles.container}>
-          <h3 className={styles.sectionTitle}>
-            Son Paylaşılanlar
-          </h3>
           <div className={styles.postList}>
             {data.allMarkdownRemark.edges.map(
               ({ node }) => {

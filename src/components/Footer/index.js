@@ -5,8 +5,20 @@ export default function Footer({ children }) {
   return (
     <section className={styles.footerSection}>
       <div className={styles.container}>
-        <div className={styles.copyrighted}>
-          Bütün hakları gizlidir.
+        <div className={styles.footerMenu}>
+          <h5>Hizmetlerimiz</h5>
+          <ol className={styles.menuList}>
+            <a>Hizmetlerimiz</a>
+            <a>Hakkımızda</a>
+          </ol>
+        </div>
+        <div className={styles.footerMenu}>
+          <h5>Hakkımızda</h5>
+          <ol className={styles.menuList}>
+            <a>Hizmetlerimiz</a>
+            <a>Hakkımızda</a>
+            <a>Blog</a>
+          </ol>
         </div>
       </div>
     </section>

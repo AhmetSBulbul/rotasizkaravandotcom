@@ -1,5 +1,5 @@
 .aboutUsSection {
-  @apply flex flex-col relative bg-gray-50 mb-14;
+  @apply flex flex-col relative mb-14;
 }
 
 .aboutUsSection::before {
@@ -17,7 +17,7 @@
 }
 
 .contentCard {
-  @apply flex flex-col gap-2 px-4 py-3 rounded-sm bg-white border-2 border-gray-400 mr-5 pb-10;
+  @apply flex flex-col gap-2 px-4 py-3 rounded-xl bg-white border-2 border-gray-400 mr-0 pb-10;
 
   h3 {
     @apply font-serif text-lg text-yellow-600 font-bold flex items-center gap-2;
@@ -39,7 +39,7 @@
 }
 
 .contentCardReverse {
-  @apply text-right mr-0 ml-5;
+  @apply text-right mr-0 ml-0;
   h3 {
     @apply flex-row-reverse justify-items-end;
   }

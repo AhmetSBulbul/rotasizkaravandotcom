@@ -19,6 +19,7 @@
     "@fontsource/bungee": "^4.5.0",
     "@fontsource/fira-sans": "^4.5.0",
     "@fontsource/montserrat": "^4.5.1",
+    "@fontsource/oswald": "^4.5.1",
     "@fontsource/pt-serif": "^4.5.0",
     "autoprefixer": "^10.3.1",
     "classnames": "^2.3.1",

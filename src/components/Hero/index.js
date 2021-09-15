@@ -36,7 +36,7 @@ export default function Hero({ children }) {
                     layout: CONSTRAINED
                     transformOptions: {
                       cropFocus: CENTER
-                      fit: COVER
+                      fit: CONTAIN
                     }
                   )
                 }
@@ -62,6 +62,9 @@ export default function Hero({ children }) {
                     ])}
                   >
                     <GatsbyImage
+                      imgClassName={
+                        styles.gatsbyImage
+                      }
                       key={node.id}
                       alt={node.name}
                       image={image}
@@ -76,8 +79,8 @@ export default function Hero({ children }) {
               className={styles.contentWrapper}
             >
               <h2 className={styles.display}>
-                İSTEĞİNİZE VE İHTİYAÇLARINIZA GÖRE
-                KARAVANLAR ÜRETİYORUZ.
+                İSTEĞİNİZE VE İHTİYAÇLARINIZA
+                YÖNELİK KARAVANLAR ÜRETİYORUZ.
               </h2>
               <div
                 className={styles.buttonWrapper}

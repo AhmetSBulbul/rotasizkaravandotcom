@@ -12,6 +12,7 @@ import useToggle from "../../hooks/useToggle";
 const RotasizGallery = ({ photos }) => {
   const [isModalShow, setIsModalShow] =
     useToggle(false);
+
   return (
     <>
       <div className={styles.wrapper}>

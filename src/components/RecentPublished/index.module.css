@@ -1,7 +1,11 @@
 .container {
   @apply flex flex-col p-4 gap-y-2;
 }
-
+.postList {
+  @screen md {
+    @apply grid grid-cols-3 gap-x-4;
+  }
+}
 .sectionTitle {
   @apply font-display text-black text-xl;
 }

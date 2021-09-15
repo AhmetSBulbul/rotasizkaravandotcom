@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       body: ["Montserrat", "sans-serif"],
-      display: ["Bungee", "cursive"],
+      display: ["Oswald", "sans-serif"],
       serif: ["PT Serif", "serif"],
     },
     extend: {},

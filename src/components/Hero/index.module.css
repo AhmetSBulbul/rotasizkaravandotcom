@@ -1,9 +1,9 @@
 .base {
-  @apply h-screen w-screen relative bg-blue-50;
+  @apply h-screen w-screen relative;
 }
 
 .background {
-  @apply absolute w-screen h-screen top-0 left-0;
+  @apply absolute w-screen h-screen top-0 left-0 overflow-hidden;
 }
 
 .backgroundImage {
@@ -26,24 +26,36 @@
 }
 
 .contentWrapper {
-  @apply flex flex-col mx-auto my-auto gap-5;
+  @apply flex flex-col mx-auto mt-auto mb-44 gap-5;
+  @screen md {
+    @apply my-auto w-3/5;
+  }
 }
 
 .display {
-  @apply font-display text-white text-3xl text-right md:text-5xl;
+  @apply text-white text-3xl text-right md:text-4xl md:text-center;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  font-family: "Bungee", cursive;
 }
 
 .buttonWrapper {
-  @apply flex flex-col gap-y-4;
+  @apply flex flex-col gap-y-4 hidden;
   @screen md {
     @apply flex-row gap-x-6 justify-end;
   }
 }
 
 .primaryBtn {
-  @apply bg-yellow-600 text-white uppercase font-display px-4 py-4 rounded-md transition-colors hover:bg-yellow-500;
+  @apply bg-yellow-600 text-white uppercase font-body px-4 py-4 rounded-md transition-colors hover:bg-yellow-500;
+  font-weight: 600;
 }
 
 .secondaryBtn {
-  @apply border-2 border-white text-white uppercase font-display py-4 px-4 transition-colors hover:bg-white hover:text-yellow-700;
+  @apply border-2 border-white text-white uppercase font-body py-4 px-4 transition-colors hover:bg-white hover:text-yellow-700;
+  font-weight: 700;
+}
+
+.gatsbyImage {
+  object-position: 50% 80%;
 }
