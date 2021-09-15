@@ -7,6 +7,7 @@ import RotasizGallery from "../components/Gallery";
 import RecentPublished from "../components/RecentPublished";
 import Spacer from "../components/Spacer";
 import SectionContainer from "../components/SectionContainer";
+import FreeYourHome from "../components/FreeYourHome";
 
 import { Whatsapp } from "../components/icons";
 
@@ -14,18 +15,7 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <Hero />
-      <SectionContainer title="Hakkımızda">
-        <p>
-          Rotasız Karavan olarak, istek ve
-          ihtiyaçlarınıza göre, hep hayalini
-          kurduğunuz o karavanı sizin için ve size
-          özel olarak gerçekleştirip
-          hayallerinizin yerini, ev konforunda
-          yaptığınız seyahatler ve onun güzel
-          anılarıyla doldurmak için çalışıyor,
-          çabalıyoruz.
-        </p>
-      </SectionContainer>
+      <FreeYourHome />
       <SectionContainer title="HİZMETLERİMİZ">
         <p>
           Rotasız Karavan olarak, istek ve

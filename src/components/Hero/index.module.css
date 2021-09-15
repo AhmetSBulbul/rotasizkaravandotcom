@@ -40,7 +40,7 @@
 }
 
 .buttonWrapper {
-  @apply flex flex-col gap-y-4 hidden;
+  @apply flex flex-col gap-y-4;
   @screen md {
     @apply flex-row gap-x-6 justify-end;
   }

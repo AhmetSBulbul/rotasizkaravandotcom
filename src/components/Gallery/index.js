@@ -89,7 +89,7 @@ const RotasizGallery = ({ photos }) => {
         <Lightbox onClose={setIsModalShow}>
           <ImageCarousel
             settings={{
-              dots: true,
+              dots: false,
               slideToShow: 1,
               slidesToScroll: 1,
               infinite: true,
@@ -100,10 +100,11 @@ const RotasizGallery = ({ photos }) => {
               return (
                 <div
                   key={node.id + "-lightbox"}
-                  className="h-full w-full px-2 flex"
+                  className="block my-auto"
                 >
                   <GatsbyImage
-                    className="object-contain"
+                    className="object-contain my-auto"
+                    imgClassName="object-contain"
                     alt={node.name}
                     image={image}
                   />

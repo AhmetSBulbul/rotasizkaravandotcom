@@ -82,22 +82,6 @@ export default function Hero({ children }) {
                 İSTEĞİNİZE VE İHTİYAÇLARINIZA
                 YÖNELİK KARAVANLAR ÜRETİYORUZ.
               </h2>
-              <div
-                className={styles.buttonWrapper}
-              >
-                <Link
-                  to="/islerimiz"
-                  className={styles.primaryBtn}
-                >
-                  İŞLERİMİZİ İNCELEYİN
-                </Link>
-                <Link
-                  to="/kurumsal"
-                  className={styles.secondaryBtn}
-                >
-                  HAKKIMIZDA
-                </Link>
-              </div>
             </div>
           </div>
         </div>

@@ -15,14 +15,16 @@ export default function Lightbox({
   return (
     <div className={styles.baseContainer}>
       <div className={styles.innerContainer}>
-        {children}
+        <button
+          className={styles.exitBtn}
+          onClick={props.onClose}
+        >
+          X
+        </button>
+        <div className={styles.body}>
+          {children}
+        </div>
       </div>
-      <button
-        className={styles.exitBtn}
-        onClick={props.onClose}
-      >
-        Kapat
-      </button>
     </div>
   );
 }

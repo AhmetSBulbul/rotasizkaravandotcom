@@ -1,0 +1,39 @@
+.container {
+  @apply px-4 py-8;
+}
+
+.wrapper {
+  @apply flex flex-col gap-y-6;
+}
+
+.sectionTitle {
+  @apply font-display font-bold text-2xl text-center mx-auto flex flex-col gap-y-3;
+  &::before,
+  &::after {
+    @apply w-3/5 bg-yellow-500 block mx-auto rounded-full;
+    height: 2px;
+    content: "";
+  }
+}
+
+.imageWrapper {
+  @apply w-full ml-auto relative overflow-visible flex;
+  transform: translateX(-1.6em) rotate(1deg);
+  &::before {
+    content: "";
+    @apply absolute w-full h-full border-2 border-yellow-600 left-2 top-2;
+  }
+}
+
+.image {
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+.innerContainer {
+  @apply flex flex-col gap-y-6 relative;
+}
+
+.content {
+  @apply text-center;
+}
