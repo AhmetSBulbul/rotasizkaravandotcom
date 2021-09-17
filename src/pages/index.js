@@ -18,7 +18,10 @@ const IndexPage = ({ data }) => {
     <>
       <Hero />
       <FreeYourHome />
-      <SectionContainer title="HİZMETLERİMİZ">
+      <SectionContainer
+        title="HİZMETLERİMİZ"
+        oranj
+      >
         <p>
           Rotasız Karavan olarak, istek ve
           ihtiyaçlarınıza göre, hep hayalini

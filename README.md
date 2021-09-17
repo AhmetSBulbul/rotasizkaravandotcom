@@ -46,7 +46,9 @@
 - [ ] Desktop View
 - [ ] SEO
 - [x] mdx source for blog posts
-- [ ] Re-Factor !!URGENT
+- [ ] Re-Factor CSS
+- [ ] Re-Factor Queries
+- [ ] Re-Factor Components
 - [ ] Image Gallery
 - [ ] terms of use page
 - [ ] add hooks section to readme

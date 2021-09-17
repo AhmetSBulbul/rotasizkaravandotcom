@@ -13,3 +13,18 @@
     @apply -right-3;
   }
 }
+
+.container {
+  @apply fixed top-0 left-0 right-0 z-20 bg-black px-5;
+  background-color: #5f6040;
+}
+
+.innerContainer {
+  @apply container h-20 flex flex-row justify-between mx-auto relative;
+  &::after {
+    @apply absolute top-full left-0 h-6 w-full;
+    content: "";
+    background: url(../../svgs/rip.svg) bottom;
+    background-size: 200%;
+  }
+}
