@@ -7,7 +7,11 @@ module.exports = {
       display: ["Oswald", "sans-serif"],
       serif: ["PT Serif", "serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#132624",
+      },
+    },
   },
   variants: {
     extend: {},
