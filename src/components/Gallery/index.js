@@ -17,7 +17,7 @@ const RotasizGallery = ({ photos }) => {
     <>
       <div className={styles.wrapper}>
         <h3 className="font-display text-2xl text-right text-black">
-          İŞLERİMİZ
+          FOTOĞRAF GALERİSİ
         </h3>
         <div className={styles.gallery}>
           <ImageCarousel>

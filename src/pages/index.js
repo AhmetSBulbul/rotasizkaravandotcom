@@ -2,12 +2,14 @@ import React from "react";
 import Hero from "../components/Hero";
 
 import AboutUs from "../components/AboutUs";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import RotasizGallery from "../components/Gallery";
 import RecentPublished from "../components/RecentPublished";
 import Spacer from "../components/Spacer";
 import SectionContainer from "../components/SectionContainer";
 import FreeYourHome from "../components/FreeYourHome";
+import ImageCarousel from "../components/ImageCarousel";
+import OurServiceCard from "../components/OurServiceCard";
 
 import { Whatsapp } from "../components/icons";
 
@@ -27,6 +29,39 @@ const IndexPage = ({ data }) => {
           anılarıyla doldurmak için çalışıyor,
           çabalıyoruz.
         </p>
+        <ImageCarousel>
+          <OurServiceCard title="Planlama">
+            hayallerinizin yerini, ev konforunda
+            yaptığınız seyahatler ve onun güzel
+            anılarıyla doldurmak için çalışıyor,
+            çabalıyoruz.
+          </OurServiceCard>
+          <OurServiceCard title="Danışma">
+            hayallerinizin yerini, ev konforunda
+            yaptığınız seyahatler ve onun güzel
+            anılarıyla doldurmak için çalışıyor,
+            çabalıyoruz.
+          </OurServiceCard>
+          <OurServiceCard title="Üretim">
+            hayallerinizin yerini, ev konforunda
+            yaptığınız seyahatler ve onun güzel
+            anılarıyla doldurmak için çalışıyor,
+            çabalıyoruz.
+          </OurServiceCard>
+        </ImageCarousel>
+        <Link
+          to="kurumsal"
+          className="primaryBtn mt-4 border-2 border-yellow-600"
+        >
+          BİZE ULAŞIN
+        </Link>
+      </SectionContainer>
+      <SectionContainer title="İŞLERİMİZ">
+        Ürettiğimiz her karavanın geçtiği
+        işlemleri aşama aşama inceleyebilirsiniz.
+        Aynı zamanda işlerimiz arasından metreküp,
+        araba marka ve modeline göre filtreleyerek
+        geçmiş projelerimizi listeleyebilirsiniz.
       </SectionContainer>
       <RotasizGallery photos={data.allFile} />
       <SectionContainer title="Blog">

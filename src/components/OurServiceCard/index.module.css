@@ -1,0 +1,19 @@
+.innerContainer {
+  @apply flex flex-col w-full text-black bg-white border-2 border-gray-400 mb-6 rounded-3xl gap-x-4 relative p-4;
+}
+
+.container {
+  @apply px-4;
+}
+
+.title {
+  @apply font-display font-bold text-xl;
+}
+
+.body {
+  @apply flex flex-col px-2 py-4;
+  flex: 5;
+  h2 {
+    @apply font-body text-black font-black;
+  }
+}

@@ -55,19 +55,20 @@
 - [ ] Blog posts tags
 - [ ] Recent published query item limit
 - [ ] Queries file
-- [ ] Design System re-vision
+- [x] Design System re-vision
 - [ ] Image alts
-- [ ] Use html meta tags (section, header, etc.)
 - [ ] Contact, Faqs pages.
-- [ ] Storybook
-- [ ] Lightbox will be at a different dynamic page
+- [ ] Better Gatsby Images.
+- [ ] Our Works Posts and page
+- [ ] Our works page filter
+- [ ] Social Media Cards
 
 ## 🐞 BUGS
 
 - [x] Logo onClick doesn't work while menu is expanded.
 - [ ] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
 - [x] Hero Background Images animation bug.
-- [ ] Gatsby Images hasn't rendered properly!!!!
+- [x] Gatsby Images hasn't rendered properly!!!!
 
 ## 📒 NOTES to Myself
  ...
