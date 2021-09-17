@@ -16,15 +16,14 @@
 
 .container {
   @apply fixed top-0 left-0 right-0 z-20 bg-black px-5;
-  background-color: #5f6040;
+  background-color: #132624;
 }
 
 .innerContainer {
   @apply container h-20 flex flex-row justify-between mx-auto relative;
   &::after {
-    @apply absolute top-full left-0 h-6 w-full;
+    @apply absolute top-full left-0 h-6 w-screen;
     content: "";
     background: url(../../svgs/rip.svg) bottom;
-    background-size: 200%;
   }
 }
