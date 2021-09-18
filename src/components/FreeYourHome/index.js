@@ -7,7 +7,7 @@ const FreeYourHome = ({
   title = "",
 }) => {
   return (
-    <div className="content-safe py-8 bg-white">
+    <div className="content-safe py-8 bg-white pb-24">
       <div className={styles.wrapper}>
         <div className={styles.innerContainer}>
           <div className={styles.content}>
