@@ -7,13 +7,13 @@ const FreeYourHome = ({
   title = "",
 }) => {
   return (
-    <div className={styles.container}>
+    <div className="content-safe py-8 bg-white">
       <div className={styles.wrapper}>
-        <h3 className={styles.sectionTitle}>
-          Evinizi Özgürleştirelim.
-        </h3>
         <div className={styles.innerContainer}>
           <div className={styles.content}>
+            <h3 className={styles.sectionTitle}>
+              Evinizi Özgürleştirelim.
+            </h3>
             <p>
               Rotasız Karavan olarak, istek ve
               ihtiyaçlarınıza göre, hep hayalini
