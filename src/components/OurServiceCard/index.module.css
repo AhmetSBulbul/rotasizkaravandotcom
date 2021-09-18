@@ -1,5 +1,5 @@
 .innerContainer {
-  @apply flex flex-col w-full h-80 text-black bg-white mb-6 rounded-3xl gap-x-4 relative p-4;
+  @apply flex flex-col w-full h-80 text-black bg-white mb-6 gap-x-4 relative p-4;
 }
 
 .container {

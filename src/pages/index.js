@@ -32,7 +32,19 @@ const IndexPage = ({ data }) => {
           anılarıyla doldurmak için çalışıyor,
           çabalıyoruz.
         </p>
-        <ImageCarousel>
+        <ImageCarousel
+          settings={{
+            dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            autoplay: true,
+            speed: 2000,
+            autoplaySpeed: 4000,
+            cssEase: "ease-in-out",
+          }}
+        >
           <OurServiceCard title="Planlama">
             hayallerinizin yerini, ev konforunda
             yaptığınız seyahatler ve onun güzel
@@ -54,17 +66,21 @@ const IndexPage = ({ data }) => {
         </ImageCarousel>
         <Link
           to="kurumsal"
-          className="primaryBtn mt-4 border-2 border-yellow-600"
+          className="primaryBtn mt-4 border-none text-white font-display font-medium bg-yellow-600 mx-4"
         >
           BİZE ULAŞIN
         </Link>
       </SectionContainer>
       <SectionContainer title="İŞLERİMİZ">
-        Ürettiğimiz her karavanın geçtiği
-        işlemleri aşama aşama inceleyebilirsiniz.
-        Aynı zamanda işlerimiz arasından metreküp,
-        araba marka ve modeline göre filtreleyerek
-        geçmiş projelerimizi listeleyebilirsiniz.
+        <p>
+          Ürettiğimiz her karavanın geçtiği
+          işlemleri aşama aşama
+          inceleyebilirsiniz. Aynı zamanda
+          işlerimiz arasından metreküp, araba
+          marka ve modeline göre filtreleyerek
+          geçmiş projelerimizi
+          listeleyebilirsiniz.
+        </p>
       </SectionContainer>
       <RotasizGallery photos={data.allFile} />
       <SectionContainer title="Blog">

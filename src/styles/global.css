@@ -7,6 +7,22 @@
     font-size: 16px;
   }
 
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    font-weight: 700;
+  }
+
+  @supports (font-variation-settings: normal) {
+    h1,
+    h2,
+    h3 {
+      font-family: "Maven ProVariable";
+      font-variation-settings: "wght" 700;
+    }
+  }
+
   body {
     @apply font-body;
     &::-webkit-scrollbar {

@@ -48,7 +48,15 @@
 }
 
 .content {
-  @apply text-left;
+  @apply text-left antialiased;
+
+  @supports (font-variation-settings: normal) {
+    h3 {
+      @apply text-4xl md:text-5xl;
+      font-family: "Maven ProVariable";
+      font-variation-settings: "wght" 900;
+    }
+  }
 
   p {
     @apply mt-6;

@@ -40,9 +40,9 @@
 }
 
 .display {
-  @apply text-white text-3xl text-right md:text-4xl md:text-center;
-  letter-spacing: 0.03em;
-  line-height: 1.2;
+  @apply text-white text-3xl text-right md:text-4xl md:text-center  antialiased;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
   font-family: "Bungee", cursive;
 }
 

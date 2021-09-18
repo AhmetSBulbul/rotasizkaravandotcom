@@ -7,13 +7,11 @@ const FreeYourHome = ({
   title = "",
 }) => {
   return (
-    <div className="content-safe py-8 bg-white pb-24">
+    <div className="content-safe py-12 bg-white">
       <div className={styles.wrapper}>
         <div className={styles.innerContainer}>
           <div className={styles.content}>
-            <h3 className={styles.sectionTitle}>
-              Evinizi Özgürleştirelim.
-            </h3>
+            <h3>EVİNİZİ ÖZGÜRLEŞTİRELİM</h3>
             <p>
               Rotasız Karavan olarak, istek ve
               ihtiyaçlarınıza göre, hep hayalini
@@ -29,7 +27,7 @@ const FreeYourHome = ({
             className={styles.imageWrapper}
             imgClassName={styles.image}
           />
-          <button className="primaryBtn absolute -bottom-6 -right-2 border-2 border-yellow-700">
+          <button className="primaryBtn absolute -bottom-6 -right-2 border-none antialiased bg-yellow-600 text-white font-display font-semibold">
             Hakkimizda
           </button>
         </div>
