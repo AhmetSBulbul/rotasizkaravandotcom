@@ -15,18 +15,25 @@
 }
 
 .container {
-  @apply fixed top-0 left-0 right-0 z-20 px-5;
+  @apply fixed top-0 left-0 right-0 z-20 h-24 flex flex-col;
 }
 
 .innerContainer {
-  @apply container h-20 flex flex-row justify-between mx-auto relative;
+  @apply relative my-auto flex flex-col justify-center h-full md:bg-primary md:pt-1;
 
   &::before {
-    @apply absolute top-0 left-0 h-full w-full;
+    @apply absolute -top-1 left-0 h-full w-full;
     content: "";
-    background-image: url("../../svgs/brush-stroke-banner-6.svg");
-    background-size: 120% 300%;
+    background-image: url("../../svgs/brush-stroke-banner-6.svg"),
+      url("../../svgs/brush-stroke-banner-1.svg");
+    background-size: 130% 200%, 130% 110%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 80% 30%, 55% 100%;
+    filter: drop-shadow(
+      10px 10px 10px rgba(19, 38, 36, 0.5)
+    );
+    @screen md {
+      @apply top-auto -bottom-5 transform rotate-180;
+    }
   }
 }

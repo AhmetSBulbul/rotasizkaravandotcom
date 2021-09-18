@@ -1,7 +1,7 @@
 import React from "react";
 
 import * as styles from "./index.module.css";
-import useToggle from "../../hooks/useToggle";
+
 import cn from "classnames";
 import { Link } from "gatsby";
 import NavItemCard from "../NavItemCard";
@@ -27,18 +27,15 @@ const ExitIcon = () => {
   );
 };
 
-export default function Navigation({ children }) {
-  const [isMenuActive, setIsMenuActive] =
-    useToggle();
-
-  useLockBodyScroll(isMenuActive);
+export default function Navigation(props) {
+  useLockBodyScroll(props.state);
   return (
     <div className={styles.navigationWrapper}>
       <button
-        onClick={setIsMenuActive}
+        onClick={props.onCallback}
         className={cn([
           styles.toggleBtn,
-          isMenuActive && styles.toggleBtnActive,
+          props.state && styles.toggleBtnActive,
         ])}
       >
         <div />
@@ -49,12 +46,12 @@ export default function Navigation({ children }) {
       <nav
         className={cn([
           styles.navigation,
-          isMenuActive && styles.navActive,
+          props.state && styles.navActive,
         ])}
       >
         <Link
           to="/islerimiz"
-          onClick={setIsMenuActive}
+          onClick={props.onCallback}
           className={cn([styles.navItemCard])}
         >
           <NavItemCard title="İŞLERİMİZ">
@@ -70,7 +67,7 @@ export default function Navigation({ children }) {
         </Link>
         <Link
           to="/blog"
-          onClick={setIsMenuActive}
+          onClick={props.onCallback}
           className={cn([styles.navItemCard])}
         >
           <NavItemCard title="Blog">
@@ -86,7 +83,7 @@ export default function Navigation({ children }) {
         </Link>
         <Link
           to="/kurumsal"
-          onClick={setIsMenuActive}
+          onClick={props.onCallback}
           className={cn([styles.navItemCard])}
         >
           <NavItemCard title="Kurumsal">

@@ -15,7 +15,7 @@ import cn from "classnames";
 import useSlide from "../../hooks/useSlide";
 
 export default function Hero({ children }) {
-  const [currIndex] = useSlide(3000, 7);
+  const [currIndex] = useSlide(7000, 7);
 
   return (
     <StaticQuery
