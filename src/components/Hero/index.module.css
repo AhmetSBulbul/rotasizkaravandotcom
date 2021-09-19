@@ -6,7 +6,7 @@
     background-image: url("../../svgs/rip.svg");
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     transform: rotate(180deg);
     top: 95%;
   }

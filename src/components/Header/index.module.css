@@ -15,7 +15,7 @@
 }
 
 .container {
-  @apply fixed top-4 left-0 right-0 z-20 h-24 flex flex-col md:top-0;
+  @apply fixed top-0 left-0 right-0 z-20 h-24 flex flex-col md:top-0;
 }
 
 .innerContainer {
