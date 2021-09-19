@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
     background-position: 80% 30%, 55% 100%;
     filter: drop-shadow(
-      10px 10px 10px rgba(19, 38, 36, 0.5)
+      2px 2px 2px rgba(19, 38, 36, 0.2)
     );
     @screen md {
       @apply top-auto -bottom-5 transform rotate-180;

@@ -1,11 +1,15 @@
 .base {
   @apply h-screen w-screen relative overflow-hidden;
   &::after {
-    @apply absolute -bottom-4 left-0 h-12 w-full;
+    @apply absolute left-0 h-full w-full;
     content: "";
-    background: url(../../svgs/rip.svg) bottom;
-
-    transform: rotate(179deg);
+    background-image: url("../../svgs/rip.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    transform: rotate(180deg);
+    top: 95%;
   }
 }
 
