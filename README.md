@@ -69,10 +69,10 @@
 ## 🐞 BUGS
 
 - [x] Logo onClick doesn't work while menu is expanded.
-- [ ] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
+- [x] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
 - [x] Hero Background Images animation bug.
-- [x] Gatsby Images hasn't rendered properly!!!!
-- [ ] Background svg header render problem on ios
+- [x] Gatsby Images hasn't rendered properly!!!! - Solution: imgClasses
+- [x] Background svg header render problem on ios - Solution: preserveAspectRatio:'none' is added to svgs
 
 ## 📒 NOTES to Myself
  ...
