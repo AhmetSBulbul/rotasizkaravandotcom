@@ -64,7 +64,6 @@
 - [ ] Our Works Posts and page
 - [ ] Our works page filter
 - [ ] Social Media Cards
-- [ ] Use Features of variable fonts(Maven-pro)
 
 ## 🐞 BUGS
 
