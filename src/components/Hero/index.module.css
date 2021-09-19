@@ -3,7 +3,8 @@
   &::after {
     @apply absolute -bottom-4 left-0 h-12 w-full;
     content: "";
-    background: url("../../svgs/rip.svg") bottom;
+    background-image: url("../../svgs/rip.svg");
+    background-position: bottom;
     transform: rotate(179deg);
   }
 }
