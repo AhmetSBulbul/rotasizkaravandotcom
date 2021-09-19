@@ -6,19 +6,6 @@
   @apply py-16;
 }
 
-.sectionTitle {
-  @apply font-display font-bold text-2xl text-center mx-auto flex flex-col gap-y-3 md:text-left;
-  &::before,
-  &::after {
-    @apply w-3/5 bg-yellow-500 block mx-auto rounded-full;
-    height: 2px;
-    content: "";
-    @screen md {
-      content: none;
-    }
-  }
-}
-
 .decoration {
   @apply w-full flex-none;
   @screen md {
