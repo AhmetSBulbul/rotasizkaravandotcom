@@ -1,19 +1,61 @@
-.innerContainer {
-  @apply flex flex-col w-full h-80 text-black bg-white mb-6 gap-x-4 relative p-4;
-}
+.sectionContainer {
+  @apply w-full;
+  height: 600px;
 
-.container {
-  @apply px-4;
+  @screen md {
+    @apply container px-8 mx-auto;
+    height: 400px;
+  }
 }
 
 .title {
-  @apply font-display font-bold text-xl;
+  @apply font-display font-black text-4xl md:text-5xl;
 }
 
 .body {
-  @apply flex flex-col px-2 py-4;
-  flex: 5;
-  h2 {
-    @apply font-body text-black font-black;
+  @apply flex flex-col py-4 flex-1;
+}
+
+.content {
+  @apply mt-4 subpixel-antialiased;
+}
+
+.innerContainer {
+  @apply flex flex-col h-full;
+
+  @screen md {
+    @apply w-full flex-row;
+  }
+}
+
+.sectionTitle {
+  @apply font-black text-secondary text-xl md:text-2xl;
+}
+
+.decoration {
+  @apply h-3/5 object-bottom relative;
+  &::after {
+    @apply absolute bottom-0 w-full left-0 transform rotate-180;
+    content: " ";
+    background: url("../../svgs/rip.svg") bottom;
+    background-size: 100%;
+    height: 20px;
+  }
+}
+
+.decorationTop {
+  @apply h-3/5 object-bottom relative md:w-1/2 md:h-full;
+  &::after {
+    @apply absolute top-0 w-full left-0;
+    content: " ";
+    background: url("../../svgs/rip.svg") bottom;
+    background-size: 100%;
+    height: 20px;
+
+    @screen md {
+      @apply left-full transform rotate-90;
+      transform-origin: top left;
+      width: 400px;
+    }
   }
 }

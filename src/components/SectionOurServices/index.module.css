@@ -1,0 +1,32 @@
+.container {
+  @apply mt-12;
+}
+
+.innerContainer {
+  @apply flex flex-col antialiased;
+}
+
+.sectionTitle {
+  @apply font-display font-black text-4xl text-primary;
+}
+
+.bgOranj {
+  @apply mt-4  relative text-white;
+  &::before {
+    @apply bg-primary absolute top-0 -left-2;
+    content: "";
+    z-index: -20;
+    width: 120%;
+    height: 100%;
+    transform: rotate(1deg);
+  }
+}
+
+.cardImageWrapper {
+  @apply h-full w-full;
+}
+
+.cardImage {
+  object-fit: cover;
+  object-position: 50% 80%;
+}

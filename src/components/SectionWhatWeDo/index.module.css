@@ -14,32 +14,16 @@
 }
 
 .button {
-  @apply px-8 bg-secondary text-white font-display text-lg font-medium antialiased absolute right-0 z-50;
+  @apply px-8 bg-secondary text-white font-display text-lg font-medium antialiased absolute right-0 z-10;
   height: 52px;
   bottom: -26px;
   @screen md {
-    @apply relative ml-auto mt-auto;
+    @apply static ml-auto mt-auto;
   }
 }
 
 .slogan {
   @apply font-display font-semibold text-secondary text-xl;
-}
-
-.aimageWrapper {
-  @apply w-full ml-auto relative overflow-visible flex;
-  transform: translateX(-1.6em) rotate(1deg);
-  &::before {
-    content: "";
-    @apply absolute w-full h-full border-2 border-yellow-600 left-2 top-2;
-  }
-
-  @screen md {
-    @apply transform rotate-0 translate-x-0;
-    &::before {
-      content: none;
-    }
-  }
 }
 
 .bigImg {
@@ -58,16 +42,19 @@
 .innerContainer {
   @apply flex flex-col gap-y-8 relative;
   @screen md {
-    @apply flex-row-reverse gap-x-6;
+    @apply flex-row gap-x-6;
   }
 }
 
 .content {
   @apply text-left flex flex-col;
 
+  h3 {
+    @apply font-display font-black text-4xl md:text-5xl;
+  }
+
   @supports (font-variation-settings: normal) {
     h3 {
-      @apply text-4xl md:text-5xl;
       font-family: "Maven ProVariable";
       font-variation-settings: "wght" 900;
     }
