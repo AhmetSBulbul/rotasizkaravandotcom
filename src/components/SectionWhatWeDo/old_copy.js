@@ -2,7 +2,7 @@ import React from "react";
 import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 
-const FreeYourHome = ({
+const SectionWhatWeDo = ({
   children,
   title = "",
 }) => {
@@ -36,4 +36,4 @@ const FreeYourHome = ({
   );
 };
 
-export default FreeYourHome;
+export default SectionWhatWeDo;

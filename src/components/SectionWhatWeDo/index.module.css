@@ -1,9 +1,9 @@
 .container {
-  @apply px-4 py-8 text-primary bg-white;
+  @apply text-primary bg-white;
 }
 
 .wrapper {
-  @apply flex flex-col gap-y-6;
+  @apply py-16;
 }
 
 .sectionTitle {
@@ -19,7 +19,27 @@
   }
 }
 
-.imageWrapper {
+.decoration {
+  @apply w-full flex-none;
+  @screen md {
+    @apply w-1/2;
+  }
+}
+
+.button {
+  @apply px-8 bg-secondary text-white font-display text-lg font-medium antialiased absolute right-0 z-50;
+  height: 52px;
+  bottom: -26px;
+  @screen md {
+    @apply relative ml-auto mt-auto;
+  }
+}
+
+.slogan {
+  @apply font-display font-semibold text-secondary text-xl;
+}
+
+.aimageWrapper {
   @apply w-full ml-auto relative overflow-visible flex;
   transform: translateX(-1.6em) rotate(1deg);
   &::before {
@@ -35,20 +55,28 @@
   }
 }
 
+.bigImg {
+  @apply w-full;
+  transform: translateX(-1.6em) rotate(1deg);
+  @screen md {
+    transform: translateX(0) rotate(0);
+  }
+}
+
 .image {
   object-fit: cover;
   object-position: 50% 100%;
 }
 
 .innerContainer {
-  @apply flex flex-col gap-y-6 relative;
+  @apply flex flex-col gap-y-8 relative;
   @screen md {
     @apply flex-row-reverse gap-x-6;
   }
 }
 
 .content {
-  @apply text-left antialiased;
+  @apply text-left flex flex-col;
 
   @supports (font-variation-settings: normal) {
     h3 {
@@ -59,6 +87,6 @@
   }
 
   p {
-    @apply mt-6;
+    @apply mt-4;
   }
 }

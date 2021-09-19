@@ -1,6 +1,6 @@
 .base {
   @apply h-screen w-screen relative overflow-hidden;
-  &::after {
+  &-a::after {
     @apply absolute left-0 h-full w-full;
     content: "";
     background-image: url("../../svgs/rip.svg");
