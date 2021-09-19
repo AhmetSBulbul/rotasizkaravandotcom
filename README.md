@@ -72,6 +72,7 @@
 - [ ] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
 - [x] Hero Background Images animation bug.
 - [x] Gatsby Images hasn't rendered properly!!!!
+- [ ] Background svg header render problem on ios
 
 ## 📒 NOTES to Myself
  ...
