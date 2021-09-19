@@ -30,3 +30,18 @@
   object-fit: cover;
   object-position: 50% 80%;
 }
+
+.buttonWrapper {
+  @apply flex gap-x-8 justify-end;
+  button {
+    @apply text-black h-12 w-12;
+    svg {
+      @apply mx-auto my-auto;
+    }
+  }
+}
+
+.activeIndex {
+  @apply ml-auto opacity-30 text-4xl md:text-5xl;
+  font-family: "Bungee", cursive;
+}
