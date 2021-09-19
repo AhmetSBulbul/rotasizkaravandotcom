@@ -29,7 +29,7 @@
 
 ---
 
-## 📝 TO-DO
+## 📝 TO-DO 
 
 - [x] Image Optimization
 - [x] Layout Component
@@ -73,9 +73,24 @@
 - [x] Gatsby Images hasn't rendered properly!!!! - Solution: imgClasses
 - [x] Background svg header render problem on ios - Solution: preserveAspectRatio:'none' is added to svgs
 
-## 📒 NOTES to Myself
- ...
- react-slick active slide hook'una callback fonksiyon atilicak. active slide lightboxtaki active slidei da degistiricek.
+## After Launch
+
+### TO-DO
+
+- [ ] Hero section will be revised.
+
+  Useful and good looking
+
+- [ ] Clean up unnecessary things.
+- [ ] Google Analytics.
+
+
+### Test Checklist
+
+- [ ] Header drop-shadow
+- [ ] Gaps
+- [ ] Seo
+- [ ] Loading Speed
 
 ---
 
