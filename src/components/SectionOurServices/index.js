@@ -72,6 +72,9 @@ export default class SectionOurServices extends Component {
       slidesToScroll: 1,
       fade: true,
       focusOnSelect: false,
+      autoplay: true,
+      cssEase: "linear",
+      autoplaySpeed: 4000,
       afterChange: (current) =>
         this.setState({ activeSlide: current }),
     };
@@ -93,7 +96,7 @@ export default class SectionOurServices extends Component {
               content="Rotasız Karavan olarak araba satın alma, bütçe belirleme ve karavan imalatı üzerine sorularınızı sorabilirsiniz."
             >
               <StaticImage
-                src="../../images/2012-sprinter.jpg"
+                src="../../images/compass.jpg"
                 alt="mercedes sprinter 2012"
                 layout="constrained"
                 objectFit="cover"

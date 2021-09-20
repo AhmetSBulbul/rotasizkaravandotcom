@@ -81,7 +81,7 @@
 
 - [ ] Hero section will be revised.
 
-  Useful and good looking
+  Wide aspect ratio
 
 - [ ] Clean up unnecessary things.
 - [ ] Google Analytics.

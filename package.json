@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "icon": "svgr src/images/icons -d src/components/icons --icon"
+    "colorful-icon": "svgr src/images/icons/colorful-icons -d src/components/icons/colorful-icons --icon"
   },
   "dependencies": {
     "@fontsource/bungee": "^4.5.0",
