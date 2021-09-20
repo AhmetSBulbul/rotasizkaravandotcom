@@ -83,7 +83,7 @@ export default class SectionOurServices extends Component {
         this.setState({ activeSlide: current }),
     };
     return (
-      <section>
+      <section className="mb-32">
         <ContentSafe className={styles.wrapper}>
           <div className={styles.decoration}>
             <StaticImage

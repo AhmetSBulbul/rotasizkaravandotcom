@@ -1,17 +1,27 @@
 .wrapper {
-  @apply p-5 flex flex-col gap-y-4;
+  @apply flex flex-col gap-y-4;
 }
 
 .gallery {
-  @apply flex flex-col gap-5;
+  @apply flex flex-col;
 }
 
 .photo {
   @apply rounded-sm;
+  width: 100vw;
+  height: 100vw;
 }
 
-.photoWrapper {
-  @apply px-4;
+.lightboxGatsby {
+  @apply max-w-lg mx-auto block;
+}
+
+.lightWrap {
+  @apply w-1/3;
+}
+
+.lightboxImage {
+  object-fit: contain;
 }
 
 .controllerWrapper {
@@ -24,4 +34,8 @@
 
 .gridContainer {
   @apply grid grid-cols-4 gap-4;
+}
+
+.title {
+  @apply font-display font-black text-2xl text-secondary;
 }

@@ -16,9 +16,11 @@ const RotasizGallery = ({ photos }) => {
   return (
     <>
       <div className={styles.wrapper}>
-        <h3 className="font-display text-2xl text-right text-black">
-          FOTOĞRAF GALERİSİ
-        </h3>
+        <div className="px-8">
+          <h3 className={styles.title}>
+            Fotoğraf Galerisi
+          </h3>
+        </div>
         <div className={styles.gallery}>
           <ImageCarousel>
             {photos.edges.map(({ node }) => {
@@ -33,6 +35,9 @@ const RotasizGallery = ({ photos }) => {
                   >
                     <GatsbyImage
                       className={styles.photo}
+                      imgClassName={
+                        styles.carouselImg
+                      }
                       alt={node.name}
                       image={image}
                     />
@@ -89,10 +94,13 @@ const RotasizGallery = ({ photos }) => {
         <Lightbox onClose={setIsModalShow}>
           <ImageCarousel
             settings={{
+              className: "",
+              adaptiveHeight: true,
               dots: false,
               slideToShow: 1,
               slidesToScroll: 1,
               infinite: true,
+              arrows: false,
             }}
           >
             {photos.edges.map(({ node }) => {
@@ -100,11 +108,15 @@ const RotasizGallery = ({ photos }) => {
               return (
                 <div
                   key={node.id + "-lightbox"}
-                  className="block my-auto"
+                  className="w-full flex"
                 >
                   <GatsbyImage
-                    className="object-contain my-auto"
-                    imgClassName="object-contain"
+                    className={
+                      styles.lightboxGatsby
+                    }
+                    imgClassName={
+                      styles.lightboxImage
+                    }
                     alt={node.name}
                     image={image}
                   />

@@ -15,7 +15,7 @@ export default function Lightbox({
   return (
     <div className={styles.baseContainer}>
       <div className={styles.innerContainer}>
-        <div className={styles.buttonWrapper}>
+        <div className={styles.header}>
           <button
             className={styles.exitBtn}
             onClick={props.onClose}
@@ -25,6 +25,9 @@ export default function Lightbox({
         </div>
         <div className={styles.body}>
           {children}
+        </div>
+        <div className={styles.footer}>
+          Footer
         </div>
       </div>
     </div>

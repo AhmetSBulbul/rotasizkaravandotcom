@@ -17,6 +17,7 @@ const IndexPage = ({ data }) => {
       <Hero />
       <SectionWhatWeDo />
       <SectionOurServices />
+      <RotasizGallery photos={data.allFile} />
     </>
   );
 };
@@ -32,14 +33,7 @@ export const pageQuery = graphql`
         node {
           name
           childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              aspectRatio: 1
-              transformOptions: {
-                cropFocus: CENTER
-                fit: COVER
-              }
-            )
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }

@@ -9,16 +9,13 @@ const ImageCarousel = ({
   ...props
 }) => {
   const settings = props.settings ?? {
-    className: "center",
-    centerMode: true,
     infinite: true,
-    centerPadding: "60px",
     slidesToShow: 1,
     speed: 500,
     dots: true,
   };
   return (
-    <div>
+    <div className="w-screen">
       <Slider {...settings}>{children}</Slider>
     </div>
   );

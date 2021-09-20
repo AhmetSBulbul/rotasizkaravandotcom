@@ -3,7 +3,7 @@
 }
 
 .toggleBtn {
-  @apply relative flex gap-1 my-auto z-50 text-white text-lg;
+  @apply relative flex space-x-1 my-auto z-50 text-white text-lg;
   div {
     @apply bg-white w-1 h-6 inline-block;
     opacity: 1;
