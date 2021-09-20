@@ -17,7 +17,6 @@ const IndexPage = ({ data }) => {
       <Hero />
       <SectionWhatWeDo />
       <SectionOurServices />
-      <RotasizGallery photos={data.allFile} />
     </>
   );
 };

@@ -94,8 +94,6 @@ const RotasizGallery = ({ photos }) => {
         <Lightbox onClose={setIsModalShow}>
           <ImageCarousel
             settings={{
-              className: "",
-              adaptiveHeight: true,
               dots: false,
               slideToShow: 1,
               slidesToScroll: 1,
@@ -108,7 +106,7 @@ const RotasizGallery = ({ photos }) => {
               return (
                 <div
                   key={node.id + "-lightbox"}
-                  className="w-full flex"
+                  className={styles.lightWrap}
                 >
                   <GatsbyImage
                     className={
