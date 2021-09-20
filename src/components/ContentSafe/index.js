@@ -10,7 +10,7 @@ function ContentSafe({
   return (
     <div
       className={cn([
-        styles.container,
+        styles.wrapperContainer,
         className,
       ])}
       {...props}

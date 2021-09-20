@@ -1,13 +1,14 @@
 import React from "react";
 import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
+import ContentSafe from "../ContentSafe";
 
 const SectionWhatWeDo = ({
   children,
   title = "",
 }) => {
   return (
-    <div className="content-safe">
+    <ContentSafe className="px-8">
       <div className={styles.wrapper}>
         <div className={styles.innerContainer}>
           <div className={styles.content}>
@@ -48,7 +49,7 @@ const SectionWhatWeDo = ({
           </div>
         </div>
       </div>
-    </div>
+    </ContentSafe>
   );
 };
 
