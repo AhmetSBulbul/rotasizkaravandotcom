@@ -1,0 +1,7 @@
+.container {
+  @apply py-4 sm:py-8 md:py-12;
+
+  @screen lg {
+    @apply max-w-lg mx-auto py-12;
+  }
+}

@@ -1,0 +1,15 @@
+.button {
+  @apply py-4 px-8 font-display;
+}
+
+.primary {
+  @apply border-2 border-primary text-primary;
+}
+
+.secondary {
+  @apply bg-secondary text-white;
+}
+
+.stretch {
+  @apply w-full;
+}
