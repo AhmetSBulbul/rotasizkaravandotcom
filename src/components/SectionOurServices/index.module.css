@@ -1,6 +1,5 @@
 .wrapper {
   @apply flex flex-col;
-  height: 600px;
 
   @screen md {
     @apply flex-row container w-full gap-x-8;
@@ -9,7 +8,7 @@
 }
 
 .contentWrapper {
-  @apply flex flex-col md:w-1/2 justify-between px-8 md:px-0;
+  @apply flex flex-col md:w-1/2 justify-between px-8 md:px-0 gap-y-3;
 }
 
 .decoration {
@@ -58,7 +57,7 @@
 }
 
 .sectionTitle {
-  @apply font-black text-secondary text-xl md:text-2xl;
+  @apply font-black text-secondary text-2xl md:text-2xl;
 }
 
 .cardImageWrapper {

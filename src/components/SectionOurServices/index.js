@@ -101,7 +101,7 @@ export default class SectionOurServices extends Component {
                 Hizmetlerimiz
               </h2>
               <div className={styles.iconWrapper}>
-                <Icon.Blueprint
+                <Icon.Call
                   className={cn(
                     styles.makeGray,
                     this.state.activeSlide == 0 &&
@@ -119,6 +119,13 @@ export default class SectionOurServices extends Component {
                   className={cn(
                     styles.makeGray,
                     this.state.activeSlide == 2 &&
+                      styles.color
+                  )}
+                />
+                <Icon.Support
+                  className={cn(
+                    styles.makeGray,
+                    this.state.activeSlide == 3 &&
                       styles.color
                   )}
                 />
@@ -157,6 +164,18 @@ export default class SectionOurServices extends Component {
                   ustalarımız ve çalışma
                   arkadaşlarımızla sizin için en
                   uygun karavanı üretelim.
+                </OurServiceCard>
+                <OurServiceCard
+                  key={4}
+                  title="Üretim Sonrası Destek"
+                >
+                  Karavanınızla ilgili bir sorun
+                  mu var? Hemen sizin için
+                  ilgilenelim! <br />
+                  <br />
+                  Karavanınızla ilgili her türlü
+                  tamir ya da tadilat için bizimle
+                  iletişime geçebilirsiniz!
                 </OurServiceCard>
               </Slider>
             </div>

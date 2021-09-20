@@ -64,7 +64,7 @@
 - [ ] Our Works Posts and page
 - [ ] Our works page filter
 - [ ] Social Media Cards
-- [ ] Our Services Carousel
+- [x] Our Services Carousel
 - [ ] Page paddings and body max-width layout
 
 ## 🐞 BUGS
