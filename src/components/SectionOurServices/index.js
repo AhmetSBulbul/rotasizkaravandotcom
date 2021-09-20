@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import * as Icon from "../icons/colorful-icons";
 
 const LeftArrow = () => {
   return (

@@ -33,27 +33,16 @@
 }
 
 .decoration {
-  @apply h-3/5 object-bottom relative;
+  @apply h-3/5 object-bottom relative md:w-1/2 md:h-full;
   &::after {
     @apply absolute bottom-0 w-full left-0 transform rotate-180;
     content: " ";
     background: url("../../svgs/rip.svg") bottom;
     background-size: 100%;
     height: 20px;
-  }
-}
-
-.decorationTop {
-  @apply h-3/5 object-bottom relative md:w-1/2 md:h-full;
-  &::after {
-    @apply absolute top-0 w-full left-0;
-    content: " ";
-    background: url("../../svgs/rip.svg") bottom;
-    background-size: 100%;
-    height: 20px;
 
     @screen md {
-      @apply left-full transform rotate-90;
+      @apply bottom-auto left-full transform rotate-90;
       transform-origin: top left;
       width: 400px;
     }

@@ -13,7 +13,7 @@ const OurServiceCard = ({
   return (
     <div className={styles.sectionContainer}>
       <div className={styles.innerContainer}>
-        <div className={styles.decorationTop}>
+        <div className={styles.decoration}>
           {children}
         </div>
         <div
