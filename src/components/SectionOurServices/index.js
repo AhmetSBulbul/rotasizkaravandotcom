@@ -90,10 +90,7 @@ export default class SectionOurServices extends Component {
             <OurServiceCard
               key={1}
               title="Karavan Danışmanlığı"
-              content="Hayalinizdeki karavana sahip olma
-            sürecinizde size eşlik edelim. İster
-            aracınızla gelin isterseniz sizin için
-            en uygun aracı birlikte satın alalım."
+              content="Rotasız Karavan olarak araba satın alma, bütçe belirleme ve karavan imalatı üzerine sorularınızı sorabilirsiniz."
             >
               <StaticImage
                 src="../../images/2012-sprinter.jpg"
@@ -109,10 +106,7 @@ export default class SectionOurServices extends Component {
             <OurServiceCard
               key={2}
               title="Tasarım ve Planlama"
-              content="Hayalinizdeki karavana sahip olma
-            sürecinizde size eşlik edelim. İster
-            aracınızla gelin isterseniz sizin için
-            en uygun aracı birlikte satın alalım."
+              content="Siz hayalinizi anlatın, biz sizin için somutlaştıralım. İstek, ihtiyaç ve bütçenize göre en uygun karavanı sizin için tasarlayalım."
             >
               <StaticImage
                 src="../../images/road.jpg"
@@ -128,10 +122,7 @@ export default class SectionOurServices extends Component {
             <OurServiceCard
               key={3}
               title="Karavan İmalatı"
-              content="Hayalinizdeki karavana sahip olma
-            sürecinizde size eşlik edelim. İster
-            aracınızla gelin isterseniz sizin için
-            en uygun aracı birlikte satın alalım."
+              content="Hayallerinizi kendi hayaliymiş gibi sahiplenen tecrübeli ustalarımız ve çalışma arkadaşlarımızla sizin için en uygun karavanı üretelim."
             >
               <StaticImage
                 src="../../images/drive-pov.jpg"
