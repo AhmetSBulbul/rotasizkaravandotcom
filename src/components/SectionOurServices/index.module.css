@@ -1,3 +1,54 @@
+.wrapper {
+  @apply flex flex-col;
+  height: 600px;
+
+  @screen md {
+    @apply flex-row container w-full gap-x-8;
+    height: 400px;
+  }
+}
+
+.contentWrapper {
+  @apply flex flex-col md:w-1/2 justify-between px-8 md:px-0;
+}
+
+.decoration {
+  @apply h-3/5 object-bottom relative md:w-1/2 md:h-full;
+  &::after {
+    @apply absolute bottom-0 w-full left-0 transform rotate-180;
+    content: " ";
+    background: url("../../svgs/rip.svg") bottom;
+    background-size: 100%;
+    height: 20px;
+
+    @screen md {
+      @apply bottom-auto left-full transform rotate-90;
+      transform-origin: top left;
+      width: 400px;
+    }
+  }
+}
+
+.sectionHeader {
+  @apply flex justify-between;
+
+  .iconWrapper {
+    @apply flex gap-x-2 text-3xl;
+  }
+}
+
+.makeGray {
+  @apply filter grayscale;
+}
+
+.color {
+  @apply filter grayscale-0;
+}
+
+.sectionBody {
+  @apply flex flex-col text-white w-full h-full;
+}
+
 .container {
   @apply mt-12;
 }
@@ -7,19 +58,7 @@
 }
 
 .sectionTitle {
-  @apply font-display font-black text-4xl text-primary;
-}
-
-.bgOranj {
-  @apply mt-4  relative text-white;
-  &::before {
-    @apply bg-primary absolute top-0 -left-2;
-    content: "";
-    z-index: -20;
-    width: 120%;
-    height: 100%;
-    transform: rotate(1deg);
-  }
+  @apply font-black text-secondary text-xl md:text-2xl;
 }
 
 .cardImageWrapper {

@@ -19,3 +19,5 @@ function ContentSafe({
     </div>
   );
 }
+
+export default ContentSafe;

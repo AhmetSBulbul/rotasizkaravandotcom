@@ -7,32 +7,11 @@ import cn from "classnames";
 const OurServiceCard = ({
   children,
   title = "null",
-  content = "Lorem Ipsum",
 }) => {
-  const contentSafe = "content-safe";
   return (
-    <div className={styles.sectionContainer}>
-      <div className={styles.innerContainer}>
-        <div className={styles.decoration}>
-          {children}
-        </div>
-        <div
-          className={cn([
-            styles.body,
-            contentSafe,
-          ])}
-        >
-          <h2 className={styles.sectionTitle}>
-            Hizmetlerimiz
-          </h2>
-          <h3 className={styles.title}>
-            {title}
-          </h3>
-          <p className={styles.content}>
-            {content}
-          </p>
-        </div>
-      </div>
+    <div className={styles.wrapper}>
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.content}>{children}</p>
     </div>
   );
 };

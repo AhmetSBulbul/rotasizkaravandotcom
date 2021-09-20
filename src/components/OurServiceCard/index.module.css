@@ -1,4 +1,4 @@
-.sectionContainer {
+.asectionContainer {
   @apply w-full;
   height: 600px;
 
@@ -8,19 +8,31 @@
   }
 }
 
-.title {
-  @apply font-display font-black text-4xl md:text-5xl;
-}
-
-.body {
-  @apply flex flex-col py-4 flex-1;
+.wrapper {
+  @apply w-full flex flex-col;
 }
 
 .content {
+  @apply text-black;
+}
+
+.title {
+  @apply font-display text-3xl text-black;
+}
+
+.atitle {
+  @apply font-display font-black text-4xl md:text-5xl;
+}
+
+.abody {
+  @apply flex flex-col py-4 flex-1;
+}
+
+.acontent {
   @apply mt-4 subpixel-antialiased;
 }
 
-.innerContainer {
+.ainnerContainer {
   @apply flex flex-col h-full;
 
   @screen md {
@@ -28,11 +40,11 @@
   }
 }
 
-.sectionTitle {
+.asectionTitle {
   @apply font-black text-secondary text-xl md:text-2xl;
 }
 
-.decoration {
+.adecoration {
   @apply h-3/5 object-bottom relative md:w-1/2 md:h-full;
   &::after {
     @apply absolute bottom-0 w-full left-0 transform rotate-180;

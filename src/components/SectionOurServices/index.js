@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import * as Icon from "../icons/colorful-icons";
+import ContentSafe from "../ContentSafe";
 
 const LeftArrow = () => {
   return (
@@ -67,6 +68,7 @@ export default class SectionOurServices extends Component {
   render() {
     const settings = {
       dots: false,
+      arrows: false,
       infinite: true,
       swipe: false,
       speed: 500,
@@ -81,67 +83,83 @@ export default class SectionOurServices extends Component {
         this.setState({ activeSlide: current }),
     };
     return (
-      <div className={cn([styles.container])}>
-        <div className={styles.innerContainer}>
-          <div className="content-safe flex">
-            <span className={styles.activeIndex}>
-              {this.state.activeSlide + 1}
-            </span>
+      <section>
+        <ContentSafe className={styles.wrapper}>
+          <div className={styles.decoration}>
+            <StaticImage
+              src="../../images/compass.jpg"
+              alt="mercedes sprinter 2012"
+              layout="constrained"
+              objectFit="cover"
+              className={styles.cardImageWrapper}
+              imgClassName={styles.cardImage}
+            />
           </div>
-          <Slider
-            ref={(c) => (this.slider = c)}
-            {...settings}
-          >
-            <OurServiceCard
-              key={1}
-              title="Karavan Danışmanlığı"
-              content="Rotasız Karavan olarak araba satın alma, bütçe belirleme ve karavan imalatı üzerine sorularınızı sorabilirsiniz."
-            >
-              <StaticImage
-                src="../../images/compass.jpg"
-                alt="mercedes sprinter 2012"
-                layout="constrained"
-                objectFit="cover"
-                className={
-                  styles.cardImageWrapper
-                }
-                imgClassName={styles.cardImage}
-              />
-            </OurServiceCard>
-            <OurServiceCard
-              key={2}
-              title="Tasarım ve Planlama"
-              content="Siz hayalinizi anlatın, biz sizin için somutlaştıralım. İstek, ihtiyaç ve bütçenize göre en uygun karavanı sizin için tasarlayalım."
-            >
-              <StaticImage
-                src="../../images/road.jpg"
-                alt="mercedes sprinter 2012"
-                layout="constrained"
-                objectFit="cover"
-                className={
-                  styles.cardImageWrapper
-                }
-                imgClassName={styles.cardImage}
-              />
-            </OurServiceCard>
-            <OurServiceCard
-              key={3}
-              title="Karavan İmalatı"
-              content="Hayallerinizi kendi hayaliymiş gibi sahiplenen tecrübeli ustalarımız ve çalışma arkadaşlarımızla sizin için en uygun karavanı üretelim."
-            >
-              <StaticImage
-                src="../../images/drive-pov.jpg"
-                alt="mercedes sprinter 2012"
-                layout="constrained"
-                objectFit="cover"
-                className={
-                  styles.cardImageWrapper
-                }
-                imgClassName={styles.cardImage}
-              />
-            </OurServiceCard>
-          </Slider>
-          <div className="content-safe">
+          <div className={styles.contentWrapper}>
+            <div className={styles.sectionHeader}>
+              <h2 className={styles.sectionTitle}>
+                Hizmetlerimiz
+              </h2>
+              <div className={styles.iconWrapper}>
+                <Icon.Blueprint
+                  className={cn(
+                    styles.makeGray,
+                    this.state.activeSlide == 0 &&
+                      styles.color
+                  )}
+                />
+                <Icon.Planning
+                  className={cn(
+                    styles.makeGray,
+                    this.state.activeSlide == 1 &&
+                      styles.color
+                  )}
+                />
+                <Icon.Toolbox
+                  className={cn(
+                    styles.makeGray,
+                    this.state.activeSlide == 2 &&
+                      styles.color
+                  )}
+                />
+              </div>
+            </div>
+            <div className={styles.sectionBody}>
+              <Slider
+                ref={(c) => (this.slider = c)}
+                {...settings}
+              >
+                <OurServiceCard
+                  key={1}
+                  title="Karavan Danışmanlığı"
+                >
+                  Rotasız Karavan olarak araba
+                  satın alma, bütçe belirleme ve
+                  karavan imalatı üzerine
+                  sorularınızı sorabilirsiniz.
+                </OurServiceCard>
+                <OurServiceCard
+                  key={2}
+                  title="Tasarım ve Planlama"
+                >
+                  Siz hayalinizi anlatın, biz
+                  sizin için somutlaştıralım.
+                  İstek, ihtiyaç ve bütçenize göre
+                  en uygun karavanı sizin için
+                  tasarlayalım.
+                </OurServiceCard>
+                <OurServiceCard
+                  key={3}
+                  title="Karavan İmalatı"
+                >
+                  Hayallerinizi kendi hayaliymiş
+                  gibi sahiplenen tecrübeli
+                  ustalarımız ve çalışma
+                  arkadaşlarımızla sizin için en
+                  uygun karavanı üretelim.
+                </OurServiceCard>
+              </Slider>
+            </div>
             <div className={styles.buttonWrapper}>
               <button onClick={this.previous}>
                 <LeftArrow />
@@ -152,8 +170,8 @@ export default class SectionOurServices extends Component {
               </button>
             </div>
           </div>
-        </div>
-      </div>
+        </ContentSafe>
+      </section>
     );
   }
 }
