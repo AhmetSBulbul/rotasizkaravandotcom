@@ -23,17 +23,21 @@ const IndexPage = ({ data }) => {
       <SectionOurServices />
       <div className="flex flex-col items-center w-full container px-8">
         <h1>Foto Galeri</h1>
-        <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-3">
+        <div className="w-full grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-3">
           {data.allFile.edges.map(
             ({ node }, index) => {
               const image = getImage(node);
               console.log(index);
               return (
-                <GatsbyImage
+                <div
                   key={node.key}
-                  alt={node.name}
-                  image={image}
-                />
+                  className="aspect-w-1 aspect-h-1"
+                >
+                  <GatsbyImage
+                    alt={node.name}
+                    image={image}
+                  />
+                </div>
               );
             }
           )}
