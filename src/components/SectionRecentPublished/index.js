@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 import PostLink from "../PostLink";
 
-export default function RecentPublished({
+export default function SectionRecentPublished({
   children,
 }) {
   return (
@@ -17,6 +17,7 @@ export default function RecentPublished({
               order: DESC
               fields: [frontmatter___date]
             }
+            limit: 3
           ) {
             edges {
               node {
