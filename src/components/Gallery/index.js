@@ -9,7 +9,7 @@ import {
 import ImageCarousel from "../ImageCarousel";
 import useToggle from "../../hooks/useToggle";
 
-const RotasizGallery = ({ photos }) => {
+const CarouselGallery = ({ photos }) => {
   const [isModalShow, setIsModalShow] =
     useToggle(false);
 
@@ -128,4 +128,4 @@ const RotasizGallery = ({ photos }) => {
   );
 };
 
-export default RotasizGallery;
+export default CarouselGallery;
