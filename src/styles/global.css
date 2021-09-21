@@ -9,7 +9,9 @@
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4,
+  h5 {
     @apply font-display;
     font-weight: 700;
   }
@@ -17,7 +19,9 @@
   @supports (font-variation-settings: normal) {
     h1,
     h2,
-    h3 {
+    h3,
+    h4,
+    h5 {
       font-family: "Maven ProVariable";
       font-variation-settings: "wght" 700;
     }
@@ -54,6 +58,14 @@
 
   .content-safe {
     @apply px-4 md:container md:px-8;
+  }
+
+  .big-title {
+    @apply font-display font-black text-3xl md:text-4xl;
+  }
+
+  .sub-title {
+    @apply font-display font-semibold text-secondary text-xl;
   }
 }
 

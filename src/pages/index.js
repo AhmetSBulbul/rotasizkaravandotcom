@@ -21,9 +21,16 @@ const IndexPage = ({ data }) => {
       <Hero />
       <SectionWhatWeDo />
       <SectionOurServices />
-      <div className="flex flex-col items-center w-full container px-8">
-        <h1>Foto Galeri</h1>
-        <div className="w-full grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-3">
+      <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 w-full container px-8">
+        <div className="grid grid-cols-3 w-full md:grid-cols-5 gap-4">
+          <div className="flex flex-col justify-center col-span-2 md:col-span-3">
+            <h3 className="sub-title">
+              Fotoğraf Galerisi
+            </h3>
+            <h1 className="big-title">
+              İşlerimizi İnceleyin
+            </h1>
+          </div>
           {data.allFile.edges.map(
             ({ node }, index) => {
               const image = getImage(node);
@@ -34,6 +41,7 @@ const IndexPage = ({ data }) => {
                   className="aspect-w-1 aspect-h-1"
                 >
                   <GatsbyImage
+                    className="w-full h-full"
                     alt={node.name}
                     image={image}
                   />
@@ -41,8 +49,8 @@ const IndexPage = ({ data }) => {
               );
             }
           )}
-          <button className="h-full w-full font-display bg-secondary font-bold text-white">
-            Bütün görselleri gör.
+          <button className="col-span-2 font-display bg-secondary font-bold text-white text-2xl">
+            Fotoğraf Galerisi
           </button>
         </div>
       </div>
