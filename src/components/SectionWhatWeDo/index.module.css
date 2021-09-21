@@ -14,7 +14,7 @@
 }
 
 .button {
-  @apply px-8 bg-secondary text-white font-display text-lg font-medium antialiased absolute right-0 z-10;
+  @apply px-8 bg-secondary text-white font-display text-lg font-medium antialiased absolute right-4 z-10;
   height: 52px;
   bottom: -26px;
   @screen md {
@@ -27,8 +27,11 @@
 }
 
 .bigImg {
-  @apply w-full;
+  @apply w-full border-4 border-white;
   transform: translateX(-1.6em) rotate(1deg);
+
+  box-shadow: 0px 0px 5px #000;
+
   @screen md {
     transform: translateX(0) rotate(0);
   }
@@ -47,7 +50,7 @@
 }
 
 .content {
-  @apply text-left flex flex-col;
+  @apply text-left flex flex-col px-5;
 
   h3 {
     @apply font-display font-black text-4xl md:text-5xl;

@@ -8,7 +8,7 @@ const SectionWhatWeDo = ({
   title = "",
 }) => {
   return (
-    <ContentSafe className="px-8">
+    <ContentSafe>
       <div className={styles.wrapper}>
         <div className={styles.innerContainer}>
           <div className={styles.content}>
