@@ -25,12 +25,13 @@
 
   body {
     @apply font-body;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow-y: scroll;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
 }
 

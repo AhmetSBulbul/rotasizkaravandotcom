@@ -79,12 +79,11 @@
 
 ### TO-DO
 
-- [ ] Hero section will be revised.
-
-  Wide aspect ratio
-
 - [ ] Clean up unnecessary things.
 - [ ] Google Analytics.
+- [ ] Instagram source
+- [ ] Contact form using mail service (MailChimp or SendGrid)
+- [ ] Accessibility
 
 
 ### Test Checklist

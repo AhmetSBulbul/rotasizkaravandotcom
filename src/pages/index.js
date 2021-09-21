@@ -10,6 +10,10 @@ import SectionContainer from "../components/SectionContainer";
 import SectionWhatWeDo from "../components/SectionWhatWeDo";
 import ImageCarousel from "../components/ImageCarousel";
 import SectionOurServices from "../components/SectionOurServices";
+import {
+  GatsbyImage,
+  getImage,
+} from "gatsby-plugin-image";
 
 const IndexPage = ({ data }) => {
   return (
@@ -17,6 +21,27 @@ const IndexPage = ({ data }) => {
       <Hero />
       <SectionWhatWeDo />
       <SectionOurServices />
+      <div className="flex flex-col items-center w-full container px-8">
+        <h1>Foto Galeri</h1>
+        <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-3">
+          {data.allFile.edges.map(
+            ({ node }, index) => {
+              const image = getImage(node);
+              console.log(index);
+              return (
+                <GatsbyImage
+                  key={node.key}
+                  alt={node.name}
+                  image={image}
+                />
+              );
+            }
+          )}
+          <button className="h-full w-full font-display bg-secondary font-bold text-white">
+            Bütün görselleri gör.
+          </button>
+        </div>
+      </div>
     </>
   );
 };
