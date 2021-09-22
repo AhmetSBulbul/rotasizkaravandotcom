@@ -1,0 +1,46 @@
+.navButton {
+  @apply w-2 h-7 bg-white relative;
+  &::before,
+  &::after {
+    @apply absolute w-2 h-7 top-0 bottom-0 bg-white;
+    content: "";
+  }
+
+  &::before {
+    @apply -left-3;
+  }
+  &::after {
+    @apply -right-3;
+  }
+}
+
+.headerTop {
+  @apply hidden;
+  @screen md {
+    @apply flex flex-row space-x-4 justify-end bg-white py-2 text-primary px-4;
+  }
+}
+
+.acontainer {
+  @apply static top-0 left-0 right-0 z-20 h-24 flex flex-col md:top-0 bg-primary;
+}
+
+.ainnerContainer {
+  @apply relative my-auto flex flex-col justify-center h-full md:bg-primary md:pt-1;
+
+  &a::before {
+    @apply absolute -top-1 left-0 h-full w-full;
+    content: "";
+    background-image: url("../../svgs/brush-stroke-banner-6.svg"),
+      url("../../svgs/brush-stroke-banner-1.svg");
+    background-size: 130% 200%, 130% 110%;
+    background-repeat: no-repeat;
+    background-position: 80% 30%, 55% 100%;
+    filter: drop-shadow(
+      2px 2px 2px rgba(19, 38, 36, 0.2)
+    );
+    @screen md {
+      @apply top-auto -bottom-5 transform rotate-180;
+    }
+  }
+}
