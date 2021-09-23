@@ -1,5 +1,5 @@
 .base {
-  @apply h-screen w-screen relative overflow-hidden;
+  @apply h-screen w-full relative overflow-hidden;
   &-a::after {
     @apply absolute left-0 h-full w-full;
     content: "";

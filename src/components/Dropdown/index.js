@@ -4,11 +4,13 @@ import * as styles from "./index.module.css";
 
 export default function Dropdown({
   children,
-  classNames,
+  className,
   ...props
 }) {
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={cn([styles.wrapper, className])}
+    >
       <button className={styles.btn}>
         Size Nasıl Yardımcı Olabiliriz?
       </button>

@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  @apply py-16 pb-32;
+  @apply py-8;
 }
 
 .decoration {
@@ -50,7 +50,7 @@
 }
 
 .content {
-  @apply text-left flex flex-col px-5;
+  @apply text-left flex flex-col;
 
   h3 {
     @apply font-display font-black text-4xl md:text-5xl;

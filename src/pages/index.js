@@ -18,7 +18,7 @@ const IndexPage = () => {
   return (
     <>
       <HeroNew />
-      <SectionWhatWeDo />
+      <SectionWhatWeDo className="px-8" />
       <SectionOurServices />
       <SectionRotasizGallery />
       <div className="px-8 flex flex-col space-y-4 mt-24">

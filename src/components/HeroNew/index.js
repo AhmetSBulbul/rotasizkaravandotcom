@@ -17,76 +17,24 @@ import cn from "classnames";
 import Dropdown from "../Dropdown";
 
 export default function HeroNew({ children }) {
-  const [currIndex] = useSlide(6000, 7);
+  const [currIndex] = useSlide(6000, 3);
   return (
     <div className={styles.base}>
-      <StaticQuery
-        query={graphql`
-          query {
-            allFile(
-              filter: {
-                absolutePath: {
-                  regex: "//backgrounds//"
-                }
-              }
-            ) {
-              edges {
-                node {
-                  childImageSharp {
-                    id
-                    gatsbyImageData(
-                      layout: CONSTRAINED
-                      width: 1280
-                      height: 840
-                    )
-                  }
-                  name
-                }
-              }
-            }
-          }
-        `}
-        render={(data) => (
-          <>
-            {data.allFile.edges.map(
-              ({ node }, index) => {
-                const isIt = index === currIndex;
-                console.log({ currIndex });
-                const image = getImage(node);
-                return (
-                  <div
-                    key={
-                      index.toString() +
-                      "imageWrap"
-                    }
-                    className={cn([
-                      styles.background,
-                      isIt &&
-                        styles.backgroundActive,
-                    ])}
-                  >
-                    <GatsbyImage
-                      key={node.id}
-                      imgClassName={
-                        styles.gatsbyImage
-                      }
-                      alt={node.name}
-                      image={image}
-                    />
-                  </div>
-                );
-              }
-            )}
-          </>
-        )}
+      <StaticImage
+        src="../../backgrounds/beach-wide.jpg"
+        alt=""
+        layout="constrained"
+        objectFit="cover"
+        objectPosition="left"
+        className={styles.background}
       />
-      <div className={styles.foreground}>
-        <Dropdown>
-          <a href="#">İşlerimiz</a>
-          <a href="#">Kayıp Eşya Bürosu</a>
-          <a href="#">Kayıp Eşya Bürosu</a>
-          <a href="#">Kayıp Eşya Bürosu</a>
-        </Dropdown>
+
+      <div className={styles.foreground}></div>
+      <div className={styles.heroFooter}>
+        <h1>
+          İSTEK VE İHTİYAÇLARINIZA YÖNELİK
+          KARAVANLAR ÜRETİYORUZ
+        </h1>
       </div>
     </div>
   );

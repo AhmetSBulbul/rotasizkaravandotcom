@@ -68,6 +68,7 @@
 - [ ] Page paddings and body max-width layout
 - [ ] Desktop view nav flex-row
 - [ ] Header menu active bg
+- [ ] Hero withArtDirection
 
 ## 🐞 BUGS
 
@@ -87,6 +88,7 @@
 - [ ] Instagram source
 - [ ] Contact form using mail service (MailChimp or SendGrid)
 - [ ] Accessibility
+- [ ] Better Queries
 
 
 ### Test Checklist

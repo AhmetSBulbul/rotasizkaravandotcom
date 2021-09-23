@@ -1,5 +1,5 @@
 .wrapper {
-  @apply relative w-3/4 overflow-visible text-black font-display;
+  @apply relative overflow-visible text-black font-display;
 
   &:focus-within {
     .menu {
@@ -11,7 +11,7 @@
 }
 
 .btn {
-  @apply py-2 px-4 w-full bg-white text-left rounded-full;
+  @apply py-2 px-4 w-full bg-white text-left rounded-xl border-2 border-secondary;
   z-index: 5;
 }
 

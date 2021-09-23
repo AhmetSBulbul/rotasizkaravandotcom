@@ -55,18 +55,21 @@ export default function Hero({ children }) {
                 console.log({ currIndex });
                 const image = getImage(node);
                 return (
-                  <GatsbyImage
+                  <div
                     className={cn([
                       styles.backgroundImage,
                       isIt && styles.sliderActive,
                     ])}
-                    imgClassName={
-                      styles.gatsbyImage
-                    }
-                    key={node.id}
-                    alt={node.name}
-                    image={image}
-                  />
+                  >
+                    <GatsbyImage
+                      imgClassName={
+                        styles.gatsbyImage
+                      }
+                      key={node.id}
+                      alt={node.name}
+                      image={image}
+                    />
+                  </div>
                 );
               }
             )}

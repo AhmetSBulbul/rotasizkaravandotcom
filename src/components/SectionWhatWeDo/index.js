@@ -2,14 +2,21 @@ import React from "react";
 import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import ContentSafe from "../ContentSafe";
+import cn from "classnames";
 
 const SectionWhatWeDo = ({
   children,
   title = "",
+  className,
 }) => {
   return (
     <ContentSafe>
-      <div className={styles.wrapper}>
+      <div
+        className={cn([
+          styles.wrapper,
+          className,
+        ])}
+      >
         <div className={styles.innerContainer}>
           <div className={styles.content}>
             <h5 className={styles.slogan}>
