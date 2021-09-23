@@ -66,6 +66,8 @@
 - [ ] Social Media Cards
 - [x] Our Services Carousel
 - [ ] Page paddings and body max-width layout
+- [ ] Desktop view nav flex-row
+- [ ] Header menu active bg
 
 ## 🐞 BUGS
 
