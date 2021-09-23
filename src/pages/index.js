@@ -18,17 +18,14 @@ const IndexPage = () => {
     <>
       {/**<Hero /> */}
       <div className="min-h-screen w-full">
-        <div className="max-w-screen-xl mx-auto flex flex-col md:px-2">
-          <HeaderNew />
-          <div className="w-full relative">
-            <StaticImage
-              src="../backgrounds/winter-road.jpg"
-              alt="campervan"
-            />
-            <div className="h-full w-full absolute top-0 z-30 flex flex-col px-4 justify-end bg-gradient-to-b from-black via-transparent">
-              <div className="w-full md:w-1/3 py-2 px-4 mx-auto rounded-full font-display font-medium text-black bg-white">
-                Size Nasıl Yardımcı Olabiliriz?
-              </div>
+        <div className="w-full relative">
+          <StaticImage
+            src="../backgrounds/winter-road.jpg"
+            alt="campervan"
+          />
+          <div className="h-full w-full absolute top-0 z-30 flex flex-col px-4 justify-end bg-gradient-to-b from-black via-transparent">
+            <div className="w-full md:w-1/3 py-2 px-4 mx-auto rounded-full font-display font-medium text-black bg-white">
+              Size Nasıl Yardımcı Olabiliriz?
             </div>
           </div>
         </div>

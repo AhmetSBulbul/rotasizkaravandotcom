@@ -74,6 +74,7 @@
 - [x] Hero Background Images animation bug.
 - [x] Gatsby Images hasn't rendered properly!!!! - Solution: imgClasses
 - [x] Background svg header render problem on ios - Solution: preserveAspectRatio:'none' is added to svgs
+- [ ] Firefox scrollbar problem
 
 ## After Launch
 
