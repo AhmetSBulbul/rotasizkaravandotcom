@@ -1,0 +1,24 @@
+.wrapper {
+  @apply relative w-3/4 overflow-visible text-black font-display;
+
+  &:focus-within {
+    .menu {
+      @apply transform translate-y-4;
+      opacity: 1;
+      z-index: 0;
+    }
+  }
+}
+
+.btn {
+  @apply py-2 px-4 w-full bg-white text-left rounded-full;
+  z-index: 5;
+}
+
+.menu {
+  @apply w-full flex flex-col absolute bg-white rounded-md transform translate-y-0;
+  opacity: 0;
+  transition: transform 0.4s ease-in,
+    opacity 0.3s linear;
+  z-index: -100;
+}
