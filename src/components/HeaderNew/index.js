@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../Logo";
 import * as styles from "./index.module.css";
 import useToggle from "../../hooks/useToggle";
+import cn from "classnames";
 
 import Navigation from "../Navigation";
 
@@ -12,7 +13,7 @@ export default function HeaderNew() {
     useToggle();
   return (
     <header className="relative">
-      <div className={styles.headerTop}>
+      <div className={cn([styles.headerTop])}>
         <div className="font-display text-sm font-medium">
           +90 (539) 517 38 77
         </div>

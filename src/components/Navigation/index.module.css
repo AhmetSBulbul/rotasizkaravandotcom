@@ -33,7 +33,7 @@
 }
 
 .navigation {
-  @apply fixed w-screen h-full left-0 pt-20 bg-transparent flex-col flex;
+  @apply fixed w-screen mx-auto h-full left-0 pt-20 bg-transparent flex flex-col md:px-2;
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out,
     opacity 0.3s ease-in-out;

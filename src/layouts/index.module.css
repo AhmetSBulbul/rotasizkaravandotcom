@@ -1,3 +1,7 @@
+.outerContainer {
+  @apply bg-white;
+}
+
 .wrapper {
   @apply max-w-screen-xl mx-auto flex flex-col md:px-2;
 }
