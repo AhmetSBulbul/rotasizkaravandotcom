@@ -1,5 +1,5 @@
 .wrapper {
-  @apply flex flex-col;
+  @apply flex flex-col bg-white pb-8;
 
   @screen md {
     @apply flex-row container w-full gap-x-8;
@@ -8,7 +8,7 @@
 }
 
 .contentWrapper {
-  @apply flex flex-col md:w-1/2 justify-between px-8 md:px-0 gap-y-3;
+  @apply flex flex-col md:w-1/2 justify-between px-8 md:px-0 gap-y-3 md:pt-8;
 }
 
 .decoration {

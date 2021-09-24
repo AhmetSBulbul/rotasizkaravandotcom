@@ -9,7 +9,7 @@
 }
 
 .wrapper {
-  @apply w-full flex flex-col bg-white;
+  @apply w-full flex flex-col;
 }
 
 .content {

@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../components/Hero";
 
 import SectionWhatWeDo from "../components/SectionWhatWeDo";
 
@@ -7,19 +6,20 @@ import SectionOurServices from "../components/SectionOurServices";
 
 import SectionRotasizGallery from "../components/SectionRotasizGallery";
 import SectionRecentPublished from "../components/SectionRecentPublished";
-import { StaticImage } from "gatsby-plugin-image";
+
 import Logo from "../components/Logo";
-import { Link } from "gatsby";
-import NavigationNew from "../components/NavigationNew";
-import HeaderNew from "../components/HeaderNew";
+
 import HeroNew from "../components/HeroNew";
+import SectionOurServicesNew from "../components/SectionOurServicesNew";
 
 const IndexPage = () => {
   return (
     <>
       <HeroNew />
       <SectionWhatWeDo className="px-8" />
-      <SectionOurServices />
+      {/*<SectionOurServices />*/}
+      <SectionOurServicesNew className="px-8" />
+
       <SectionRotasizGallery />
       <div className="px-8 flex flex-col space-y-4 mt-24">
         <div className="flex flex-col">

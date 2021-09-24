@@ -11,7 +11,7 @@ function SectionRotasizGallery() {
   return (
     <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 w-full container px-8">
       <div className={styles.gridContainer}>
-        <div className="flex flex-col justify-center col-span-2 row-span-1 md:col-span-3">
+        <div className="flex flex-col justify-center col-span-2 row-span-1 md:col-span-3 border-2 border-primary p-4">
           <h3 className="sub-title">
             Fotoğraf Galerisi
           </h3>

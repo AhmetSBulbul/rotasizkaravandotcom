@@ -1,7 +1,3 @@
-.container {
-  @apply text-primary;
-}
-
 .wrapper {
   @apply py-8;
 }
@@ -14,9 +10,7 @@
 }
 
 .button {
-  @apply px-8 bg-secondary text-white font-display text-lg font-medium antialiased absolute right-4 z-10;
-  height: 52px;
-  bottom: -26px;
+  @apply px-8 bg-secondary text-white font-display text-lg font-medium antialiased absolute z-10 -bottom-6 h-12 right-0;
   @screen md {
     @apply static ml-auto mt-auto;
   }
@@ -28,12 +22,12 @@
 
 .bigImg {
   @apply w-full border-4 border-white;
-  transform: translateX(-1.6em) rotate(1deg);
+  transform: rotate(1deg);
 
   box-shadow: 0px 0px 5px #000;
 
   @screen md {
-    transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(2deg);
   }
 }
 
@@ -43,14 +37,14 @@
 }
 
 .innerContainer {
-  @apply flex flex-col gap-y-8 relative;
+  @apply flex flex-col space-y-8 relative;
   @screen md {
-    @apply flex-row gap-x-12;
+    @apply flex-row;
   }
 }
 
 .content {
-  @apply text-left flex flex-col;
+  @apply text-left flex flex-col justify-items-start md:mr-12;
   color: #030301;
 
   h3 {

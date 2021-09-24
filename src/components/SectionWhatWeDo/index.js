@@ -10,53 +10,47 @@ const SectionWhatWeDo = ({
   className,
 }) => {
   return (
-    <ContentSafe>
-      <div
-        className={cn([
-          styles.wrapper,
-          className,
-        ])}
-      >
-        <div className={styles.innerContainer}>
-          <div className={styles.content}>
-            <h5 className={styles.slogan}>
-              Evinizi Özgürleştirin
-            </h5>
-            <h3>
-              KARAVAN HAYALİNİZİ GERÇEKLEŞTİRELİM
-            </h3>
-            <p>
-              Hayalinizdeki karavana sahip olma
-              sürecinizde size eşlik edelim. İster
-              aracınızla gelin isterseniz sizin
-              için en uygun aracı birlikte satın
-              alalım.
-              <br />
-              <br />
-              Hayalinizdeki karavanı,
-              ihtiyaçlarınız ve bütçeniz
-              doğrultusunda birlikte planlayalım.
-              Alanında tecrübeli ustalarımızla,
-              gerçekleştirme ve teslim sonrası
-              destek ile yanınızda olalım.
-            </p>
-            <button className={styles.button}>
-              Hakkimizda
-            </button>
-          </div>
-          <div className={styles.decoration}>
-            <StaticImage
-              src="../../images/yellow-van.jpg"
-              alt="karavan kamp"
-              placeholder="blurred"
-              layout="constrained"
-              className={styles.bigImg}
-              imgClassName={styles.image}
-            />
-          </div>
+    <div
+      className={cn([styles.wrapper, className])}
+    >
+      <div className={styles.innerContainer}>
+        <div className={styles.content}>
+          <h5 className={styles.slogan}>
+            Evinizi Özgürleştirin
+          </h5>
+          <h3>
+            KARAVAN HAYALİNİZİ GERÇEKLEŞTİRELİM
+          </h3>
+          <p>
+            Hayalinizdeki karavana sahip olma
+            sürecinizde size eşlik edelim. İster
+            aracınızla gelin isterseniz sizin için
+            en uygun aracı birlikte satın alalım.
+            <br />
+            <br />
+            Hayalinizdeki karavanı, ihtiyaçlarınız
+            ve bütçeniz doğrultusunda birlikte
+            planlayalım. Alanında tecrübeli
+            ustalarımızla, gerçekleştirme ve
+            teslim sonrası destek ile yanınızda
+            olalım.
+          </p>
+          <button className={styles.button}>
+            Hakkimizda
+          </button>
+        </div>
+        <div className={styles.decoration}>
+          <StaticImage
+            src="../../images/yellow-van.jpg"
+            alt="karavan kamp"
+            placeholder="blurred"
+            layout="constrained"
+            className={styles.bigImg}
+            imgClassName={styles.image}
+          />
         </div>
       </div>
-    </ContentSafe>
+    </div>
   );
 };
 

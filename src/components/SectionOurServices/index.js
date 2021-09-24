@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import * as styles from "./index.module.css";
 import cn from "classnames";
-import OurServiceCard from "../OurServiceCard";
+import OurServicesItem from "../OurServiceCard";
 import { StaticImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -83,7 +83,7 @@ export default class SectionOurServices extends Component {
         this.setState({ activeSlide: current }),
     };
     return (
-      <section className="mb-32">
+      <section className="mt-32 mb-12">
         <ContentSafe className={styles.wrapper}>
           <div className={styles.decoration}>
             <StaticImage
@@ -136,7 +136,7 @@ export default class SectionOurServices extends Component {
                 ref={(c) => (this.slider = c)}
                 {...settings}
               >
-                <OurServiceCard
+                <OurServicesItem
                   key={1}
                   title="Karavan Danışmanlığı"
                 >
@@ -144,8 +144,8 @@ export default class SectionOurServices extends Component {
                   satın alma, bütçe belirleme ve
                   karavan imalatı üzerine
                   sorularınızı sorabilirsiniz.
-                </OurServiceCard>
-                <OurServiceCard
+                </OurServicesItem>
+                <OurServicesItem
                   key={2}
                   title="Tasarım ve Planlama"
                 >
@@ -154,8 +154,8 @@ export default class SectionOurServices extends Component {
                   İstek, ihtiyaç ve bütçenize göre
                   en uygun karavanı sizin için
                   tasarlayalım.
-                </OurServiceCard>
-                <OurServiceCard
+                </OurServicesItem>
+                <OurServicesItem
                   key={3}
                   title="Karavan İmalatı"
                 >
@@ -164,8 +164,8 @@ export default class SectionOurServices extends Component {
                   ustalarımız ve çalışma
                   arkadaşlarımızla sizin için en
                   uygun karavanı üretelim.
-                </OurServiceCard>
-                <OurServiceCard
+                </OurServicesItem>
+                <OurServicesItem
                   key={4}
                   title="Üretim Sonrası Destek"
                 >
@@ -176,7 +176,7 @@ export default class SectionOurServices extends Component {
                   Karavanınızla ilgili her türlü
                   tamir ya da tadilat için bizimle
                   iletişime geçebilirsiniz!
-                </OurServiceCard>
+                </OurServicesItem>
               </Slider>
             </div>
             <div className={styles.buttonWrapper}>
