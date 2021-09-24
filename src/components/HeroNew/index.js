@@ -15,6 +15,7 @@ import {
 import useSlide from "../../hooks/useSlide";
 import cn from "classnames";
 import Dropdown from "../Dropdown";
+import ThemeButton from "../ThemeButton";
 
 export default function HeroNew({ children }) {
   const [currIndex] = useSlide(6000, 3);
@@ -35,6 +36,9 @@ export default function HeroNew({ children }) {
           İSTEK VE İHTİYAÇLARINIZA YÖNELİK
           KARAVANLAR ÜRETİYORUZ
         </h1>
+        <ThemeButton secondary>
+          Bize Ulaşın
+        </ThemeButton>
       </div>
     </div>
   );

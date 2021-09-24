@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#132624",
-        secondary: "#F0A028",
+        secondary: "#FF8A5C",
       },
     },
   },

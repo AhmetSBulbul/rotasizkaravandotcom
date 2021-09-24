@@ -51,6 +51,7 @@
 
 .content {
   @apply text-left flex flex-col;
+  color: #030301;
 
   h3 {
     @apply font-display font-black text-4xl md:text-5xl;
