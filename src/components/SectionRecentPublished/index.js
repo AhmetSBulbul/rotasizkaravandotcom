@@ -13,6 +13,11 @@ export default function SectionRecentPublished({
       query={graphql`
         query {
           allMarkdownRemark(
+            filter: {
+              fileAbsolutePath: {
+                regex: "//blog//"
+              }
+            }
             sort: {
               order: DESC
               fields: [frontmatter___date]

@@ -4,10 +4,7 @@ import * as styles from "./index.module.css";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const PostLink = ({ post }) => (
-  <Link
-    to={post.frontmatter.slug}
-    className={styles.link}
-  >
+  <Link to={post.frontmatter.slug}>
     <div className={styles.container}>
       <div className={styles.featuredImage}>
         <GatsbyImage

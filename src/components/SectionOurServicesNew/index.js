@@ -1,10 +1,27 @@
 import React from "react";
 import * as styles from "./index.module.css";
 import cn from "classnames";
-import OurServiceCard from "../OurServiceCardNew";
+
 import * as Icon from "../icons/colorful-icons";
 import { Question } from "../icons/solid-icons";
 import { Link } from "gatsby";
+
+const ServiceCard = ({
+  children,
+  title,
+  ...props
+}) => {
+  return (
+    <Link to={props.to}>
+      <div className={styles.card}>
+        {children}
+        <h3 className={styles.cardTitle}>
+          {title}
+        </h3>
+      </div>
+    </Link>
+  );
+};
 
 const SectionOurServicesNew = ({
   children,
@@ -26,32 +43,31 @@ const SectionOurServicesNew = ({
           Size Nasıl Yardımcı Olabiliriz?
         </h2>
         <div className={styles.itemsWrapper}>
-          <Link to="/hizmetlerimiz">
-            <div className={styles.card}>
-              <Icon.Brainstorming />
-              <h3 className={styles.cardTitle}>
-                Karavan Danışmanlığı
-              </h3>
-            </div>
-          </Link>
-          <div className={styles.card}>
+          <ServiceCard
+            title="Karavan Danışmanlığı"
+            to="/hizmetlerimiz/karavan-danismanligi"
+          >
+            <Icon.Brainstorming />
+          </ServiceCard>
+          <ServiceCard
+            title="Planlama & Tasarım"
+            to="/hizmetlerimiz/karavan-planlama-tasarim"
+          >
             <Icon.Planning />
-            <h3 className={styles.cardTitle}>
-              Planlama & Tasarım
-            </h3>
-          </div>
-          <div className={styles.card}>
+          </ServiceCard>
+          <ServiceCard
+            title="Karavan İmalatı"
+            to="/hizmetlerimiz/karavan-imalati"
+          >
             <Icon.Toolbox />
-            <h3 className={styles.cardTitle}>
-              Karavan İmalatı
-            </h3>
-          </div>
-          <div className={styles.card}>
+          </ServiceCard>
+          <ServiceCard
+            title="Üretim Sonrası Destek"
+            to="/hizmetlerimiz/uretim-sonrasi-destek"
+          >
             <Icon.Support />
-            <h3 className={styles.cardTitle}>
-              Üretim Sonrası Destek
-            </h3>
-          </div>
+          </ServiceCard>
+
           <div className={styles.dropmenu}>
             <Question
               fill="#fff"

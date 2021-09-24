@@ -1,32 +1,40 @@
-.wrapper {
-  @apply overflow-visible relative flex;
+.sectionWrapper {
+  @apply px-8 flex flex-col w-full my-8;
 }
 
-.gallery {
-  @apply absolute flex flex-row gap-5 p-5 overflow-scroll;
-}
-
-.photo {
-  @apply rounded-sm w-screen h-56;
-}
-
-.dotsWrapper {
-  @apply flex flex-row mx-auto justify-items-center gap-4;
-  .dot {
-    @apply rounded-full border-yellow-700 border-2 text-2xl p-4;
-  }
-
-  .dotActive {
-    @apply bg-yellow-700;
-  }
-
-  .dotEmpty {
-    @apply bg-white;
+.postImage {
+  @apply mr-auto border-4 border-white shadow-xl transform rotate-3;
+  @screen md {
+    max-width: 60%;
   }
 }
 
-.imageCard {
+.post {
+  @apply relative flex flex-col;
+  @screen md {
+    @apply flex-row;
+  }
 }
 
-.imageCardActive {
+.postTitle {
+}
+
+.postBody {
+  @apply px-4 py-4 bg-white ml-12 transform -translate-y-3 flex flex-col;
+
+  @screen md {
+    @apply ml-0 mt-auto;
+  }
+}
+
+.sectionHeader {
+  @apply mb-6 text-right;
+}
+
+.controllerWrap {
+  @apply flex space-x-4 ml-auto;
+}
+
+.technicDetails {
+  @apply mt-4;
 }

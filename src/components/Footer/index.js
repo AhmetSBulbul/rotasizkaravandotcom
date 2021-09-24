@@ -7,18 +7,11 @@ export default function Footer({ children }) {
       <div className={styles.container}>
         <div className={styles.footerMenu}>
           <h5>Hizmetlerimiz</h5>
-          <ol className={styles.menuList}>
-            <a>Hizmetlerimiz</a>
-            <a>Hakkımızda</a>
-          </ol>
+          <ol className={styles.menuList}></ol>
         </div>
         <div className={styles.footerMenu}>
           <h5>Hakkımızda</h5>
-          <ol className={styles.menuList}>
-            <a>Hizmetlerimiz</a>
-            <a>Hakkımızda</a>
-            <a>Blog</a>
-          </ol>
+          <ol className={styles.menuList}></ol>
         </div>
       </div>
     </section>

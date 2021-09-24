@@ -52,6 +52,8 @@
 - [ ] Image Gallery
 - [ ] terms of use page
 - [x] Home page last published posts section
+- [ ] PostLink new design
+- [ ] Blog Page
 - [ ] Blog search feature
 - [ ] Blog posts tags
 - [x] Recent published query item limit

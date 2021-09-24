@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
+
 import * as styles from "./index.module.css";
-import { GatsbyImage } from "gatsby-plugin-image";
+
 import cn from "classnames";
-import ThemeButton from "../ThemeButton";
 
 const OurServiceCard = ({
   children,

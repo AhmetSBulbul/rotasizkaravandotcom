@@ -10,6 +10,6 @@
   @apply border-2 border-secondary text-secondary font-bold transition-colors hover:bg-secondary hover:text-white;
 }
 
-.stretch {
+.fullWidth {
   @apply w-full;
 }

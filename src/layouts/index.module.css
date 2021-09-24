@@ -1,4 +1,5 @@
 .outerContainer {
+  @apply overflow-x-hidden;
   background-color: #fcf9ea;
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import * as styles from "./index.module.css";
 import cn from "classnames";
-import { Link } from "gatsby";
+
 import BaseButton from "../BaseButton";
 
 function ThemeButton({

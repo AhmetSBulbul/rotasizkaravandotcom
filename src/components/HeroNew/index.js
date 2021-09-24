@@ -1,22 +1,10 @@
 import React from "react";
 
 import * as styles from "./index.module.css";
-import {
-  Link,
-  StaticQuery,
-  graphql,
-} from "gatsby";
 
-import {
-  StaticImage,
-  getImage,
-  GatsbyImage,
-} from "gatsby-plugin-image";
-import useSlide from "../../hooks/useSlide";
-import cn from "classnames";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function HeroNew({ children }) {
-  const [currIndex] = useSlide(6000, 3);
   return (
     <div className={styles.base}>
       <StaticImage

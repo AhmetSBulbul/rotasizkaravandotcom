@@ -2,23 +2,20 @@ import React from "react";
 
 import SectionWhatWeDo from "../components/SectionWhatWeDo";
 
-import SectionOurServices from "../components/SectionOurServices";
-
 import SectionRotasizGallery from "../components/SectionRotasizGallery";
 import SectionRecentPublished from "../components/SectionRecentPublished";
 
-import Logo from "../components/Logo";
-
 import HeroNew from "../components/HeroNew";
 import SectionOurServicesNew from "../components/SectionOurServicesNew";
+import Showroom from "../components/Showroom";
 
 const IndexPage = () => {
   return (
     <>
       <HeroNew />
       <SectionWhatWeDo />
-      {/*<SectionOurServices />*/}
       <SectionOurServicesNew className="px-8" />
+      <Showroom />
 
       <SectionRotasizGallery />
       <div className="px-8 flex flex-col space-y-4 mt-24">

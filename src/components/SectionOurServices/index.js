@@ -104,29 +104,29 @@ export default class SectionOurServices extends Component {
                 <Icon.Call
                   className={cn(
                     styles.makeGray,
-                    this.state.activeSlide == 0 &&
-                      styles.color
+                    this.state.activeSlide ===
+                      0 && styles.color
                   )}
                 />
                 <Icon.Planning
                   className={cn(
                     styles.makeGray,
-                    this.state.activeSlide == 1 &&
-                      styles.color
+                    this.state.activeSlide ===
+                      1 && styles.color
                   )}
                 />
                 <Icon.Toolbox
                   className={cn(
                     styles.makeGray,
-                    this.state.activeSlide == 2 &&
-                      styles.color
+                    this.state.activeSlide ===
+                      2 && styles.color
                   )}
                 />
                 <Icon.Support
                   className={cn(
                     styles.makeGray,
-                    this.state.activeSlide == 3 &&
-                      styles.color
+                    this.state.activeSlide ===
+                      3 && styles.color
                   )}
                 />
               </div>

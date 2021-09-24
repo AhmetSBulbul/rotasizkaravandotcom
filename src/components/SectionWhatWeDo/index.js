@@ -1,7 +1,6 @@
 import React from "react";
 import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
-import ContentSafe from "../ContentSafe";
 import cn from "classnames";
 import ThemeButton from "../ThemeButton";
 
@@ -37,7 +36,7 @@ const SectionWhatWeDo = ({
             olalım.
           </p>
           <ThemeButton
-            to="/hakkimizda"
+            to="/kurumsal"
             secondary
             className="ml-auto mt-auto"
           >

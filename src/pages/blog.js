@@ -30,9 +30,12 @@ export default BlogPage;
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "//blog//" }
+      }
       sort: {
+        fields: frontmatter___date
         order: DESC
-        fields: [frontmatter___date]
       }
     ) {
       edges {
@@ -41,12 +44,12 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "DD.MM.YYYY")
+            excerpt
             slug
             title
-            excerpt
             featureImage {
               childImageSharp {
-                gatsbyImageData(height: 300)
+                gatsbyImageData
               }
             }
           }
