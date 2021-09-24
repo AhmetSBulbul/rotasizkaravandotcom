@@ -51,16 +51,13 @@
 - [ ] Re-Factor Components
 - [ ] Image Gallery
 - [ ] terms of use page
-- [ ] add hooks section to readme
 - [x] Home page last published posts section
 - [ ] Blog search feature
 - [ ] Blog posts tags
-- [ ] Recent published query item limit
-- [ ] Queries file
+- [x] Recent published query item limit
 - [x] Design System re-vision
-- [ ] Image alts
 - [ ] Contact, Faqs pages.
-- [ ] Better Gatsby Images.
+- [x] Better Gatsby Images.
 - [ ] Our Works Posts and page
 - [ ] Our works page filter
 - [ ] Social Media Cards
@@ -68,7 +65,6 @@
 - [ ] Page paddings and body max-width layout
 - [ ] Desktop view nav flex-row
 - [ ] Header menu active bg
-- [ ] Hero withArtDirection
 
 ## 🐞 BUGS
 

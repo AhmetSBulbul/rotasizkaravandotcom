@@ -3,6 +3,7 @@ import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import ContentSafe from "../ContentSafe";
 import cn from "classnames";
+import ThemeButton from "../ThemeButton";
 
 const SectionWhatWeDo = ({
   children,
@@ -35,9 +36,13 @@ const SectionWhatWeDo = ({
             teslim sonrası destek ile yanınızda
             olalım.
           </p>
-          <button className={styles.button}>
+          <ThemeButton
+            to="/hakkimizda"
+            secondary
+            className="ml-auto mt-auto"
+          >
             Hakkimizda
-          </button>
+          </ThemeButton>
         </div>
         <div className={styles.decoration}>
           <StaticImage

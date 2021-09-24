@@ -1,5 +1,5 @@
 .footerSection {
-  @apply w-screen bg-gray-800 p-5 mt-20 pb-40 text-white;
+  @apply w-full bg-gray-800 p-5 mt-20 pb-40 text-white;
 }
 
 .container {

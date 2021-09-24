@@ -11,7 +11,7 @@
 }
 
 .card {
-  @apply p-4 flex flex-col space-y-8 bg-white shadow-md;
+  @apply p-4 flex flex-col space-y-8 bg-white shadow-md transition-colors hover:bg-secondary hover:text-white;
   svg {
     @apply text-5xl mr-auto;
   }
@@ -34,7 +34,13 @@
 }
 
 .dropmenu {
-  @apply w-full bg-secondary text-white font-body col-span-2 px-2 py-3 rounded-sm font-medium antialiased text-center;
+  @apply w-full bg-secondary text-white font-body col-span-2 px-2 py-3 rounded-sm font-medium antialiased text-center flex justify-between items-center;
+  @screen md {
+    @apply col-span-1 flex-col items-start;
+    .cardTitle {
+      @apply ml-auto;
+    }
+  }
 }
 
 .slogan {
@@ -43,4 +49,7 @@
 
 .itemsWrapper {
   @apply grid grid-cols-2 gap-4 mt-4;
+  @screen md {
+    @apply grid-cols-5;
+  }
 }

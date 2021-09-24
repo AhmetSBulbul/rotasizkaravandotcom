@@ -11,14 +11,17 @@ import Logo from "../components/Logo";
 
 import HeroNew from "../components/HeroNew";
 import SectionOurServicesNew from "../components/SectionOurServicesNew";
+import useWindowSize from "../hooks/useWindowSize";
 
 const IndexPage = () => {
+  const size = useWindowSize();
   return (
     <>
       <HeroNew />
-      <SectionWhatWeDo className="px-8" />
+      <SectionWhatWeDo />
       {/*<SectionOurServices />*/}
       <SectionOurServicesNew className="px-8" />
+      <h3 className="big-title">{size.height}</h3>
 
       <SectionRotasizGallery />
       <div className="px-8 flex flex-col space-y-4 mt-24">

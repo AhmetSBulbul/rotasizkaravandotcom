@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "colorful-icon": "svgr src/images/icons/colorful-icons -d src/components/icons/colorful-icons --icon"
+    "colorful-icon": "svgr src/images/icons/colorful-icons -d src/components/icons/colorful-icons --icon",
+    "icon-solid": "svgr src/images/icons/solid -d src/components/icons/solid-icons --icon --replace-attr-values \"#000=currentColor\""
   },
   "dependencies": {
     "@fontsource/bungee": "^4.5.0",
