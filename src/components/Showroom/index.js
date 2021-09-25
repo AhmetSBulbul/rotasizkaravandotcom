@@ -7,6 +7,7 @@ import ThemeButton from "../ThemeButton";
 import cn from "classnames";
 
 import {
+  StaticImage,
   GatsbyImage,
   getImage,
 } from "gatsby-plugin-image";
@@ -14,7 +15,7 @@ import {
 function Label({ name, children }) {
   return (
     <p>
-      <span className="font-medium text-secondary mr-2">
+      <span className="font-display font-black text-primary mr-2">
         {name}:
       </span>
       {children}
@@ -32,17 +33,21 @@ function PostCard({
     <div
       className={cn([
         styles.post,
-        currIndex === index && styles.postActive,
+        currIndex === index
+          ? styles.postActive
+          : currIndex > index &&
+            styles.postPrevious,
       ])}
     >
-      <GatsbyImage
-        className={styles.postImage}
-        image={
-          post.frontmatter.featureImage
-            .childImageSharp.gatsbyImageData
-        }
-        alt=""
-      />
+      <div className={styles.postImage}>
+        <GatsbyImage
+          image={
+            post.frontmatter.featureImage
+              .childImageSharp.gatsbyImageData
+          }
+          alt=""
+        />
+      </div>
       <div className={styles.postBody}>
         <h3>{post.frontmatter.title}</h3>
         <p>{post.frontmatter.excerpt}</p>
@@ -62,10 +67,47 @@ function PostCard({
         </div>
         <ThemeButton
           to={post.frontmatter.slug}
-          secondary
           className="ml-auto mt-4"
         >
           Devamını Oku
+        </ThemeButton>
+      </div>
+    </div>
+  );
+}
+
+function Cover({ currIndex }) {
+  return (
+    <div
+      className={cn([
+        styles.post,
+        currIndex === 3 && styles.postActive,
+      ])}
+    >
+      <div className={styles.postImage}>
+        <StaticImage
+          src="../../images/rotasizlar.jpg"
+          alt=""
+        />
+        <h5 className={styles.coverPhotoAlt}>
+          03 Temmuz 2021 - Rotasızlar
+        </h5>
+      </div>
+      <div className={styles.postBody}>
+        <h3>Daha Fazlası</h3>
+        <p>
+          Keyifle her gün bir yeni hayale ortak
+          oluyoruz. Bütün bu hayallerin
+          gerçekleşme süreçlerini işlerimiz
+          sayfasından inceleyebilir ve size en
+          uygun karavan için fikirler
+          edinebilirsiniz.
+        </p>
+        <ThemeButton
+          to="/islerimiz"
+          className="ml-auto mt-4"
+        >
+          İşlerimizi İnceleyin
         </ThemeButton>
       </div>
     </div>
@@ -132,6 +174,7 @@ function Posts({ currIndex }) {
               );
             }
           )}
+          <Cover currIndex={currIndex} />
         </>
       )}
     />
@@ -142,11 +185,11 @@ export default function Showroom({}) {
   const [currIndex, setIndex] = useState(0);
 
   const nextIndex = () => {
-    return setIndex((currIndex + 1) % 3);
+    return setIndex((currIndex + 1) % 4);
   };
 
   const prevIndex = () => {
-    return setIndex((currIndex - 1) % 3);
+    return setIndex((currIndex + 3) % 4);
   };
   return (
     <div className={styles.sectionWrapper}>
