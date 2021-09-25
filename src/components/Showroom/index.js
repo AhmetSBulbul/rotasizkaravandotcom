@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import * as styles from "./index.module.css";
 import { StaticQuery, graphql } from "gatsby";
 import * as SolidIcon from "../icons/solid-icons";
 import IconButton from "../IconButton";
 import ThemeButton from "../ThemeButton";
+import cn from "classnames";
 
 import {
   GatsbyImage,
@@ -21,9 +22,19 @@ function Label({ name, children }) {
   );
 }
 
-function PostCard({ children, post, excerpt }) {
+function PostCard({
+  children,
+  post,
+  index,
+  currIndex,
+}) {
   return (
-    <div className={styles.post}>
+    <div
+      className={cn([
+        styles.post,
+        currIndex === index && styles.postActive,
+      ])}
+    >
       <GatsbyImage
         className={styles.postImage}
         image={
@@ -50,6 +61,7 @@ function PostCard({ children, post, excerpt }) {
           </Label>
         </div>
         <ThemeButton
+          to={post.frontmatter.slug}
           secondary
           className="ml-auto mt-4"
         >
@@ -60,7 +72,7 @@ function PostCard({ children, post, excerpt }) {
   );
 }
 
-function Posts() {
+function Posts({ currIndex }) {
   return (
     <StaticQuery
       query={graphql`
@@ -75,7 +87,7 @@ function Posts() {
               order: DESC
               fields: [frontmatter___date]
             }
-            limit: 1
+            limit: 3
           ) {
             edges {
               node {
@@ -109,11 +121,13 @@ function Posts() {
       render={(data) => (
         <>
           {data.allMarkdownRemark.edges.map(
-            ({ node }) => {
+            ({ node }, index) => {
               return (
                 <PostCard
                   key={node.id}
                   post={node}
+                  index={index}
+                  currIndex={currIndex}
                 />
               );
             }
@@ -125,6 +139,15 @@ function Posts() {
 }
 
 export default function Showroom({}) {
+  const [currIndex, setIndex] = useState(0);
+
+  const nextIndex = () => {
+    return setIndex((currIndex + 1) % 3);
+  };
+
+  const prevIndex = () => {
+    return setIndex((currIndex - 1) % 3);
+  };
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.sectionHeader}>
@@ -134,13 +157,13 @@ export default function Showroom({}) {
         </h2>
       </div>
       <div className={styles.sectionBody}>
-        <Posts />
+        <Posts currIndex={currIndex} />
       </div>
       <div className={styles.controllerWrap}>
-        <IconButton>
+        <IconButton onClick={prevIndex}>
           <SolidIcon.LeftArrow />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={nextIndex}>
           <SolidIcon.RightArrow />
         </IconButton>
       </div>

@@ -1,5 +1,5 @@
 .sectionWrapper {
-  @apply px-8 flex flex-col w-full my-8;
+  @apply px-8 flex flex-col w-full my-12;
 }
 
 .postImage {
@@ -10,10 +10,20 @@
 }
 
 .post {
-  @apply relative flex flex-col;
+  @apply relative flex flex-col transition-transform transform;
+  transform: translateX(120%);
+  grid-area: 1/1;
   @screen md {
     @apply flex-row;
   }
+}
+
+.postActive {
+  @apply transform -translate-x-0;
+}
+
+.sectionBody {
+  @apply grid;
 }
 
 .postTitle {
@@ -24,6 +34,7 @@
 
   @screen md {
     @apply ml-0 mt-auto;
+    max-width: 50vh;
   }
 }
 
