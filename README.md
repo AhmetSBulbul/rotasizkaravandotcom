@@ -33,26 +33,15 @@
 
 - [x] Image Optimization
 - [x] Layout Component
-- [x] Navigation Menu
-- [x] Dynamic images from file system source
-- [x] Routing
-- [x] Hero background image slider with lazy load
-- [x] Background image must be dynamic image not static (gatsby-image-plugin)
-- [x] Navigation menu and button animation
-- [ ] Navigation Footer social media links and contact buttons
 - [x] lockBodyScroll while nav menu is expanded
 - [x] Nav Items Background Images
 - [ ] Page Transition
-- [ ] Desktop View
+- [x] Desktop View
 - [ ] SEO
 - [x] mdx source for blog posts
-- [ ] Re-Factor CSS
-- [ ] Re-Factor Queries
-- [ ] Re-Factor Components
-- [ ] Image Gallery
+- [x] Image Gallery
 - [ ] terms of use page
 - [x] Home page last published posts section
-- [ ] PostLink new design
 - [ ] Blog Page
 - [ ] Blog search feature
 - [ ] Blog posts tags
@@ -60,13 +49,13 @@
 - [x] Design System re-vision
 - [ ] Contact, Faqs pages.
 - [x] Better Gatsby Images.
-- [ ] Our Works Posts and page
+- [x] Our Works Posts and page
 - [ ] Our works page filter
 - [ ] Social Media Cards
 - [x] Our Services Carousel
-- [ ] Page paddings and body max-width layout
-- [ ] Desktop view nav flex-row
-- [ ] Header menu active bg
+- [x] Page paddings and body max-width layout
+- [ ] Google Bussiness Reviews
+- [ ] Google Map api
 
 ## 🐞 BUGS
 
@@ -75,7 +64,6 @@
 - [x] Hero Background Images animation bug.
 - [x] Gatsby Images hasn't rendered properly!!!! - Solution: imgClasses
 - [x] Background svg header render problem on ios - Solution: preserveAspectRatio:'none' is added to svgs
-- [ ] Firefox scrollbar problem
 
 ## After Launch
 

@@ -1,5 +1,5 @@
 .container {
-  @apply py-6 my-12;
+  @apply py-6 bg-primary;
 }
 
 .innerContainer {
@@ -7,13 +7,13 @@
 }
 
 .sectionTitle {
-  @apply font-display font-bold text-2xl text-right text-secondary;
+  @apply font-display font-bold text-2xl text-left text-secondary;
 }
 
 .card {
-  @apply p-4 flex flex-col space-y-8 bg-white shadow-md transition-colors hover:bg-secondary hover:text-white;
+  @apply p-4 flex flex-col col-span-2 row-span-2 w-full h-full space-y-8 bg-white shadow-md transition-colors hover:bg-secondary hover:text-white;
   svg {
-    @apply text-5xl mr-auto;
+    @apply text-3xl sm:text-5xl mr-auto;
   }
 
   .cardTitle {
@@ -44,7 +44,7 @@
 }
 
 .slogan {
-  @apply font-display font-black text-right text-2xl;
+  @apply font-display font-black text-left text-2xl text-white;
 }
 
 .itemsWrapper {

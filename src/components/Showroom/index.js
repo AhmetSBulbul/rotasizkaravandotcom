@@ -181,7 +181,7 @@ function Posts({ currIndex }) {
   );
 }
 
-export default function Showroom({}) {
+export default function Showroom({ className }) {
   const [currIndex, setIndex] = useState(0);
 
   const nextIndex = () => {
@@ -192,7 +192,12 @@ export default function Showroom({}) {
     return setIndex((currIndex + 3) % 4);
   };
   return (
-    <div className={styles.sectionWrapper}>
+    <div
+      className={cn([
+        styles.sectionWrapper,
+        className,
+      ])}
+    >
       <div className={styles.sectionHeader}>
         <h3 className="sub-title">İşlerimiz</h3>
         <h2 className="big-title">

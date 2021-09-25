@@ -1,27 +1,22 @@
 .container {
-  @apply flex flex-col w-full text-black bg-white border-2 border-gray-400 mb-6 rounded-sm gap-x-4 relative;
+  @apply flex flex-col w-full text-black mb-12 rounded-sm relative shadow-2xl;
 }
 
 .featuredImage {
-  @apply w-full object-cover;
+  @apply w-full object-cover relative;
   flex: 2;
 }
 
 .body {
-  @apply flex flex-col px-2 py-4;
+  @apply flex flex-col px-4 space-y-2;
   flex: 5;
   h2 {
-    @apply font-body text-black font-black;
+    @apply font-display text-xl text-black font-black;
   }
 }
 
 .dateField {
-  @apply text-sm text-yellow-600 font-medium flex items-center gap-2 font-body;
-  &::before {
-    @apply w-3 bg-yellow-600 rounded-sm;
-    content: "";
-    height: 2px;
-  }
+  @apply absolute right-2 bottom-2 bg-white px-2 py-1 text-sm text-secondary font-bold rounded-md flex items-center gap-2 font-body;
 }
 
 .readMore {

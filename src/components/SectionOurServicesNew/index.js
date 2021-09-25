@@ -26,13 +26,14 @@ const ServiceCard = ({
 const SectionOurServicesNew = ({
   children,
   title = "Hizmetlerimiz",
+  className,
   ...props
 }) => {
   return (
     <div
       className={cn([
         styles.container,
-        props.oranj && styles.bgOranj,
+        className,
       ])}
     >
       <div className={styles.innerContainer}>

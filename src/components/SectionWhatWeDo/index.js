@@ -21,7 +21,7 @@ const SectionWhatWeDo = ({
           <h3>
             KARAVAN HAYALİNİZİ GERÇEKLEŞTİRELİM
           </h3>
-          <p>
+          <p className="mb-4">
             Hayalinizdeki karavana sahip olma
             sürecinizde size eşlik edelim. İster
             aracınızla gelin isterseniz sizin için
