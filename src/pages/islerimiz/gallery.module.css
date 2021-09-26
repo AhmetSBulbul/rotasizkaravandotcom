@@ -1,0 +1,8 @@
+.gallery {
+  @apply mx-auto;
+  width: 90%;
+  columns: 5 200px;
+  column-fill: balance;
+
+  column-gap: 1.5rem;
+}

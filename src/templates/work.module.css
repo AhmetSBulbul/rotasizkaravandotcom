@@ -1,0 +1,7 @@
+.album {
+  width: 100%;
+  columns: 4 200px;
+  column-fill: balance;
+
+  column-gap: 1.5rem;
+}

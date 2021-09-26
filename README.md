@@ -42,7 +42,7 @@
 - [x] Image Gallery
 - [ ] terms of use page
 - [x] Home page last published posts section
-- [ ] Blog Page
+- [x] Blog Page
 - [ ] Blog search feature
 - [ ] Blog posts tags
 - [x] Recent published query item limit
@@ -54,7 +54,7 @@
 - [ ] Social Media Cards
 - [x] Our Services Carousel
 - [x] Page paddings and body max-width layout
-- [ ] Google Bussiness Reviews
+- [x] Next and previous post links at post page
 - [ ] Google Map api
 - [ ] Header Search
 - [ ] Re-Factor Navigation Menu

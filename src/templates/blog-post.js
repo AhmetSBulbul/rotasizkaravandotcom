@@ -1,6 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { Pages } from "../constants";
+import ThemeButton from "../components/ThemeButton";
+import {
+  LeftArrow,
+  RightArrow,
+} from "../components/icons/solid-icons";
 
 export default function BlogPostTemplate({
   data,
@@ -27,12 +33,6 @@ export default function BlogPostTemplate({
         <h1 className="font-display text-xl text-center">
           {post.frontmatter.title}
         </h1>
-        <h2 className="font-display text-xl text-center">
-          Next: {next && next.frontmatter.title}
-        </h2>
-        <h2 className="font-display text-xl text-center">
-          Prev: {prev && prev.frontmatter.title}
-        </h2>
 
         <div
           className="text-black font-body font-medium text-justify"
@@ -40,6 +40,36 @@ export default function BlogPostTemplate({
             __html: post.html,
           }}
         />
+        <div className="flex flex-row justify-between mt-12">
+          <ThemeButton
+            secondary
+            className="flex flex-row items-center"
+            to={
+              prev != null
+                ? prev.frontmatter.slug
+                : Pages.blog
+            }
+          >
+            <LeftArrow className="mr-4" />
+            {prev != null
+              ? prev.frontmatter.title
+              : "Blog"}
+          </ThemeButton>
+          <ThemeButton
+            secondary
+            className="flex flex-row items-center"
+            to={
+              next != null
+                ? next.frontmatter.slug
+                : Pages.blog
+            }
+          >
+            {next != null
+              ? next.frontmatter.title
+              : "Blog"}
+            <RightArrow className="ml-4" />
+          </ThemeButton>
+        </div>
       </div>
     </>
   );
