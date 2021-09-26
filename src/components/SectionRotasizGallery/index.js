@@ -6,6 +6,7 @@ import {
 import { StaticQuery, graphql } from "gatsby";
 import * as styles from "./index.module.css";
 import cn from "classNames";
+import { Pages } from "../../constants";
 
 import ThemeButton from "../ThemeButton";
 
@@ -70,7 +71,7 @@ function SectionRotasizGallery({ className }) {
           )}
         />
         <ThemeButton
-          to="/foto-galeri"
+          to={Pages.galeri}
           secondary
           className={styles.gridButton}
         >

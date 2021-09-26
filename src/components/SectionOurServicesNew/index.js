@@ -5,6 +5,7 @@ import cn from "classnames";
 import * as Icon from "../icons/colorful-icons";
 import { Question } from "../icons/solid-icons";
 import { Link } from "gatsby";
+import { Pages } from "../../constants";
 
 const ServiceCard = ({
   children,
@@ -46,25 +47,25 @@ const SectionOurServicesNew = ({
         <div className={styles.itemsWrapper}>
           <ServiceCard
             title="Karavan Danışmanlığı"
-            to="/hizmetlerimiz/karavan-danismanligi"
+            to={Pages.danisma}
           >
             <Icon.Brainstorming />
           </ServiceCard>
           <ServiceCard
             title="Planlama & Tasarım"
-            to="/hizmetlerimiz/karavan-planlama-tasarim"
+            to={Pages.planlama}
           >
             <Icon.Planning />
           </ServiceCard>
           <ServiceCard
             title="Karavan İmalatı"
-            to="/hizmetlerimiz/karavan-imalati"
+            to={Pages.imalat}
           >
             <Icon.Toolbox />
           </ServiceCard>
           <ServiceCard
             title="Üretim Sonrası Destek"
-            to="/hizmetlerimiz/uretim-sonrasi-destek"
+            to={Pages.destek}
           >
             <Icon.Support />
           </ServiceCard>

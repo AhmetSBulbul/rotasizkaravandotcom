@@ -3,6 +3,7 @@ import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import cn from "classnames";
 import ThemeButton from "../ThemeButton";
+import { Pages } from "../../constants";
 
 const SectionWhatWeDo = ({
   children,
@@ -36,7 +37,7 @@ const SectionWhatWeDo = ({
             olalım.
           </p>
           <ThemeButton
-            to="/kurumsal"
+            to={Pages.hakkimizda}
             secondary
             className="ml-auto mt-auto"
           >

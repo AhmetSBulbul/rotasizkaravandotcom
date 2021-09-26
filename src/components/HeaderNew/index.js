@@ -21,7 +21,7 @@ export default function HeaderNew() {
           ahmetsafabulbul@gmail.com
         </div>
       </div>
-      <div className="absolute top-full w-full flex h-20 flex-row justify-between items-center z-50 text-white px-4 py-4 space-x-4">
+      <div className="absolute top-full w-full flex h-20 bg-primary flex-row justify-between items-center z-50 text-white px-4 py-4 space-x-4">
         <Link
           to="/"
           className="w-52 z-50"

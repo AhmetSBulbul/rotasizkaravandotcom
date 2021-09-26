@@ -7,6 +7,7 @@ import { Link } from "gatsby";
 import NavItemCard from "../NavItemCard";
 import { StaticImage } from "gatsby-plugin-image";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
+import { Pages } from "../../constants";
 
 const ExitIcon = () => {
   return (
@@ -50,7 +51,7 @@ export default function Navigation(props) {
         ])}
       >
         <Link
-          to="/islerimiz"
+          to={Pages.islerimiz}
           onClick={props.onCallback}
           className={cn([styles.navItemCard])}
         >
@@ -66,7 +67,7 @@ export default function Navigation(props) {
           </NavItemCard>
         </Link>
         <Link
-          to="/blog"
+          to={Pages.blog}
           onClick={props.onCallback}
           className={cn([styles.navItemCard])}
         >
@@ -82,7 +83,7 @@ export default function Navigation(props) {
           </NavItemCard>
         </Link>
         <Link
-          to="/kurumsal"
+          to={Pages.hakkimizda}
           onClick={props.onCallback}
           className={cn([styles.navItemCard])}
         >

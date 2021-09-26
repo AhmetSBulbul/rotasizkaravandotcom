@@ -56,6 +56,8 @@
 - [x] Page paddings and body max-width layout
 - [ ] Google Bussiness Reviews
 - [ ] Google Map api
+- [ ] Header Search
+- [ ] Re-Factor Navigation Menu
 
 ## 🐞 BUGS
 
@@ -75,6 +77,7 @@
 - [ ] Contact form using mail service (MailChimp or SendGrid)
 - [ ] Accessibility
 - [ ] Better Queries
+- [ ] Admin panel as mobil app and google places api for reviews. Only new pushes updates the reviews list
 
 
 ### Test Checklist
