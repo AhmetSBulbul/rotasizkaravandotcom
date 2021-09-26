@@ -7,6 +7,13 @@ export default function Footer({ children }) {
   return (
     <section className={styles.footerSection}>
       <div className={styles.container}>
+        <iframe
+          title="rotasiz-map"
+          loading="lazy"
+          className="w-full h-96 md:w-3/5"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ32OKIVuTwxQRdE93GdMJ4Ls&key=AIzaSyD54TSd_7gV50TdlvvnJR12XaFt22RsXL8"
+        ></iframe>
         <div className={styles.footerMenu}>
           <h5>Kurumsal</h5>
           <ol className={styles.menuList}>
