@@ -1,7 +1,7 @@
 import React from "react";
-import PageTitle from "../../components/PageTitle";
+
 import { graphql } from "gatsby";
-import ImageCarousel from "../../components/ImageCarousel";
+
 import {
   GatsbyImage,
   getImage,

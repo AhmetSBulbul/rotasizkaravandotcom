@@ -1,4 +1,4 @@
-export default {
+const RouteNames = {
   hakkimizda: "/kurumsal",
   iletisim: "/kurumsal/iletisim",
   sss: "/kurumsal/s-s-s",
@@ -13,3 +13,5 @@ export default {
   destek: "/hizmetlerimiz/karavan-teknik-destek",
   contactUs: "/kurumsal/iletisim",
 };
+
+export default RouteNames;

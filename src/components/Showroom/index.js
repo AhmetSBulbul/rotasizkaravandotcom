@@ -9,7 +9,6 @@ import cn from "classnames";
 import {
   StaticImage,
   GatsbyImage,
-  getImage,
 } from "gatsby-plugin-image";
 
 function Label({ name, children }) {

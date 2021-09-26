@@ -3,11 +3,10 @@ import React from "react";
 const WorksPage = () => {
   return (
     <>
-      <div className="h-24 bg-black w-full flex">
-        <h1>Hey</h1>
-      </div>
-      <div className="bg-secondary">
-        <h2>İşlerimiz</h2>
+      <div className="flex min-h-screen w-screen bg-white">
+        <h1 className="mx-auto my-auto text-link text-3xl text-black">
+          İşlerimiz
+        </h1>
       </div>
     </>
   );

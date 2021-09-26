@@ -5,7 +5,7 @@ const FaqsPage = () => {
     <>
       <div className="flex min-h-screen w-screen bg-white">
         <h1 className="mx-auto my-auto text-link text-3xl text-black">
-          Hakkımızda
+          Sık Sorulan Sorular
         </h1>
       </div>
     </>

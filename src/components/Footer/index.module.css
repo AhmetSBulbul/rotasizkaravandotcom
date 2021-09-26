@@ -19,3 +19,7 @@
 .copyrighted {
   @apply text-gray-100 text-sm font-body text-center;
 }
+
+.link {
+  @apply font-body text-lg;
+}
