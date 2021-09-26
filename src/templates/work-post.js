@@ -30,7 +30,7 @@ export default function WorkPostTemplate({
           }
         />
       </div>
-      <div className="flex flex-col mt-4 mx-32 px-4 gap-y-4">
+      <div className="flex flex-col mt-4 px-4 gap-y-4">
         <span className="font-body text-gray-500 text-left">
           {post.frontmatter.date}
         </span>
@@ -74,7 +74,7 @@ export default function WorkPostTemplate({
             }
           )}
         </div>
-        <div className="flex flex-row justify-between mt-12">
+        <div className="flex flex-row justify-between space-x-8 mt-12">
           <ThemeButton
             secondary
             className="flex flex-row items-center"
