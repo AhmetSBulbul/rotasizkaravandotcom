@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function BlogPostTemplate({
+export default function WorkPostTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark: post } = data; // data.markdownRemark holds your post data
@@ -25,6 +25,9 @@ export default function BlogPostTemplate({
         <h1 className="font-display text-xl text-center">
           {post.frontmatter.title}
         </h1>
+        <h1 className="font-display text-xl text-center">
+          {post.frontmatter.make}
+        </h1>
 
         <div
           className="text-black font-body font-medium text-justify"
@@ -38,7 +41,7 @@ export default function BlogPostTemplate({
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query WorkPostByPath($path: String!) {
     markdownRemark(
       frontmatter: { slug: { eq: $path } }
     ) {
@@ -53,6 +56,7 @@ export const pageQuery = graphql`
         }
         slug
         title
+        make
       }
     }
   }
