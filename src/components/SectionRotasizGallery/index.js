@@ -5,7 +5,7 @@ import {
 } from "gatsby-plugin-image";
 import { StaticQuery, graphql } from "gatsby";
 import * as styles from "./index.module.css";
-import cn from "classNames";
+import cn from "classnames";
 import { Pages } from "../../constants";
 
 import ThemeButton from "../ThemeButton";

@@ -14,9 +14,9 @@ exports.createPages = async ({
     `src/templates/work-post.js`
   );
 
-  const resultBlog = await graphql(`
-    query BlogPostAll {
-      allMarkdownRemark(
+  const result = await graphql(`
+    query GetPosts {
+      blog: allMarkdownRemark(
         filter: {
           fileAbsolutePath: { regex: "//blog//" }
         }
@@ -29,23 +29,12 @@ exports.createPages = async ({
           node {
             frontmatter {
               slug
+              title
             }
           }
         }
       }
-    }
-  `);
-
-  if (resultBlog.errors) {
-    reporter.panicOnBuild(
-      `Error while running BlogPostAll query.`
-    );
-    return;
-  }
-
-  const resultWorks = await graphql(`
-    query WorkPostAll {
-      allMarkdownRemark(
+      works: allMarkdownRemark(
         filter: {
           fileAbsolutePath: { regex: "//works//" }
         }
@@ -58,6 +47,7 @@ exports.createPages = async ({
           node {
             frontmatter {
               slug
+              title
             }
           }
         }
@@ -65,30 +55,47 @@ exports.createPages = async ({
     }
   `);
 
-  if (resultWorks.errors) {
+  if (result.errors) {
     reporter.panicOnBuild(
-      `Error while running WorkPostAll query.`
+      `Error while running GraphiQL query.`
     );
     return;
   }
 
-  resultBlog.data.allMarkdownRemark.edges.forEach(
-    ({ node }) => {
-      createPage({
-        path: node.frontmatter.slug,
-        component: blogPostTemplate,
-        context: {}, // additional data can be passed via context
-      });
-    }
-  );
+  const blogPosts = result.data.blog.edges;
+  const workPosts = result.data.works.edges;
 
-  resultWorks.data.allMarkdownRemark.edges.forEach(
-    ({ node }) => {
-      createPage({
-        path: node.frontmatter.slug,
-        component: workPostTemplate,
-        context: {}, // additional data can be passed via context
-      });
-    }
-  );
+  blogPosts.forEach(({ node }, index) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: blogPostTemplate,
+      context: {
+        prev:
+          index === 0
+            ? null
+            : blogPosts[index - 1].node,
+        next:
+          index === blogPosts.length - 1
+            ? null
+            : blogPosts[index + 1].node,
+      }, // additional data can be passed via context
+    });
+  });
+
+  workPosts.forEach(({ node }, index) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: workPostTemplate,
+      context: {
+        prev:
+          index === 0
+            ? null
+            : workPosts[index - 1].node,
+        next:
+          index === workPosts.length - 1
+            ? null
+            : workPosts[index + 1].node,
+      }, // additional data can be passed via context
+    });
+  });
 };

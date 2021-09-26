@@ -3,8 +3,10 @@ import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function BlogPostTemplate({
-  data, // this prop will be injected by the GraphQL query below.
+  data,
+  pageContext, // this prop will be injected by the GraphQL query below.
 }) {
+  const { next, prev } = pageContext;
   const { markdownRemark: post } = data; // data.markdownRemark holds your post data
   return (
     <>
@@ -25,6 +27,12 @@ export default function BlogPostTemplate({
         <h1 className="font-display text-xl text-center">
           {post.frontmatter.title}
         </h1>
+        <h2 className="font-display text-xl text-center">
+          Next: {next && next.frontmatter.title}
+        </h2>
+        <h2 className="font-display text-xl text-center">
+          Prev: {prev && prev.frontmatter.title}
+        </h2>
 
         <div
           className="text-black font-body font-medium text-justify"
