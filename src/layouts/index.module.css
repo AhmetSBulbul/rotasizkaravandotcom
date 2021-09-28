@@ -1,8 +1,7 @@
 .outerContainer {
-  @apply overflow-x-hidden;
-  background-color: #fcf9ea;
+  @apply overflow-x-hidden bg-white;
 }
 
 .wrapper {
-  @apply container mx-auto flex flex-col md:px-2;
+  @apply container mx-auto flex flex-col md:px-outer;
 }

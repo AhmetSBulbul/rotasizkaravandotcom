@@ -14,6 +14,15 @@
   }
 }
 
+.mainHeader {
+  @apply absolute top-full w-full flex flex-row justify-between items-center z-50 text-white px-mobile md:px-wrapper py-6 md:py-8 space-x-4 md:rounded-xl;
+  background: linear-gradient(
+    180deg,
+    #000000 -38.71%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
 .headerTop {
   @apply hidden;
   @screen md {

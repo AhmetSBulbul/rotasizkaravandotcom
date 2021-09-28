@@ -8,21 +8,18 @@ export default function HeroNew({ children }) {
   return (
     <div className={styles.base}>
       <StaticImage
-        src="../../backgrounds/beach-wide.jpg"
+        src="../../backgrounds/winter-road.jpg"
         alt=""
         layout="constrained"
         objectFit="cover"
-        objectPosition="left"
+        objectPosition="center"
         className={styles.background}
       />
-
-      <div className={styles.foreground}></div>
-      <div className={styles.heroFooter}>
-        <h1>
-          İSTEK VE İHTİYAÇLARINIZA YÖNELİK
-          KARAVANLAR ÜRETİYORUZ
-        </h1>
+      <div className={styles.foreground}>
+        <h3>Evinizi Özgürleştirin</h3>
+        <h2>KARAVAN HAYALİNİZE ORTAK OLALIM</h2>
       </div>
+      <div className={styles.diagonal} />
     </div>
   );
 }

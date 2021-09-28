@@ -13,8 +13,16 @@ module.exports = {
     extend: {
       colors: {
         primaryOld: "#132624",
-        primary: "#50583B",
-        secondary: "#FF8A5C",
+        white: {
+          dirty: "#F5f5f5",
+          DEFAULT: "#FFFFFF",
+          not: "#333333",
+        },
+        primary: {
+          light: "#384C4A",
+          DEFAULT: "#132624",
+        },
+        secondary: "#C8553D",
       },
       zIndex: {
         "-10": "-10",
@@ -29,6 +37,12 @@ module.exports = {
         "sky-2": "80",
         everest: "90",
         space: "100",
+      },
+      spacing: {
+        outer: "40px",
+        wrapper: "48px",
+        inner: "38px",
+        mobile: "24px",
       },
     },
   },
