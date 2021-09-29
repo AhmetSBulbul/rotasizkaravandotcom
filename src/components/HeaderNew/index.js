@@ -14,17 +14,17 @@ export default function HeaderNew() {
   return (
     <header className="relative">
       <div className={cn([styles.headerTop])}>
-        <div className="font-display text-sm font-medium my-auto">
-          +90 (539) 517 38 77
+        <div className="ml-4">Kurumsal</div>
+        <div className="ml-4">İletişim</div>
+        <div className="ml-4">
+          Kullanıcı Sözleşmesi
         </div>
-        <div className="font-display text-sm font-medium my-auto">
-          ahmetsafabulbul@gmail.com
-        </div>
+        <div className="mx-4">TR</div>
       </div>
       <div className={styles.mainHeader}>
         <Link
           to="/"
-          className="w-52 z-50"
+          className="z-50"
           onClick={
             isMenuActive && setIsMenuActive
           }

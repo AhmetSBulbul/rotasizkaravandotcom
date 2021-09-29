@@ -24,6 +24,11 @@ module.exports = {
         },
         secondary: "#C8553D",
       },
+      screens: {
+        tablet: "640px",
+        laptop: "1024px",
+        desktop: "1280px",
+      },
       zIndex: {
         "-10": "-10",
         base: "0",
@@ -43,6 +48,10 @@ module.exports = {
         wrapper: "48px",
         inner: "38px",
         mobile: "24px",
+      },
+      boxShadow: {
+        card: "0px 10px 50px -1px rgba(0,0,0,0.25)",
+        lead: "-9px 16px 22px 8px rgba(0,0,0,0.3)",
       },
     },
   },

@@ -5,14 +5,13 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Logo({ className }) {
   return (
     <StaticImage
-      src="../images/rotasiz-white@3x.png"
+      src="../images/rotasiz-white.png"
       alt="rotasiz karavan logo"
       layout="constrained"
       placeholder="none"
-      width={275}
-      height={75}
+      width={200}
+      height={55}
       className={className}
-      imgClassName="object-contain h-full w-full"
     />
   );
 }

@@ -3,8 +3,11 @@ import React from "react";
 import * as styles from "./index.module.css";
 
 import { StaticImage } from "gatsby-plugin-image";
+import cn from "classnames";
 
-export default function HeroNew({ children }) {
+export default function PageLeading({
+  children,
+}) {
   return (
     <div className={styles.base}>
       <StaticImage
@@ -22,6 +25,7 @@ export default function HeroNew({ children }) {
           ORTAK OLALIM
         </h2>
       </div>
+      <div className={styles.diagonal} />
     </div>
   );
 }
