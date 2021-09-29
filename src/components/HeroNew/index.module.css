@@ -14,10 +14,10 @@
     );
   }
   &::before {
-    @apply w-1/2 h-44 -bottom-32 absolute left-wrapper;
-    background-image: url("../../svgs/rip.svg");
+    @apply w-1/2 h-12 -bottom-12 absolute left-wrapper;
+    background-image: url("../../svgs/rip-friendly.svg");
     background-position: bottom;
-    background-size: cover;
+    background-size: 100%;
     content: "";
   }
 }
