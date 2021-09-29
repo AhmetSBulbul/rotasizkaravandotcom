@@ -26,8 +26,10 @@
   @apply z-10 md:rounded-xl overflow-hidden shadow-lead;
   height: 70vh;
   grid-area: 1 / 1 / span 4 / span 4;
+
   @screen md {
     height: 90vh;
+    transition: height 0.5s;
   }
 }
 
