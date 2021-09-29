@@ -3,5 +3,8 @@
 }
 
 .wrapper {
-  @apply container mx-auto flex flex-col laptop:px-outer;
+  @apply flex flex-col;
+  @screen laptop {
+    @apply container px-outer;
+  }
 }

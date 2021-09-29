@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function HeroNew({ children }) {
   return (
-    <div className={styles.base}>
+    <div className="pageLead">
       <StaticImage
         src="../../backgrounds/winter-road.jpg"
         alt=""

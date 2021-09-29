@@ -35,7 +35,6 @@
 - [x] Layout Component
 - [x] lockBodyScroll while nav menu is expanded
 - [x] Nav Items Background Images
-- [ ] Page Transition
 - [x] Desktop View
 - [ ] SEO
 - [x] mdx source for blog posts
@@ -55,9 +54,14 @@
 - [x] Our Services Carousel
 - [x] Page paddings and body max-width layout
 - [x] Next and previous post links at post page
-- [ ] Google Map api
+- [x] Google Map api
 - [ ] Header Search
 - [ ] Re-Factor Navigation Menu
+- [ ] Ios svg bottom line problem(PageLead before rip svg)
+- [ ] Better Queries
+- [ ] Initialize All pages
+- [ ] Header top hover animation
+- [ ] Backdrop filter fallback (use @supports)
 
 ## 🐞 BUGS
 
@@ -71,13 +75,15 @@
 
 ### TO-DO
 
-- [ ] Clean up unnecessary things.
+- [ ] Clean up unnecessary tailwind presets, assets and codes.
+- [ ] Performance Improvements. (On mobile devices has a reflow problem due to css vh bug )
 - [ ] Google Analytics.
 - [ ] Instagram source
 - [ ] Contact form using mail service (MailChimp or SendGrid)
 - [ ] Accessibility
-- [ ] Better Queries
-- [ ] Admin panel as mobil app and google places api for reviews. Only new pushes updates the reviews list
+
+- [ ] Content Management Mobil App and google places api for reviews. Only new pushes updates the reviews list
+- [ ] Page Transition
 
 
 ### Test Checklist
@@ -88,5 +94,13 @@
 - [ ] Loading Speed
 
 ---
+
+## After Break To-Do
+
+- [ ] Better font size and typography
+- [ ] Better design system. Re-factor every css file.
+- [ ] Get rid of the "Navigation". Make it simple
+- [ ] Initialize main pagas and layouts with page leading and test the performance
+- [ ] Layout breaks at between laptop and default. Add mid values and arrange hybrid layout for ipad landing mode.
 
 designed & developed by [@AhmetSBulbul](https://ahmetsafabulbul.com/)

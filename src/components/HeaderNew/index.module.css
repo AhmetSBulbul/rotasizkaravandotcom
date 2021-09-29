@@ -25,7 +25,7 @@
 
 .headerTop {
   @apply hidden;
-  @screen md {
+  @screen laptop {
     @apply flex flex-row w-full justify-end text-sm font-display font-medium items-center h-8 relative;
     &::before {
       @apply bg-primary-light w-1/2 h-full absolute left-wrapper shadow-inner;
