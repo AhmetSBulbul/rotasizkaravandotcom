@@ -1,5 +1,5 @@
 .footerSection {
-  @apply w-full bg-gray-800 p-5 mt-20 pb-40 text-white;
+  @apply w-full bg-white-not px-mobile py-12 my-14 text-white;
 }
 
 .container {
@@ -7,10 +7,6 @@
 }
 
 .footerMenu {
-  h5 {
-    @apply font-display text-lg;
-  }
-
   .menuList {
     @apply ml-1 flex flex-col font-body;
   }
@@ -22,4 +18,40 @@
 
 .link {
   @apply font-body text-lg;
+}
+
+.footerContact {
+  @apply flex flex-col px-wrapper mt-8;
+  @screen laptop {
+    @apply flex-row-reverse justify-between;
+  }
+}
+
+.contact {
+  @apply laptop:my-auto;
+}
+
+.mapAspectRatio {
+  @apply w-full relative overflow-hidden mt-8;
+  padding-top: 74.15%;
+
+  @screen laptop {
+    @apply w-3/5;
+    padding-top: 40.15%;
+  }
+}
+
+.map {
+  @apply absolute left-0 top-0 bottom-0 right-0 w-full h-full;
+}
+
+.logo {
+  @apply flex items-center justify-center w-full mx-auto mb-10;
+}
+
+.footerNav {
+  @apply flex flex-col px-wrapper;
+  @screen laptop {
+    @apply flex-row;
+  }
 }

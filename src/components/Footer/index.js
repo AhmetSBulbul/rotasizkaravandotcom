@@ -2,43 +2,84 @@ import React from "react";
 import * as styles from "./index.module.css";
 import { Link } from "gatsby";
 import { Pages } from "../../constants";
+import {
+  Call,
+  Pin,
+  Mail,
+} from "../icons/solid-icons";
+import { StaticImage } from "gatsby-plugin-image";
+
+const NavItem = ({ children, ...props }) => {
+  return (
+    <Link
+      to={props.to}
+      className="link text-white mr-auto my-1"
+    >
+      {children}
+    </Link>
+  );
+};
+
+const ContactItem = ({
+  children,
+  Icon = Call,
+}) => {
+  return (
+    <div className="font-display font-black text-lg text-white my-4">
+      <Icon
+        fill="#fff"
+        className="inline-block mr-4 text-2xl"
+      />
+      {children}
+    </div>
+  );
+};
+
+const FooterLogo = () => {
+  return (
+    <div className={styles.logo}>
+      <StaticImage
+        src="../../images/rotasiz-earth-white.png"
+        width={70}
+        height={70}
+        alt="Rotasız Karavan Logo"
+        className="mr-4"
+      />
+      <span className="big-title">
+        Rotasız Karavan
+      </span>
+    </div>
+  );
+};
 
 export default function Footer({ children }) {
   return (
-    <section className={styles.footerSection}>
-      <div className={styles.container}>
-        <iframe
-          title="rotasiz-map"
-          loading="lazy"
-          className="w-full h-96 md:w-3/5"
-          allowfullscreen
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ32OKIVuTwxQRdE93GdMJ4Ls&key=AIzaSyD54TSd_7gV50TdlvvnJR12XaFt22RsXL8"
-        ></iframe>
+    <footer className={styles.footerSection}>
+      <div className={styles.footerNav}>
+        <NavItem to={Pages.hakkimizda}>
+          Hakkımızda
+        </NavItem>
+        <NavItem to={Pages.islerimiz}>
+          İşlerimiz
+        </NavItem>
+
+        <NavItem to={Pages.blog}>Blog</NavItem>
+        <NavItem to={Pages.galeri}>
+          Fotoğraf Galerisi
+        </NavItem>
+        <NavItem to={Pages.iletisim}>
+          İletişim
+        </NavItem>
+        <NavItem
+          className={styles.link}
+          to={Pages.sss}
+        >
+          Sık Sorulan Sorular
+        </NavItem>
         <div className={styles.footerMenu}>
-          <h5>Kurumsal</h5>
-          <ol className={styles.menuList}>
-            <Link
-              className={styles.link}
-              to={Pages.hakkimizda}
-            >
-              Hakkımızda
-            </Link>
-            <Link
-              className={styles.link}
-              to={Pages.iletisim}
-            >
-              İletişim
-            </Link>
-            <Link
-              className={styles.link}
-              to={Pages.sss}
-            >
-              S.S.S
-            </Link>
-          </ol>
-        </div>
-        <div className={styles.footerMenu}>
-          <h5>Hizmetlerimiz</h5>
+          <NavItem to={Pages.hizmetlerimiz}>
+            Hizmetlerimiz
+          </NavItem>
           <ol className={styles.menuList}>
             <Link
               className={styles.link}
@@ -66,30 +107,36 @@ export default function Footer({ children }) {
             </Link>
           </ol>
         </div>
-        <div className={styles.footerMenu}>
-          <h5>Karavan</h5>
-          <ol className={styles.menuList}>
-            <Link
-              className={styles.link}
-              to={Pages.islerimiz}
-            >
-              İşlerimiz
-            </Link>
-            <Link
-              className={styles.link}
-              to={Pages.blog}
-            >
-              Blog
-            </Link>
-            <Link
-              className={styles.link}
-              to={Pages.galeri}
-            >
-              Fotoğraf Galerisi
-            </Link>
-          </ol>
+      </div>
+
+      <div className={styles.footerContact}>
+        <div className={styles.contact}>
+          <h5 className="big-title text-3xl mb-6">
+            İletişim
+          </h5>
+          <ContactItem Icon={Call}>
+            +90 (505) 877 78 88
+          </ContactItem>
+          <ContactItem>
+            +90 (534) 554 32 83
+          </ContactItem>
+          <ContactItem Icon={Mail}>
+            rotasizkaravan@gmail.com
+          </ContactItem>
+          <ContactItem Icon={Pin}>
+            Aşağıkaraman, 07070 Konyaaltı/Antalya
+          </ContactItem>
+        </div>
+        <div className={styles.mapAspectRatio}>
+          <iframe
+            title="rotasiz-map"
+            loading="lazy"
+            className={styles.map}
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ32OKIVuTwxQRdE93GdMJ4Ls&key=AIzaSyD54TSd_7gV50TdlvvnJR12XaFt22RsXL8"
+          />
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
