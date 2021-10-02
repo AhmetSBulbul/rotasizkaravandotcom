@@ -48,10 +48,10 @@
 - [x] Next and previous post links at post page
 - [x] Google Map api
 - [x] Initialize All pages
-- [ ] Navigation Link
-- [ ] Footer
+- [x] Navigation Link
+- [x] Footer
 - [ ] Button Comp
-- [ ] See More Link
+- [x] See More Link
 - [ ] Work List
 - [ ] Content
 - [ ] What we do section image size
@@ -62,11 +62,11 @@
 - [ ] Ios svg bottom line problem(PageLead before rip svg)
 - [ ] Social Media Cards
 - [ ] Better Queries
-- [ ] Re-Factor Navigation Menu
+- [x] Re-Factor Navigation Menu
+- [ ] Navigation animation
 - [ ] Page queries
 - [ ] Our works page filter
 - [ ] Header top hover animation
-- [ ] Header Search
 - [ ] Backdrop filter fallback (use @supports)
 - [ ] SEO
 
