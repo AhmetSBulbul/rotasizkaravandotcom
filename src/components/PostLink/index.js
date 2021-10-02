@@ -8,7 +8,7 @@ const PostLink = ({ post }) => (
   <div className={styles.container}>
     <div className={styles.featuredImage}>
       <GatsbyImage
-        className="w-full border-4 border-white"
+        className="w-full"
         key={post.id}
         image={
           post.frontmatter.featureImage
@@ -16,13 +16,12 @@ const PostLink = ({ post }) => (
         }
         alt={post.frontmatter.slug}
       />
-      <span className={styles.dateField}>
-        {post.frontmatter.date}
-      </span>
     </div>
     <div className={styles.body}>
       <h2>{post.frontmatter.title}</h2>
-      <p>{post.excerpt}</p>
+      <span className={styles.dateField}>
+        {post.frontmatter.date}
+      </span>
     </div>
     <ThemeButton
       to={post.frontmatter.slug}

@@ -15,7 +15,7 @@ function SectionRotasizGallery({ className }) {
     "flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 w-full container px-8 my-8";
   return (
     <div
-      className={cn([styleWrapper, className])}
+      className={cn([styles.wrapper, className])}
     >
       <div className={styles.gridContainer}>
         <div className={styles.gridTitle}>

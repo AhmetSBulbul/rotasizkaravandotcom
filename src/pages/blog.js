@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import PostLink from "../components/PostLink";
+import { StaticImage } from "gatsby-plugin-image";
 
 const BlogPage = ({
   data: {
@@ -19,9 +20,24 @@ const BlogPage = ({
     ));
 
   return (
-    <div className="min-h-screen pt-28 px-4">
-      {Posts}
-    </div>
+    <>
+      <div className="pageLead">
+        <StaticImage
+          src="../images/rotasizlar.jpg"
+          alt=""
+          layout="constrained"
+          objectFit="cover"
+          objectPosition="center"
+          className="pageLeadImg"
+        />
+        <div className="pageLeadTitleBox w-full">
+          <h1>Blog</h1>
+        </div>
+      </div>
+      <div className="min-h-screen pt-28 px-4">
+        {Posts}
+      </div>
+    </>
   );
 };
 

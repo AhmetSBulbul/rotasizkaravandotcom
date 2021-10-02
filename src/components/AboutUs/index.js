@@ -6,9 +6,6 @@ export default function AboutUs({ children }) {
   return (
     <section className={styles.aboutUsSection}>
       <div className={styles.container}>
-        <h3 className="font-body text-2xl text-left text-black font-semibold">
-          HAKKIMIZDA
-        </h3>
         <ContentCard
           subject="Biz Kimiz?"
           title="Hayalinizdeki Karavana Bugün Kavuşmak İstemez misiniz?"

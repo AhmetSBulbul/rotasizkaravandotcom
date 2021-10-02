@@ -4,19 +4,18 @@
 
 .featuredImage {
   @apply w-full object-cover relative;
-  flex: 2;
 }
 
 .body {
-  @apply flex flex-col px-4 space-y-2;
-  flex: 5;
+  @apply flex flex-col px-4;
+
   h2 {
-    @apply font-display text-xl text-black font-black;
+    @apply font-display text-2xl text-black font-bold my-4 laptop:text-lg;
   }
 }
 
 .dateField {
-  @apply absolute right-2 bottom-2 bg-white px-2 py-1 text-sm text-secondary font-bold rounded-md flex items-center gap-2 font-body;
+  @apply text-sm font-medium font-body ml-auto text-gray-400;
 }
 
 .readMore {

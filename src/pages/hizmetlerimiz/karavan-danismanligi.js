@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Pages } from "../../constants";
+import { StaticImage } from "gatsby-plugin-image";
 
 const ServiceConsultingPage = () => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 
 import { graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import {
   GatsbyImage,
@@ -11,23 +12,32 @@ import * as styles from "./gallery.module.css";
 const PhotoGalleryPage = ({ data }) => {
   return (
     <>
-      <div className="flex flex-col min-h-screen w-full bg-white pt-24">
-        <h2 className="text-center text-2xl my-4">
-          Fotoğraf Galerisi
-        </h2>
-        <div className={styles.gallery}>
-          {data.allFile.edges.map(({ node }) => {
-            const image = getImage(node);
-            return (
-              <GatsbyImage
-                className="rounded-sm my-2 block"
-                key={node.id}
-                alt={node.name}
-                image={image}
-              />
-            );
-          })}
+      <div className="pageLead">
+        <StaticImage
+          src="../../images/rotasizlar.jpg"
+          alt=""
+          layout="constrained"
+          objectFit="cover"
+          objectPosition="center"
+          className="pageLeadImg"
+        />
+        <div className="pageLeadTitleBox w-full">
+          <h1>Fotoğraf Galerisi</h1>
         </div>
+      </div>
+
+      <div className={styles.gallery}>
+        {data.allFile.edges.map(({ node }) => {
+          const image = getImage(node);
+          return (
+            <GatsbyImage
+              className="rounded-sm my-2 block"
+              key={node.id}
+              alt={node.name}
+              image={image}
+            />
+          );
+        })}
       </div>
     </>
   );

@@ -95,12 +95,4 @@
 
 ---
 
-## After Break To-Do
-
-- [ ] Better font size and typography
-- [ ] Better design system. Re-factor every css file.
-- [ ] Get rid of the "Navigation". Make it simple
-- [ ] Initialize main pagas and layouts with page leading and test the performance
-- [ ] Layout breaks at between laptop and default. Add mid values and arrange hybrid layout for ipad landing mode.
-
 designed & developed by [@AhmetSBulbul](https://ahmetsafabulbul.com/)

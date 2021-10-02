@@ -18,8 +18,8 @@ export default function HeroNew({ children }) {
       <div className={styles.foreground}>
         <h3>Evinizi Özgürleştirin</h3>
         <h2>
-          KARAVAN <br /> HAYALİNİZE <br />
-          ORTAK OLALIM
+          KARAVAN <span>HAYALİNİZE</span>
+          <span> ORTAK OLALIM</span>
         </h2>
       </div>
     </div>

@@ -15,7 +15,6 @@ const ServiceCard = ({
   return (
     <Link to={props.to}>
       <div className={styles.card}>
-        {children}
         <h3 className={styles.cardTitle}>
           {title}
         </h3>
@@ -32,10 +31,7 @@ const SectionOurServicesNew = ({
 }) => {
   return (
     <div
-      className={cn([
-        styles.container,
-        className,
-      ])}
+      className={cn([styles.wrapper, className])}
     >
       <div className={styles.innerContainer}>
         <h3 className={styles.sectionTitle}>

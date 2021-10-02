@@ -15,20 +15,11 @@ const IndexPage = () => {
     <>
       <HeroNew />
       <SectionWhatWeDo />
-      <SectionOurServicesNew className="my-12" />
+      <SectionOurServicesNew />
       <Showroom />
-      <StaticImage
-        className="my-12"
-        src="../images/winter-road.jpg"
-        alt=""
-        width={2000}
-        height={300}
-        objectPosition="50% 100%"
-      />
 
       <SectionRotasizGallery />
-      <div className="w-full h-24 flex bg-primary my-12" />
-      <div className="px-8 flex flex-col space-y-4">
+      <div className="px-8 py-8 flex flex-col space-y-4">
         <div className="flex flex-col">
           <h2 className="sub-title">Blog</h2>
           <h3 className="big-title">

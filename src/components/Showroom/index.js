@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import * as styles from "./index.module.css";
-import { StaticQuery, graphql } from "gatsby";
+import {
+  StaticQuery,
+  graphql,
+  Link,
+} from "gatsby";
 import * as SolidIcon from "../icons/solid-icons";
 import IconButton from "../IconButton";
 import ThemeButton from "../ThemeButton";
@@ -64,12 +68,12 @@ function PostCard({
             {post.frontmatter.year}
           </Label>
         </div>
-        <ThemeButton
+        <Link
           to={post.frontmatter.slug}
-          className="ml-auto mt-4"
+          className="ml-auto mt-4 font-display font-bold px-2 text-secondary text-xl"
         >
           Devamını Oku
-        </ThemeButton>
+        </Link>
       </div>
     </div>
   );
@@ -88,9 +92,6 @@ function Cover({ currIndex }) {
           src="../../images/rotasizlar.jpg"
           alt=""
         />
-        <h5 className={styles.coverPhotoAlt}>
-          03 Temmuz 2021 - Rotasızlar
-        </h5>
       </div>
       <div className={styles.postBody}>
         <h3>Daha Fazlası</h3>

@@ -1,12 +1,12 @@
 .gridContainer {
   @apply grid grid-cols-3 grid-rows-3 w-full gap-4;
-  @screen md {
+  @screen laptop {
     @apply grid-cols-5 grid-rows-2;
   }
 }
 
 .gridTitle {
-  @apply flex flex-col justify-center col-span-2 row-span-1 md:col-span-3 border-2 border-primary p-4;
+  @apply flex flex-col justify-center text-center col-span-2 row-span-1 laptop:col-span-3;
 }
 
 .gridGalleryItem {
@@ -15,4 +15,8 @@
 
 .gridButton {
   @apply col-span-2 row-span-1 text-2xl text-center flex flex-col justify-center;
+}
+
+.wrapper {
+  @apply px-mobile py-12 laptop:px-wrapper laptop:py-20;
 }

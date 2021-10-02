@@ -25,9 +25,11 @@ module.exports = {
         secondary: "#C8553D",
       },
       screens: {
-        tablet: "640px",
+        landscape: "640px",
+        tablet: "768px",
         laptop: "1024px",
         desktop: "1280px",
+        wide: "1536px",
       },
       zIndex: {
         "-10": "-10",
@@ -44,13 +46,19 @@ module.exports = {
         space: "100",
       },
       spacing: {
-        outer: "40px",
-        wrapper: "48px",
-        inner: "38px",
-        mobile: "24px",
+        outer: "8px",
+        wrapper: "24px",
+        inner: "8px",
+        mobile: "16px",
+        qtr: "25%",
+        half: "50%",
+        qtrVW: "25vw",
+        halfVW: "50vw",
       },
       boxShadow: {
         card: "0px 10px 50px -1px rgba(0,0,0,0.25)",
+        cardSm:
+          "0px 10px 50px -1px rgba(0,0,0,0.15)",
         lead: "-9px 16px 22px 8px rgba(0,0,0,0.3)",
       },
     },

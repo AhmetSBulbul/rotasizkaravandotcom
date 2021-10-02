@@ -13,17 +13,21 @@
 .foreground {
   @apply w-full col-span-4 bg-secondary bg-opacity-90 text-white flex flex-col py-6 px-mobile;
   h3 {
-    @apply text-lg font-bold;
+    @apply text-xl desktop:text-2xl;
   }
   h2 {
-    @apply font-black text-5xl;
+    @apply font-display font-black text-3xl laptop:text-4xl desktop:text-5xl;
   }
 
   @screen laptop {
-    @apply px-wrapper z-base-step-1 w-auto pt-inner absolute bottom-0 right-inner bg-opacity-40 backdrop-filter backdrop-blur;
+    @apply px-wrapper z-base-step-1 w-auto pt-12 absolute bottom-0 right-wrapper bg-opacity-60 backdrop-filter backdrop-blur;
     &::after {
-      @apply absolute z-base-step-1 w-full bg-secondary right-0 h-full top-full bg-opacity-40;
+      @apply absolute z-base-step-1 w-full bg-secondary right-0 h-full top-full bg-opacity-60;
       content: "";
+    }
+
+    span {
+      @apply block;
     }
   }
 }

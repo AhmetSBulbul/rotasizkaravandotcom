@@ -2,16 +2,6 @@
   @apply flex flex-col relative mb-14;
 }
 
-.aboutUsSection::before {
-  @apply absolute w-screen h-10 -top-10 left-0;
-  content: "";
-  background-image: linear-gradient(
-    rgba(249, 250, 251, 0),
-    rgba(249, 250, 251, 0.7),
-    rgba(249, 250, 251, 1)
-  );
-}
-
 .container {
   @apply flex flex-col px-5 py-4 min-h-screen gap-y-9;
 }

@@ -5,6 +5,6 @@
 .wrapper {
   @apply flex flex-col;
   @screen laptop {
-    @apply container px-outer;
+    @apply container px-4;
   }
 }

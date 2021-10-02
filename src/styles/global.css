@@ -4,10 +4,7 @@
 
 @layer base {
   html {
-    font-size: 14px;
-    @screen md {
-      font-size: 16px;
-    }
+    font-size: 16px;
   }
 
   h1,
@@ -75,7 +72,7 @@
     @apply grid relative z-base mb-10;
 
     &::before {
-      @apply w-1/2 h-12 -bottom-12 absolute left-mobile laptop:left-wrapper;
+      @apply w-1/2 h-14 -bottom-14 laptop:h-24 laptop:-bottom-20 absolute left-mobile laptop:left-wrapper;
       background-image: url("../svgs/rip-friendly.svg");
       background-position: bottom;
       background-size: 100%;
@@ -85,7 +82,7 @@
     @screen laptop {
       @apply rounded-2xl;
       &::after {
-        @apply absolute -z-10 h-1/2 w-outer -right-outer top-1/3;
+        @apply absolute -z-10 h-1/2 w-wrapper -right-wrapper top-1/3;
         content: "";
         background-color: #fff;
         opacity: 1;
@@ -98,6 +95,23 @@
         );
       }
     }
+  }
+
+  .pageLeadImg {
+    @apply z-base overflow-hidden;
+    height: 50vh;
+    grid-area: 1 / 1 / span 4 / span 4;
+
+    @screen laptop {
+      @apply rounded-xl shadow-lead;
+      height: 70vh;
+      transition: height 0.5s;
+    }
+  }
+
+  .pageLeadTitleBox {
+    @apply flex z-base-step-1 bg-secondary bg-opacity-60 py-8 px-wrapper laptop:rounded-b-xl text-white font-display text-2xl;
+    grid-area: 4 / 1 / span 1 / span 4;
   }
 }
 
