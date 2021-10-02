@@ -13,7 +13,7 @@
   h4,
   h5 {
     @apply font-display;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   @supports (font-variation-settings: normal) {
@@ -23,7 +23,7 @@
     h4,
     h5 {
       font-family: "Maven ProVariable";
-      font-variation-settings: "wght" 700;
+      font-variation-settings: "wght" 900;
     }
   }
 
@@ -36,6 +36,29 @@
 
   body::-webkit-scrollbar {
     display: none;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
+    @apply text-lg;
+  }
+
+  p {
+    @apply text-base font-medium;
   }
 }
 
@@ -58,6 +81,26 @@
 
   .content-safe {
     @apply px-4 md:container md:px-8;
+  }
+
+  .link {
+    @apply font-display font-bold text-secondary text-xl;
+  }
+
+  .big-link {
+    @apply font-display font-bold text-primary text-2xl;
+  }
+
+  .sub-link {
+    @apply font-display font-medium text-gray-600 text-base;
+  }
+
+  .button-text {
+    @apply font-display font-medium text-secondary text-xl;
+  }
+
+  .big-button-text {
+    @apply font-display font-bold text-white text-3xl;
   }
 
   .big-title {

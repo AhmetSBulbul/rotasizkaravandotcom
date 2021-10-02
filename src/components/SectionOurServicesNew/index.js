@@ -15,17 +15,15 @@ const ServiceCard = ({
   return (
     <Link to={props.to}>
       <div className={styles.card}>
-        <h3 className={styles.cardTitle}>
+        <h4 className={styles.cardTitle}>
           {title}
-        </h3>
+        </h4>
       </div>
     </Link>
   );
 };
 
 const SectionOurServicesNew = ({
-  children,
-  title = "Hizmetlerimiz",
   className,
   ...props
 }) => {
@@ -34,10 +32,10 @@ const SectionOurServicesNew = ({
       className={cn([styles.wrapper, className])}
     >
       <div className={styles.innerContainer}>
-        <h3 className={styles.sectionTitle}>
-          {title}
+        <h3 className="sub-title text-center">
+          Hizmetlerimiz
         </h3>
-        <h2 className={styles.slogan}>
+        <h2 className="big-title text-center">
           Size Nasıl Yardımcı Olabiliriz?
         </h2>
         <div className={styles.itemsWrapper}>
@@ -71,9 +69,9 @@ const SectionOurServicesNew = ({
               fill="#fff"
               className="text-2xl"
             />
-            <h3 className={styles.cardTitle}>
+            <h5 className={styles.cardTitle}>
               Sık Sorulan Sorular
-            </h3>
+            </h5>
           </div>
         </div>
       </div>

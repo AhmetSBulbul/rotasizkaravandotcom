@@ -5,47 +5,18 @@
   }
 }
 
-.decoration {
-  @apply w-full;
-}
-
-.button {
-  @apply px-8 bg-secondary text-white font-display text-lg font-medium antialiased ml-auto mt-4 z-10 h-12;
-  @screen md {
-    @apply ml-auto mt-auto;
-  }
-}
-
-.slogan {
-  @apply font-display font-semibold text-secondary text-xl;
-}
-
 .image {
-  @apply border-4 border-white box-border transform rotate-6;
+  @apply border-4 border-white box-border shadow-card transform rotate-6;
 
-  box-shadow: 0px 0px 5px #000;
   @screen laptop {
-    @apply bg-black origin-bottom-left;
+    @apply origin-bottom-left;
   }
 }
-
 .content {
   @apply text-left flex flex-col justify-items-start px-mobile mb-wrapper;
-  color: #030301;
 
   @screen laptop {
     @apply w-1/2 ml-wrapper flex-shrink-0 mb-0 px-wrapper;
-  }
-
-  h3 {
-    @apply font-display font-black text-3xl;
-  }
-
-  @supports (font-variation-settings: normal) {
-    h3 {
-      font-family: "Maven ProVariable";
-      font-variation-settings: "wght" 900;
-    }
   }
 
   p {

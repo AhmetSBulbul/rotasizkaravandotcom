@@ -11,9 +11,15 @@ import { Link } from "gatsby";
 export default function HeaderNew() {
   const [isMenuActive, setIsMenuActive] =
     useToggle();
+  const sublinkStyle = "sub-link";
   return (
     <header className="relative">
-      <div className={cn([styles.headerTop])}>
+      <div
+        className={cn([
+          styles.headerTop,
+          sublinkStyle,
+        ])}
+      >
         <div className="ml-4">Kurumsal</div>
         <div className="ml-4">İletişim</div>
         <div className="ml-4">

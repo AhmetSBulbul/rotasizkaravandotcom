@@ -5,20 +5,14 @@ import cn from "classnames";
 import ThemeButton from "../ThemeButton";
 import { Pages } from "../../constants";
 
-const SectionWhatWeDo = ({
-  children,
-  title = "",
-  className,
-}) => {
+const SectionWhatWeDo = ({ className }) => {
   return (
     <div
       className={cn([styles.wrapper, className])}
     >
       <div className={styles.content}>
-        <h5 className={styles.slogan}>
-          Biz Kimiz?
-        </h5>
-        <h3>
+        <h5 className="sub-title">Biz Kimiz?</h5>
+        <h3 className="big-title">
           İsteğinize ve İhtiyaçlarınıza Yönelik
           Karavanlar Üretiyoruz.
         </h3>

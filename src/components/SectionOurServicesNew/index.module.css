@@ -1,13 +1,9 @@
 .wrapper {
-  @apply px-mobile my-24;
+  @apply px-mobile my-24 laptop:px-wrapper;
 }
 
 .innerContainer {
   @apply flex flex-col antialiased;
-}
-
-.sectionTitle {
-  @apply font-display font-bold text-2xl text-center text-secondary;
 }
 
 .card {
@@ -19,8 +15,8 @@
 }
 
 .dropmenu {
-  @apply w-full bg-secondary text-white font-body col-span-2 px-2 py-3 rounded-sm font-medium antialiased text-center flex justify-between items-center;
-  @screen md {
+  @apply w-full bg-secondary text-white col-span-2 px-2 py-3 rounded-sm antialiased text-center flex justify-between items-center;
+  @screen laptop {
     @apply col-span-1 flex-col items-start;
     .cardTitle {
       @apply ml-auto;
@@ -28,13 +24,9 @@
   }
 }
 
-.slogan {
-  @apply font-display font-black text-center text-2xl text-black;
-}
-
 .itemsWrapper {
-  @apply grid grid-cols-2 gap-8 mt-4;
-  @screen md {
+  @apply grid grid-cols-2 gap-8 mt-8;
+  @screen laptop {
     @apply grid-cols-5;
   }
 }

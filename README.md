@@ -34,7 +34,6 @@
 - [x] Image Optimization
 - [x] Layout Component
 - [x] lockBodyScroll while nav menu is expanded
-- [x] Nav Items Background Images
 - [x] Desktop View
 - [x] mdx source for blog posts
 - [x] Image Gallery
@@ -49,6 +48,13 @@
 - [x] Next and previous post links at post page
 - [x] Google Map api
 - [x] Initialize All pages
+- [ ] Navigation Link
+- [ ] Footer
+- [ ] Button Comp
+- [ ] See More Link
+- [ ] Work List
+- [ ] Content
+- [ ] What we do section image size
 - [ ] Blog posts tags
 - [ ] terms of use page
 - [ ] Blog search feature
