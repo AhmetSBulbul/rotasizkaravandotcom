@@ -6,7 +6,7 @@ const ContactPage = () => {
     <>
       <div className="pageLead">
         <StaticImage
-          src="../../images/rotasizlar.jpg"
+          src="../../images/coffee.jpg"
           alt=""
           layout="constrained"
           objectFit="cover"

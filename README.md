@@ -36,40 +36,37 @@
 - [x] lockBodyScroll while nav menu is expanded
 - [x] Nav Items Background Images
 - [x] Desktop View
-- [ ] SEO
 - [x] mdx source for blog posts
 - [x] Image Gallery
-- [ ] terms of use page
 - [x] Home page last published posts section
 - [x] Blog Page
-- [ ] Blog search feature
-- [ ] Blog posts tags
 - [x] Recent published query item limit
 - [x] Design System re-vision
-- [ ] Contact, Faqs pages.
 - [x] Better Gatsby Images.
 - [x] Our Works Posts and page
-- [ ] Our works page filter
-- [ ] Social Media Cards
 - [x] Our Services Carousel
 - [x] Page paddings and body max-width layout
 - [x] Next and previous post links at post page
 - [x] Google Map api
-- [ ] Header Search
-- [ ] Re-Factor Navigation Menu
+- [x] Initialize All pages
+- [ ] Blog posts tags
+- [ ] terms of use page
+- [ ] Blog search feature
+- [ ] Contact, Faqs pages.
 - [ ] Ios svg bottom line problem(PageLead before rip svg)
+- [ ] Social Media Cards
 - [ ] Better Queries
-- [ ] Initialize All pages
+- [ ] Re-Factor Navigation Menu
+- [ ] Page queries
+- [ ] Our works page filter
 - [ ] Header top hover animation
+- [ ] Header Search
 - [ ] Backdrop filter fallback (use @supports)
+- [ ] SEO
 
 ## 🐞 BUGS
 
-- [x] Logo onClick doesn't work while menu is expanded.
-- [x] Clicking to Logo doesn't close the navigation menu. Toggle controller must be on header and navigation must be divided to MenuButton and NavigationMenu components.
-- [x] Hero Background Images animation bug.
-- [x] Gatsby Images hasn't rendered properly!!!! - Solution: imgClasses
-- [x] Background svg header render problem on ios - Solution: preserveAspectRatio:'none' is added to svgs
+- [ ] Safari postlink component shadow.
 
 ## After Launch
 
@@ -83,15 +80,11 @@
 - [ ] Accessibility
 
 - [ ] Content Management Mobil App and google places api for reviews. Only new pushes updates the reviews list
-- [ ] Page Transition
+- [ ] Page Transition(support problem)
 
 
 ### Test Checklist
 
-- [ ] Header drop-shadow
-- [ ] Gaps
-- [ ] Seo
-- [ ] Loading Speed
 
 ---
 

@@ -1,5 +1,5 @@
 .container {
-  @apply flex flex-col w-full text-black mb-12 rounded-sm relative shadow-2xl;
+  @apply flex flex-col w-full text-black mt-12 rounded-sm relative shadow-card;
 }
 
 .featuredImage {

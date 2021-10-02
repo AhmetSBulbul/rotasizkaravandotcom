@@ -23,7 +23,7 @@ const BlogPage = ({
     <>
       <div className="pageLead">
         <StaticImage
-          src="../images/rotasizlar.jpg"
+          src="../images/map-notepad.jpg"
           alt=""
           layout="constrained"
           objectFit="cover"
