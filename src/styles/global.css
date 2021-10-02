@@ -108,7 +108,7 @@
   }
 
   .sub-title {
-    @apply font-display font-semibold text-secondary text-xl;
+    @apply font-display font-bold text-secondary text-xl;
   }
 
   .pageLead {

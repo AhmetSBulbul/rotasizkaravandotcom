@@ -49,12 +49,14 @@ function PostCard({
               .childImageSharp.gatsbyImageData
           }
           alt=""
+          objectFit="cover"
+          className="w-full h-full"
         />
       </div>
       <div className={styles.postBody}>
         <h3>{post.frontmatter.title}</h3>
         <p>{post.frontmatter.excerpt}</p>
-        <div className={styles.technicDetails}>
+        <div className={styles.specs}>
           <Label name="Marka">
             {post.frontmatter.make}
           </Label>
@@ -70,7 +72,7 @@ function PostCard({
         </div>
         <Link
           to={post.frontmatter.slug}
-          className="ml-auto mt-4 font-display font-bold px-2 text-secondary text-xl"
+          className="ml-auto mt-4 px-2 link"
         >
           Devamını Oku
         </Link>

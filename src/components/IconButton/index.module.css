@@ -1,3 +1,6 @@
 .iconBtn {
   @apply p-4;
+  svg {
+    @apply text-2xl;
+  }
 }

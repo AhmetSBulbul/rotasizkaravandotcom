@@ -19,15 +19,8 @@ const IndexPage = () => {
       <Showroom />
 
       <SectionRotasizGallery />
-      <div className="px-8 py-8 flex flex-col space-y-4">
-        <div className="flex flex-col">
-          <h2 className="sub-title">Blog</h2>
-          <h3 className="big-title">
-            Son Paylaşılanlar
-          </h3>
-        </div>
-        <SectionRecentPublished />
-      </div>
+
+      <SectionRecentPublished />
     </>
   );
 };

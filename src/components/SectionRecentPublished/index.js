@@ -1,7 +1,13 @@
 import React from "react";
 
 import * as styles from "./index.module.css";
-import { StaticQuery, graphql } from "gatsby";
+import {
+  StaticQuery,
+  graphql,
+  Link,
+} from "gatsby";
+import { Pages } from "../../constants";
+import { RightArrow } from "../icons/solid-icons";
 
 import PostLink from "../PostLink";
 
@@ -45,7 +51,11 @@ export default function SectionRecentPublished({
         }
       `}
       render={(data) => (
-        <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <h3 className="sub-title">Blog</h3>
+          <h2 className="big-title">
+            Son Paylaşılanlar
+          </h2>
           <div className={styles.postList}>
             {data.allMarkdownRemark.edges.map(
               ({ node }) => {
@@ -58,6 +68,14 @@ export default function SectionRecentPublished({
               }
             )}
           </div>
+
+          <Link
+            to={Pages.blog}
+            className="big-link text-black mt-16 ml-auto transition-opacity hover:opacity-60"
+          >
+            Blog{" "}
+            <RightArrow className="inline-block" />
+          </Link>
         </div>
       )}
     />
