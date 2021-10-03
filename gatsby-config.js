@@ -14,41 +14,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `photos`,
-        path: `${__dirname}/src/photos`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `showroom`,
-        path: `${__dirname}/src/showroom`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `backgrounds`,
-        path: `${__dirname}/src/backgrounds`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `contentSrc`,
-        path: `${__dirname}/src/contentSrc`,
-      },
-    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -59,7 +24,7 @@ module.exports = {
         name: `Rotasız Karavan`,
         start_url: `/`,
         lang: `tr`,
-        icon: `src/images/rotasiz-earth-blackless.png`,
+        icon: `src/images/rotasiz-earth-white.png`,
       },
     },
     `gatsby-plugin-layout`,
