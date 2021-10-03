@@ -55,7 +55,9 @@ const NavItem = ({
 }) => {
   return (
     <div className={styles.navItemWrap}>
-      <BgImage className={styles.navItemBg} />
+      <div className={styles.navItemBgWrap}>
+        <BgImage className={styles.navItemBg} />
+      </div>
       <Link
         to={props.to}
         onClick={props.onClick}
