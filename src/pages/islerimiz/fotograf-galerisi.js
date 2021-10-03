@@ -14,7 +14,7 @@ const PhotoGalleryPage = ({ data }) => {
     <>
       <div className="pageLead">
         <StaticImage
-          src="../../images/rotasizlar.jpg"
+          src="../../images/photo-album.jpg"
           alt=""
           layout="constrained"
           objectFit="cover"

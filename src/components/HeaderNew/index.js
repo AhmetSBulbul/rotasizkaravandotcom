@@ -9,6 +9,8 @@ import {
   Call,
 } from "../icons/solid-icons";
 import { Pages } from "../../constants";
+import useWindowSize from "../../hooks/useWindowSize";
+import useLockBodyScroll from "../../hooks/useLockBodyScroll";
 
 const MenuBtn = ({ ...props }) => {
   return (
@@ -49,6 +51,7 @@ const NavItem = ({ children, ...props }) => {
   return (
     <Link
       to={props.to}
+      onClick={props.onClick}
       className={cn([styleLink, styles.navItem])}
     >
       {children}
@@ -59,17 +62,36 @@ const NavItem = ({ children, ...props }) => {
 const NewNavigation = ({ ...props }) => {
   return (
     <nav className={cn([styles.newNavigation])}>
-      <NavItem to={Pages.hakkimizda}>
+      <NavItem
+        to={Pages.hakkimizda}
+        onClick={props.onClick}
+      >
         Hakkımızda
       </NavItem>
-      <NavItem to={Pages.hizmetlerimiz}>
+      <NavItem
+        to={Pages.hizmetlerimiz}
+        onClick={props.onClick}
+      >
         Hizmetlerimiz
       </NavItem>
-      <NavItem to={Pages.islerimiz}>
+      <NavItem
+        to={Pages.islerimiz}
+        onClick={props.onClick}
+      >
         İşlerimiz
       </NavItem>
-      <NavItem to={Pages.galeri}>Galeri</NavItem>
-      <NavItem to={Pages.blog}>Blog</NavItem>
+      <NavItem
+        to={Pages.galeri}
+        onClick={props.onClick}
+      >
+        Galeri
+      </NavItem>
+      <NavItem
+        to={Pages.blog}
+        onClick={props.onClick}
+      >
+        Blog
+      </NavItem>
     </nav>
   );
 };
@@ -103,7 +125,7 @@ const Menu = ({ ...props }) => {
         props.isActive && styles.menuActive,
       ])}
     >
-      <NewNavigation />
+      <NewNavigation onClick={props.onClick} />
 
       <ContactUsBtn />
     </div>
@@ -113,7 +135,15 @@ const Menu = ({ ...props }) => {
 export default function HeaderNew() {
   const [isMenuActive, setIsMenuActive] =
     useToggle();
+  const size = useWindowSize();
   const sublinkStyle = "sub-link";
+  const isMobile = size.width < 1024;
+  const shouldILockBodyScroll =
+    isMobile && isMenuActive;
+
+  useLockBodyScroll(shouldILockBodyScroll);
+  /*menuActive css sınıfı isMobile sartina da baglanacak  */
+
   return (
     <header className="relative">
       <div
@@ -122,7 +152,7 @@ export default function HeaderNew() {
           sublinkStyle,
         ])}
       >
-        <div className="ml-4">Kurumsal</div>
+        <div className="ml-4">{size.width}</div>
         <div className="ml-4">İletişim</div>
         <div className="ml-4">
           Kullanıcı Sözleşmesi
@@ -143,7 +173,12 @@ export default function HeaderNew() {
           onClick={setIsMenuActive}
           isActive={isMenuActive}
         />
-        <Menu isActive={isMenuActive} />
+        <Menu
+          isActive={isMenuActive}
+          onClick={
+            isMenuActive && setIsMenuActive
+          }
+        />
       </div>
     </header>
   );

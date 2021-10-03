@@ -7,7 +7,7 @@ const OurServicesPage = () => {
     <>
       <div className="pageLead">
         <StaticImage
-          src="../../images/rotasizlar.jpg"
+          src="../../images/work-process.jpg"
           alt=""
           layout="constrained"
           objectFit="cover"
