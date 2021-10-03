@@ -72,7 +72,7 @@ const NavItem = ({
   );
 };
 
-const NewNavigation = ({ ...props }) => {
+const Navigation = ({ ...props }) => {
   return (
     <nav className={cn([styles.newNavigation])}>
       <NavItem
@@ -146,7 +146,7 @@ const Menu = ({ ...props }) => {
         "--mobile-inner-height": `${props.height}px`,
       }}
     >
-      <NewNavigation onClick={props.onClick} />
+      <Navigation onClick={props.onClick} />
 
       <ContactUsBtn />
     </div>
