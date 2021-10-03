@@ -142,6 +142,9 @@ const Menu = ({ ...props }) => {
         styles.menu,
         props.isActive && styles.menuActive,
       ])}
+      style={{
+        "--mobile-inner-height": `${props.height}px`,
+      }}
     >
       <NewNavigation onClick={props.onClick} />
 
@@ -196,6 +199,7 @@ export default function HeaderNew() {
           onClick={
             isMenuActive && setIsMenuActive
           }
+          height={size.height}
         />
       </div>
     </header>

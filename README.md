@@ -15,6 +15,12 @@
 
 - Live Preview: [rotasizkaravandotcom.vercel.app](https://rotasizkaravandotcom.vercel.app/)
 
+- Current PageSpeed Insights [Score](https://developers.google.com/speed/pagespeed/insights/?hl=tr&url=https%3A%2F%2Frotasizkaravandotcom.vercel.app%2F&tab=desktop)
+
+- Last PageSpeed Insights Score
+  - Mobile: 96
+  - Desktop: 99
+
 ---
 
 ## 🛠 Tools and Frameworks
@@ -54,7 +60,7 @@
 - [x] See More Link
 - [ ] Better Mobile Image Sizes for Statics
 - [ ] Work List
-- [ ] Mobile NavItem BackgroundImages
+- [x] Mobile NavItem BackgroundImages
 - [ ] Content
 - [ ] What we do section image size
 - [ ] Blog posts tags
