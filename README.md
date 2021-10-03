@@ -18,8 +18,8 @@
 - Current PageSpeed Insights [Score](https://developers.google.com/speed/pagespeed/insights/?hl=tr&url=https%3A%2F%2Frotasizkaravandotcom.vercel.app%2F&tab=desktop)
 
 - Last PageSpeed Insights Score
-  - Mobile: 94 
-  - Desktop: 99
+  - Mobile: 80 
+  - Desktop: 100
 
 ---
 
@@ -46,7 +46,7 @@
 - [x] Home page last published posts section
 - [x] Blog Page
 - [x] Recent published query item limit
-- [x] Design System re-vision
+- [x] Design System revise
 - [x] Better Gatsby Images.
 - [x] Our Works Posts and page
 - [x] Our Services Carousel
@@ -56,7 +56,7 @@
 - [x] Initialize All pages
 - [x] Navigation Link
 - [x] Footer
-- [ ] Button Comp
+- [x] Button Comp
 - [x] See More Link
 - [ ] Better Mobile Image Sizes for Statics
 - [ ] Work List
@@ -69,7 +69,6 @@
 - [ ] Contact, Faqs pages.
 - [ ] Ios svg bottom line problem(PageLead before rip svg)
 - [ ] Social Media Cards
-- [ ] Better Queries
 - [x] Re-Factor Navigation Menu
 - [ ] Navigation animation
 - [ ] Page queries
