@@ -153,7 +153,7 @@ const Menu = ({ ...props }) => {
   );
 };
 
-export default function HeaderNew() {
+export default function Header() {
   const [isMenuActive, setIsMenuActive] =
     useToggle();
   const size = useWindowSize();

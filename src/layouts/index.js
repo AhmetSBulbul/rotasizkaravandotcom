@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderNew from "../components/HeaderNew";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 import * as styles from "./index.module.css";
@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <div className={styles.outerContainer}>
       <div className={styles.wrapper}>
         <Helmet title="Rotasız Karavan" />
-        <HeaderNew />
+        <Header />
         {children}
         <Footer />
       </div>

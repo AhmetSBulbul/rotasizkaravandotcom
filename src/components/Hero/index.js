@@ -3,7 +3,7 @@ import React from "react";
 import * as styles from "./index.module.css";
 import { HeroFigure } from "../figures";
 
-export default function HeroNew({ children }) {
+export default function Hero({ children }) {
   return (
     <div className="pageLead">
       <HeroFigure className={styles.background} />
