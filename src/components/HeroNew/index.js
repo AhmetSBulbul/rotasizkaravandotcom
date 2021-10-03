@@ -1,20 +1,12 @@
 import React from "react";
 
 import * as styles from "./index.module.css";
-
-import { StaticImage } from "gatsby-plugin-image";
+import { HeroFigure } from "../figures";
 
 export default function HeroNew({ children }) {
   return (
     <div className="pageLead">
-      <StaticImage
-        src="../../backgrounds/winter-road.jpg"
-        alt=""
-        layout="constrained"
-        objectFit="cover"
-        objectPosition="center"
-        className={styles.background}
-      />
+      <HeroFigure className={styles.background} />
       <div className={styles.foreground}>
         <h3>Evinizi Özgürleştirin</h3>
         <h2>

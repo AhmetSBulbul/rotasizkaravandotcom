@@ -2,6 +2,7 @@ import React from "react";
 
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { GalleryFigure } from "../../components/figures";
 
 import {
   GatsbyImage,
@@ -13,14 +14,7 @@ const PhotoGalleryPage = ({ data }) => {
   return (
     <>
       <div className="pageLead">
-        <StaticImage
-          src="../../images/photo-album.jpg"
-          alt=""
-          layout="constrained"
-          objectFit="cover"
-          objectPosition="center"
-          className="pageLeadImg"
-        />
+        <GalleryFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
           <h1>Fotoğraf Galerisi</h1>
         </div>

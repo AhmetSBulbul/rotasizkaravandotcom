@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import PostLink from "../components/PostLink";
 import { StaticImage } from "gatsby-plugin-image";
+import { BlogFigure } from "../components/figures";
 
 const BlogPage = ({
   data: {
@@ -22,14 +23,7 @@ const BlogPage = ({
   return (
     <>
       <div className="pageLead">
-        <StaticImage
-          src="../images/map-notepad.jpg"
-          alt=""
-          layout="constrained"
-          objectFit="cover"
-          objectPosition="center"
-          className="pageLeadImg"
-        />
+        <BlogFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
           <h1>Blog</h1>
         </div>
