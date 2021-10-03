@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import PostLink from "../components/PostLink";
-import { StaticImage } from "gatsby-plugin-image";
 import { BlogFigure } from "../components/figures";
 
 const BlogPage = ({

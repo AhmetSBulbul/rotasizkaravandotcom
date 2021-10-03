@@ -1,7 +1,7 @@
 import React from "react";
 
 import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+
 import { GalleryFigure } from "../../components/figures";
 
 import {

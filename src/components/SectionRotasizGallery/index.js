@@ -11,8 +11,6 @@ import { Pages } from "../../constants";
 import ThemeButton from "../ThemeButton";
 
 function SectionRotasizGallery({ className }) {
-  const styleWrapper =
-    "flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 w-full container px-8 my-8";
   return (
     <div
       className={cn([styles.wrapper, className])}

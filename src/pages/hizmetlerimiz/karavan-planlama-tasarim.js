@@ -1,11 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Pages } from "../../constants";
-import { StaticImage } from "gatsby-plugin-image";
+import { ServicesFigure } from "../../components/figures";
 
 const ServicePlanDesignPage = () => {
   return (
     <>
+      <div className="pageLead">
+        <ServicesFigure className="pageLeadImg" />
+        <div className="pageLeadTitleBox w-full">
+          <h1>Hizmetlerimiz</h1>
+        </div>
+      </div>
       <div className="pt-24 px-8 flex flex-col">
         <h1 className="text-2xl">
           Tasarım ve Planlama

@@ -1,9 +1,5 @@
 .container {
-  @apply flex flex-col w-full text-black mt-12 rounded-sm relative shadow-card;
-}
-
-.featuredImage {
-  @apply w-full object-cover relative;
+  @apply flex flex-col w-full mt-12 rounded-sm shadow-card;
 }
 
 .body {
@@ -15,9 +11,9 @@
 }
 
 .dateField {
-  @apply text-sm font-medium font-body ml-auto text-gray-400;
+  @apply text-sm font-medium font-body mr-auto text-gray-400;
 }
 
-.readMore {
-  @apply text-xs text-gray-400 text-right ml-auto mr-2 inline-block;
+.featureImage {
+  @apply w-full h-full;
 }

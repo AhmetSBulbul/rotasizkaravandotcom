@@ -7,7 +7,6 @@ import {
   Pin,
   Mail,
 } from "../icons/solid-icons";
-import { StaticImage } from "gatsby-plugin-image";
 
 const NavItem = ({ children, ...props }) => {
   return (
@@ -31,23 +30,6 @@ const ContactItem = ({
         className="inline-block mr-4 text-2xl"
       />
       {children}
-    </div>
-  );
-};
-
-const FooterLogo = () => {
-  return (
-    <div className={styles.logo}>
-      <StaticImage
-        src="../../images/rotasiz-earth-white.png"
-        width={70}
-        height={70}
-        alt="Rotasız Karavan Logo"
-        className="mr-4"
-      />
-      <span className="big-title">
-        Rotasız Karavan
-      </span>
     </div>
   );
 };
