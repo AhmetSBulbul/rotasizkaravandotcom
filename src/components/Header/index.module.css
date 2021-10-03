@@ -92,12 +92,15 @@
 }
 
 .mainHeader {
-  @apply absolute top-full w-full flex flex-row justify-between items-center z-50 text-white px-mobile md:px-wrapper py-6 md:py-8 md:rounded-xl;
+  @apply absolute top-full w-full flex flex-row justify-between items-center z-mid-air-2 text-white px-mobile py-6;
   background: linear-gradient(
     180deg,
-    #000000 -38.71%,
+    #000000 -30%,
     rgba(0, 0, 0, 0) 100%
   );
+  @screen laptop {
+    @apply px-wrapper py-8 rounded-xl;
+  }
 }
 
 .headerTop {
@@ -109,9 +112,4 @@
       content: "";
     }
   }
-}
-
-.headerTopActive {
-  @apply flex flex-row space-x-4 justify-end py-2 text-primary px-4;
-  visibility: visible;
 }

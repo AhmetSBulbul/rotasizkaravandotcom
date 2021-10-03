@@ -63,26 +63,6 @@
 }
 
 @layer components {
-  .primaryBtn {
-    @apply font-body text-center bg-white text-yellow-500 px-4 py-2 hover:bg-yellow-500 hover:text-white;
-  }
-
-  .btn {
-    @apply bg-blue-600 text-white;
-  }
-
-  .card {
-    @apply shadow-xl;
-  }
-
-  .rotasiz-layout {
-    @apply flex flex-col min-h-screen w-screen overflow-x-hidden;
-  }
-
-  .content-safe {
-    @apply px-4 md:container md:px-8;
-  }
-
   .link {
     @apply font-display font-bold text-secondary text-xl;
   }
@@ -104,7 +84,7 @@
   }
 
   .big-title {
-    @apply font-display font-black text-3xl md:text-4xl;
+    @apply font-display font-black text-3xl tablet:text-4xl;
   }
 
   .sub-title {

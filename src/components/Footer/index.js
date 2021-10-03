@@ -34,7 +34,7 @@ const ContactItem = ({
   );
 };
 
-export default function Footer({ children }) {
+export default function Footer() {
   return (
     <footer className={styles.footerSection}>
       <div className={styles.footerNav}>

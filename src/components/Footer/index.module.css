@@ -1,19 +1,14 @@
 .footerSection {
-  @apply w-full bg-white-not px-mobile py-12 my-14 text-white;
-}
-
-.container {
-  @apply flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0;
+  @apply w-full bg-white-not px-mobile py-12 mt-14 text-white;
+  @screen laptop {
+    @apply my-8;
+  }
 }
 
 .footerMenu {
   .menuList {
     @apply ml-1 flex flex-col font-body;
   }
-}
-
-.copyrighted {
-  @apply text-gray-100 text-sm font-body text-center;
 }
 
 .link {
@@ -43,10 +38,6 @@
 
 .map {
   @apply absolute left-0 top-0 bottom-0 right-0 w-full h-full;
-}
-
-.logo {
-  @apply flex items-center justify-center w-full mx-auto mb-10;
 }
 
 .footerNav {

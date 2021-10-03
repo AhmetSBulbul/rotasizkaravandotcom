@@ -7,12 +7,32 @@ module.exports = {
       display: ["Maven Pro", "sans-serif"],
       serif: ["PT Serif", "serif"],
     },
+    screens: {
+      landscape: "640px",
+      tablet: "768px",
+      laptop: "1024px",
+      desktop: "1280px",
+      wide: "1536px",
+    },
+    zIndex: {
+      "-10": "-10",
+      base: "0",
+      "base-step-1": "10",
+      "base-step-2": "20",
+      "mid-air": "30",
+      "mid-air-1": "40",
+      "mid-air-2": "50",
+      sky: "60",
+      "sky-1": "70",
+      "sky-2": "80",
+      everest: "90",
+      space: "100",
+    },
     container: {
       center: true,
     },
     extend: {
       colors: {
-        primaryOld: "#132624",
         white: {
           dirty: "#F5f5f5",
           DEFAULT: "#FFFFFF",
@@ -24,27 +44,7 @@ module.exports = {
         },
         secondary: "#C8553D",
       },
-      screens: {
-        landscape: "640px",
-        tablet: "768px",
-        laptop: "1024px",
-        desktop: "1280px",
-        wide: "1536px",
-      },
-      zIndex: {
-        "-10": "-10",
-        base: "0",
-        "base-step-1": "10",
-        "base-step-2": "20",
-        "mid-air": "30",
-        "mid-air-1": "40",
-        "mid-air-2": "50",
-        sky: "60",
-        "sky-1": "70",
-        "sky-2": "80",
-        everest: "90",
-        space: "100",
-      },
+
       spacing: {
         outer: "8px",
         wrapper: "24px",
