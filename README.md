@@ -52,7 +52,9 @@
 - [x] Footer
 - [ ] Button Comp
 - [x] See More Link
+- [ ] Better Mobile Image Sizes for Statics
 - [ ] Work List
+- [ ] Mobile NavItem BackgroundImages
 - [ ] Content
 - [ ] What we do section image size
 - [ ] Blog posts tags

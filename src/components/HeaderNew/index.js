@@ -11,6 +11,7 @@ import {
 import { Pages } from "../../constants";
 import useWindowSize from "../../hooks/useWindowSize";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
+import * as Figures from "../figures";
 
 const MenuBtn = ({ ...props }) => {
   return (
@@ -47,15 +48,25 @@ const MenuBtn = ({ ...props }) => {
 const styleLink =
   "link text-white text-xl laptop:text-lg";
 
-const NavItem = ({ children, ...props }) => {
+const NavItem = ({
+  children,
+  BgImage = Figures.HeroFigure,
+  ...props
+}) => {
   return (
-    <Link
-      to={props.to}
-      onClick={props.onClick}
-      className={cn([styleLink, styles.navItem])}
-    >
-      {children}
-    </Link>
+    <div className={styles.navItemWrap}>
+      <BgImage className={styles.navItemBg} />
+      <Link
+        to={props.to}
+        onClick={props.onClick}
+        className={cn([
+          styleLink,
+          styles.navItem,
+        ])}
+      >
+        {children}
+      </Link>
+    </div>
   );
 };
 
@@ -65,30 +76,35 @@ const NewNavigation = ({ ...props }) => {
       <NavItem
         to={Pages.hakkimizda}
         onClick={props.onClick}
+        BgImage={Figures.AboutUsFigure}
       >
         Hakkımızda
       </NavItem>
       <NavItem
         to={Pages.hizmetlerimiz}
         onClick={props.onClick}
+        BgImage={Figures.ServicesFigure}
       >
         Hizmetlerimiz
       </NavItem>
       <NavItem
         to={Pages.islerimiz}
         onClick={props.onClick}
+        BgImage={Figures.WorksFigure}
       >
         İşlerimiz
       </NavItem>
       <NavItem
         to={Pages.galeri}
         onClick={props.onClick}
+        BgImage={Figures.GalleryFigure}
       >
         Galeri
       </NavItem>
       <NavItem
         to={Pages.blog}
         onClick={props.onClick}
+        BgImage={Figures.BlogFigure}
       >
         Blog
       </NavItem>

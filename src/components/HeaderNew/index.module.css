@@ -1,5 +1,5 @@
 .menuBtn {
-  @apply relative w-9 h-9 z-sky-1 laptop:hidden;
+  @apply relative w-9 h-9 z-sky-2 laptop:hidden;
 
   .btnIcon {
     @apply absolute left-0 top-0 bottom-0 right-0 w-full h-full;
@@ -69,10 +69,21 @@
 }
 
 .navItem {
-  @apply h-full border-2 border-white rounded-sm my-2 flex flex-col p-mobile justify-items-end justify-end transition-colors hover:bg-secondary;
+  @apply z-sky-1 h-full w-full border-2 border-white flex flex-col p-mobile justify-items-end justify-end transition-opacity bg-secondary bg-opacity-0 hover:bg-opacity-25;
   @screen laptop {
-    @apply mr-mobile border-none h-auto inline-block my-0 p-0;
+    @apply mr-mobile border-none h-auto w-auto inline-block my-0 p-0;
   }
+}
+
+.navItemWrap {
+  @apply relative flex overflow-hidden h-full w-full rounded-sm my-2;
+  @screen laptop {
+    @apply my-0 h-auto w-auto;
+  }
+}
+
+.navItemBg {
+  @apply absolute w-full h-full left-0 right-0 bottom-0 top-0 z-sky laptop:hidden;
 }
 
 .mainHeader {
