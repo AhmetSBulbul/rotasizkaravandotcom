@@ -1,5 +1,5 @@
 import React from "react";
-import SectionOurServicesNew from "../../components/SectionOurServicesNew";
+import SectionOurServices from "../../components/SectionOurServices";
 import { ServicesFigure } from "../../components/figures";
 
 const OurServicesPage = () => {
@@ -12,7 +12,7 @@ const OurServicesPage = () => {
         </div>
       </div>
 
-      <SectionOurServicesNew className="my-auto" />
+      <SectionOurServices className="my-auto" />
     </>
   );
 };

@@ -6,7 +6,7 @@ import SectionRotasizGallery from "../components/SectionRotasizGallery";
 import SectionRecentPublished from "../components/SectionRecentPublished";
 
 import Hero from "../components/Hero";
-import SectionOurServicesNew from "../components/SectionOurServicesNew";
+import SectionOurServices from "../components/SectionOurServices";
 import Showroom from "../components/Showroom";
 
 const IndexPage = () => {
@@ -14,7 +14,7 @@ const IndexPage = () => {
     <>
       <Hero />
       <SectionWhatWeDo />
-      <SectionOurServicesNew />
+      <SectionOurServices />
       <Showroom />
 
       <SectionRotasizGallery />

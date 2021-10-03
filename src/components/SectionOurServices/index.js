@@ -23,7 +23,7 @@ const ServiceCard = ({
   );
 };
 
-const SectionOurServicesNew = ({
+const SectionOurServices = ({
   className,
   ...props
 }) => {
@@ -79,4 +79,4 @@ const SectionOurServicesNew = ({
   );
 };
 
-export default SectionOurServicesNew;
+export default SectionOurServices;
