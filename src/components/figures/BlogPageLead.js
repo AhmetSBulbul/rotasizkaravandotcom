@@ -9,9 +9,11 @@ export default function FigureBlog({
     <StaticImage
       src="../../images/map-notepad.jpg"
       alt=""
-      layout="constrained"
+      layout="fullWidth"
+      breakpoints={[640, 768, 1024, 1280, 1536]}
       objectFit="cover"
       objectPosition="center"
+      placeholder="blurred"
       className={className}
     />
   );
