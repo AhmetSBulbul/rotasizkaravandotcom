@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUs from "../../components/AboutUs";
+import OldAboutUs from "../../components/OldAboutUs";
 
 import { AboutUsFigure } from "../../components/figures";
 
@@ -13,7 +13,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <AboutUs />
+      <OldAboutUs />
     </>
   );
 };

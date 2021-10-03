@@ -183,7 +183,9 @@ function Posts({ currIndex }) {
   );
 }
 
-export default function Showroom({ className }) {
+export default function SectionOurWorks({
+  className,
+}) {
   const [currIndex, setIndex] = useState(0);
 
   const nextIndex = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import ContentCard from "./__contentCard";
 import * as styles from "./index.module.css";
 
-export default function AboutUs({ children }) {
+export default function OldAboutUs({ children }) {
   return (
     <section className={styles.aboutUsSection}>
       <div className={styles.container}>

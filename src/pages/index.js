@@ -7,7 +7,7 @@ import SectionRecentPublished from "../components/SectionRecentPublished";
 
 import Hero from "../components/Hero";
 import SectionOurServices from "../components/SectionOurServices";
-import Showroom from "../components/Showroom";
+import SectionOurWorks from "../components/SectionOurWorks";
 
 const IndexPage = () => {
   return (
@@ -15,7 +15,7 @@ const IndexPage = () => {
       <Hero />
       <SectionWhatWeDo />
       <SectionOurServices />
-      <Showroom />
+      <SectionOurWorks />
 
       <SectionRotasizGallery />
 
