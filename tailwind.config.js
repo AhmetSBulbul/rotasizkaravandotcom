@@ -5,7 +5,6 @@ module.exports = {
     fontFamily: {
       body: ["Montserrat", "sans-serif"],
       display: ["Maven Pro", "sans-serif"],
-      serif: ["PT Serif", "serif"],
     },
     screens: {
       landscape: "640px",
@@ -66,5 +65,4 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
 };
