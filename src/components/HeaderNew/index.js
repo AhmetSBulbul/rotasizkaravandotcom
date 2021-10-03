@@ -152,7 +152,7 @@ export default function HeaderNew() {
           sublinkStyle,
         ])}
       >
-        <div className="ml-4">{size.width}</div>
+        <div className="ml-4">Kurumsal</div>
         <div className="ml-4">İletişim</div>
         <div className="ml-4">
           Kullanıcı Sözleşmesi
