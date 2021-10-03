@@ -98,6 +98,7 @@
       @apply w-1/2 h-14 -bottom-14 laptop:h-24 laptop:-bottom-20 absolute left-mobile laptop:left-wrapper;
       background-image: url("../svgs/rip-friendly.svg");
       background-position: bottom;
+      background-repeat: no-repeat;
       background-size: 100%;
       content: "";
     }

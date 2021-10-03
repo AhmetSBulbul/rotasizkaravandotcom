@@ -38,7 +38,7 @@ const PhotoGalleryPage = ({ data }) => {
 };
 
 export const pageQuery = graphql`
-  query {
+  query GalleryPageQuery {
     allFile(
       filter: {
         absolutePath: { regex: "//photos//" }

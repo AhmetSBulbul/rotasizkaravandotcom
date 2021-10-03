@@ -120,7 +120,7 @@ function Posts({ currIndex }) {
   return (
     <StaticQuery
       query={graphql`
-        query {
+        query GetWorks {
           allMarkdownRemark(
             filter: {
               fileAbsolutePath: {

@@ -26,7 +26,7 @@ function SectionRotasizGallery({ className }) {
         </div>
         <StaticQuery
           query={graphql`
-            query {
+            query GetShowroomImages {
               allFile(
                 filter: {
                   absolutePath: {

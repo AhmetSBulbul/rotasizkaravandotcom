@@ -7,7 +7,7 @@ export default function FigureBlog({
 }) {
   return (
     <StaticImage
-      src="../images/map-notepad.jpg"
+      src="../../images/map-notepad.jpg"
       alt=""
       layout="constrained"
       objectFit="cover"

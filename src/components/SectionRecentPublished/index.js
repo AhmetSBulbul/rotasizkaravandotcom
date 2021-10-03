@@ -17,7 +17,7 @@ export default function SectionRecentPublished({
   return (
     <StaticQuery
       query={graphql`
-        query {
+        query GetBlogPosts {
           allMarkdownRemark(
             filter: {
               fileAbsolutePath: {

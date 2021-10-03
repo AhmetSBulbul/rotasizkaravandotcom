@@ -57,7 +57,7 @@ exports.createPages = async ({
 
   if (result.errors) {
     reporter.panicOnBuild(
-      `Error while running GraphiQL query.`
+      `Error while running GetPosts GraphiQL query.`
     );
     return;
   }
