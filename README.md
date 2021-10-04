@@ -59,7 +59,7 @@
 - [x] Button Comp
 - [x] See More Link
 - [x] Better Mobile Image Sizes for Statics
-- [ ] Work List
+- [x] Work List
 - [x] Mobile NavItem BackgroundImages
 - [ ] Content
 - [x] All image sizes
@@ -76,10 +76,14 @@
 - [ ] Backdrop filter fallback (use @supports)
 - [x] About Us Page 
 - [ ] SEO
+- [ ] Float contact button
+- [ ] Our services page
+- [ ] Better queries
 
 ## 🐞 BUGS
 
 - [ ] Safari postlink component shadow.
+- [ ] Navigation menu toggle.
 
 ## After Launch
 
