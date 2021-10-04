@@ -28,7 +28,7 @@
   }
 
   body {
-    @apply font-body;
+    @apply font-body text-black;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
@@ -95,6 +95,11 @@
     .link {
       font-family: "Maven ProVariable";
       font-variation-settings: "wght" 700;
+    }
+
+    .big-title {
+      font-family: "Maven ProVariable";
+      font-variation-settings: "wght" 900;
     }
   }
 

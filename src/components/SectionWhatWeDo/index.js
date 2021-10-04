@@ -12,10 +12,10 @@ const SectionWhatWeDo = ({ className }) => {
     >
       <div className={styles.content}>
         <h5 className="sub-title">Biz Kimiz?</h5>
-        <h3 className="big-title">
+        <h2 className="big-title">
           İsteğinize ve İhtiyaçlarınıza Yönelik
           Karavanlar Üretiyoruz.
-        </h3>
+        </h2>
         <p>
           Hayalinizdeki karavana sahip olma
           sürecinizde size eşlik edelim. İster
