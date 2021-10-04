@@ -75,6 +75,7 @@
 - [ ] Our works page filter
 - [ ] Header top hover animation
 - [ ] Backdrop filter fallback (use @supports)
+- [ ] About Us Page 
 - [ ] SEO
 
 ## 🐞 BUGS
