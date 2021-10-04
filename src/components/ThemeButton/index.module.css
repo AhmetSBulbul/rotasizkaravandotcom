@@ -3,7 +3,7 @@
 }
 
 .primary {
-  @apply border-2 border-primary text-primary;
+  @apply border-2 border-cta-dark text-cta-dark;
 }
 
 .secondary {

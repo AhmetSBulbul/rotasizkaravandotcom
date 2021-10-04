@@ -13,6 +13,42 @@ module.exports = {
       desktop: "1280px",
       wide: "1536px",
     },
+    colors: {
+      white: "#ffffff",
+      transparent: "transparent",
+      "gray-lightest": "#faf9f8",
+      "gray-lighter": "#e6e5e4",
+      "gray-light": "#d3d1d0",
+      gray: "#c0bebe",
+      "gray-dark": "#989796",
+      "gray-darker": "#716f6e",
+      "gray-darkest": "#4a4948",
+      black: "#222120",
+
+      "brand-light": "#ffdec9",
+      brand: "#e97e2e",
+      "brand-dark": "#6f3f1d",
+
+      "cta-light": "#d9faf6",
+      cta: "#2ee9dc",
+      "cta-dark": "#276e68",
+
+      "info-light": "#e4f2f4",
+      info: "#8ecbd5",
+      "info-dark": "#466065",
+
+      "warning-light": "#fff1cc",
+      warning: "#fcca15",
+      "warning-dark": "#77601a",
+
+      "success-light": "#e2f7d1",
+      success: "#7ddb3f",
+      "success-dark": "#406725",
+
+      "danger-light": "#ffd5cc",
+      danger: "#fb4940",
+      "danger-dark": "#782a23",
+    },
     zIndex: {
       "-10": "-10",
       base: "0",
@@ -32,16 +68,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        white: {
-          dirty: "#F5f5f5",
-          DEFAULT: "#FFFFFF",
-          not: "#333333",
-        },
-        primary: {
-          light: "#384C4A",
-          DEFAULT: "#132624",
-        },
-        secondary: "#C8553D",
+        secondary: "#E97e2e",
       },
 
       spacing: {
@@ -55,10 +82,10 @@ module.exports = {
         halfVW: "50vw",
       },
       boxShadow: {
-        card: "0px 10px 50px -1px rgba(0,0,0,0.25)",
+        card: "0px 10px 50px -1px rgba(70,96,101,0.25)",
         cardSm:
-          "0px 10px 50px -1px rgba(0,0,0,0.15)",
-        lead: "-9px 16px 22px 8px rgba(0,0,0,0.3)",
+          "0px 10px 50px -1px rgba(70,96,101,0.15)",
+        lead: "-9px 16px 22px 8px rgba(70,96,101,0.25)",
       },
     },
   },

@@ -1,5 +1,5 @@
 .wrapper {
-  @apply flex flex-col px-mobile laptop:px-wrapper bg-white-dirty py-12;
+  @apply flex flex-col px-mobile laptop:px-wrapper bg-gray-lightest py-12;
 }
 .postList {
   @screen laptop {

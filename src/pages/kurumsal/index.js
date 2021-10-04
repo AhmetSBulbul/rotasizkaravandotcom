@@ -6,7 +6,7 @@ const SectionTemplate = ({ children }) => {
   return (
     <div className="grid items-center grid-cols-1 laptop:grid-cols-2 mb-24 gap-y-10 laptop:gap-y-32 gap-x-10 laptop:gap-x-24">
       <div>{children}</div>
-      <div className="w-full h-full bg-gray-600 py-48"></div>
+      <div className="w-full h-full bg-cta-dark py-48"></div>
     </div>
   );
 };
@@ -20,7 +20,7 @@ const AboutPage = () => {
           <h1>Hakkımızda</h1>
         </div>
       </div>
-      <div className="w-full px-wrapper py-14 bg-white-dirty">
+      <div className="w-full px-wrapper py-14 bg-gray-lightest rounded-md">
         <SectionTemplate>
           <h3>Biz Kimiz?</h3>
           <h2>

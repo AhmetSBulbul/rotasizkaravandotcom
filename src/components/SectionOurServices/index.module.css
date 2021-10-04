@@ -7,7 +7,7 @@
 }
 
 .card {
-  @apply p-8 col-span-2 row-span-2 shadow-cardSm justify-center flex flex-col w-full h-full bg-white transition-colors hover:bg-secondary hover:text-white;
+  @apply p-8 col-span-2 row-span-2 shadow-cardSm justify-center flex flex-col w-full h-full bg-white transition-colors hover:bg-brand hover:text-white;
 
   .cardTitle {
     @apply text-center;
@@ -15,7 +15,7 @@
 }
 
 .dropmenu {
-  @apply w-full bg-secondary text-white col-span-2 px-2 py-3 rounded-sm antialiased text-center flex justify-between items-center;
+  @apply w-full bg-brand text-white col-span-2 px-2 py-3 rounded-sm antialiased text-center flex justify-between items-center;
   @screen laptop {
     @apply col-span-1 flex-col items-start;
     .cardTitle {

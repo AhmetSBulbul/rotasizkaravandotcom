@@ -60,7 +60,7 @@ const DesignSystemPage = () => {
           <span className="font-display font-bold text-secondary text-xl">
             Link
           </span>
-          <span className="font-display font-bold text-primary text-2xl">
+          <span className="font-display font-bold text-cta-dark text-2xl">
             Big Link
           </span>
           <span className="font-display font-medium text-gray-600 text-base">
@@ -69,7 +69,7 @@ const DesignSystemPage = () => {
           <span className="font-display mr-auto font-medium text-secondary text-xl border-2 border-secondary px-6 py-2 my-4">
             Button
           </span>
-          <span className="font-display mr-auto font-bold text-white bg-primary text-3xl px-6 py-3 my-4">
+          <span className="font-display mr-auto font-bold text-white bg-cta-dark text-3xl px-6 py-3 my-4">
             Big Button
           </span>
         </div>
@@ -78,21 +78,21 @@ const DesignSystemPage = () => {
             Spacing
           </h1>
           <span>wrapper</span>
-          <div className="h-wrapper w-wrapper block bg-white-not" />
+          <div className="h-wrapper w-wrapper block bg-gray-darkest" />
           <span>mobile</span>
-          <div className="h-mobile w-mobile block bg-white-not" />
+          <div className="h-mobile w-mobile block bg-gray-darkest" />
           <span>outer</span>
-          <div className="h-outer w-outer block bg-white-not" />
+          <div className="h-outer w-outer block bg-gray-darkest" />
           <span>inner</span>
-          <div className="h-inner w-inner block bg-white-not" />
+          <div className="h-inner w-inner block bg-gray-darkest" />
           <span>width qtr</span>
-          <div className="h-wrapper w-qtr block bg-white-not" />
+          <div className="h-wrapper w-qtr block bg-gray-darkest" />
           <span>width half</span>
-          <div className="h-wrapper w-half block bg-white-not" />
+          <div className="h-wrapper w-half block bg-gray-darkest" />
           <span>qtrVW</span>
-          <div className="h-qtrVW w-qtrVW block bg-white-not" />
+          <div className="h-qtrVW w-qtrVW block bg-gray-darkest" />
           <span>halfVW</span>
-          <div className="h-halfVW w-halfVW block bg-white-not" />
+          <div className="h-halfVW w-halfVW block bg-gray-darkest" />
         </div>
       </div>
     </>

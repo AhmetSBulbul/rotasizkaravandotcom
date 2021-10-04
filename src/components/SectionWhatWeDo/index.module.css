@@ -1,5 +1,5 @@
 .wrapper {
-  @apply bg-white-dirty flex flex-col pt-12;
+  @apply bg-gray-lightest flex flex-col pt-12;
   @screen laptop {
     @apply flex-row w-full pt-24 pb-12 items-start;
   }

@@ -157,7 +157,8 @@ export default function Header() {
   const [isMenuActive, setIsMenuActive] =
     useToggle();
   const size = useWindowSize();
-  const sublinkStyle = "sub-link";
+  const sublinkStyle =
+    "sub-link text-gray-darkest";
   const isMobile = size.width < 1024;
   const shouldILockBodyScroll =
     isMobile && isMenuActive;

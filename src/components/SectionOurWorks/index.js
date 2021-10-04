@@ -18,7 +18,7 @@ import {
 function Label({ name, children }) {
   return (
     <p>
-      <span className="font-display font-black text-primary mr-2">
+      <span className="font-display font-black text-info-dark mr-2">
         {name}:
       </span>
       {children}

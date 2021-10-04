@@ -68,11 +68,11 @@
   }
 
   .big-link {
-    @apply font-display font-bold text-primary text-2xl;
+    @apply font-display font-bold text-info-dark text-2xl;
   }
 
   .sub-link {
-    @apply font-display font-medium text-gray-600 text-base;
+    @apply font-display font-medium text-gray-dark text-base;
   }
 
   .button-text {
@@ -101,15 +101,6 @@
   .pageLead {
     @apply grid relative z-base mb-10;
 
-    &::before {
-      @apply w-1/2 h-14 -bottom-14 laptop:h-24 laptop:-bottom-20 absolute left-mobile laptop:left-wrapper;
-      background-image: url("../svgs/rip-friendly.svg");
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      content: "";
-    }
-
     @screen laptop {
       @apply rounded-2xl;
       &::after {
@@ -134,8 +125,8 @@
     grid-area: 1 / 1 / span 4 / span 4;
 
     @screen laptop {
-      @apply rounded-xl shadow-lead;
-      height: 70vh;
+      @apply rounded-xl;
+      height: 80vh;
       transition: height 0.5s;
     }
   }

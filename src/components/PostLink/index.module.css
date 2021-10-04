@@ -11,7 +11,7 @@
 }
 
 .dateField {
-  @apply text-sm font-medium font-body mr-auto text-gray-400;
+  @apply text-sm font-medium font-body mr-auto text-gray;
 }
 
 .featureImage {

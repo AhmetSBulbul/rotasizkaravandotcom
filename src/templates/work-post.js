@@ -33,7 +33,7 @@ export default function WorkPostTemplate({
         </div>
       </div>
       <div className="flex flex-col mt-4 px-4 gap-y-4">
-        <span className="font-body text-gray-500 text-left">
+        <span className="font-body text-gray text-left">
           {post.frontmatter.date}
         </span>
         <div className="flex flex-wrap space-x-4 justify-center">

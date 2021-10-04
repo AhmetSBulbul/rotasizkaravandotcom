@@ -1,5 +1,5 @@
 .footerSection {
-  @apply w-full bg-white-not px-mobile py-12 mt-14 text-white;
+  @apply w-full bg-gray-darkest px-mobile py-12 mt-14 text-white;
   @screen laptop {
     @apply my-8;
   }

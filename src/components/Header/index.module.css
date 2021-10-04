@@ -45,7 +45,7 @@
 .menu {
   --mobile-inner-height: 100vh;
   height: var(--mobile-inner-height);
-  @apply fixed top-0 left-0 right-0 bottom-0 bg-primary w-screen flex flex-col z-sky pt-24 pb-12 px-mobile text-right transform translate-x-full transition-transform;
+  @apply fixed top-0 left-0 right-0 bottom-0 bg-cta-dark w-screen flex flex-col z-sky pt-24 pb-12 px-mobile text-right transform translate-x-full transition-transform;
   @screen laptop {
     @apply static w-auto h-auto flex-row items-center bg-transparent p-0 transform translate-x-0;
   }
@@ -71,7 +71,7 @@
 }
 
 .navItem {
-  @apply z-sky-1 h-full w-full border-2 border-white flex flex-col p-mobile justify-items-end justify-end transition-opacity bg-secondary bg-opacity-0 hover:bg-opacity-25;
+  @apply z-sky-1 h-full w-full border-2 border-white flex flex-col p-mobile justify-items-end justify-end transition-opacity bg-brand bg-opacity-0 hover:bg-opacity-25;
   @screen laptop {
     @apply mr-mobile border-none h-auto w-auto inline-block my-0 p-0;
   }
@@ -107,9 +107,5 @@
   @apply hidden;
   @screen laptop {
     @apply flex flex-row w-full justify-end items-center h-8 relative;
-    &::before {
-      @apply bg-primary-light w-1/2 h-full absolute left-wrapper shadow-inner;
-      content: "";
-    }
   }
 }
