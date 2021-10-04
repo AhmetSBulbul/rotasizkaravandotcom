@@ -16,7 +16,7 @@ const PhotoGalleryPage = ({ data }) => {
       <div className="pageLead">
         <GalleryFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
-          <h1>Fotoğraf Galerisi</h1>
+          <h1>Fotoğraf Albümü</h1>
         </div>
       </div>
 
@@ -25,7 +25,7 @@ const PhotoGalleryPage = ({ data }) => {
           const image = getImage(node);
           return (
             <GatsbyImage
-              className="rounded-sm my-2 block"
+              className="rounded-xl my-4 block"
               key={node.id}
               alt={node.name}
               image={image}
@@ -43,6 +43,7 @@ export const pageQuery = graphql`
       filter: {
         absolutePath: { regex: "//photos//" }
       }
+      limit: 16
     ) {
       edges {
         node {

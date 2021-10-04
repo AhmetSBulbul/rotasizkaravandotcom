@@ -174,12 +174,7 @@ export default function Header() {
           sublinkStyle,
         ])}
       >
-        <div className="ml-4">Kurumsal</div>
-        <div className="ml-4">İletişim</div>
-        <div className="ml-4">
-          Kullanıcı Sözleşmesi
-        </div>
-        <div className="mx-4">TR</div>
+        <h5 className="mr-6 text-base">TR</h5>
       </div>
       <div className={styles.mainHeader}>
         <Link

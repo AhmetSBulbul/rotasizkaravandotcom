@@ -45,7 +45,7 @@
 .menu {
   --mobile-inner-height: 100vh;
   height: var(--mobile-inner-height);
-  @apply fixed top-0 left-0 right-0 bottom-0 bg-cta-dark w-screen flex flex-col z-sky pt-24 pb-12 px-mobile text-right transform translate-x-full transition-transform;
+  @apply fixed top-0 left-0 right-0 bottom-0 bg-black w-screen flex flex-col z-sky pt-24 pb-12 px-mobile text-right transform translate-x-full transition-transform;
   @screen laptop {
     @apply static w-auto h-auto flex-row items-center bg-transparent p-0 transform translate-x-0;
   }

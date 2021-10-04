@@ -1,8 +1,15 @@
 .gallery {
-  @apply mx-auto;
-  width: 90%;
-  columns: 5 200px;
+  @apply px-wrapper;
+  width: 100%;
+  columns: 2;
   column-fill: balance;
 
-  column-gap: 1.5rem;
+  column-gap: 1rem;
+  @screen tablet {
+    columns: 3;
+  }
+
+  @screen laptop {
+    columns: 4;
+  }
 }

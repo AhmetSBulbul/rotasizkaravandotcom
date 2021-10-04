@@ -4,9 +4,9 @@ import { AboutUsFigure } from "../../components/figures";
 
 const SectionTemplate = ({ children }) => {
   return (
-    <div className="grid items-center grid-cols-1 laptop:grid-cols-2 mb-24 gap-y-10 laptop:gap-y-32 gap-x-10 laptop:gap-x-24">
+    <div className="grid items-center px-wrapper bg-gray-lightest rounded-md py-8 grid-cols-1 laptop:grid-cols-2 mb-24 gap-y-10 laptop:gap-y-32 gap-x-10 laptop:gap-x-24">
       <div>{children}</div>
-      <div className="w-full h-full bg-cta-dark py-48"></div>
+      <div className="w-full h-full bg-gray-darkest py-48"></div>
     </div>
   );
 };
@@ -20,13 +20,13 @@ const AboutPage = () => {
           <h1>Hakkımızda</h1>
         </div>
       </div>
-      <div className="w-full px-wrapper py-14 bg-gray-lightest rounded-md">
+      <div className="w-full py-8">
         <SectionTemplate>
-          <h3>Biz Kimiz?</h3>
-          <h2>
+          <h2>Biz Kimiz?</h2>
+          <h3>
             Hayalinizdeki Karavana Bugün Kavuşmak
             İstemez misiniz?
-          </h2>
+          </h3>
           <p>
             Rotasız Karavan olarak, istek ve
             ihtiyaçlarınıza göre, hep hayalini

@@ -58,16 +58,15 @@
 - [x] Footer
 - [x] Button Comp
 - [x] See More Link
-- [ ] Better Mobile Image Sizes for Statics
+- [x] Better Mobile Image Sizes for Statics
 - [ ] Work List
 - [x] Mobile NavItem BackgroundImages
 - [ ] Content
-- [ ] What we do section image size
+- [x] All image sizes
 - [ ] Blog posts tags
 - [ ] terms of use page
 - [ ] Blog search feature
 - [ ] Contact, Faqs pages.
-- [ ] Ios svg bottom line problem(PageLead before rip svg)
 - [ ] Social Media Cards
 - [x] Re-Factor Navigation Menu
 - [ ] Navigation animation
@@ -75,7 +74,7 @@
 - [ ] Our works page filter
 - [ ] Header top hover animation
 - [ ] Backdrop filter fallback (use @supports)
-- [ ] About Us Page 
+- [x] About Us Page 
 - [ ] SEO
 
 ## 🐞 BUGS
