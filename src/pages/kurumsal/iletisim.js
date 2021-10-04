@@ -11,6 +11,7 @@ const ContactPage = () => {
           <h1>İletişim</h1>
         </div>
       </div>
+      <div className="my-4 bg-gray-darkest h-96 rounded-xl w-full block" />
     </>
   );
 };

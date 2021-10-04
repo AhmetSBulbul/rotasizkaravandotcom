@@ -1,5 +1,5 @@
 .container {
-  @apply flex flex-col w-full mt-12 rounded-sm shadow-card;
+  @apply flex flex-col w-full mt-12 rounded-xl bg-white shadow-cardSm overflow-hidden;
 }
 
 .body {

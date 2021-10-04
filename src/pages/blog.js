@@ -27,7 +27,7 @@ const BlogPage = ({
           <h1>Blog</h1>
         </div>
       </div>
-      <div className="min-h-screen pt-28 px-4">
+      <div className="grid grid-cols-1 laptop:grid-cols-3 laptop:gap-x-8 px-mobile laptop:px-wrapper">
         {Posts}
       </div>
     </>
