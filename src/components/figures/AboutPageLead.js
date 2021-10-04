@@ -9,10 +9,10 @@ export default function FigureAboutUs({
     <StaticImage
       src="../../images/compass.jpg"
       alt=""
-      layout="fullWidth"
-      breakpoints={[640, 768, 1024, 1280, 1536]}
+      layout="constrained"
       objectFit="cover"
       objectPosition="center"
+      width={1536}
       placeholder="blurred"
       className={className}
     />

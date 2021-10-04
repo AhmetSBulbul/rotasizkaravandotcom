@@ -40,6 +40,7 @@ function SectionRotasizGallery({ className }) {
                     childImageSharp {
                       gatsbyImageData(
                         layout: CONSTRAINED
+                        width: 748
                       )
                     }
                   }

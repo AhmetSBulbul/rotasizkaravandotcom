@@ -12,6 +12,8 @@ export default function FigureWorks({
       layout="constrained"
       objectFit="cover"
       objectPosition="center"
+      width={1536}
+      placeholder="blurred"
       className={className}
     />
   );

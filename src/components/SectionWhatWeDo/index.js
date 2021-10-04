@@ -42,6 +42,7 @@ const SectionWhatWeDo = ({ className }) => {
         alt="karavan kamp"
         placeholder="blurred"
         layout="constrained"
+        width={1280}
         className={styles.image}
       />
     </div>

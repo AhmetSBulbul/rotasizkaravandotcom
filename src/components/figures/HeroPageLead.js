@@ -9,10 +9,10 @@ export default function FigureHero({
     <StaticImage
       src="../../backgrounds/winter-road.jpg"
       alt=""
-      layout="constrained"
+      layout="fullWidth"
+      breakpoints={[640, 768, 1024, 1280, 1536]}
       objectFit="cover"
       objectPosition="center"
-      width={1536}
       placeholder="blurred"
       className={className}
     />

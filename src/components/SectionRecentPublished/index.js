@@ -41,7 +41,10 @@ export default function SectionRecentPublished({
                   excerpt
                   featureImage {
                     childImageSharp {
-                      gatsbyImageData(height: 300)
+                      gatsbyImageData(
+                        layout: CONSTRAINED
+                        width: 748
+                      )
                     }
                   }
                 }
