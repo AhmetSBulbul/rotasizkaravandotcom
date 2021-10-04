@@ -13,7 +13,7 @@
   h4,
   h5 {
     @apply font-display;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   @supports (font-variation-settings: normal) {
@@ -23,7 +23,7 @@
     h4,
     h5 {
       font-family: "Maven ProVariable";
-      font-variation-settings: "wght" 900;
+      font-variation-settings: "wght" 700;
     }
   }
 
@@ -64,7 +64,7 @@
 
 @layer components {
   .link {
-    @apply font-display font-bold text-secondary text-xl;
+    @apply font-display font-semibold text-secondary text-xl;
   }
 
   .big-link {
@@ -84,11 +84,18 @@
   }
 
   .big-title {
-    @apply font-display font-black text-3xl tablet:text-4xl;
+    @apply font-display font-extrabold text-3xl tablet:text-4xl;
   }
 
   .sub-title {
     @apply font-display font-bold text-secondary text-xl;
+  }
+
+  @supports (font-variation-settings: normal) {
+    .link {
+      font-family: "Maven ProVariable";
+      font-variation-settings: "wght" 700;
+    }
   }
 
   .pageLead {

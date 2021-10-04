@@ -46,7 +46,7 @@ const MenuBtn = ({ ...props }) => {
 };
 
 const styleLink =
-  "link text-white text-xl laptop:text-lg";
+  "link text-white text-xl antialised laptop:text-lg";
 
 const NavItem = ({
   children,
