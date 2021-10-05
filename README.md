@@ -79,6 +79,7 @@
 - [ ] Float contact button
 - [ ] Our services page
 - [ ] Better queries
+- [ ] Custom Gatsby Image component for gallery images.(RotasizImage)
 
 ## 🐞 BUGS
 

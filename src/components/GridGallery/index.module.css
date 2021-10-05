@@ -1,0 +1,15 @@
+.galleryWrapper {
+  @apply grid grid-flow-row grid-cols-3 grid-rows-3 gap-4;
+}
+
+.gridGalleryItem {
+  &:first-child {
+    @apply row-span-2 col-span-2;
+  }
+}
+
+.gridGalleryEven {
+  &:last-child {
+    @apply row-span-1 col-span-1;
+  }
+}

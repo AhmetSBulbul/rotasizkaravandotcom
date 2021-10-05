@@ -4,11 +4,8 @@ import { graphql } from "gatsby";
 
 import { GalleryFigure } from "../../components/figures";
 
-import {
-  GatsbyImage,
-  getImage,
-} from "gatsby-plugin-image";
 import * as styles from "./gallery.module.css";
+import RotasizImage from "../../components/RotasizImage";
 
 const PhotoGalleryPage = ({ data }) => {
   return (
@@ -22,13 +19,12 @@ const PhotoGalleryPage = ({ data }) => {
 
       <div className={styles.gallery}>
         {data.allFile.edges.map(({ node }) => {
-          const image = getImage(node);
           return (
-            <GatsbyImage
-              className="rounded-xl my-4 block"
+            <RotasizImage
+              className="my-4 block"
               key={node.id}
               alt={node.name}
-              image={image}
+              imgData={node}
             />
           );
         })}

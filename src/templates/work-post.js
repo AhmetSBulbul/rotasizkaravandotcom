@@ -4,6 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import * as styles from "./work.module.css";
 import { Pages } from "../constants";
 import ThemeButton from "../components/ThemeButton";
+import RotasizImage from "../components/RotasizImage";
 import {
   LeftArrow,
   RightArrow,
@@ -54,13 +55,12 @@ export default function WorkPostTemplate({
           {post.frontmatter.gallery.map(
             ({ childImg }, index) => {
               return (
-                <GatsbyImage
+                <RotasizImage
                   className="block my-4"
-                  image={
+                  imgData={
                     post.frontmatter.gallery[
                       index
-                    ].childImageSharp
-                      .gatsbyImageData
+                    ]
                   }
                   alt={post.frontmatter.title}
                   key={
