@@ -1,0 +1,6 @@
+.sidebar {
+  @apply flex flex-row justify-between;
+  @screen laptop {
+    @apply flex-col justify-start;
+  }
+}
