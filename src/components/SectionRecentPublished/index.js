@@ -77,7 +77,7 @@ export default function SectionRecentPublished({
             className="big-link text-black mt-16 ml-auto transition-opacity hover:opacity-60"
           >
             Blog{" "}
-            <RightArrow className="inline-block" />
+            <RightArrow className="inline-block text-brand" />
           </Link>
         </div>
       )}

@@ -2,7 +2,8 @@ import React from "react";
 import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import cn from "classnames";
-import ThemeButton from "../ThemeButton";
+
+import { Theme as ThemeButton } from "../buttons";
 import { Pages } from "../../constants";
 
 const SectionWhatWeDo = ({ className }) => {
@@ -28,11 +29,7 @@ const SectionWhatWeDo = ({ className }) => {
           ustalarımızla, gerçekleştirme ve teslim
           sonrası destek ile yanınızda olalım.
         </p>
-        <ThemeButton
-          to={Pages.hakkimizda}
-          secondary
-          className="ml-auto"
-        >
+        <ThemeButton to={Pages.hakkimizda}>
           Hakkimizda
         </ThemeButton>
       </div>

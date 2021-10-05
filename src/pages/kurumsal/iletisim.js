@@ -1,6 +1,9 @@
 import React from "react";
 
 import { AboutUsFigure } from "../../components/figures";
+import * as Icon from "../../components/icons/solid";
+import * as Button from "../../components/buttons";
+import { Pages } from "../../constants";
 
 const ContactPage = () => {
   return (
@@ -11,7 +14,32 @@ const ContactPage = () => {
           <h1>İletişim</h1>
         </div>
       </div>
-      <div className="my-4 bg-gray-darkest h-96 rounded-xl w-full block" />
+      <div className="p-14 space-y-4 flex flex-col mr-auto items-baseline">
+        <Button.Theme>Button</Button.Theme>
+        <Button.Theme to={Pages.blog}>
+          Link
+        </Button.Theme>
+        <Button.Icon>
+          <Icon.Call />
+        </Button.Icon>
+        <Button.Icon to={Pages.hakkimizda}>
+          <Icon.Question />
+        </Button.Icon>
+        <Button.WithIcon>
+          <Icon.Magnifier className="mr-2" />{" "}
+          Button with icon
+        </Button.WithIcon>
+        <Button.WithIcon to={Pages.islerimiz}>
+          <Icon.Call className="mr-3" />
+          Link with icon
+        </Button.WithIcon>
+        <Button.ContinueTo to={Pages.contactUs}>
+          Link Continue
+        </Button.ContinueTo>
+        <Button.ContinueTo>
+          Button Continue
+        </Button.ContinueTo>
+      </div>
     </>
   );
 };

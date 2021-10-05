@@ -56,10 +56,7 @@ const SectionOurServices = ({
           ></ServiceCard>
 
           <div className={styles.dropmenu}>
-            <Question
-              fill="#fff"
-              className="text-2xl"
-            />
+            <Question className="text-2xl" />
             <h5 className={styles.cardTitle}>
               Sık Sorulan Sorular
             </h5>

@@ -1,0 +1,28 @@
+.baseBtn {
+  @apply py-2 transition-colors inline-block font-display font-bold text-lg;
+}
+
+.themeBtn {
+  @apply px-4 border-2 border-brand text-brand hover:bg-brand hover:text-white hover:border-white;
+}
+
+.iconBtn {
+  @apply p-4 text-black rounded-full inline-block transition-transform transform hover:rotate-12 hover:-translate-y-1;
+  svg {
+    @apply text-2xl inline-block;
+  }
+}
+
+.withIconBtn {
+  @apply px-4 border-2 border-black text-black flex justify-center items-center hover:bg-cta-dark hover:text-white hover:border-cta-dark;
+  svg {
+    @apply inline-block text-xl;
+  }
+}
+
+.continueToBtn {
+  @apply text-black font-display transition-transform font-bold text-xl hover:opacity-75 transform hover:translate-x-2;
+  svg {
+    @apply inline-block;
+  }
+}

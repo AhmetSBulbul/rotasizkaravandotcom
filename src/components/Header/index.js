@@ -121,10 +121,7 @@ const ContactUsBtn = ({ ...props }) => {
       to={Pages.contactUs}
       className={cn([styleBtnText])}
     >
-      <Call
-        fill="#fff"
-        className="mr-2 inline-block text-lg"
-      />
+      <Call className="mr-2 inline-block text-lg" />
       Bize Ulaşın
     </FeaturedButton>
   );
