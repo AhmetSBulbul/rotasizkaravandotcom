@@ -24,7 +24,7 @@ function NormalButton({ children, ...props }) {
   );
 }
 
-export default function ButtonBase({
+export default function BaseButton({
   children,
   className,
   ...props

@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonBase from "./Base";
+import BaseButton from "./Base";
 import { continueToBtn as style } from "./index.module.css";
 import { RightArrow } from "../icons/solid";
 import cn from "classnames";
@@ -9,12 +9,12 @@ const ButtonContinueTo = ({
   className,
   ...props
 }) => (
-  <ButtonBase
+  <BaseButton
     className={cn([style, className])}
     {...props}
   >
     {children} <RightArrow />
-  </ButtonBase>
+  </BaseButton>
 );
 
 export default ButtonContinueTo;

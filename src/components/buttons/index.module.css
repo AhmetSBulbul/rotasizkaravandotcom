@@ -1,5 +1,5 @@
 .baseBtn {
-  @apply py-2 transition-colors inline-block font-display font-bold text-lg;
+  @apply py-2 transition-colors inline-block font-display font-bold text-lg whitespace-nowrap;
 }
 
 .themeBtn {

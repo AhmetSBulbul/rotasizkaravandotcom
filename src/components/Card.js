@@ -3,7 +3,7 @@ import cn from "classnames";
 
 const Card = ({ children, className }) => {
   const cardBaseStyle =
-    "bg-white shadow-lg rounded-md";
+    "rounded-md h-full w-full";
   return (
     <div
       className={cn([cardBaseStyle, className])}
