@@ -9,6 +9,7 @@ import { Pages } from "../../constants";
 import useWindowSize from "../../hooks/useWindowSize";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
 import * as Figures from "../figures";
+import FeaturedButton from "../FeaturedButton";
 
 const MenuBtn = ({ ...props }) => {
   return (
@@ -112,23 +113,20 @@ const Navigation = ({ ...props }) => {
 };
 
 const styleBtnText =
-  "button-text text-white text-lg";
+  "button-text text-white text-lg hover:bg-brand hover:border-brand transition-colors";
 
 const ContactUsBtn = ({ ...props }) => {
   return (
-    <button
-      type="button"
-      className={cn([
-        styleBtnText,
-        styles.contactBtn,
-      ])}
+    <FeaturedButton
+      to={Pages.contactUs}
+      className={cn([styleBtnText])}
     >
       <Call
         fill="#fff"
         className="mr-2 inline-block text-lg"
       />
       Bize Ulaşın
-    </button>
+    </FeaturedButton>
   );
 };
 

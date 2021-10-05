@@ -2,7 +2,7 @@ import React from "react";
 
 import * as styles from "./index.module.css";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 
 const WorkLink = ({ post }) => (
   <div className={styles.container}>
