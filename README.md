@@ -79,11 +79,11 @@
 - [ ] Float contact button
 - [ ] Our services page
 - [ ] Better queries
-- [ ] Custom Gatsby Image component for gallery images.(RotasizImage)
+- [x] Custom Gatsby Image component for gallery images.(RotasizImage)
 
 ## 🐞 BUGS
 
-- [ ] Safari postlink component shadow.
+- [x] Safari postlink component shadow.
 - [ ] Navigation menu toggle.
 
 ## After Launch
@@ -91,7 +91,7 @@
 ### TO-DO
 
 - [ ] Readme md logo update and better documentation
-- [ ] Clean up unnecessary tailwind presets, assets and codes.
+- [x] Clean up unnecessary tailwind presets, assets and codes.
 - [ ] Performance Improvements. (On mobile devices has a reflow problem due to css vh bug )
 - [ ] Google Analytics.
 - [ ] Instagram source
