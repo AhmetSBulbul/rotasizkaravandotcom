@@ -1,13 +1,10 @@
 import React from "react";
-import Logo from "../Logo";
+import { LogoFigure } from "../figures";
 import * as styles from "./index.module.css";
 import useToggle from "../../hooks/useToggle";
 import cn from "classnames";
 import { Link } from "gatsby";
-import {
-  Close,
-  Call,
-} from "../icons/solid-icons";
+import { Close, Call } from "../icons/solid";
 import { Pages } from "../../constants";
 import useWindowSize from "../../hooks/useWindowSize";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
@@ -184,7 +181,7 @@ export default function Header() {
             isMenuActive && setIsMenuActive
           }
         >
-          <Logo />
+          <LogoFigure />
         </Link>
         <MenuBtn
           onClick={setIsMenuActive}

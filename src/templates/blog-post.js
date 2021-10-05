@@ -6,7 +6,7 @@ import ThemeButton from "../components/ThemeButton";
 import {
   LeftArrow,
   RightArrow,
-} from "../components/icons/solid-icons";
+} from "../components/icons/solid";
 
 export default function BlogPostTemplate({
   data,

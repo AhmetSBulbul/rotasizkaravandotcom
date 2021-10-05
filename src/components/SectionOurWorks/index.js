@@ -5,7 +5,7 @@ import {
   graphql,
   Link,
 } from "gatsby";
-import * as SolidIcon from "../icons/solid-icons";
+import * as SolidIcon from "../icons/solid";
 import IconButton from "../IconButton";
 import ThemeButton from "../ThemeButton";
 import cn from "classnames";

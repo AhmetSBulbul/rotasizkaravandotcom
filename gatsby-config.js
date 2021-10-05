@@ -24,7 +24,7 @@ module.exports = {
         name: `Rotasız Karavan`,
         start_url: `/`,
         lang: `tr`,
-        icon: `src/images/rotasiz-earth-white.png`,
+        icon: `src/images/brand/icon.png`,
       },
     },
     `gatsby-plugin-layout`,

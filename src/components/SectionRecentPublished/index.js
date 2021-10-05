@@ -7,7 +7,7 @@ import {
   Link,
 } from "gatsby";
 import { Pages } from "../../constants";
-import { RightArrow } from "../icons/solid-icons";
+import { RightArrow } from "../icons/solid";
 
 import PostLink from "../PostLink";
 

@@ -2,8 +2,7 @@ import React from "react";
 import * as styles from "./index.module.css";
 import cn from "classnames";
 
-import * as Icon from "../icons/colorful-icons";
-import { Question } from "../icons/solid-icons";
+import { Question } from "../icons/solid";
 import { Link } from "gatsby";
 import { Pages } from "../../constants";
 
@@ -42,27 +41,19 @@ const SectionOurServices = ({
           <ServiceCard
             title="Karavan Danışmanlığı"
             to={Pages.danisma}
-          >
-            <Icon.Brainstorming />
-          </ServiceCard>
+          ></ServiceCard>
           <ServiceCard
             title="Planlama & Tasarım"
             to={Pages.planlama}
-          >
-            <Icon.Planning />
-          </ServiceCard>
+          ></ServiceCard>
           <ServiceCard
             title="Karavan İmalatı"
             to={Pages.imalat}
-          >
-            <Icon.Toolbox />
-          </ServiceCard>
+          ></ServiceCard>
           <ServiceCard
             title="Üretim Sonrası Destek"
             to={Pages.destek}
-          >
-            <Icon.Support />
-          </ServiceCard>
+          ></ServiceCard>
 
           <div className={styles.dropmenu}>
             <Question

@@ -2,11 +2,7 @@ import React from "react";
 import * as styles from "./index.module.css";
 import { Link } from "gatsby";
 import { Pages } from "../../constants";
-import {
-  Call,
-  Pin,
-  Mail,
-} from "../icons/solid-icons";
+import { Call, Pin, Mail } from "../icons/solid";
 
 const NavItem = ({ children, ...props }) => {
   return (

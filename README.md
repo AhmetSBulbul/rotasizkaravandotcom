@@ -89,6 +89,7 @@
 
 ### TO-DO
 
+- [ ] Readme md logo update and better documentation
 - [ ] Clean up unnecessary tailwind presets, assets and codes.
 - [ ] Performance Improvements. (On mobile devices has a reflow problem due to css vh bug )
 - [ ] Google Analytics.

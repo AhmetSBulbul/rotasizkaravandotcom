@@ -1,6 +1,7 @@
-export { default as HeroFigure } from "./HeroPageLead";
-export { default as AboutUsFigure } from "./AboutPageLead";
-export { default as GalleryFigure } from "./GalleryPageLead";
-export { default as WorksFigure } from "./WorksPageLead";
-export { default as ServicesFigure } from "./ServicesPageLead";
-export { default as BlogFigure } from "./BlogPageLead";
+export { default as HeroFigure } from "./LandingHero";
+export { default as AboutUsFigure } from "./CorporateHero";
+export { default as GalleryFigure } from "./GalleryHero";
+export { default as WorksFigure } from "./WorksHero";
+export { default as ServicesFigure } from "./ServicesHero";
+export { default as BlogFigure } from "./BlogHero";
+export { default as LogoFigure } from "./Logo";

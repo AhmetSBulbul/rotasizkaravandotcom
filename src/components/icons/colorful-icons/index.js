@@ -1,8 +1,0 @@
-export { default as Blueprint } from './Blueprint'
-export { default as Brainstorming } from './Brainstorming'
-export { default as Call } from './Call'
-export { default as Planning } from './Planning'
-export { default as Support } from './Support'
-export { default as Toolbox } from './Toolbox'
-export { default as Tools } from './Tools'
-export { default as Whatsapp } from './Whatsapp'
