@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Pages } from "../constants";
-import ThemeButton from "../components/ThemeButton";
+import { WithIcon as ButtonWithIcon } from "../components/buttons";
 import {
   LeftArrow,
   RightArrow,
@@ -43,9 +43,7 @@ export default function BlogPostTemplate({
           }}
         />
         <div className="flex flex-row justify-between mt-12">
-          <ThemeButton
-            secondary
-            className="flex flex-row items-center"
+          <ButtonWithIcon
             to={
               prev != null
                 ? prev.frontmatter.slug
@@ -56,10 +54,8 @@ export default function BlogPostTemplate({
             {prev != null
               ? prev.frontmatter.title
               : "Blog"}
-          </ThemeButton>
-          <ThemeButton
-            secondary
-            className="flex flex-row items-center"
+          </ButtonWithIcon>
+          <ButtonWithIcon
             to={
               next != null
                 ? next.frontmatter.slug
@@ -70,7 +66,7 @@ export default function BlogPostTemplate({
               ? next.frontmatter.title
               : "Blog"}
             <RightArrow className="ml-4" />
-          </ThemeButton>
+          </ButtonWithIcon>
         </div>
       </div>
     </>

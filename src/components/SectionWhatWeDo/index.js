@@ -3,7 +3,7 @@ import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import cn from "classnames";
 
-import { Theme as ThemeButton } from "../buttons";
+import { Theme as ButtonTheme } from "../buttons";
 import { Pages } from "../../constants";
 
 const SectionWhatWeDo = ({ className }) => {
@@ -29,9 +29,12 @@ const SectionWhatWeDo = ({ className }) => {
           ustalarımızla, gerçekleştirme ve teslim
           sonrası destek ile yanınızda olalım.
         </p>
-        <ThemeButton to={Pages.hakkimizda}>
+        <ButtonTheme
+          className="ml-auto"
+          to={Pages.hakkimizda}
+        >
           Hakkimizda
-        </ThemeButton>
+        </ButtonTheme>
       </div>
 
       <StaticImage

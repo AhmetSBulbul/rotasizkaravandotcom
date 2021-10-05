@@ -6,8 +6,11 @@ import {
   Link,
 } from "gatsby";
 import * as SolidIcon from "../icons/solid";
-import IconButton from "../IconButton";
-import ThemeButton from "../ThemeButton";
+import {
+  Icon as IconBtn,
+  Theme as ThemeBtn,
+} from "../buttons";
+
 import cn from "classnames";
 
 import {
@@ -105,12 +108,12 @@ function Cover({ currIndex }) {
           uygun karavan için fikirler
           edinebilirsiniz.
         </p>
-        <ThemeButton
+        <ThemeBtn
           to="/islerimiz"
           className="ml-auto mt-4"
         >
           İşlerimizi İnceleyin
-        </ThemeButton>
+        </ThemeBtn>
       </div>
     </div>
   );
@@ -212,12 +215,12 @@ export default function SectionOurWorks({
         <Posts currIndex={currIndex} />
       </div>
       <div className={styles.controllerWrap}>
-        <IconButton onClick={prevIndex}>
+        <IconBtn onClick={prevIndex}>
           <SolidIcon.LeftArrow />
-        </IconButton>
-        <IconButton onClick={nextIndex}>
+        </IconBtn>
+        <IconBtn onClick={nextIndex}>
           <SolidIcon.RightArrow />
-        </IconButton>
+        </IconBtn>
       </div>
     </div>
   );

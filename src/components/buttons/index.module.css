@@ -3,7 +3,7 @@
 }
 
 .themeBtn {
-  @apply px-4 border-2 border-brand text-brand hover:bg-brand hover:text-white hover:border-white;
+  @apply px-4 border-2 border-brand text-brand hover:bg-brand hover:text-white;
 }
 
 .iconBtn {

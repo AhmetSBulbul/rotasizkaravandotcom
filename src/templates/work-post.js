@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import * as styles from "./work.module.css";
 import { Pages } from "../constants";
-import ThemeButton from "../components/ThemeButton";
+import { WithIcon as ButtonWithIcon } from "../components/buttons";
 import RotasizImage from "../components/RotasizImage";
 import {
   LeftArrow,
@@ -74,9 +74,7 @@ export default function WorkPostTemplate({
           )}
         </div>
         <div className="flex flex-row justify-between space-x-8 mt-12">
-          <ThemeButton
-            secondary
-            className="flex flex-row items-center"
+          <ButtonWithIcon
             to={
               prev != null
                 ? prev.frontmatter.slug
@@ -87,10 +85,8 @@ export default function WorkPostTemplate({
             {prev != null
               ? prev.frontmatter.title
               : "İşlerimiz"}
-          </ThemeButton>
-          <ThemeButton
-            secondary
-            className="flex flex-row items-center"
+          </ButtonWithIcon>
+          <ButtonWithIcon
             to={
               next != null
                 ? next.frontmatter.slug
@@ -101,7 +97,7 @@ export default function WorkPostTemplate({
               ? next.frontmatter.title
               : "İşlerimiz"}
             <RightArrow className="ml-4" />
-          </ThemeButton>
+          </ButtonWithIcon>
         </div>
       </div>
     </>
