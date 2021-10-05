@@ -3,11 +3,7 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import * as styles from "./index.module.css";
 import cn from "classnames";
-import { Pages } from "../../constants";
-import RotasizImage from "../RotasizImage";
 import GridGallery from "../GridGallery/GridGallery";
-
-import ThemeButton from "../ThemeButton";
 
 function SectionRotasizGallery({ className }) {
   return (
