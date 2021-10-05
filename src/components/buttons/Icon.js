@@ -1,5 +1,5 @@
 import React from "react";
-import BaseButton from "../BaseButton";
+import BaseButton from "./Base";
 import cn from "classnames";
 import { iconBtn as style } from "./index.module.css";
 

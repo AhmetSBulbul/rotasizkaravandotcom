@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonBase from "./Base";
+import BaseButton from "./Base";
 import { withIconBtn as style } from "./index.module.css";
 import cn from "classnames";
 
@@ -8,12 +8,12 @@ const ButtonWithIcon = ({
   className,
   ...props
 }) => (
-  <ButtonBase
+  <BaseButton
     className={cn([style, className])}
     {...props}
   >
     {children}
-  </ButtonBase>
+  </BaseButton>
 );
 
 export default ButtonWithIcon;
