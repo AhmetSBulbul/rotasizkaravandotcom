@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import { WorksFigure } from "../../components/figures";
+import WorkLink from "../../components/WorkLink";
 
 const WorksPage = ({
   data: {
@@ -13,12 +14,10 @@ const WorksPage = ({
       (edge) => !!edge.node.frontmatter.date
     )
     .map((edge) => (
-      <h3
-        className="big-title"
+      <WorkLink
         key={edge.node.id}
-      >
-        {edge.node.frontmatter.title}
-      </h3>
+        post={edge.node}
+      />
     ));
   return (
     <>
@@ -28,7 +27,7 @@ const WorksPage = ({
           <h1>İşlerimiz</h1>
         </div>
       </div>
-      <div className="flex flex-col my-8 px-mobile laptop:px-wrapper">
+      <div className="grid grid-cols-1 laptop:grid-cols-3 laptop:gap-x-8 px-mobile laptop:px-wrapper">
         {Works}
       </div>
     </>
@@ -36,14 +35,14 @@ const WorksPage = ({
 };
 
 export const pageQuery = graphql`
-  query GetWorksAll {
+  query WorksPageQuery {
     allMarkdownRemark(
       filter: {
         fileAbsolutePath: { regex: "//works//" }
       }
       sort: {
+        fields: frontmatter___date
         order: DESC
-        fields: [frontmatter___date]
       }
     ) {
       edges {
@@ -52,21 +51,12 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "DD.MM.YYYY")
+            excerpt
             slug
             title
-            excerpt
-            make
-            model
-            year
-            volume
             featureImage {
               childImageSharp {
-                id
-                gatsbyImageData(
-                  layout: CONSTRAINED
-                  width: 800
-                  height: 600
-                )
+                gatsbyImageData
               }
             }
           }
