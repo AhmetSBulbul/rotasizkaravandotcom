@@ -142,12 +142,19 @@ const Menu = ({ ...props }) => {
   );
 };
 
+const SubLink = ({ children, ...props }) => (
+  <Link
+    to={props.to}
+    className="font-display font-semibold mx-2"
+  >
+    {children}
+  </Link>
+);
+
 export default function Header() {
   const [isMenuActive, setIsMenuActive] =
     useToggle();
   const size = useWindowSize();
-  const sublinkStyle =
-    "sub-link text-gray-darkest";
   const isMobile = size.width < 1024;
   const shouldILockBodyScroll =
     isMobile && isMenuActive;
@@ -157,13 +164,15 @@ export default function Header() {
 
   return (
     <header className="relative">
-      <div
-        className={cn([
-          styles.headerTop,
-          sublinkStyle,
-        ])}
-      >
-        <h5 className="mr-6 text-base">TR</h5>
+      <div className={cn([styles.headerTop])}>
+        <SubLink to={Pages.iletisim}>
+          İletişim
+        </SubLink>
+        <SubLink to={Pages.sss}>S.S.S</SubLink>
+
+        <h5 className="mr-6 ml-2 text-base">
+          TR
+        </h5>
       </div>
       <div className={styles.mainHeader}>
         <Link

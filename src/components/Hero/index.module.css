@@ -20,7 +20,7 @@
   }
 
   @screen laptop {
-    @apply px-11 z-base-step-1 w-auto pt-12 absolute bottom-0 right-wrapper bg-opacity-60 backdrop-filter backdrop-blur;
+    @apply px-11 z-base-step-1 w-auto pt-12 absolute bottom-0 right-14 bg-opacity-60 backdrop-filter backdrop-blur;
     &::after {
       @apply absolute z-base-step-1 w-full bg-brand right-0 h-full top-full bg-opacity-60;
       content: "";
