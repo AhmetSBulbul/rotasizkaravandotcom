@@ -4,14 +4,7 @@
     transform 0.17s ease-in-out;
 }
 .cardBody {
-  @apply h-full w-full relative pb-12 transition-transform;
-}
-
-.acardBody {
-  @apply flex flex-col px-4 py-wrapper justify-start rounded-md h-full w-full relative pb-12 transition-transform;
-  p {
-    @apply my-auto;
-  }
+  @apply h-full w-full relative pb-12 mt-12 transition-transform;
 }
 
 .cardWrap {

@@ -1,19 +1,11 @@
-.container {
-  @apply flex flex-col w-full mt-12 rounded-xl bg-white shadow-cardSm overflow-hidden;
-}
-
 .body {
-  @apply flex flex-col px-4;
+  @apply flex flex-col;
 
   h2 {
-    @apply font-display text-2xl text-black font-bold my-4 laptop:text-lg;
+    @apply font-display text-2xl text-black font-bold laptop:text-lg;
   }
 }
 
 .dateField {
   @apply text-sm font-medium font-body mr-auto text-gray;
-}
-
-.featureImage {
-  @apply w-full h-full;
 }

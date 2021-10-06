@@ -15,6 +15,7 @@ const PostCard = ({
   imageData,
   imageAlt = "",
   className,
+  ...props
 }) => {
   const img = getImage(imageData);
   return (
@@ -24,6 +25,7 @@ const PostCard = ({
         alt={imageAlt}
         objectFit="cover"
         className={postCardImage}
+        {...props}
       />
       <div className={postCardBody}>
         {children}
