@@ -22,6 +22,7 @@ const PostCard = ({
       <GatsbyImage
         image={img}
         alt={imageAlt}
+        objectFit="cover"
         className={postCardImage}
       />
       <div className={postCardBody}>

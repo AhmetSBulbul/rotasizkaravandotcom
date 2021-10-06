@@ -32,10 +32,13 @@
 }
 
 .postCard {
+  @apply flex flex-col w-full rounded-xl bg-white shadow-cardSm overflow-hidden;
 }
 
 .postCardBody {
+  @apply px-4 py-4;
 }
 
 .postCardImage {
+  @apply w-full h-full;
 }
