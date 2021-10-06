@@ -91,6 +91,10 @@
     @apply font-display font-bold text-secondary text-xl;
   }
 
+  .section-wrap {
+    @apply px-mobile laptop:px-wrapper my-8 py-8;
+  }
+
   @supports (font-variation-settings: normal) {
     .link {
       font-family: "Maven ProVariable";
