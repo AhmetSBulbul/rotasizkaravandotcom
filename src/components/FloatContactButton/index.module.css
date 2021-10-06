@@ -1,0 +1,3 @@
+.wrapper {
+  @apply fixed z-everest w-24 p-mobile rounded-l-xl justify-center items-center right-0 bottom-24 font-display font-bold bg-cta-dark text-white text-left;
+}
