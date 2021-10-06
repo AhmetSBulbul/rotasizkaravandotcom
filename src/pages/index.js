@@ -9,6 +9,8 @@ import Hero from "../components/Hero";
 import SectionOurWorks from "../components/SectionOurWorks";
 import CardLink from "../components/CardLink";
 import { Pages } from "../constants";
+import Card from "../components/Card";
+import { ContinueTo } from "../components/buttons";
 
 const IndexPage = () => {
   return (
@@ -25,42 +27,85 @@ const IndexPage = () => {
         </h2>
         <div className="grid grid-flow-row laptop:grid-flow-col laptop:gap-2 py-mobile gap-mobile mt-8">
           <CardLink to={Pages.danisma}>
-            <h3>Karavan Danismanligi</h3>
+            <h3>Karavan Danışmanlığı</h3>
             <p>
-              If any Environment Variables values
-              are changed between Deployments,
-              deduplication will always be
-              bypassed.
+              Karavan üretmeyi sevdiğimiz kadar
+              üzerine konuşmayı da seviyoruz.
+              Arayın ücretsiz danışmanlık
+              hizmetimizle sorularınızı
+              cevaplayalım.
             </p>
           </CardLink>
           <CardLink to={Pages.planlama}>
-            <h3>Planlama & Tasarim</h3>
+            <h3>Planlama & Tasarım</h3>
             <p>
-              If any Environment Variables values
-              are changed between Deployments,
-              deduplication will always be
-              bypassed.
+              Aklınızdaki karavanı sizinle
+              birlikte somutlaştıralım.
+              İhtiyaçlarınız doğrultusunda projeyi
+              planlayalım.
             </p>
           </CardLink>
           <CardLink to={Pages.imalat}>
-            <h3>Karavan Imalati</h3>
+            <h3>Karavan İmalatı</h3>
             <p>
-              If any Environment Variables values
-              are changed between Deployments,
-              deduplication will always be
-              bypassed.
+              Hayalinizdeki karavana eksiksiz bir
+              şekilde sahip olabilmeniz için bütün
+              süreci yöneterek size eşlik edelim.
             </p>
           </CardLink>
           <CardLink to={Pages.destek}>
-            <h3>Karavan Teknik Destek</h3>
+            <h3>Tamir ve Tadilat</h3>
             <p>
-              If any Environment Variables values
-              are changed between Deployments,
-              deduplication will always be
-              bypassed.
+              Karavanınız hakkındaki her problemle
+              ilgileniyoruz. Bütün tamir ve
+              tadilatlarınızı sizin için
+              halledelim.
             </p>
           </CardLink>
         </div>
+        <ContinueTo
+          className="ml-auto"
+          to={Pages.hizmetlerimiz}
+        >
+          Hizmetlerimiz
+        </ContinueTo>
+      </div>
+      <div className="flex flex-col w-full py-8 justify-center my-12 laptop:px-wrapper bg-gray-lighter">
+        <h3 className="sub-title text-right">
+          Referanslarımız
+        </h3>
+        <h2 className="big-title text-right">
+          Müşterilerimizin Yorumları
+        </h2>
+        <div className="grid grid-flow-row laptop:grid-flow-col laptop:gap-20 laptop:px-32 py-mobile gap-mobile mt-8">
+          <Card className="bg-white px-mobile py-4">
+            <p>
+              " Yapim aşamasında bizleri
+              dinliyorlar hayallerimin
+              oluşturulmasında adeta köprü
+              oldular. Sonrasında ilave
+              isteklerimizi geri çevirmediler.
+              Daha iyisi ve güzelin peşindeler. "
+            </p>
+            <h3 className="text-right mt-2 pt-2 border-t-2 border-gray-light">
+              Mete Önder
+            </h3>
+          </Card>
+          <Card className="bg-white px-mobile py-4 flex flex-col justify-end">
+            <p className="my-auto">
+              " Kaliteli iscilik yapiyorlar
+              tavsiye ederim.. karavanimizi teslim
+              aldik elinize saglik gorusmek uzere
+              "
+            </p>
+            <h3 className="text-right mt-2 pt-2 border-t-2 border-gray-light">
+              Ali Ataş
+            </h3>
+          </Card>
+        </div>
+        <ContinueTo className="ml-auto">
+          Bütün Yorumlar
+        </ContinueTo>
       </div>
       <SectionOurWorks />
 

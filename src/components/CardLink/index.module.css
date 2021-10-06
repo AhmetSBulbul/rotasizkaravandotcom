@@ -1,17 +1,17 @@
 .readMore {
-  @apply absolute left-0 right-0 bg-white bottom-0 w-full flex py-2 justify-end items-center font-display font-bold pointer-events-none transform -translate-x-full opacity-0;
+  @apply absolute left-0 right-0 bottom-0 w-full flex py-2 justify-end items-center font-display font-bold pointer-events-none transform -translate-x-full opacity-0;
   transition: opacity 0.17s ease-in-out,
     transform 0.17s ease-in-out;
 }
 .cardBody {
-  @apply flex flex-col px-8 py-wrapper justify-start relative pb-12 transition-transform;
+  @apply flex flex-col px-4 py-wrapper justify-start rounded-md h-full w-full relative pb-12 transition-transform;
   p {
     @apply my-auto;
   }
 }
 
 .cardWrap {
-  @apply antialiased rounded-md text-center laptop:text-left m-mobile;
+  @apply antialiased rounded-md text-center m-mobile;
   &:hover {
     .cardBody {
       @apply transform -translate-y-8 laptop:-translate-x-mobile;
