@@ -2,6 +2,11 @@ import React from "react";
 
 import { AboutUsFigure } from "../../components/figures";
 import { StaticImage } from "gatsby-plugin-image";
+import {
+  RotasizlarFigure,
+  RotasizlarBeach,
+  RotasizlarHarbour,
+} from "../../components/figures";
 
 const SectionTemplate = ({ children }) => {
   return (
@@ -23,7 +28,7 @@ const AboutPage = () => {
       </div>
       <div className="w-full py-8">
         <div className="flex flex-col laptop:flex-row px-wrapper justify-center">
-          <div className="flex flex-col mx-auto laptop:m-0 laptop:mr-16 laptop:w-1/2 justify-center">
+          <div className="flex flex-col mx-auto laptop:m-0 laptop:w-3/5 justify-center">
             <h3 className="big-title mb-8">
               Hayalinizdeki Karavana Bugün
               Kavuşmak İstemez misiniz?
@@ -41,32 +46,11 @@ const AboutPage = () => {
           </div>
           <div className="flex my-8 laptop:my-0 items-center justify-center laptop:-mx-4 desktop:pl-8">
             <div className="flex flex-col items-end px-3">
-              <StaticImage
-                src="../../images/map-on-road-inside.jpg"
-                alt=""
-                layout="constrained"
-                objectFit="cover"
-                height={500}
-                className="rounded-lg mb-3"
-              />
-              <StaticImage
-                src="../../images/rotasizlar.jpg"
-                alt=""
-                layout="constrained"
-                objectFit="cover"
-                height={400}
-                className="rounded-lg"
-              />
+              <RotasizlarHarbour className="rounded-lg mb-6 w-2/3 ml-auto" />
+              <RotasizlarFigure className="rounded-lg" />
             </div>
             <div className="px-3">
-              <StaticImage
-                src="../../images/coffee.jpg"
-                alt=""
-                layout="constrained"
-                objectFit="cover"
-                height={400}
-                className="rounded-lg"
-              />
+              <RotasizlarBeach className="rounded-lg" />
             </div>
           </div>
         </div>
