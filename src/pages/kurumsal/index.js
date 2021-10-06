@@ -1,21 +1,11 @@
 import React from "react";
 
 import { AboutUsFigure } from "../../components/figures";
-import { StaticImage } from "gatsby-plugin-image";
 import {
   RotasizlarFigure,
   RotasizlarBeach,
   RotasizlarHarbour,
 } from "../../components/figures";
-
-const SectionTemplate = ({ children }) => {
-  return (
-    <div className="grid items-center px-wrapper bg-gray-lightest rounded-md py-8 grid-cols-1 laptop:grid-cols-2 mb-24 gap-y-10 laptop:gap-y-32 gap-x-10 laptop:gap-x-24">
-      <div>{children}</div>
-      <div className="w-full h-full bg-gray-darkest py-48"></div>
-    </div>
-  );
-};
 
 const AboutPage = () => {
   return (
@@ -26,14 +16,14 @@ const AboutPage = () => {
           <h1>Hakkımızda</h1>
         </div>
       </div>
-      <div className="w-full py-8">
-        <div className="flex flex-col laptop:flex-row px-wrapper justify-center">
-          <div className="flex flex-col mx-auto laptop:m-0 laptop:w-3/5 justify-center">
+      <div className="w-full py-8 px-mobile laptop:px-24">
+        <div className="flex flex-col laptop:flex-row justify-center">
+          <div className="flex flex-col laptop:flex-1 laptop:mr-48 justify-center text-center laptop:text-left">
             <h3 className="big-title mb-8">
               Hayalinizdeki Karavana Bugün
               Kavuşmak İstemez misiniz?
             </h3>
-            <p>
+            <p className="text-lg">
               Rotasız Karavan olarak, istek ve
               ihtiyaçlarınıza göre, hep hayalini
               kurduğunuz o karavanı sizin için ve
@@ -44,9 +34,9 @@ const AboutPage = () => {
               çabalıyoruz.
             </p>
           </div>
-          <div className="flex my-8 laptop:my-0 items-center justify-center laptop:-mx-4 desktop:pl-8">
+          <div className="flex flex-row-reverse my-16 laptop:my-0 laptop:w-2/5 items-center justify-center laptop:-mx-4">
             <div className="flex flex-col items-end px-3">
-              <RotasizlarHarbour className="rounded-lg mb-6 w-2/3 ml-auto" />
+              <RotasizlarHarbour className="rounded-lg mb-6" />
               <RotasizlarFigure className="rounded-lg" />
             </div>
             <div className="px-3">
@@ -54,11 +44,11 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center my-16 text-center">
+        <div className="flex flex-col laptop:my-16 items-center text-center laptop:items-center laptop:mx-auto laptop:w-2/3">
           <h2 className="big-title mb-8">
             Ortak Tutku ve Hayallere Sahibiz!
           </h2>
-          <p className="laptop:mx-qtrVW">
+          <p className="laptop:text-lg">
             Rotasız Karavan, sizler ile ortak
             paylaştığımız hayaller sonucu kurulmuş
             bir işletmedir.
@@ -71,13 +61,15 @@ const AboutPage = () => {
             yardımcı oluyor.
           </p>
         </div>
-        <SectionTemplate>
-          <h3>Vizyonumuz</h3>
-          <h2>
+
+        <div className="text-center laptop:text-left">
+          <RotasizlarHarbour className="rounded-lg w-full my-16 laptop:m-4 laptop:w-auto laptop:float-left" />
+          <h2 className="big-title mb-8">
             Ürettiğimiz Her Karavan, Bizim İçin
             Bir Karavandan Fazlası...
           </h2>
-          <p>
+
+          <p className="text-lg laptop:text-left">
             Bizim için sadece birer müşteri değil
             aynı zamanda keşfedebileceğimiz yeni
             bir yer, dinleyebileceğimiz eşşiz anı
@@ -101,7 +93,7 @@ const AboutPage = () => {
             sabırsızlıkla beklediğimiz birer
             hikaye...
           </p>
-        </SectionTemplate>
+        </div>
       </div>
     </>
   );
