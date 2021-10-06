@@ -1,11 +1,11 @@
 import React from "react";
 
-import * as styles from "./index.module.css";
+import * as styles from "./linkCard.module.css";
 import cn from "classnames";
 import { Link } from "gatsby";
 import { RightArrow } from "../icons/solid";
 
-const CardLink = ({
+const LinkCard = ({
   children,
   className,
   ...props
@@ -26,4 +26,4 @@ const CardLink = ({
   );
 };
 
-export default CardLink;
+export default LinkCard;

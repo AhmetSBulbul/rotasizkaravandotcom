@@ -1,0 +1,41 @@
+.baseCard {
+  @apply rounded-md h-full w-full;
+}
+
+.contentCard {
+  @apply flex flex-col px-4 justify-start;
+  @apply rounded-md w-full h-full;
+  @apply py-4 text-center;
+
+  h3 {
+    @apply mb-4;
+  }
+
+  p {
+    @apply my-auto;
+  }
+}
+
+.reviewCard {
+  @apply flex flex-col;
+}
+
+.reviewCardBody {
+  @apply relative text-center px-8 py-8 flex-1 flex flex-col;
+  p {
+    @apply text-lg my-auto;
+  }
+}
+
+.reviewCardFooter {
+  @apply py-2 text-center;
+}
+
+.postCard {
+}
+
+.postCardBody {
+}
+
+.postCardImage {
+}

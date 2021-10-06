@@ -4,8 +4,6 @@ import { AboutUsFigure } from "../../components/figures";
 import * as Icon from "../../components/icons/solid";
 import * as Button from "../../components/buttons";
 import { Pages } from "../../constants";
-import Card from "../../components/Card";
-import { StaticImage } from "gatsby-plugin-image";
 
 const ContactPage = () => {
   return (
@@ -42,22 +40,6 @@ const ContactPage = () => {
           <Button.ContinueTo>
             Button Continue
           </Button.ContinueTo>
-        </div>
-        <div className="p-14 space-y-4 grid grid-cols-3 items-baseline bg-gray-lightest">
-          <Card>
-            <StaticImage
-              src="../../images/coffee.jpg"
-              alt=""
-              layout="constrained"
-              objectFit="cover"
-              height={600}
-              width={740}
-            />
-            <div className="p-mobile w-full h-full flex flex-col">
-              <h3>Title</h3>
-              <h2>Ufak bir yazi</h2>
-            </div>
-          </Card>
         </div>
       </div>
     </>
