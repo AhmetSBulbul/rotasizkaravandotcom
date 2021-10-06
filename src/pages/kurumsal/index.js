@@ -1,6 +1,7 @@
 import React from "react";
 
 import { AboutUsFigure } from "../../components/figures";
+import { StaticImage } from "gatsby-plugin-image";
 
 const SectionTemplate = ({ children }) => {
   return (
@@ -21,29 +22,59 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="w-full py-8">
-        <SectionTemplate>
-          <h2>Biz Kimiz?</h2>
-          <h3>
-            Hayalinizdeki Karavana Bugün Kavuşmak
-            İstemez misiniz?
-          </h3>
-          <p>
-            Rotasız Karavan olarak, istek ve
-            ihtiyaçlarınıza göre, hep hayalini
-            kurduğunuz o karavanı sizin için ve
-            size özel olarak gerçekleştirip
-            hayallerinizin yerini, ev konforunda
-            yaptığınız seyahatler ve onun güzel
-            anılarıyla doldurmak için çalışıyor,
-            çabalıyoruz.
-          </p>
-        </SectionTemplate>
-        <SectionTemplate>
-          <h3>Neden Biz?</h3>
-          <h2>
+        <div className="flex flex-col laptop:flex-row px-wrapper justify-center">
+          <div className="flex flex-col mx-auto laptop:m-0 laptop:mr-16 laptop:w-1/2 justify-center">
+            <h3 className="big-title mb-8">
+              Hayalinizdeki Karavana Bugün
+              Kavuşmak İstemez misiniz?
+            </h3>
+            <p>
+              Rotasız Karavan olarak, istek ve
+              ihtiyaçlarınıza göre, hep hayalini
+              kurduğunuz o karavanı sizin için ve
+              size özel olarak gerçekleştirip
+              hayallerinizin yerini, ev konforunda
+              yaptığınız seyahatler ve onun güzel
+              anılarıyla doldurmak için çalışıyor,
+              çabalıyoruz.
+            </p>
+          </div>
+          <div className="flex my-8 laptop:my-0 items-center justify-center laptop:-mx-4 desktop:pl-8">
+            <div className="flex flex-col items-end px-3">
+              <StaticImage
+                src="../../images/map-on-road-inside.jpg"
+                alt=""
+                layout="constrained"
+                objectFit="cover"
+                height={500}
+                className="rounded-lg mb-3"
+              />
+              <StaticImage
+                src="../../images/rotasizlar.jpg"
+                alt=""
+                layout="constrained"
+                objectFit="cover"
+                height={400}
+                className="rounded-lg"
+              />
+            </div>
+            <div className="px-3">
+              <StaticImage
+                src="../../images/coffee.jpg"
+                alt=""
+                layout="constrained"
+                objectFit="cover"
+                height={400}
+                className="rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center my-16 text-center">
+          <h2 className="big-title mb-8">
             Ortak Tutku ve Hayallere Sahibiz!
           </h2>
-          <p>
+          <p className="laptop:mx-qtrVW">
             Rotasız Karavan, sizler ile ortak
             paylaştığımız hayaller sonucu kurulmuş
             bir işletmedir.
@@ -55,7 +86,7 @@ const AboutPage = () => {
             ihtiyaçlarınızı eksiksiz anlamamıza
             yardımcı oluyor.
           </p>
-        </SectionTemplate>
+        </div>
         <SectionTemplate>
           <h3>Vizyonumuz</h3>
           <h2>
