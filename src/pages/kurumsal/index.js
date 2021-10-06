@@ -36,12 +36,17 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="flex flex-row-reverse my-16 laptop:my-0 laptop:w-2/5 items-center justify-center laptop:-mx-4">
-            <div className="flex flex-col items-end px-3">
-              <RotasizlarHarbour className="rounded-lg mb-6" />
+            <div className="flex flex-col-reverse flex-1 items-start px-3">
+              <RotasizlarHarbour className="rounded-lg mt-6 w-10/12" />
               <RotasizlarFigure className="rounded-lg" />
             </div>
-            <div className="px-3">
-              <RotasizlarBeach className="rounded-lg" />
+            <div className="flex flex-col flex-1 px-3 items-end">
+              <RotasizlarBeach className="rounded-lg mb-6 w-4/5" />
+              <StaticImage
+                src="../../images/rotasizlar-4.jpg"
+                alt=""
+                className="rounded-lg"
+              />
             </div>
           </div>
         </div>
