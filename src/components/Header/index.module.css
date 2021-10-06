@@ -73,7 +73,7 @@
 .navItem {
   @apply z-sky-1 h-full w-full border-2 border-white flex flex-col p-mobile justify-items-end justify-end transition-opacity bg-brand bg-opacity-0 hover:bg-opacity-25;
   @screen laptop {
-    @apply mr-mobile border-none h-auto w-auto inline-block my-0 p-0;
+    @apply mr-2 border-none h-auto w-auto inline-block my-0 px-2 py-1 rounded-md;
   }
 }
 
