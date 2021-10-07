@@ -1,10 +1,12 @@
 import React from "react";
 import * as styles from "./index.module.css";
+import { Pages } from "../../constants";
+import { ButtonBase } from "../buttons";
 
 const ChatSvg = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 mr-auto"
+    className="h-6 w-6"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -20,9 +22,12 @@ const ChatSvg = () => (
 
 const FloatContactButton = ({ ...props }) => {
   return (
-    <div className={styles.wrapper}>
+    <ButtonBase
+      to={Pages.iletisim}
+      className={styles.wrapper}
+    >
       <ChatSvg /> Bilgi Talebi
-    </div>
+    </ButtonBase>
   );
 };
 

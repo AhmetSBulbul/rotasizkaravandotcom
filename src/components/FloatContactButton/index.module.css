@@ -1,3 +1,6 @@
 .wrapper {
-  @apply fixed z-everest w-24 p-mobile rounded-l-xl justify-center items-center right-0 bottom-24 font-display font-bold bg-cta-dark text-white text-left;
+  @apply fixed z-everest rounded-l-xl right-0 bottom-16;
+  @apply font-display font-bold bg-cta-dark text-white;
+  @apply flex flex-col px-4 py-4 text-center items-center;
+  @apply transform translate-x-2 transition-transform hover:translate-x-0;
 }

@@ -27,7 +27,7 @@ const BlogPage = ({
           <h1>Blog</h1>
         </div>
       </div>
-      <div className="grid grid-cols-1 laptop:grid-cols-3 laptop:gap-x-8 px-mobile laptop:px-wrapper">
+      <div className="section-wrap grid grid-flow-row gap-8 laptop:grid-cols-3">
         {Posts}
       </div>
     </>
