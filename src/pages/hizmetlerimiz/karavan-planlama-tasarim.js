@@ -1,59 +1,18 @@
 import React from "react";
-import { Link } from "gatsby";
-import { Pages } from "../../constants";
-import { ServicesFigure } from "../../components/figures";
+
+import ServicesPageTemplate from "../../components/ServicePageLayout";
 
 const ServicePlanDesignPage = () => {
   return (
-    <>
-      <div className="pageLead">
-        <ServicesFigure className="pageLeadImg" />
-        <div className="pageLeadTitleBox w-full">
-          <h1>Hizmetlerimiz</h1>
-        </div>
-      </div>
-      <div className="pt-24 px-8 flex flex-col">
-        <h1 className="text-2xl">
-          Tasarım ve Planlama
-        </h1>
-        <p>
-          Siz hayalinizi anlatın, biz sizin için
-          somutlaştıralım. İstek, ihtiyaç ve
-          bütçenize göre en uygun karavanı sizin
-          için tasarlayalım.
-        </p>
-        <div className="grid grid-cols-2 grid-rows-2 mt-12 gap-4">
-          <Link
-            to={Pages.danisma}
-            activeClassName="bg-secondary text-white"
-            className="w-full h-full p-8 flex font-display font-black text-2xl justify-center items-center bg-white"
-          >
-            Karavan Danismanligi
-          </Link>
-          <Link
-            to={Pages.planlama}
-            activeClassName="bg-secondary text-white"
-            className="w-full h-full p-8 flex font-display font-black text-2xl justify-center items-center bg-white"
-          >
-            Karavan Planlama
-          </Link>
-          <Link
-            to={Pages.imalat}
-            activeClassName="bg-secondary text-white"
-            className="w-full h-full p-8 flex font-display font-black text-2xl justify-center items-center bg-white"
-          >
-            Karavan Imalat
-          </Link>
-          <Link
-            to={Pages.destek}
-            activeClassName="bg-secondary text-white"
-            className="w-full h-full p-8 flex font-display font-black text-2xl justify-center items-center bg-white"
-          >
-            Karavan Destek
-          </Link>
-        </div>
-      </div>
-    </>
+    <ServicesPageTemplate title="Karavan Planlama ve Tasarımı">
+      Rotasız Karavan olarak, istek ve
+      ihtiyaçlarınıza göre, hep hayalini
+      kurduğunuz o karavanı sizin için ve size
+      özel olarak gerçekleştirip hayallerinizin
+      yerini, ev konforunda yaptığınız seyahatler
+      ve onun güzel anılarıyla doldurmak için
+      çalışıyor, çabalıyoruz.
+    </ServicesPageTemplate>
   );
 };
 

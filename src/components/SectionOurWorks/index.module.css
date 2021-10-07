@@ -1,5 +1,5 @@
 .sectionWrapper {
-  @apply flex flex-col w-full py-8 bg-gray-lightest;
+  @apply flex flex-col w-full py-8;
 }
 
 .postImage {

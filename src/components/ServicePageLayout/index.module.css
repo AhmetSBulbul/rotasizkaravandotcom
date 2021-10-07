@@ -1,0 +1,26 @@
+.pageWrap {
+  @apply w-full flex flex-col-reverse px-mobile;
+  @screen laptop {
+    @apply flex-row-reverse px-wrapper items-center;
+  }
+}
+
+.links {
+  @apply grid grid-flow-row grid-cols-2 grid-rows-2 mt-8 laptop:mt-0;
+}
+
+.subPageLink {
+  @apply font-display font-bold text-xl px-3 py-1 bg-white shadow-card mx-2 my-2 rounded-md text-center transition-colors hover:text-white hover:bg-brand;
+}
+
+.linkActive {
+  @apply bg-brand text-white;
+}
+
+.pageBody {
+  @apply w-full h-full flex flex-col laptop:mr-24;
+}
+
+.pageTitle {
+  @apply font-display font-extrabold text-4xl mb-8;
+}

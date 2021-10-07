@@ -1,19 +1,18 @@
 import React from "react";
-import SectionOurServices from "../../components/SectionOurServices";
-import { ServicesFigure } from "../../components/figures";
+
+import ServicesPageTemplate from "../../components/ServicePageLayout";
 
 const OurServicesPage = () => {
   return (
-    <>
-      <div className="pageLead">
-        <ServicesFigure className="pageLeadImg" />
-        <div className="pageLeadTitleBox w-full">
-          <h1>Hizmetlerimiz</h1>
-        </div>
-      </div>
-
-      <SectionOurServices className="my-auto" />
-    </>
+    <ServicesPageTemplate title="Size Nasıl Yardımcı Olabiliriz?">
+      Rotasız Karavan olarak, istek ve
+      ihtiyaçlarınıza göre, hep hayalini
+      kurduğunuz o karavanı sizin için ve size
+      özel olarak gerçekleştirip hayallerinizin
+      yerini, ev konforunda yaptığınız seyahatler
+      ve onun güzel anılarıyla doldurmak için
+      çalışıyor, çabalıyoruz.
+    </ServicesPageTemplate>
   );
 };
 

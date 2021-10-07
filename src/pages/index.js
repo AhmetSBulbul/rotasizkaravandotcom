@@ -69,7 +69,7 @@ const IndexPage = () => {
           Hizmetlerimiz
         </ContinueTo>
       </div>
-      <div className="flex flex-col w-full py-8 justify-center my-12 laptop:px-wrapper bg-gray-lighter">
+      <div className="flex flex-col w-full py-8 justify-center my-12 laptop:px-wrapper bg-gray-lightest rounded-md">
         <h3 className="sub-title text-right">
           Referanslarımız
         </h3>
