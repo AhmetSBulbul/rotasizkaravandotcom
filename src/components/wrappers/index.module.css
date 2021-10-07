@@ -1,6 +1,0 @@
-.simpleRowWrap {
-  @apply w-full px-mobile bg-gray-lighter rounded-xl laptop:px-wrapper grid grid-flow-col grid-rows-2 py-8 gap-y-6 my-12;
-  @screen laptop {
-    @apply px-wrapper grid-flow-row grid-cols-2 grid-rows-none gap-x-8 justify-items-center items-center;
-  }
-}

@@ -57,7 +57,7 @@ export default function SectionRecentPublished({
           <h2 className="big-title text-center">
             Son Paylaşılanlar
           </h2>
-          <div className={styles.postList}>
+          <div className="wrap-simple-row simple-row-3 mt-12">
             {data.allMarkdownRemark.edges.map(
               ({ node }) => {
                 return (

@@ -160,11 +160,12 @@
     }
   }
 
-  .wrap-simple-row-justify {
-    @apply w-full grid grid-flow-row grid-rows-4 justify-items-center gap-y-6;
-    @screen laptop {
-      @apply grid-flow-row grid-cols-4 grid-rows-none gap-x-8;
-    }
+  .simple-row-3 {
+    @apply grid-rows-3 laptop:grid-cols-3 laptop:grid-rows-none;
+  }
+
+  .simple-row-4 {
+    @apply grid-rows-4 laptop:grid-cols-4 laptop:grid-rows-none;
   }
 }
 

@@ -28,7 +28,7 @@ const IndexPage = () => {
         <h2 className="big-title text-center">
           Size Nasıl Yardımcı Olabiliriz?
         </h2>
-        <div className="wrap-simple-row-justify mt-10">
+        <div className="wrap-simple-row simple-row-4 mt-10">
           <CardLink to={Pages.danisma}>
             <CardContent title="Karavan Danışmanlığı">
               Karavan üretmeyi sevdiğimiz kadar
