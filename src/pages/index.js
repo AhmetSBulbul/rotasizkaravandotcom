@@ -23,7 +23,7 @@ const IndexPage = () => {
     <>
       <Hero />
       <SectionWhatWeDo />
-      {/*<SectionOurServices />*/}
+
       <div className="section-wrap flex flex-col justify-center">
         <h3 className="sub-title text-center">
           Hizmetlerimiz

@@ -18,8 +18,8 @@
 - Current PageSpeed Insights [Score](https://developers.google.com/speed/pagespeed/insights/?hl=tr&url=https%3A%2F%2Frotasizkaravandotcom.vercel.app%2F&tab=desktop)
 
 - Last PageSpeed Insights Score
-  - Mobile: 82 
-  - Desktop: 98
+  - Mobile: 65 
+  - Desktop: 100
 
 ---
 
@@ -66,7 +66,8 @@
 - [ ] Blog posts tags
 - [ ] terms of use page
 - [ ] Blog search feature
-- [ ] Contact, Faqs pages.
+- [x] Contact
+- [ ] Faqs pages.
 - [ ] Social Media Cards
 - [x] Re-Factor Navigation Menu
 - [x] Navigation animation
