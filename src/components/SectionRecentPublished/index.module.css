@@ -1,8 +1,9 @@
 .wrapper {
-  @apply flex flex-col px-mobile laptop:px-wrapper bg-gray-lightest py-12;
+  @apply flex flex-col;
 }
 .postList {
+  @apply grid grid-flow-row grid-rows-3 py-12 gap-y-8;
   @screen laptop {
-    @apply grid grid-cols-3 gap-x-5;
+    @apply grid-flow-col grid-cols-3 grid-rows-none gap-x-5;
   }
 }

@@ -2,11 +2,13 @@ import React from "react";
 import cn from "classnames";
 import { simpleRowWrap as style } from "./index.module.css";
 
+const styleGray = "bg-gray-lightest";
+
 const SimpleRowWrapper = ({
   children,
-  className,
+  isGray = false,
 }) => (
-  <div className={cn(style, className)}>
+  <div className={cn(style, isGray && styleGray)}>
     {children}
   </div>
 );

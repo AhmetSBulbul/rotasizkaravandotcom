@@ -1,5 +1,5 @@
 .sectionWrapper {
-  @apply flex flex-col w-full py-8;
+  @apply flex flex-col;
 }
 
 .postImage {
@@ -57,11 +57,11 @@
 }
 
 .sectionHeader {
-  @apply mb-6 text-center px-mobile;
+  @apply mb-6 text-center;
 }
 
 .controllerWrap {
-  @apply flex space-x-4 ml-auto mt-4 px-mobile;
+  @apply flex space-x-4 ml-auto mt-4;
 }
 
 .specs {

@@ -7,9 +7,7 @@ import GridGallery from "../GridGallery/GridGallery";
 
 function SectionRotasizGallery({ className }) {
   return (
-    <div
-      className={cn([styles.wrapper, className])}
-    >
+    <>
       <StaticQuery
         query={graphql`
           query GetShowroomImages {
@@ -42,7 +40,7 @@ function SectionRotasizGallery({ className }) {
           </>
         )}
       />
-    </div>
+    </>
   );
 }
 

@@ -27,9 +27,7 @@ const SectionOurServices = ({
   ...props
 }) => {
   return (
-    <div
-      className={cn([styles.wrapper, className])}
-    >
+    <div className="section-wrap bg-brand">
       <div className={styles.innerContainer}>
         <h3 className="sub-title text-center">
           Hizmetlerimiz

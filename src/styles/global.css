@@ -108,7 +108,7 @@
   }
 
   .pageLead {
-    @apply grid relative z-base mb-10;
+    @apply grid relative z-base;
 
     @screen laptop {
       @apply rounded-2xl;
@@ -143,6 +143,28 @@
   .pageLeadTitleBox {
     @apply flex z-base-step-1 py-8 px-wrapper laptop:rounded-b-xl text-white font-display text-2xl;
     grid-area: 4 / 1 / span 1 / span 4;
+  }
+
+  .section-wrap {
+    @apply w-full px-mobile rounded-xl py-8 my-12 laptop:px-wrapper;
+  }
+
+  .section-gray {
+    @apply bg-gray-lightest;
+  }
+
+  .wrap-simple-row {
+    @apply grid grid-flow-col grid-rows-2 gap-y-6;
+    @screen laptop {
+      @apply grid-flow-row grid-cols-2 grid-rows-none gap-x-8;
+    }
+  }
+
+  .wrap-simple-row-justify {
+    @apply w-full grid grid-flow-row grid-rows-4 justify-items-center gap-y-6;
+    @screen laptop {
+      @apply grid-flow-row grid-cols-4 grid-rows-none gap-x-8;
+    }
   }
 }
 

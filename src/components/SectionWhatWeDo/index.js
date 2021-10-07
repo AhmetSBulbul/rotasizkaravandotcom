@@ -5,11 +5,10 @@ import cn from "classnames";
 
 import { Theme as ButtonTheme } from "../buttons";
 import { Pages } from "../../constants";
-import { WrapperSimpleRow } from "../wrappers";
 
 const SectionWhatWeDo = ({ className }) => {
   return (
-    <WrapperSimpleRow>
+    <section className="section-wrap wrap-simple-row section-gray">
       <div className={styles.content}>
         <h5 className="sub-title">Biz Kimiz?</h5>
         <h2 className="big-title">
@@ -44,7 +43,7 @@ const SectionWhatWeDo = ({ className }) => {
         width={1280}
         className={styles.image}
       />
-    </WrapperSimpleRow>
+    </section>
   );
 };
 

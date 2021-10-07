@@ -50,7 +50,7 @@ export default function SectionRecentPublished({
         }
       `}
       render={(data) => (
-        <div className={styles.wrapper}>
+        <div className="section-wrap flex flex-col ">
           <h3 className="sub-title text-center">
             Blog
           </h3>

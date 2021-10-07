@@ -21,14 +21,14 @@ const IndexPage = () => {
       <Hero />
       <SectionWhatWeDo />
       {/*<SectionOurServices />*/}
-      <div className="flex flex-col w-full justify-center my-12 px-mobile laptop:px-wrapper">
+      <div className="section-wrap flex flex-col justify-center">
         <h3 className="sub-title text-center">
           Hizmetlerimiz
         </h3>
         <h2 className="big-title text-center">
           Size Nasıl Yardımcı Olabiliriz?
         </h2>
-        <div className="grid grid-flow-row laptop:grid-flow-col laptop:gap-2 py-mobile gap-mobile mt-8">
+        <div className="wrap-simple-row-justify mt-10">
           <CardLink to={Pages.danisma}>
             <CardContent title="Karavan Danışmanlığı">
               Karavan üretmeyi sevdiğimiz kadar
@@ -69,22 +69,28 @@ const IndexPage = () => {
           Hizmetlerimiz
         </ContinueTo>
       </div>
-      <div className="flex flex-col w-full py-8 justify-center my-12 px-mobile laptop:px-wrapper bg-gray-lightest rounded-md">
+      <div className="section-wrap section-gray flex flex-col justify-center">
         <h3 className="sub-title text-right">
           Referanslarımız
         </h3>
         <h2 className="big-title text-right">
           Müşterilerimizin Yorumları
         </h2>
-        <div className="grid grid-flow-row laptop:grid-flow-col laptop:gap-20 laptop:px-32 py-mobile gap-mobile mt-8">
-          <CardReview name="Mete Önder">
+        <div className="wrap-simple-row justify-items-center py-12">
+          <CardReview
+            name="Mete Önder"
+            className="laptop:w-2/3"
+          >
             Yapim aşamasında bizleri dinliyorlar
             hayallerimin oluşturulmasında adeta
             köprü oldular. Sonrasında ilave
             isteklerimizi geri çevirmediler. Daha
             iyisi ve güzelin peşindeler.
           </CardReview>
-          <CardReview name="Ali Ataş">
+          <CardReview
+            name="Ali Ataş"
+            className="laptop:w-2/3"
+          >
             Kaliteli iscilik yapiyorlar tavsiye
             ederim.. karavanimizi teslim aldik
             elinize saglik gorusmek uzere
@@ -94,18 +100,17 @@ const IndexPage = () => {
           Bütün Yorumlar
         </ContinueTo>
       </div>
-      <SectionOurWorks />
+      <SectionOurWorks className="section-wrap" />
 
-      <div className="flex flex-col px-mobile laptop:px-wrapper text-left mt-12">
+      <div className="section-wrap section-gray flex flex-col text-left">
         <h3 className="sub-title">
           Fotoğraf Galerisi
         </h3>
-        <h2 className="big-title">
+        <h2 className="big-title mb-8">
           Karavan Fotoğrafları
         </h2>
+        <SectionRotasizGallery />
       </div>
-
-      <SectionRotasizGallery />
 
       <SectionRecentPublished />
     </>
@@ -113,3 +118,6 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+//grid grid-flow-row laptop:grid-flow-col laptop:gap-2 py-mobile gap-mobile mt-8
+//reviews wrap

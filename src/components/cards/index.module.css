@@ -1,5 +1,5 @@
 .baseCard {
-  @apply rounded-md h-full w-full;
+  @apply rounded-md;
 }
 
 .contentCard {

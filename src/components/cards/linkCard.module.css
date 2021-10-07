@@ -1,14 +1,14 @@
 .readMore {
-  @apply absolute left-0 right-0 bottom-0 w-full flex py-2 justify-end items-center font-display font-bold pointer-events-none transform -translate-x-full opacity-0;
+  @apply absolute left-0 right-0 bottom-0 w-full flex justify-end items-center font-display font-bold pointer-events-none transform -translate-x-full opacity-0;
   transition: opacity 0.17s ease-in-out,
     transform 0.17s ease-in-out;
 }
 .cardBody {
-  @apply h-full w-full relative pb-12 mt-12 transition-transform;
+  @apply h-full w-full relative pb-8 transition-transform;
 }
 
 .cardWrap {
-  @apply antialiased m-mobile;
+  @apply antialiased;
   &:hover {
     .cardBody {
       @apply transform -translate-y-8 laptop:-translate-x-mobile;
