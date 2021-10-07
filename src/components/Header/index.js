@@ -117,6 +117,7 @@ const ContactUsBtn = ({ ...props }) => {
     <WithIconButton
       className="border-white text-white rounded-lg"
       to={Pages.contactUs}
+      {...props}
     >
       <Call className="mr-2" />
       Bize Ulaşın
@@ -137,7 +138,7 @@ const Menu = ({ ...props }) => {
     >
       <Navigation onClick={props.onClick} />
 
-      <ContactUsBtn />
+      <ContactUsBtn onClick={props.onClick} />
     </div>
   );
 };
