@@ -1,5 +1,5 @@
 .gallery {
-  @apply px-wrapper;
+  @apply px-mobile my-12;
   width: 100%;
   columns: 2;
   column-fill: balance;
@@ -10,6 +10,7 @@
   }
 
   @screen laptop {
+    @apply px-wrapper;
     columns: 4;
   }
 }

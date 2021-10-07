@@ -61,7 +61,7 @@
 - [x] Better Mobile Image Sizes for Statics
 - [x] Work List
 - [x] Mobile NavItem BackgroundImages
-- [ ] Content
+- [x] Content
 - [x] All image sizes
 - [ ] Blog posts tags
 - [ ] terms of use page
@@ -69,15 +69,15 @@
 - [ ] Contact, Faqs pages.
 - [ ] Social Media Cards
 - [x] Re-Factor Navigation Menu
-- [ ] Navigation animation
+- [x] Navigation animation
 - [ ] Page queries
 - [ ] Our works page filter
 - [ ] Header top hover animation
 - [ ] Backdrop filter fallback (use @supports)
 - [x] About Us Page 
 - [ ] SEO
-- [ ] Float contact button
-- [ ] Our services page
+- [x] Float contact button
+- [x] Our services page
 - [ ] Better queries
 - [x] Custom Gatsby Image component for gallery images.(RotasizImage)
 

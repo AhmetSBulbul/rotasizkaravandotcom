@@ -1,18 +1,50 @@
 import React from "react";
 
-import ServicesPageTemplate from "../../components/ServicePageLayout";
+import { ServicesFigure } from "../../components/figures";
+import {
+  WithIcon,
+  Theme as ThemeButton,
+  ContinueTo,
+} from "../../components/buttons";
+import { Call } from "../../components/icons/solid";
+import { Pages } from "../../constants";
 
 const ServicePlanDesignPage = () => {
   return (
-    <ServicesPageTemplate title="Karavan Planlama ve Tasarımı">
-      Rotasız Karavan olarak, istek ve
-      ihtiyaçlarınıza göre, hep hayalini
-      kurduğunuz o karavanı sizin için ve size
-      özel olarak gerçekleştirip hayallerinizin
-      yerini, ev konforunda yaptığınız seyahatler
-      ve onun güzel anılarıyla doldurmak için
-      çalışıyor, çabalıyoruz.
-    </ServicesPageTemplate>
+    <>
+      <div className="pageLead">
+        <ServicesFigure className="pageLeadImg" />
+        <div className="pageLeadTitleBox w-full">
+          <h1>Karavan Planlama & Tasarım</h1>
+        </div>
+      </div>
+      <section className="section-wrap wrap-simple-row">
+        <div className="row-span-2">
+          <p className="text-lg">
+            Hayalinizdeki karavanı sizinle
+            birlikte ihtiyaç ve istekleriniz
+            doğrultusunda projelendiriyoruz.
+            Konforunuz için her santime birlikte
+            karar verip süreci en sağlıklı bir
+            şekilde sizin için planlayalım.
+            <br />
+            <br />
+            Fotoğraf galerimizden
+            gerçekleştirdiğimiz kendi karavan
+            tasarımlarımızı inceleyebilirsiniz.
+          </p>
+          <ContinueTo className="ml-auto laptop:ml-0 mt-4">
+            Rotasız Albüm
+          </ContinueTo>
+        </div>
+      </section>
+      <ContinueTo
+        className="ml-auto mr-mobile laptop:mr-wrapper"
+        to={Pages.imalat}
+      >
+        Karavan İmalatı
+      </ContinueTo>
+    </>
   );
 };
 
