@@ -1,10 +1,3 @@
-.wrapper {
-  @apply bg-gray-lightest flex flex-col pt-12;
-  @screen laptop {
-    @apply flex-row w-full pt-24 pb-12 items-start;
-  }
-}
-
 .image {
   @apply border-4 border-white box-border shadow-card transform rotate-6;
 
@@ -13,13 +6,8 @@
   }
 }
 .content {
-  @apply text-left flex flex-col justify-items-start px-mobile mb-wrapper;
+  @apply text-left grid grid-flow-row gap-y-4;
 
   @screen laptop {
-    @apply w-1/2 ml-wrapper flex-shrink-0 mb-0 px-wrapper;
-  }
-
-  p {
-    @apply mt-4;
   }
 }

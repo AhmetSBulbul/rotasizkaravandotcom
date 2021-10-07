@@ -5,12 +5,11 @@ import cn from "classnames";
 
 import { Theme as ButtonTheme } from "../buttons";
 import { Pages } from "../../constants";
+import { WrapperSimpleRow } from "../wrappers";
 
 const SectionWhatWeDo = ({ className }) => {
   return (
-    <div
-      className={cn([styles.wrapper, className])}
-    >
+    <WrapperSimpleRow>
       <div className={styles.content}>
         <h5 className="sub-title">Biz Kimiz?</h5>
         <h2 className="big-title">
@@ -30,8 +29,8 @@ const SectionWhatWeDo = ({ className }) => {
           sonrası destek ile yanınızda olalım.
         </p>
         <ButtonTheme
-          className="ml-auto"
           to={Pages.hakkimizda}
+          className="place-self-end"
         >
           Hakkimizda
         </ButtonTheme>
@@ -45,7 +44,7 @@ const SectionWhatWeDo = ({ className }) => {
         width={1280}
         className={styles.image}
       />
-    </div>
+    </WrapperSimpleRow>
   );
 };
 
