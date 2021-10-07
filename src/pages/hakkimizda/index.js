@@ -7,6 +7,7 @@ import {
   RotasizlarHarbour,
 } from "../../components/figures";
 import { StaticImage } from "gatsby-plugin-image";
+import { WrapperSimpleRow } from "../../components/wrappers";
 
 const AboutPage = () => {
   return (
@@ -115,6 +116,44 @@ const AboutPage = () => {
           />
         </div>
       </div>
+      <WrapperSimpleRow>
+        <div className="text-center laptop:text-left col-span-3">
+          <h2 className="big-title mb-8">
+            Ürettiğimiz Her Karavan, Bizim İçin
+            Bir Karavandan Fazlası...
+          </h2>
+
+          <p className="text-lg laptop:text-left">
+            Bizim için sadece birer müşteri değil
+            aynı zamanda keşfedebileceğimiz yeni
+            bir yer, dinleyebileceğimiz eşşiz anı
+            ve hatıralarsınız.
+            <br />
+            <br />
+            Ürettiğimiz her karavan bizleri ilk
+            karavanımızmış gibi heyecanlandırıyor.
+            Çünkü biliyoruz ki planlama
+            aşamasından anahtarı sizlere teslim
+            ettiğimiz ana kadar, aracısı olmak
+            için sabırsızlandığımız ve gözümüzde
+            canlandırdığımız, yaşanacak muhteşem
+            anlardan çok daha fazlasını yaşayacak,
+            deneyimleyeceksiniz.
+            <br />
+            <br />
+            İşte bu yüzden bizler için teslim
+            ettiğimiz her karavan, sadece birer
+            araç değil, aynı zamanda dinlemeyi
+            sabırsızlıkla beklediğimiz birer
+            hikaye...
+          </p>
+        </div>
+        <StaticImage
+          src="../../images/coffee.jpg"
+          alt=""
+          className="rounded-lg col-span-2"
+        />
+      </WrapperSimpleRow>
     </>
   );
 };

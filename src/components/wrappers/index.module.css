@@ -1,0 +1,6 @@
+.simpleRowWrap {
+  @apply w-full px-mobile laptop:px-wrapper grid grid-flow-row py-8 gap-x-6;
+  @screen laptop {
+    @apply px-wrapper grid-flow-col justify-items-center items-center;
+  }
+}

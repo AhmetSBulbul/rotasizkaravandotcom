@@ -1,7 +1,7 @@
 const RouteNames = {
-  hakkimizda: "/kurumsal",
-  iletisim: "/kurumsal/iletisim",
-  sss: "/kurumsal/s-s-s",
+  hakkimizda: "/hakkimizda",
+  iletisim: "/hakkimizda/iletisim",
+  sss: "/hakkimizda/s-s-s",
   blog: "/blog",
   islerimiz: "/islerimiz",
   galeri: "/islerimiz/fotograf-galerisi",
@@ -11,7 +11,7 @@ const RouteNames = {
     "/hizmetlerimiz/karavan-planlama-tasarim",
   imalat: "/hizmetlerimiz/karavan-imalati",
   destek: "/hizmetlerimiz/karavan-teknik-destek",
-  contactUs: "/kurumsal/iletisim",
+  contactUs: "/hakkimizda/iletisim",
 };
 
 export default RouteNames;
