@@ -16,6 +16,18 @@ function LinkButton({
   );
 }
 
+function ExternalLinkButton({
+  href,
+  children,
+  ...props
+}) {
+  return (
+    <a href={href} {...props}>
+      {children}
+    </a>
+  );
+}
+
 function NormalButton({ children, ...props }) {
   return (
     <button type="button" {...props}>
@@ -31,6 +43,8 @@ export default function BaseButton({
 }) {
   const CurrentBtn = props.to
     ? LinkButton
+    : props.href
+    ? ExternalLinkButton
     : NormalButton;
   return (
     <CurrentBtn

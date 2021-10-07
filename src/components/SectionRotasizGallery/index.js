@@ -1,11 +1,11 @@
 import React from "react";
 
 import { StaticQuery, graphql } from "gatsby";
-import * as styles from "./index.module.css";
-import cn from "classnames";
+//import * as styles from "./index.module.css";
+//import cn from "classnames";
 import GridGallery from "../GridGallery/GridGallery";
 
-function SectionRotasizGallery({ className }) {
+function SectionRotasizGallery() {
   return (
     <>
       <StaticQuery

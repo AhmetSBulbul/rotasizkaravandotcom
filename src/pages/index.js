@@ -15,6 +15,9 @@ import {
 import { Pages } from "../constants";
 import { ContinueTo } from "../components/buttons";
 
+const rotasizReviewsUrl =
+  "https://www.google.com/search?q=rotasiz+karavan&oq=rotasi&aqs=chrome.2.69i60j69i57j69i59j69i60l5.2701j0j1&sourceid=chrome&ie=UTF-8#lrd=0x14c3935b218a63df:0xbbe009d319774f74,1,,,";
+
 const IndexPage = () => {
   return (
     <>
@@ -96,7 +99,11 @@ const IndexPage = () => {
             elinize saglik gorusmek uzere
           </CardReview>
         </div>
-        <ContinueTo className="ml-auto">
+        <ContinueTo
+          href={rotasizReviewsUrl}
+          target="_blank"
+          className="ml-auto"
+        >
           Bütün Yorumlar
         </ContinueTo>
       </div>

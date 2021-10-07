@@ -1,15 +1,13 @@
 import React from "react";
 
-import * as styles from "./index.module.css";
+//import * as styles from "./index.module.css";
 import { StaticQuery, graphql } from "gatsby";
 import { Pages } from "../../constants";
 import { ContinueTo } from "../buttons";
 
 import PostLink from "../PostLink";
 
-export default function SectionRecentPublished({
-  children,
-}) {
+export default function SectionRecentPublished() {
   return (
     <StaticQuery
       query={graphql`

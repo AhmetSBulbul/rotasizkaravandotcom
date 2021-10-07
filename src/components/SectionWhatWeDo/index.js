@@ -1,20 +1,23 @@
 import React from "react";
 import * as styles from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
-import cn from "classnames";
 
 import { Theme as ButtonTheme } from "../buttons";
 import { Pages } from "../../constants";
 
-const SectionWhatWeDo = ({ className }) => {
+const SectionWhatWeDo = () => {
   return (
-    <section className="section-wrap wrap-simple-row section-gray">
+    <section className="section-wrap wrap-simple-row laptop:gap-x-12 section-gray">
       <div className={styles.content}>
-        <h5 className="sub-title">Biz Kimiz?</h5>
-        <h2 className="big-title">
-          İsteğinize ve İhtiyaçlarınıza Yönelik
-          Karavanlar Üretiyoruz.
-        </h2>
+        <div>
+          <span className="sub-title">
+            Hakkımızda
+          </span>
+          <h2 className="big-title">
+            İsteğinize ve İhtiyaçlarınıza Yönelik
+            Karavanlar Üretiyoruz.
+          </h2>
+        </div>
         <p>
           Hayalinizdeki karavana sahip olma
           sürecinizde size eşlik edelim. İster
