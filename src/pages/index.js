@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Hero />
       <SectionWhatWeDo />
       {/*<SectionOurServices />*/}
-      <div className="flex flex-col w-full justify-center my-12 laptop:px-wrapper">
+      <div className="flex flex-col w-full justify-center my-12 px-mobile laptop:px-wrapper">
         <h3 className="sub-title text-center">
           Hizmetlerimiz
         </h3>
@@ -69,7 +69,7 @@ const IndexPage = () => {
           Hizmetlerimiz
         </ContinueTo>
       </div>
-      <div className="flex flex-col w-full py-8 justify-center my-12 laptop:px-wrapper bg-gray-lightest rounded-md">
+      <div className="flex flex-col w-full py-8 justify-center my-12 px-mobile laptop:px-wrapper bg-gray-lightest rounded-md">
         <h3 className="sub-title text-right">
           Referanslarımız
         </h3>
@@ -95,6 +95,15 @@ const IndexPage = () => {
         </ContinueTo>
       </div>
       <SectionOurWorks />
+
+      <div className="flex flex-col px-mobile laptop:px-wrapper text-left mt-12">
+        <h3 className="sub-title">
+          Fotoğraf Galerisi
+        </h3>
+        <h2 className="big-title">
+          Karavan Fotoğrafları
+        </h2>
+      </div>
 
       <SectionRotasizGallery />
 

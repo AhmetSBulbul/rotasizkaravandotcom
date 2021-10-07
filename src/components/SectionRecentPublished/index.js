@@ -51,8 +51,10 @@ export default function SectionRecentPublished({
       `}
       render={(data) => (
         <div className={styles.wrapper}>
-          <h3 className="sub-title">Blog</h3>
-          <h2 className="big-title">
+          <h3 className="sub-title text-center">
+            Blog
+          </h3>
+          <h2 className="big-title text-center">
             Son Paylaşılanlar
           </h2>
           <div className={styles.postList}>
