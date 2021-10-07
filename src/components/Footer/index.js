@@ -48,12 +48,7 @@ export default function Footer() {
         <NavItem to={Pages.iletisim}>
           İletişim
         </NavItem>
-        <NavItem
-          className={styles.link}
-          to={Pages.sss}
-        >
-          Sık Sorulan Sorular
-        </NavItem>
+
         <div className={styles.footerMenu}>
           <NavItem to={Pages.hizmetlerimiz}>
             Hizmetlerimiz

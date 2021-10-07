@@ -167,6 +167,15 @@
   .simple-row-4 {
     @apply grid-rows-4 laptop:grid-cols-4 laptop:grid-rows-none;
   }
+
+  .mapAspectRatio {
+    @apply w-full relative overflow-hidden mt-8;
+    padding-top: 74.15%;
+  }
+
+  .map {
+    @apply absolute left-0 top-0 bottom-0 right-0 w-full h-full;
+  }
 }
 
 @layer utilities {

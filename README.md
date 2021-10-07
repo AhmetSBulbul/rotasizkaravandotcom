@@ -80,6 +80,8 @@
 - [x] Our services page
 - [ ] Better queries
 - [x] Custom Gatsby Image component for gallery images.(RotasizImage)
+- [ ] Lightbox
+- [ ] Images must be linked to work post of self
 
 ## 🐞 BUGS
 

@@ -168,7 +168,6 @@ export default function Header() {
         <SubLink to={Pages.iletisim}>
           İletişim
         </SubLink>
-        <SubLink to={Pages.sss}>S.S.S</SubLink>
 
         <h5 className="mr-6 ml-2 text-base">
           TR
