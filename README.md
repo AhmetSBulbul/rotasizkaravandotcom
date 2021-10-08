@@ -64,6 +64,7 @@
 - [x] Content
 - [x] All image sizes
 - [ ] Blog posts tags
+- [ ] Blog content
 - [ ] terms of use page
 - [ ] Blog search feature
 - [x] Contact
