@@ -31,7 +31,7 @@ export default function BlogPostTemplate({
           </h1>
         </div>
       </div>
-      <div className="flex flex-col mt-4 px-4 gap-y-4">
+      <div className="flex flex-col mt-4 px-4 gap-y-4 prose laptop:mx-auto">
         <span className="font-body text-gray text-left">
           {post.frontmatter.date}
         </span>
