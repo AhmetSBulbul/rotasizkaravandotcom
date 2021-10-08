@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://rotasizkaravandotcom.vercel.app/">
-    <img alt="Rotasiz Karavan" src="https://github.com/AhmetSBulbul/rotasizkaravandotcom/blob/main/src/images/logo-rozet.png?raw=true" width="150" />
+    <img alt="Rotasiz Karavan" src="https://raw.githubusercontent.com/AhmetSBulbul/rotasizkaravandotcom/main/src/images/brand/icon-black.png" width="150" />
   </a>
 </p>
 <h1 align="center">
@@ -10,6 +10,10 @@
 ### Official Web Site
 
 ---
+
+## First Version Launched
+
+- [rotasizkaravan.com](https://rotasizkaravan.com)
 
 ## 🚀 Under Development
 
@@ -63,31 +67,32 @@
 - [x] Mobile NavItem BackgroundImages
 - [x] Content
 - [x] All image sizes
-- [ ] Blog posts tags
-- [ ] Blog content
-- [ ] terms of use page
-- [ ] Blog search feature
 - [x] Contact
-- [ ] Faqs pages.
-- [ ] Social Media Cards
 - [x] Re-Factor Navigation Menu
 - [x] Navigation animation
+- [x] About Us Page 
+- [x] Float contact button
+- [x] Our services page
+- [x] Custom Gatsby Image component for gallery images.(RotasizImage)
+- [x] Blog content
+- [ ] SEO
+- [ ] Lightbox
+- [ ] Social Media Cards
 - [ ] Page queries
+- [ ] Blog posts tags
+- [ ] Blog search feature
+- [ ] Faqs pages.
 - [ ] Our works page filter
 - [ ] Header top hover animation
 - [ ] Backdrop filter fallback (use @supports)
-- [x] About Us Page 
-- [ ] SEO
-- [x] Float contact button
-- [x] Our services page
 - [ ] Better queries
-- [x] Custom Gatsby Image component for gallery images.(RotasizImage)
-- [ ] Lightbox
+- [ ] terms of use page
 - [ ] Images must be linked to work post of self
 
 ## 🐞 BUGS
 
 - [x] Safari postlink component shadow.
+- [ ] Small screens has a little layout problem
 - [ ] Navigation menu toggle.
 
 ## After Launch
