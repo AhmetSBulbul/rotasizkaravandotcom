@@ -27,6 +27,7 @@ module.exports = {
         icon: `src/images/brand/icon.png`,
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-layout`,
     `gatsby-transformer-remark`,
   ],
