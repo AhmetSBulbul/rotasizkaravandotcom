@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Rotasız Karavan`,
     description: `Kişiye özel karavan imalat ve tadilatı.`,
-    author: `@AhmetSBulbul`,
-    siteUrl: `https://rotasizkaravandotcom.vercel.app/`,
+    siteUrl: `https://www.rotasizkaravan.com`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -40,5 +39,6 @@ module.exports = {
     },
     `gatsby-plugin-layout`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-robots-txt`,
   ],
 };
