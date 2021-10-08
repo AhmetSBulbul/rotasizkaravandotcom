@@ -24,7 +24,7 @@ const IndexPage = () => {
     <>
       <SEO
         title="Rotasız Karavan"
-        metaImage="../images/siteImage.png"
+        metaImage="/siteImage.png"
       />
       <Hero />
       <SectionWhatWeDo />
