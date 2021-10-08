@@ -5,7 +5,8 @@ module.exports = {
       "%s · Karavan İmalatı, Danışmanlığı ve Tamiri",
     description: `İstek ve ihtiyaçlarınız doğrultusunda kişiye özel karavanlar üretiyoruz. Ücretsiz Karavan Danışmanlığı hizmetimiz ile merak ettiğiniz soruları bizlere sorabilirsiniz.`,
     author: `@rotasizkaravan`,
-    siteUrl: `https://www.rotasizkaravan.com`,
+    url: `https://www.rotasizkaravan.com`,
+    image: `/src/images/rotasizlar.jpg`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

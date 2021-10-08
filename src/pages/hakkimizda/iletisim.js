@@ -1,9 +1,6 @@
 import React from "react";
 
 import { AboutUsFigure } from "../../components/figures";
-import * as Icon from "../../components/icons/solid";
-import * as Button from "../../components/buttons";
-import { Pages } from "../../constants";
 import {
   Call,
   Pin,

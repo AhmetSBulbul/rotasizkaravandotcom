@@ -2,11 +2,10 @@ import React from "react";
 
 import { ServicesFigure } from "../../components/figures";
 import {
-  WithIcon,
   Theme as ThemeButton,
   ContinueTo,
 } from "../../components/buttons";
-import { Call } from "../../components/icons/solid";
+
 import { Pages } from "../../constants";
 
 const ServiceSupportPage = () => {
