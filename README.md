@@ -99,7 +99,9 @@
 
 ### TO-DO
 
+
 - [ ] Readme md logo update and better documentation
+- [ ] Manifest start url will be blog if it's okay for seo
 - [x] Clean up unnecessary tailwind presets, assets and codes.
 - [ ] Performance Improvements. (On mobile devices has a reflow problem due to css vh bug )
 - [ ] Google Analytics.
@@ -112,6 +114,12 @@
 
 
 ### Test Checklist
+
+
+### Personal Notes
+
+- gatsby plugin manifest enable to web app manifest. It's allows users to add web site to home screen. [Plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest)
+- [gatsby-plugin-robots-txt](https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
 
 
 ---

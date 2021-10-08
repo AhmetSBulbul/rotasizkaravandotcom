@@ -28,6 +28,8 @@ module.exports = {
         start_url: `/`,
         background_color: `#276e68`,
         theme_color: `#e97e2e`,
+        description: `Karavan üretimi, imalatı ve planlamla`,
+        display: `standalone`,
         lang: `tr`,
         icon: `src/images/brand/fav-icon.png`,
       },
