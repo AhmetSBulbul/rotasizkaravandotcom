@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Rotasız Karavan`,
-    description: `Kişiye özel karavan imalat ve tadilatı.`,
+    titleTemplate:
+      "%s · Karavan İmalatı, Danışmanlığı ve Tamiri",
+    description: `İstek ve ihtiyaçlarınız doğrultusunda kişiye özel karavanlar üretiyoruz. Ücretsiz Karavan Danışmanlığı hizmetimiz ile merak ettiğiniz soruları bizlere sorabilirsiniz.`,
+    author: `@rotasizkaravan`,
     siteUrl: `https://www.rotasizkaravan.com`,
   },
   plugins: [
@@ -21,9 +24,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Rotasız Karavan`,
+        short_name: `Rotasız Karavan`,
         start_url: `/`,
         lang: `tr`,
-        icon: `src/images/brand/icon.png`,
+        icon: `src/images/brand/fav-icon.png`,
       },
     },
 
