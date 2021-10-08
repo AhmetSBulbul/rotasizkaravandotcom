@@ -1,12 +1,13 @@
 import React from "react";
+import SEO from "../components/seo";
 
-import { AboutUsFigure } from "../../components/figures";
+import { AboutUsFigure } from "../components/figures";
 import {
   Call,
   Pin,
   Mail,
-} from "../../components/icons/solid";
-import { Whatsapp } from "../../components/icons/colorful";
+} from "../components/icons/solid";
+import { Whatsapp } from "../components/icons/colorful";
 
 const ContactItem = ({
   children,
@@ -23,6 +24,11 @@ const ContactItem = ({
 const ContactPage = () => {
   return (
     <>
+      <SEO
+        title="Bize Ulaşın"
+        pathname="/iletisim"
+      />
+
       <div className="pageLead">
         <AboutUsFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
@@ -55,7 +61,7 @@ const ContactPage = () => {
             title="rotasiz-map"
             loading="lazy"
             className="map"
-            allowfullscreen
+            allowFullScreen
             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ32OKIVuTwxQRdE93GdMJ4Ls&key=AIzaSyD54TSd_7gV50TdlvvnJR12XaFt22RsXL8"
           />
         </div>

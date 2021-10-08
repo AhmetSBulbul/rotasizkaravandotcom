@@ -1,24 +1,29 @@
 import React from "react";
 
-import { ServicesFigure } from "../../components/figures";
+import { ServicesFigure } from "../components/figures";
 import {
   WithIcon,
   Theme as ThemeButton,
   ContinueTo,
-} from "../../components/buttons";
-import { Call } from "../../components/icons/solid";
+} from "../components/buttons";
+import { Call } from "../components/icons/solid";
+import SEO from "../components/seo";
 
 const OurServicesPage = () => {
   return (
     <>
+      <SEO
+        title="Hizmetlerimiz"
+        pathname="/hizmetlerimiz"
+      />
       <div className="pageLead">
         <ServicesFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
           <h1>Hizmetlerimiz</h1>
         </div>
       </div>
-      <section className="section-wrap wrap-simple-row">
-        <div className="row-span-2">
+      <section className="section-wrap wrap-simple-row text-center laptop:text-left ">
+        <div>
           <h2 className="big-title mb-4">
             Karavan Danışmanlığı
           </h2>
@@ -36,9 +41,7 @@ const OurServicesPage = () => {
             <Call className="mr-4" /> İletişim
           </WithIcon>
         </div>
-      </section>
-      <section className="section-wrap wrap-simple-row">
-        <div className="row-span-2 laptop:order-last">
+        <div>
           <h2 className="big-title mb-4">
             Planlama & Tasarım
           </h2>
@@ -60,8 +63,8 @@ const OurServicesPage = () => {
           </ContinueTo>
         </div>
       </section>
-      <section className="section-wrap wrap-simple-row">
-        <div className="row-span-2 laptop:order-last">
+      <section className="section-wrap wrap-simple-row text-center laptop:text-left">
+        <div className="mb-12 laptop:mb-0">
           <h2 className="big-title mb-4">
             Karavan İmalatı
           </h2>
@@ -81,9 +84,7 @@ const OurServicesPage = () => {
             İşlerimiz
           </ContinueTo>
         </div>
-      </section>
-      <section className="section-wrap wrap-simple-row">
-        <div className="row-span-2 laptop:order-last">
+        <div>
           <h2 className="big-title mb-4">
             Karavan Tadilatı ve Üretim Sonrası
             Destek

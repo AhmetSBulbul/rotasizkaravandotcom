@@ -48,38 +48,9 @@ export default function Footer() {
         <NavItem to={Pages.iletisim}>
           İletişim
         </NavItem>
-
-        <div className={styles.footerMenu}>
-          <NavItem to={Pages.hizmetlerimiz}>
-            Hizmetlerimiz
-          </NavItem>
-          <ol className={styles.menuList}>
-            <Link
-              className={styles.link}
-              to={Pages.danisma}
-            >
-              Karavan Danışmanlığı
-            </Link>
-            <Link
-              className={styles.link}
-              to={Pages.planlama}
-            >
-              Planlama & Tasarım
-            </Link>
-            <Link
-              className={styles.link}
-              to={Pages.imalat}
-            >
-              Karavan İmalatı
-            </Link>
-            <Link
-              className={styles.link}
-              to={Pages.destek}
-            >
-              Karavan Teknik Destek
-            </Link>
-          </ol>
-        </div>
+        <NavItem to={Pages.hizmetlerimiz}>
+          Hizmetlerimiz
+        </NavItem>
       </div>
 
       <div className={styles.footerContact}>

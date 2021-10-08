@@ -1,16 +1,21 @@
 import React from "react";
+import SEO from "../components/seo";
 
-import { AboutUsFigure } from "../../components/figures";
+import { AboutUsFigure } from "../components/figures";
 import {
   RotasizlarFigure,
   RotasizlarBeach,
   RotasizlarHarbour,
-} from "../../components/figures";
+} from "../components/figures";
 import { StaticImage } from "gatsby-plugin-image";
 
 const AboutPage = () => {
   return (
     <>
+      <SEO
+        title="Hakkımızda"
+        pathname="/hakkimizda"
+      />
       <div className="pageLead">
         <AboutUsFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
@@ -43,7 +48,7 @@ const AboutPage = () => {
           <div className="flex flex-col flex-1 px-3 items-end">
             <RotasizlarBeach className="rounded-lg mb-6 w-4/5" />
             <StaticImage
-              src="../../images/rotasizlar-4.jpg"
+              src="../images/rotasizlar-4.jpg"
               alt=""
               className="rounded-lg"
             />
@@ -70,7 +75,7 @@ const AboutPage = () => {
           </p>
         </div>
         <StaticImage
-          src="../../images/map-on-road-inside.jpg"
+          src="../images/map-on-road-inside.jpg"
           alt=""
           className="rounded-lg h-96 laptop:order-first"
         />
@@ -108,7 +113,7 @@ const AboutPage = () => {
           </p>
         </div>
         <StaticImage
-          src="../../images/coffee.jpg"
+          src="../images/coffee.jpg"
           alt=""
           objectFit="cover"
           objectPosition="bottom"

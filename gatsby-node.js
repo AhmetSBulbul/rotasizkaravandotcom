@@ -24,6 +24,7 @@ exports.createPages = async ({
           order: DESC
           fields: frontmatter___date
         }
+        limit: 0
       ) {
         edges {
           node {
@@ -42,6 +43,8 @@ exports.createPages = async ({
           order: DESC
           fields: frontmatter___date
         }
+
+        limit: 0
       ) {
         edges {
           node {

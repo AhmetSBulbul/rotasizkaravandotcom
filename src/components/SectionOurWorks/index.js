@@ -134,7 +134,7 @@ function Posts({ currIndex }) {
               order: DESC
               fields: [frontmatter___date]
             }
-            limit: 3
+            limit: 0
           ) {
             edges {
               node {
@@ -162,6 +162,7 @@ function Posts({ currIndex }) {
                 }
               }
             }
+            totalCount
           }
         }
       `}

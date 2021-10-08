@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import { WorksFigure } from "../../components/figures";
 import WorkLink from "../../components/WorkLink";
+import SEO from "../../components/seo";
 
 const WorksPage = ({
   data: {
@@ -21,15 +22,24 @@ const WorksPage = ({
     ));
   return (
     <>
+      <SEO
+        title="İşlerimiz"
+        pathname="/islerimiz"
+      />
       <div className="pageLead">
         <WorksFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
           <h1>İşlerimiz</h1>
         </div>
       </div>
-      <div className="section-wrap grid grid-flow-row gap-8 laptop:grid-cols-3">
-        {Works}
+      <div className="flex flex-col min-h-screen">
+        <h5 className="text-center font-display font-black text-2xl mx-auto my-auto">
+          Üzgünüz henüz hiç paylaşım yok.
+        </h5>
       </div>
+      {/*<div className="section-wrap grid grid-flow-row gap-8 laptop:grid-cols-3">
+        {Works}
+      </div>*/}
     </>
   );
 };

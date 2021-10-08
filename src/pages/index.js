@@ -8,7 +8,6 @@ import SectionRecentPublished from "../components/SectionRecentPublished";
 import Hero from "../components/Hero";
 import SectionOurWorks from "../components/SectionOurWorks";
 import {
-  CardLink,
   CardContent,
   CardReview,
 } from "../components/cards";
@@ -34,38 +33,30 @@ const IndexPage = () => {
           Size Nasıl Yardımcı Olabiliriz?
         </h2>
         <div className="wrap-simple-row simple-row-4 mt-10">
-          <CardLink to={Pages.danisma}>
-            <CardContent title="Karavan Danışmanlığı">
-              Karavan üretmeyi sevdiğimiz kadar
-              üzerine konuşmayı da seviyoruz.
-              Arayın ücretsiz danışmanlık
-              hizmetimizle sorularınızı
-              cevaplayalım.
-            </CardContent>
-          </CardLink>
-          <CardLink to={Pages.planlama}>
-            <CardContent title="Planlama & Tasarım">
-              Aklınızdaki karavanı sizinle
-              birlikte somutlaştıralım.
-              İhtiyaçlarınız doğrultusunda projeyi
-              planlayalım.
-            </CardContent>
-          </CardLink>
-          <CardLink to={Pages.imalat}>
-            <CardContent title="Karavan İmalatı">
-              Hayalinizdeki karavana eksiksiz bir
-              şekilde sahip olabilmeniz için bütün
-              süreci yöneterek size eşlik edelim.
-            </CardContent>
-          </CardLink>
-          <CardLink to={Pages.destek}>
-            <CardContent title="Tamir ve Tadilat">
-              Karavanınız hakkındaki her problemle
-              ilgileniyoruz. Bütün tamir ve
-              tadilatlarınızı sizin için
-              halledelim.
-            </CardContent>
-          </CardLink>
+          <CardContent title="Karavan Danışmanlığı">
+            Karavan üretmeyi sevdiğimiz kadar
+            üzerine konuşmayı da seviyoruz. Arayın
+            ücretsiz danışmanlık hizmetimizle
+            sorularınızı cevaplayalım.
+          </CardContent>
+
+          <CardContent title="Planlama & Tasarım">
+            Aklınızdaki karavanı sizinle birlikte
+            somutlaştıralım. İhtiyaçlarınız
+            doğrultusunda projeyi planlayalım.
+          </CardContent>
+
+          <CardContent title="Karavan İmalatı">
+            Hayalinizdeki karavana eksiksiz bir
+            şekilde sahip olabilmeniz için bütün
+            süreci yöneterek size eşlik edelim.
+          </CardContent>
+
+          <CardContent title="Tamir ve Tadilat">
+            Karavanınız hakkındaki her problemle
+            ilgileniyoruz. Bütün tamir ve
+            tadilatlarınızı sizin için halledelim.
+          </CardContent>
         </div>
         <ContinueTo
           className="ml-auto"
@@ -109,7 +100,19 @@ const IndexPage = () => {
           Bütün Yorumlar
         </ContinueTo>
       </div>
-      <SectionOurWorks className="section-wrap" />
+
+      <div className="section-wrap">
+        <div className="flex flex-col text-center mb-14">
+          <h3 className="sub-title">İşlerimiz</h3>
+          <h2 className="big-title">
+            Mutfağımızda Pişenler
+          </h2>
+        </div>
+        <h5 className="text-center font-display font-black text-2xl">
+          Üzgünüz henüz hiç paylaşım yok.
+        </h5>
+      </div>
+      {/*<SectionOurWorks className="section-wrap" />*/}
 
       <div className="section-wrap section-gray flex flex-col text-left">
         <h3 className="sub-title">
@@ -121,7 +124,19 @@ const IndexPage = () => {
         <SectionRotasizGallery />
       </div>
 
-      <SectionRecentPublished />
+      <div className="section-wrap mb-24">
+        <div className="flex flex-col text-center mb-14">
+          <h3 className="sub-title">Blog</h3>
+          <h2 className="big-title">
+            Son Paylaşılanlar.
+          </h2>
+        </div>
+        <h5 className="text-center font-display font-black text-2xl">
+          Üzgünüz henüz hiç paylaşım yok.
+        </h5>
+      </div>
+
+      {/*<SectionRecentPublished />*/}
     </>
   );
 };

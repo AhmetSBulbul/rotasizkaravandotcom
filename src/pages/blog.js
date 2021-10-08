@@ -22,16 +22,21 @@ const BlogPage = ({
 
   return (
     <>
-      <SEO title="Blog" />
+      <SEO title="Blog" pathname="/blog" />
       <div className="pageLead">
         <BlogFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
           <h1>Blog</h1>
         </div>
       </div>
-      <div className="section-wrap grid grid-flow-row gap-8 laptop:grid-cols-3">
-        {Posts}
+      <div className="flex flex-col min-h-screen">
+        <h5 className="text-center font-display font-black text-2xl mx-auto my-auto">
+          Üzgünüz henüz hiç paylaşım yok.
+        </h5>
       </div>
+      {/*<div className="section-wrap grid grid-flow-row gap-8 laptop:grid-cols-3">
+        {Posts}
+  </div>*/}
     </>
   );
 };

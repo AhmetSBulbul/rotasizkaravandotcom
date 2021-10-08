@@ -22,7 +22,7 @@ export default function SectionRecentPublished() {
               order: DESC
               fields: [frontmatter___date]
             }
-            limit: 3
+            limit: 0
           ) {
             edges {
               node {

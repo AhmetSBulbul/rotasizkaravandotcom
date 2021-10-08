@@ -39,5 +39,6 @@ module.exports = {
     `gatsby-plugin-layout`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
   ],
 };

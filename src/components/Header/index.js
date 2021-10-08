@@ -116,7 +116,7 @@ const ContactUsBtn = ({ ...props }) => {
   return (
     <WithIconButton
       className="border-white text-white rounded-lg"
-      to={Pages.contactUs}
+      to={Pages.iletisim}
       {...props}
     >
       <Call className="mr-2" />

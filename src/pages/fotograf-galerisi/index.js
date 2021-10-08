@@ -4,12 +4,17 @@ import { graphql } from "gatsby";
 
 import { GalleryFigure } from "../../components/figures";
 
-import * as styles from "./gallery.module.css";
+import * as styles from "./index.module.css";
 import RotasizImage from "../../components/RotasizImage";
+import SEO from "../../components/seo";
 
 const PhotoGalleryPage = ({ data }) => {
   return (
     <>
+      <SEO
+        title="Karavan Fotoğrafları"
+        pathname="/fotograf-galerisi"
+      />
       <div className="pageLead">
         <GalleryFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
