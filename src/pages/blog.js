@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import PostLink from "../components/PostLink";
 import { BlogFigure } from "../components/figures";
+import SEO from "../components/seo";
 
 const BlogPage = ({
   data: {
@@ -21,6 +22,7 @@ const BlogPage = ({
 
   return (
     <>
+      <SEO title="Blog" />
       <div className="pageLead">
         <BlogFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">

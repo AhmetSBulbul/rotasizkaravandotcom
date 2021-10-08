@@ -6,7 +6,7 @@ module.exports = {
     description: `İstek ve ihtiyaçlarınız doğrultusunda kişiye özel karavanlar üretiyoruz. Ücretsiz Karavan Danışmanlığı hizmetimiz ile merak ettiğiniz soruları bizlere sorabilirsiniz.`,
     author: `@rotasizkaravan`,
     siteUrl: `https://www.rotasizkaravan.com`,
-    image: `/src/images/rotasizlar.jpg`,
+    image: `/public/siteImage.png`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
