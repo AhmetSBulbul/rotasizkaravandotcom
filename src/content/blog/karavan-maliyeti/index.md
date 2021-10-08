@@ -3,8 +3,22 @@ slug: /blog/karavan-maliyeti
 date: 2021-09-09
 title: Karavan Ne Kadara Mal Olur?
 featureImage: budget.jpg
-excerpt: Lorem Ipsum dolor sit amet, consecteur ipsum.
+excerpt: Elbette herkes bir karavan hayali kuruyor? Ancak bunu gerçekleştirmek istediğimizde ilk karşılaştığımız soru kuşkusuz "Bir karavan edinmenin toplam maliyeti nedir?" oluyor. Bugün sizin için bunlardan bahsedeceğiz.
 ---
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
-<br/><br/>
-content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+Elbette herkes bir karavan hayali kuruyor? Ancak bunu gerçekleştirmek istediğimizde ilk karşılaştığımız soru kuşkusuz "Bir karavan edinmenin toplam maliyeti nedir?" oluyor. Bugün sizin için bunlardan bahsedeceğiz.
+
+## Araç Maliyeti
+
+Her ne kadar marka ve model bazında bahsedeciğimiz fiyatlar değişse de ikinci el ortalama bir araç 2021'in son çeyreği baz alındığında 2012 2013 model bir araç 100 bin ila 150 bin TL aralığında alıcı buluyor. Tabi ki bu fiyatlar marka model ve tarih gibi etkenler ile değişiklik gösterecektir.
+
+## Malzeme Fiyatları
+
+Araç içi eşyalar ve malzemeler ortalama 70 bin civarları tutmaktadır. Tabi ki bu ücret tamamen ortalamayı baz almakta. Özel malzemeler ve daha kaliteli malzemeler için daha yüksek maliyetler çıkabilir.
+
+## İşçilik
+
+Tabii ki satın aldığımız bu malzemeler bir arada sorunsuz bir şekilde çalışmaya ihtiyaç duyuyor. En kaliteli işçilik ve güvenilir hizmet hakkında bilgi almak için bizimle hemen iletişime geçebilirsiniz.
+
+## Toplam Maliyet
+
+Bütün maliyeti toparladığımızda ortalama bir karavan için harcamamız gereken miktar 200 bin tl gibi ücretlerden başlıyor diyebiliriz.
