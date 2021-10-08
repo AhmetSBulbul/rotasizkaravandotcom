@@ -25,9 +25,19 @@ module.exports = {
         start_url: `/`,
         lang: `tr`,
         icon: `src/images/brand/icon.png`,
+        cache_busting_mode: `none`,
       },
     },
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          globPatterns: [
+            `**/src/images/brand/icon.png`,
+          ],
+        },
+      },
+    },
     `gatsby-plugin-layout`,
     `gatsby-transformer-remark`,
   ],

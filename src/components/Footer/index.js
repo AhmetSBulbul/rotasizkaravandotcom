@@ -105,7 +105,7 @@ export default function Footer() {
             title="rotasiz-map"
             loading="lazy"
             className={styles.map}
-            allowfullscreen
+            allowFullScreen
             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ32OKIVuTwxQRdE93GdMJ4Ls&key=AIzaSyD54TSd_7gV50TdlvvnJR12XaFt22RsXL8"
           />
         </div>

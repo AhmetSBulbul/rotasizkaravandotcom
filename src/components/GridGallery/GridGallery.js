@@ -6,7 +6,6 @@ import RotasizImage from "../RotasizImage";
 function GridGallery({ data, className }) {
   const isEven =
     data.allFile.totalCount % 2 === 0;
-  console.log(isEven);
 
   return (
     <div
@@ -17,7 +16,6 @@ function GridGallery({ data, className }) {
     >
       {data.allFile.edges.map(
         ({ node }, index) => {
-          console.log(index);
           return (
             <RotasizImage
               key={node.key}
