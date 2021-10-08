@@ -20,6 +20,7 @@ function SEO({
           author
           keywords
           siteUrl
+          defaultImage: image
         }
       }
     }
@@ -30,7 +31,7 @@ function SEO({
   const image =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : null;
+      : `${site.siteMetadata.siteUrl}${site.siteMetadata.defaultImage}`;
 
   const canonical = pathname
     ? `${site.siteMetadata.siteUrl}${pathname}`
@@ -108,8 +109,16 @@ function SEO({
               ]
             : [
                 {
+                  property: "og:image",
+                  content: image,
+                },
+                {
                   name: "twitter:card",
-                  content: "summary",
+                  content: "summary_large_image",
+                },
+                {
+                  name: "twitter:image",
+                  content: image,
                 },
               ]
         )

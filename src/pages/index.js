@@ -22,10 +22,7 @@ const rotasizReviewsUrl =
 const IndexPage = () => {
   return (
     <>
-      <SEO
-        title="Rotasız Karavan"
-        metaImage="/siteImage.png"
-      />
+      <SEO title="Rotasız Karavan" />
       <Hero />
       <SectionWhatWeDo />
 

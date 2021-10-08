@@ -5,6 +5,7 @@ module.exports = {
     author: `@rotasizkaravan`,
     siteUrl: `https://rotasizkaravandotcom.vercel.app`,
     keywords: [`Karavan`, `Motokaravan`],
+    image: "/images/meta-image.png",
   },
   plugins: [
     `gatsby-plugin-postcss`,
