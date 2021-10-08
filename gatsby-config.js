@@ -26,6 +26,8 @@ module.exports = {
         name: `Rotasız Karavan`,
         short_name: `Rotasız Karavan`,
         start_url: `/`,
+        background_color: `#276e68`,
+        theme_color: `#e97e2e`,
         lang: `tr`,
         icon: `src/images/brand/fav-icon.png`,
       },
