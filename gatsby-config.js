@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Rotasız Karavan`,
     description: `Kişiye özel karavan imalat ve tadilatı.`,
-    siteUrl: `https://www.rotasizkaravan.com`,
+    siteUrl: `https://rotasizkaravandotcom.vercel.app`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
