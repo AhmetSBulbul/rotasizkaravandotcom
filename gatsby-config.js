@@ -3,7 +3,7 @@ module.exports = {
     title: `Karavan İmalatı, Danışmanlığı ve Tamiri`,
     description: `İstek ve ihtiyaçlarınız doğrultusunda kişiye özel karavanlar üretiyoruz. Ücretsiz Karavan Danışmanlığı hizmetimiz ile merak ettiğiniz soruları bizlere sorabilirsiniz.`,
     author: `@rotasizkaravan`,
-    siteUrl: `https://rotasizkaravandotcom.vercel.app`,
+    siteUrl: `https://www.rotasizkaravan.com`,
     keywords: [`Karavan`, `Motokaravan`],
     image: "/images/meta-image.png",
   },
