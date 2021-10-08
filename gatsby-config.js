@@ -1,12 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Rotasız Karavan`,
-    titleTemplate:
-      "%s · Karavan İmalatı, Danışmanlığı ve Tamiri",
+    title: `Karavan İmalatı, Danışmanlığı ve Tamiri`,
     description: `İstek ve ihtiyaçlarınız doğrultusunda kişiye özel karavanlar üretiyoruz. Ücretsiz Karavan Danışmanlığı hizmetimiz ile merak ettiğiniz soruları bizlere sorabilirsiniz.`,
     author: `@rotasizkaravan`,
-    siteUrl: `https://www.rotasizkaravan.com`,
-    image: `/public/siteImage.png`,
+    siteUrl: `https://rotasizkaravandotcom.vercel.app`,
+    keywords: [`Karavan`, `Motokaravan`],
   },
   plugins: [
     `gatsby-plugin-postcss`,
