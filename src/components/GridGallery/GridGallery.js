@@ -18,7 +18,7 @@ function GridGallery({ data, className }) {
         ({ node }, index) => {
           return (
             <RotasizImage
-              key={node.key}
+              key={node.id}
               className={cn([
                 styles.gridGalleryItem,
                 isEven && styles.gridGalleryEven,

@@ -15,6 +15,7 @@ const RotasizImage = ({
   const img = getImage(imgData);
   return (
     <GatsbyImage
+      key={imgData.id}
       className={cn([baseStyle, className])}
       image={img}
       {...props}

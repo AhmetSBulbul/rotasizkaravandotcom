@@ -21,12 +21,14 @@ function SectionRotasizGallery() {
               totalCount
               edges {
                 node {
+                  id
                   name
                   childImageSharp {
+                    id
                     gatsbyImageData(
                       layout: CONSTRAINED
-                      width: 748
                       height: 748
+                      width: 748
                     )
                   }
                 }
