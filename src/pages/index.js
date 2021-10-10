@@ -101,18 +101,7 @@ const IndexPage = () => {
         </ContinueTo>
       </div>
 
-      <div className="section-wrap">
-        <div className="flex flex-col text-center mb-14">
-          <h3 className="sub-title">İşlerimiz</h3>
-          <h2 className="big-title">
-            Mutfağımızda Pişenler
-          </h2>
-        </div>
-        <h5 className="text-center font-display font-black text-2xl">
-          Üzgünüz henüz hiç paylaşım yok.
-        </h5>
-      </div>
-      {/*<SectionOurWorks className="section-wrap" />*/}
+      <SectionOurWorks className="section-wrap" />
 
       <div className="section-wrap section-gray flex flex-col text-left">
         <h3 className="sub-title">
@@ -124,19 +113,7 @@ const IndexPage = () => {
         <SectionRotasizGallery />
       </div>
 
-      <div className="section-wrap mb-24">
-        <div className="flex flex-col text-center mb-14">
-          <h3 className="sub-title">Blog</h3>
-          <h2 className="big-title">
-            Son Paylaşılanlar.
-          </h2>
-        </div>
-        <h5 className="text-center font-display font-black text-2xl">
-          Üzgünüz henüz hiç paylaşım yok.
-        </h5>
-      </div>
-
-      {/*<SectionRecentPublished />*/}
+      <SectionRecentPublished />
     </>
   );
 };

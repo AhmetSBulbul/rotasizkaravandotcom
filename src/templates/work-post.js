@@ -9,6 +9,7 @@ import {
   LeftArrow,
   RightArrow,
 } from "../components/icons/solid";
+import SEO from "../components/seo";
 
 export default function WorkPostTemplate({
   data,
@@ -16,8 +17,21 @@ export default function WorkPostTemplate({
 }) {
   const { next, prev } = pageContext;
   const { markdownRemark: post } = data; // data.markdownRemark holds your post data
+  const socialImg = post.frontmatter
+    .socialFeatured
+    ? post.frontmatter.socialFeatured
+        .childImageSharp.resize
+    : null; // data.markdownRemark holds your post data
   return (
     <>
+      <SEO
+        title={post.frontmatter.title}
+        pathname={post.frontmatter.slug}
+        image={socialImg}
+        description={
+          post.frontmatter.excerpt || post.excerpt
+        }
+      />
       <div className="pageLead">
         <GatsbyImage
           className="pageLeadImg"
@@ -110,6 +124,7 @@ export const pageQuery = graphql`
       frontmatter: { slug: { eq: $path } }
     ) {
       html
+      excerpt(pruneLength: 160)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         excerpt
@@ -124,6 +139,15 @@ export const pageQuery = graphql`
               layout: CONSTRAINED
             )
             id
+          }
+        }
+        socialFeatured: featureImage {
+          childImageSharp {
+            resize(width: 1200) {
+              src
+              height
+              width
+            }
           }
         }
         slug

@@ -1,8 +1,8 @@
 ---
-slug: /blog/karavan-ne-kadar-benzin-yakar
+slug: /karavan-ne-kadar-yakit-tuketir
 date: 2021-09-21
 title: Karavan Ortalama Ne Kadar Yakar?
-featureImage: fuel-price.jpg
+featureImage: featured.jpg
 excerpt: \"Karavan yapım maliyetimizi bütçemize uydurduk e iyi hoş ama bu arabanın yakıt maliyeti ne olacak?\" dediğinizi duyar gibiyiz. Gelin bugün bu konuyu ele alalım.
 ---
 "Karavan yapım maliyetimizi bütçemize uydurduk e iyi hoş ama bu arabanın yakıt maliyeti ne olacak?" dediğinizi duyar gibiyiz. Gelin bugün bu konuyu ele alalım.

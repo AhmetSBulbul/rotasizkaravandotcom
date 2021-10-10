@@ -7,15 +7,29 @@ import {
   LeftArrow,
   RightArrow,
 } from "../components/icons/solid";
+import SEO from "../components/seo";
 
 export default function BlogPostTemplate({
   data,
   pageContext, // this prop will be injected by the GraphQL query below.
 }) {
   const { next, prev } = pageContext;
-  const { markdownRemark: post } = data; // data.markdownRemark holds your post data
+  const { markdownRemark: post } = data;
+  const socialImg = post.frontmatter
+    .socialFeatured
+    ? post.frontmatter.socialFeatured
+        .childImageSharp.resize
+    : null; // data.markdownRemark holds your post data
   return (
     <>
+      <SEO
+        title={post.frontmatter.title}
+        pathname={post.frontmatter.slug}
+        image={socialImg}
+        description={
+          post.frontmatter.excerpt || post.excerpt
+        }
+      />
       <div className="pageLead">
         <GatsbyImage
           className="pageLeadImg"
@@ -80,6 +94,7 @@ export const pageQuery = graphql`
     ) {
       html
       frontmatter {
+        slug
         date(formatString: "MMMM DD, YYYY")
         excerpt
         featureImage {
@@ -87,9 +102,18 @@ export const pageQuery = graphql`
             gatsbyImageData(height: 600)
           }
         }
-        slug
+        socialFeatured: featureImage {
+          childImageSharp {
+            resize(width: 1200) {
+              src
+              height
+              width
+            }
+          }
+        }
         title
       }
+      excerpt(pruneLength: 160)
     }
   }
 `;

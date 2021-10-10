@@ -1,8 +1,8 @@
 ---
-slug: /blog/arac-secerken-dikkat-edilecekler
+slug: /karavan-icin-arac-secerken
 date: 2021-09-10
-title: Arac Secerken Nelere Dikkat Edilmeli?
-featureImage: decide.jpg
+title: Karavan İçin Araç Seçerken Dikkat Edilmesi Gerekilenler
+featureImage: featured.jpg
 excerpt: Karavan yapımına başlamanın ilk adımı araç seçmek. Her aracın artıları ve eksileri olduğu için bu noktada ne istediğinizi bilmek ve isteklerinizi karşılayabilecek en uygun aracı bulabilmek çok önemli. E peki nasıl karar vereceğiz diye soruyorsanız gelin hemen üzerine konuşalım.
 ---
 Karavan yapımına başlamanın ilk adımı araç seçmek. Her aracın artıları ve eksileri olduğu için bu noktada ne istediğinizi bilmek ve isteklerinizi karşılayabilecek en uygun aracı bulabilmek çok önemli. E peki nasıl karar vereceğiz diye soruyorsanız gelin hemen üzerine konuşalım.

@@ -1,8 +1,8 @@
 ---
-slug: /blog/karavan-yapim-sureci
+slug: /karavan-yapim-sureci
 date: 2021-09-20
 title: Karavan Yapim Sureci Nasil Ilerliyor?
-featureImage: work-process.jpg
+featureImage: featured.jpg
 excerpt: Bir araba aldınız ve karavana dönüştürmek istiyorsunuz. Bu durumda herkesin merak ettiği ilk şey süreç nasıl işliyor? Bugün sizin için bunu ele alıyoruz.
 ---
 Bir araba aldınız ve karavana dönüştürmek istiyorsunuz. Bu durumda herkesin merak ettiği ilk şey süreç nasıl işliyor? Bugün sizin için bunu ele alıyoruz.

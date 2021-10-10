@@ -1,8 +1,8 @@
 ---
-slug: /blog/karavan-maliyeti
+slug: /karavan-maliyeti
 date: 2021-09-09
 title: Karavan Ne Kadara Mal Olur?
-featureImage: budget.jpg
+featureImage: featured.jpg
 excerpt: Elbette herkes bir karavan hayali kuruyor? Ancak bunu gerçekleştirmek istediğimizde ilk karşılaştığımız soru kuşkusuz "Bir karavan edinmenin toplam maliyeti nedir?" oluyor. Bugün sizin için bunlardan bahsedeceğiz.
 ---
 Elbette herkes bir karavan hayali kuruyor? Ancak bunu gerçekleştirmek istediğimizde ilk karşılaştığımız soru kuşkusuz "Bir karavan edinmenin toplam maliyeti nedir?" oluyor. Bugün sizin için bunlardan bahsedeceğiz.
