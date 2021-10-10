@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { BlogFigure } from "../components/figures";
 
 // styles
 const pageStyles = {
@@ -28,39 +29,27 @@ const codeStyles = {
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>
-        Page not found
-      </h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span
-          role="img"
-          aria-label="Pensive emoji"
-        >
-          😔
-        </span>{" "}
-        Site lazim deyince oglan ben yaparim
-        bosuna mi okuttun demisti... Bosuna
-        okutmusuz.
-        <br />
-        {process.env.NODE_ENV ===
-        "development" ? (
-          <>
-            <br />
-            Try creating a page in{" "}
-            <code style={codeStyles}>
-              src/pages/
-            </code>
-            .
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <>
+      <div className="pageLead">
+        <BlogFigure className="pageLeadImg" />
+        <div className="pageLeadTitleBox w-full">
+          <h1>Üzgünüz Böyle Bir Sayfa Yok</h1>
+        </div>
+      </div>
+
+      <br />
+      {process.env.NODE_ENV === "development" ? (
+        <>
+          <br />
+          Try creating a page in{" "}
+          <code style={codeStyles}>
+            src/pages/
+          </code>
+          .
+          <br />
+        </>
+      ) : null}
+    </>
   );
 };
 
