@@ -56,32 +56,32 @@ export default function BlogPostTemplate({
             __html: post.html,
           }}
         />
-        <div className="flex flex-row justify-between mt-12">
-          <ButtonWithIcon
-            to={
-              prev != null
-                ? prev.frontmatter.slug
-                : Pages.blog
-            }
-          >
-            <LeftArrow className="mr-4" />
-            {prev != null
-              ? prev.frontmatter.title
-              : "Blog"}
-          </ButtonWithIcon>
-          <ButtonWithIcon
-            to={
-              next != null
-                ? next.frontmatter.slug
-                : Pages.blog
-            }
-          >
-            {next != null
-              ? next.frontmatter.title
-              : "Blog"}
-            <RightArrow className="ml-4" />
-          </ButtonWithIcon>
-        </div>
+      </div>
+      <div className="flex flex-row justify-between mt-12">
+        <ButtonWithIcon
+          to={
+            prev != null
+              ? prev.frontmatter.slug
+              : Pages.blog
+          }
+        >
+          <LeftArrow className="mr-4" />
+          {prev != null
+            ? prev.frontmatter.title
+            : "Blog"}
+        </ButtonWithIcon>
+        <ButtonWithIcon
+          to={
+            next != null
+              ? next.frontmatter.slug
+              : Pages.blog
+          }
+        >
+          {next != null
+            ? next.frontmatter.title
+            : "Blog"}
+          <RightArrow className="ml-4" />
+        </ButtonWithIcon>
       </div>
     </>
   );

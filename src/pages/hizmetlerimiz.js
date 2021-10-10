@@ -22,7 +22,7 @@ const OurServicesPage = () => {
           <h1>Hizmetlerimiz</h1>
         </div>
       </div>
-      <section className="section-wrap wrap-simple-row text-center laptop:text-left ">
+      <section className="section-wrap wrap-simple-row text-center ">
         <div>
           <h2 className="big-title mb-4">
             Karavan Danışmanlığı
@@ -37,7 +37,7 @@ const OurServicesPage = () => {
             yanıtlıyoruz. İletişime geçmeniz
             yeterli!
           </p>
-          <WithIcon className="ml-auto laptop:ml-0 mt-4">
+          <WithIcon className="mx-auto mt-4">
             <Call className="mr-4" /> İletişim
           </WithIcon>
         </div>
@@ -58,12 +58,12 @@ const OurServicesPage = () => {
             gerçekleştirdiğimiz kendi karavan
             tasarımlarımızı inceleyebilirsiniz.
           </p>
-          <ContinueTo className="ml-auto laptop:ml-0 mt-4">
+          <ContinueTo className="mx-auto mt-4">
             Rotasız Albüm
           </ContinueTo>
         </div>
       </section>
-      <section className="section-wrap wrap-simple-row text-center laptop:text-left">
+      <section className="section-wrap wrap-simple-row text-center">
         <div className="mb-12 laptop:mb-0">
           <h2 className="big-title mb-4">
             Karavan İmalatı
@@ -80,7 +80,7 @@ const OurServicesPage = () => {
             karavanlar hakkında fikir
             edinebilirsiniz.
           </p>
-          <ContinueTo className="ml-auto laptop:ml-0 mt-4">
+          <ContinueTo className="mx-auto mt-4">
             İşlerimiz
           </ContinueTo>
         </div>
@@ -96,7 +96,7 @@ const OurServicesPage = () => {
             karavanınızı getirin sizin için
             ilgilenelim.
           </p>
-          <ThemeButton className="ml-auto laptop:ml-0 mt-4">
+          <ThemeButton className="mx-auto mt-4">
             Bize Ulaşın
           </ThemeButton>
         </div>

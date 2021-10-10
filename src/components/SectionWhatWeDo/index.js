@@ -13,10 +13,10 @@ const SectionWhatWeDo = () => {
           <span className="sub-title">
             Hakkımızda
           </span>
-          <h2 className="big-title">
+          <h1 className="big-title">
             İsteğinize ve İhtiyaçlarınıza Yönelik
             Karavanlar Üretiyoruz.
-          </h2>
+          </h1>
         </div>
         <p>
           Hayalinizdeki karavana sahip olma

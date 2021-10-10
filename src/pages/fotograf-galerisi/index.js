@@ -44,7 +44,6 @@ export const pageQuery = graphql`
       filter: {
         absolutePath: { regex: "//photos//" }
       }
-      limit: 16
     ) {
       edges {
         node {
@@ -54,6 +53,7 @@ export const pageQuery = graphql`
               layout: CONSTRAINED
               width: 748
             )
+            id
           }
         }
       }

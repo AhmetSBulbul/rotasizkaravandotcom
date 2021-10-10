@@ -47,11 +47,11 @@ export default function WorkPostTemplate({
           </h1>
         </div>
       </div>
-      <div className="flex flex-col mt-4 px-4 gap-y-4">
+      <div className="flex flex-col mt-4 px-4 gap-y-4 prose laptop:mx-auto">
         <span className="font-body text-gray text-left">
           {post.frontmatter.date}
         </span>
-        <div className="flex flex-wrap space-x-4 justify-center">
+        <div className="grid grid-cols-2 grid-rows-2 place-items-center">
           <h4>{post.frontmatter.make}</h4>
           <h4>{post.frontmatter.model}</h4>
           <h4>{post.frontmatter.volume}m3</h4>
@@ -70,7 +70,6 @@ export default function WorkPostTemplate({
             ({ childImg }, index) => {
               return (
                 <RotasizImage
-                  className="block my-4"
                   imgData={
                     post.frontmatter.gallery[
                       index
@@ -163,7 +162,7 @@ export const pageQuery = graphql`
               width: 400
               layout: CONSTRAINED
               transformOptions: {
-                fit: CONTAIN
+                fit: COVER
                 cropFocus: CENTER
               }
             )

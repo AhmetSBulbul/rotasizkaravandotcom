@@ -75,9 +75,9 @@
 - [x] Our services page
 - [x] Custom Gatsby Image component for gallery images.(RotasizImage)
 - [x] Blog content
-- [ ] SEO
+- [x] SEO
 - [ ] Lightbox
-- [ ] Social Media Cards
+- [x] Social Media Cards
 - [ ] Page queries
 - [ ] Blog posts tags
 - [ ] Blog search feature
@@ -92,15 +92,15 @@
 ## 🐞 BUGS
 
 - [x] Safari postlink component shadow.
-- [ ] Small screens has a little layout problem
-- [ ] Navigation menu toggle.
+
 
 ## After Launch
 
 ### TO-DO
 
 
-- [ ] Readme md logo update and better documentation
+- [x] Readme md logo update
+- [ ] better documentation
 - [ ] Manifest start url will be blog if it's okay for seo
 - [x] Clean up unnecessary tailwind presets, assets and codes.
 - [ ] Performance Improvements. (On mobile devices has a reflow problem due to css vh bug )

@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <div className={styles.outerContainer}>
         <div className={styles.wrapper}>
           <Header />
-          {children}
+          <main>{children}</main>
           <FloatContactButton />
           <Footer />
         </div>

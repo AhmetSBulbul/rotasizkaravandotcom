@@ -18,15 +18,19 @@ const NavItem = ({ children, ...props }) => {
 const ContactItem = ({
   children,
   Icon = Call,
+  href,
 }) => {
   return (
-    <div className="font-display font-black text-lg text-white my-4">
+    <a
+      href={href}
+      className="font-display font-black text-lg text-white my-4 block"
+    >
       <Icon
         fill="#fff"
         className="inline-block mr-4 text-2xl"
       />
       {children}
-    </div>
+    </a>
   );
 };
 
@@ -58,13 +62,19 @@ export default function Footer() {
           <h5 className="big-title text-3xl mb-6">
             İletişim
           </h5>
-          <ContactItem Icon={Call}>
+          <ContactItem
+            Icon={Call}
+            href="tel:05058777888"
+          >
             +90 (505) 877 78 88
           </ContactItem>
-          <ContactItem>
+          <ContactItem href="tel:05345543283">
             +90 (534) 554 32 83
           </ContactItem>
-          <ContactItem Icon={Mail}>
+          <ContactItem
+            Icon={Mail}
+            href="mailto:rotasizkaravan@gmail.com"
+          >
             rotasizkaravan@gmail.com
           </ContactItem>
           <ContactItem Icon={Pin}>

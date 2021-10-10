@@ -64,9 +64,9 @@
 }
 
 .newNavigation {
-  @apply flex flex-col h-full;
+  @apply grid grid-cols-2 grid-rows-3 h-full gap-4 mb-4;
   @screen laptop {
-    @apply flex-row h-auto;
+    @apply flex flex-row h-auto mb-0;
   }
 }
 
@@ -78,9 +78,9 @@
 }
 
 .navItemWrap {
-  @apply relative flex overflow-hidden h-full w-full rounded-lg my-2;
+  @apply relative flex overflow-hidden h-full w-full rounded-lg;
   @screen laptop {
-    @apply my-0 h-auto w-auto;
+    @apply h-auto w-auto;
   }
 
   &:hover {

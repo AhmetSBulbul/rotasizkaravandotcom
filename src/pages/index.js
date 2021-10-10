@@ -25,7 +25,7 @@ const IndexPage = () => {
       <Hero />
       <SectionWhatWeDo />
 
-      <div className="section-wrap flex flex-col justify-center">
+      <section className="section-wrap flex flex-col justify-center">
         <h3 className="sub-title text-center">
           Hizmetlerimiz
         </h3>
@@ -64,8 +64,8 @@ const IndexPage = () => {
         >
           Hizmetlerimiz
         </ContinueTo>
-      </div>
-      <div className="section-wrap section-gray flex flex-col justify-center">
+      </section>
+      <section className="section-wrap section-gray flex flex-col justify-center">
         <h3 className="sub-title text-right">
           Referanslarımız
         </h3>
@@ -99,11 +99,11 @@ const IndexPage = () => {
         >
           Bütün Yorumlar
         </ContinueTo>
-      </div>
+      </section>
 
       <SectionOurWorks className="section-wrap" />
 
-      <div className="section-wrap section-gray flex flex-col text-left">
+      <section className="section-wrap section-gray flex flex-col text-left">
         <h3 className="sub-title">
           Fotoğraf Galerisi
         </h3>
@@ -111,7 +111,7 @@ const IndexPage = () => {
           Karavan Fotoğrafları
         </h2>
         <SectionRotasizGallery />
-      </div>
+      </section>
 
       <SectionRecentPublished />
     </>

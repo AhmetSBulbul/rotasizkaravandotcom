@@ -8,6 +8,9 @@ import {
   RotasizlarHarbour,
 } from "../components/figures";
 import { StaticImage } from "gatsby-plugin-image";
+import { WithIcon } from "../components/buttons";
+import { Call } from "../components/icons/solid";
+import { Pages } from "../constants";
 
 const AboutPage = () => {
   return (
@@ -80,7 +83,7 @@ const AboutPage = () => {
           className="rounded-lg h-96 laptop:order-first"
         />
       </div>
-      <div className="section-wrap wrap-simple-row place-items-center">
+      <div className="section-wrap wrap-simple-row laptop:place-items-center">
         <div className="text-center laptop:text-left">
           <h2 className="big-title mb-8">
             Ürettiğimiz Her Karavan, Bizim İçin
@@ -111,6 +114,12 @@ const AboutPage = () => {
             sabırsızlıkla beklediğimiz birer
             hikaye...
           </p>
+          <WithIcon
+            className="mt-4"
+            to={Pages.iletisim}
+          >
+            <Call className="mr-4" /> Bize Ulaşın
+          </WithIcon>
         </div>
         <StaticImage
           src="../images/coffee.jpg"

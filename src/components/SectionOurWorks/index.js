@@ -58,7 +58,7 @@ function PostCard({
       </div>
       <div className={styles.postBody}>
         <h3>{post.frontmatter.title}</h3>
-        <p>{post.frontmatter.excerpt}</p>
+        <p>{post.excerpt}</p>
         <div className={styles.specs}>
           <Label name="Marka">
             {post.frontmatter.make}
@@ -139,7 +139,7 @@ function Posts({ currIndex }) {
             edges {
               node {
                 id
-                excerpt(pruneLength: 250)
+                excerpt(pruneLength: 160)
                 frontmatter {
                   date(formatString: "DD.MM.YYYY")
                   slug
@@ -200,7 +200,7 @@ export default function SectionOurWorks({
     return setIndex((currIndex + 3) % 4);
   };
   return (
-    <div
+    <section
       className={cn([
         styles.sectionWrapper,
         className,
@@ -223,6 +223,6 @@ export default function SectionOurWorks({
           <SolidIcon.RightArrow />
         </IconBtn>
       </div>
-    </div>
+    </section>
   );
 }

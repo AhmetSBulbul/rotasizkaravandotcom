@@ -12,12 +12,16 @@ import { Whatsapp } from "../components/icons/colorful";
 const ContactItem = ({
   children,
   Icon = Call,
+  href,
 }) => {
   return (
-    <div className="font-display font-black text-lg text-black my-4">
+    <a
+      href={href}
+      className="font-display font-black text-lg text-black my-4"
+    >
       <Icon className="inline-block mr-4 text-2xl" />
       {children}
-    </div>
+    </a>
   );
 };
 
@@ -32,38 +36,41 @@ const ContactPage = () => {
       <div className="pageLead">
         <AboutUsFigure className="pageLeadImg" />
         <div className="pageLeadTitleBox w-full">
-          <h1>İletişim</h1>
+          <h1>Bize Ulaşın</h1>
         </div>
       </div>
-      <div className="section-wrap wrap-simple-row section-gray">
-        <div className="flex flex-col justify-center">
-          <ContactItem Icon={Call}>
+      <div className="section-wrap">
+        <div className="flex flex-col justify-center mx-auto items-center">
+          <ContactItem
+            Icon={Call}
+            href="tel:05058777888"
+          >
             +90 (505) 877 78 88
           </ContactItem>
-          <ContactItem Icon={Whatsapp}>
+          <ContactItem
+            Icon={Whatsapp}
+            href="https://wa.me/905058777888?text=Merhabalar%2C+ben+Rotas%C4%B1z+Karavan+Web+Sitesi+%C3%BCzerinden+ula%C5%9F%C4%B1yorum.+%C4%B0stedi%C4%9Fim+karavan+hakk%C4%B1nda+bilgi+almak+istiyorum"
+          >
             +90 (505) 877 78 88
           </ContactItem>
-          <ContactItem>
+          <ContactItem href="tel:05345543283">
             +90 (534) 554 32 83
           </ContactItem>
-          <ContactItem Icon={Whatsapp}>
+          <ContactItem
+            Icon={Whatsapp}
+            href="https://wa.me/905345543283?text=Merhabalar%2C+ben+Rotas%C4%B1z+Karavan+Web+Sitesi+%C3%BCzerinden+ula%C5%9F%C4%B1yorum.+%C4%B0stedi%C4%9Fim+karavan+hakk%C4%B1nda+bilgi+almak+istiyorum"
+          >
             +90 (534) 554 32 83
           </ContactItem>
-          <ContactItem Icon={Mail}>
+          <ContactItem
+            Icon={Mail}
+            href="mailto:rotasizkaravan@gmail.com"
+          >
             rotasizkaravan@gmail.com
           </ContactItem>
           <ContactItem Icon={Pin}>
             Aşağıkaraman, 07070 Konyaaltı/Antalya
           </ContactItem>
-        </div>
-        <div className="mapAspectRatio">
-          <iframe
-            title="rotasiz-map"
-            loading="lazy"
-            className="map"
-            allowFullScreen
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ32OKIVuTwxQRdE93GdMJ4Ls&key=AIzaSyD54TSd_7gV50TdlvvnJR12XaFt22RsXL8"
-          />
         </div>
       </div>
     </>
