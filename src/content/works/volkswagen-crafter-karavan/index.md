@@ -11,6 +11,6 @@ excerpt: "Volkswagen Crafter Karavan Dönüşümü."
 make: Volkswagen
 model: Crafter
 year: 2014
-volume: Extra Uzun
+volume: 17
 ---
 Ziya Bey için yaptığımız 24 m3 hacimli Crafter Motokaravanımız. Banyo, dış duş yatak ve oturma masası mevcut. 

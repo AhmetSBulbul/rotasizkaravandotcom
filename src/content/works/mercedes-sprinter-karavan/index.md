@@ -11,6 +11,6 @@ excerpt: "Mercedes Sprinter Karavan Dönüşümü."
 make: Mercedes
 model: Sprinter
 year: 2011
-volume: Extra Uzun
+volume: 17
 ---
 Öğrenci servisinden emekli ettiğimiz Mercede Sprinter Motokaravan. İçerisinde televizyon, banyo, dış duş, dönen sürücü koltukları ve 2 kişilik yatak bulunmakta.

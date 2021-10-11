@@ -10,6 +10,6 @@ excerpt: "Stepne destekli 15 m3 citroen jumper karavan dönüşümü"
 make: Citroen
 model: Jumper
 year: 2007
-volume: 15
+volume: 13
 ---
 Pandemiyi ara emekliliğe çevirmek isteyen Mete Hocamız için deniz mavisi Jumper Motokaravan. Küçük bir hacime sahip olduğu için bütün alanlar tam fonksiyonellik taşıyabilecek şekilde tasarlandı. Stepnemiz için yer kalmayınca sol bagaj kapağı için güçlendirme demiri tasarlayıp imal ederek stepnemizi de oraya taşıdık.
