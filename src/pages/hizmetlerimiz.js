@@ -8,6 +8,7 @@ import {
 } from "../components/buttons";
 import { Call } from "../components/icons/solid";
 import SEO from "../components/seo";
+import { Pages } from "../constants";
 
 const OurServicesPage = () => {
   return (
@@ -37,7 +38,10 @@ const OurServicesPage = () => {
             yanıtlıyoruz. İletişime geçmeniz
             yeterli!
           </p>
-          <WithIcon className="mx-auto mt-4">
+          <WithIcon
+            className="mx-auto mt-4"
+            to={Pages.iletisim}
+          >
             <Call className="mr-4" /> İletişim
           </WithIcon>
         </div>
@@ -58,7 +62,10 @@ const OurServicesPage = () => {
             gerçekleştirdiğimiz kendi karavan
             tasarımlarımızı inceleyebilirsiniz.
           </p>
-          <ContinueTo className="mx-auto mt-4">
+          <ContinueTo
+            className="mx-auto mt-4"
+            to={Pages.galeri}
+          >
             Rotasız Albüm
           </ContinueTo>
         </div>
@@ -80,7 +87,10 @@ const OurServicesPage = () => {
             karavanlar hakkında fikir
             edinebilirsiniz.
           </p>
-          <ContinueTo className="mx-auto mt-4">
+          <ContinueTo
+            className="mx-auto mt-4"
+            to={Pages.islerimiz}
+          >
             İşlerimiz
           </ContinueTo>
         </div>
@@ -96,7 +106,10 @@ const OurServicesPage = () => {
             karavanınızı getirin sizin için
             ilgilenelim.
           </p>
-          <ThemeButton className="mx-auto mt-4">
+          <ThemeButton
+            className="mx-auto mt-4"
+            to={Pages.iletisim}
+          >
             Bize Ulaşın
           </ThemeButton>
         </div>

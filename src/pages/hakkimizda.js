@@ -92,9 +92,9 @@ const AboutPage = () => {
 
           <p className="text-lg">
             Bizim için sadece birer müşteri değil
-            aynı zamanda keşfedebileceğimiz yeni
-            bir yer, dinleyebileceğimiz eşşiz anı
-            ve hatıralarsınız.
+            aynı zamanda keşfedebileceğiniz yeni
+            yerler hakkında dinleyebileceğimiz
+            eşşiz anılar ve hatıralarsınız.
             <br />
             <br />
             Ürettiğimiz her karavan bizleri ilk
