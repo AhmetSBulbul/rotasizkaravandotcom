@@ -9,7 +9,7 @@ excerpt: \"Karavan yapım maliyetimizi bütçemize uydurduk e iyi hoş ama bu ar
 
 ## Arabaların Yakıt Maliyeti
 
-Öncelikle yakıt maliyetini nasıl hesapladığımızdan bahsedelim. Bir araba 100 km'de yaklaşık 8 litre benzin yakıyorsa ve o gün itibari ile benzinin litresi 8 TL ise 100 km seyahat maliyeti normal şartlar altında 64 TL olacaktır. Tabi ki bu fiyat ortalama değerler üzerinden hesaplanmıştır. Günlük trafikten araç içerisindeki kişi sayısına kadar bu değerler değişiklik gösterebilir. 100 km'de 64 TL değerinde yakıt tüketen bir aracın km maliyetine 64 kuruş diyebiliriz.
+Öncelikle yakıt maliyetini nasıl hesapladığımızdan bahsedelim. Bir araba 100 km'de yaklaşık 8 litre mazot yakıyorsa ve o gün itibari ile mazotun litresi 8 TL ise 100 km seyahat maliyeti normal şartlar altında 64 TL olacaktır. Tabi ki bu fiyat ortalama değerler üzerinden hesaplanmıştır. Günlük trafikten araç içerisindeki kişi sayısına kadar bu değerler değişiklik gösterebilir. 100 km'de 64 TL değerinde yakıt tüketen bir aracın km maliyetine 64 kuruş diyebiliriz.
 
 ## Minibüs & Midibüs Yakıt Maliyeti
 
