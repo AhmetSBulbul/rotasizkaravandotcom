@@ -9,7 +9,7 @@ tags: ["15m3", "Fiat", "Ducato"]
 excerpt: "Çekirdek ailemiz için kompakt ama fonksiyonel fiat ducato motokaravanımız."
 make: Fiat
 model: Ducato
-year: 2007
+year: 2011
 volume: 15
 ---
 Çekirdek ailemiz için kompakt ama fonksiyonel fiat ducato motokaravanımız.
