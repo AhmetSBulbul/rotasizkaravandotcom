@@ -12,4 +12,4 @@ model: Jumper
 year: 2007
 volume: 13
 ---
-Pandemiyi ara emekliliğe çevirmek isteyen Mete Hocamız için deniz mavisi Jumper Motokaravan. Küçük bir hacime sahip olduğu için bütün alanlar tam fonksiyonellik taşıyabilecek şekilde tasarlandı. Stepnemiz için yer kalmayınca sol bagaj kapağı için güçlendirme demiri tasarlayıp imal ederek stepnemizi de oraya taşıdık.
+Pandemiyi ara emekliliğe çevirmek isteyen Olgun Hocamız için deniz mavisi Jumper Motokaravan. Küçük bir hacime sahip olduğu için bütün alanlar tam fonksiyonellik taşıyabilecek şekilde tasarlandı. Stepnemiz için yer kalmayınca sol bagaj kapağı için güçlendirme demiri tasarlayıp imal ederek stepnemizi de oraya taşıdık.
