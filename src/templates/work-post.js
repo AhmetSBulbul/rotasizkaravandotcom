@@ -75,6 +75,7 @@ export default function WorkPostTemplate({
                       index
                     ]
                   }
+                  className="block rounded-lg"
                   alt={post.frontmatter.title}
                   key={
                     post.frontmatter.gallery[
@@ -86,32 +87,32 @@ export default function WorkPostTemplate({
             }
           )}
         </div>
-        <div className="flex flex-row justify-between space-x-8 mt-12">
-          <ButtonWithIcon
-            to={
-              prev != null
-                ? prev.frontmatter.slug
-                : Pages.islerimiz
-            }
-          >
-            <LeftArrow className="mr-4" />
-            {prev != null
-              ? prev.frontmatter.title
-              : "İşlerimiz"}
-          </ButtonWithIcon>
-          <ButtonWithIcon
-            to={
-              next != null
-                ? next.frontmatter.slug
-                : Pages.islerimiz
-            }
-          >
-            {next != null
-              ? next.frontmatter.title
-              : "İşlerimiz"}
-            <RightArrow className="ml-4" />
-          </ButtonWithIcon>
-        </div>
+      </div>
+      <div className="section-wrap flex flex-col justify-center items-center space-y-4 laptop:flex-row laptop:justify-between mt-12">
+        <ButtonWithIcon
+          to={
+            prev != null
+              ? prev.frontmatter.slug
+              : Pages.islerimiz
+          }
+        >
+          <LeftArrow className="mr-4" />
+          {prev != null
+            ? prev.frontmatter.title
+            : "İşlerimiz"}
+        </ButtonWithIcon>
+        <ButtonWithIcon
+          to={
+            next != null
+              ? next.frontmatter.slug
+              : Pages.islerimiz
+          }
+        >
+          {next != null
+            ? next.frontmatter.title
+            : "İşlerimiz"}
+          <RightArrow className="ml-4" />
+        </ButtonWithIcon>
       </div>
     </>
   );

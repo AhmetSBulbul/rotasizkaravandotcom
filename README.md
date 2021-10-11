@@ -92,6 +92,7 @@
 ## 🐞 BUGS
 
 - [x] Safari postlink component shadow.
+- [ ] Work page template photo gallery columns
 
 
 ## After Launch
