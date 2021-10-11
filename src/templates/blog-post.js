@@ -57,7 +57,7 @@ export default function BlogPostTemplate({
           }}
         />
       </div>
-      <div className="flex flex-row justify-between mt-12">
+      <div className="section-wrap flex flex-col justify-center items-center space-y-4 laptop:flex-row laptop:justify-between mt-12">
         <ButtonWithIcon
           to={
             prev != null
