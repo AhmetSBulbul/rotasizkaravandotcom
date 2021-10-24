@@ -1,12 +1,12 @@
 ---
-slug: /motokaravan/citroen-jumper-15m3-Motokaravan-donusumu
+slug: /motokaravan/citroen-jumper-13m3-Motokaravan-donusumu
 date: 2021-09-10
 title: Citroen Jumper Karavan
 featureImage: featured.jpg
 gallery: [featured.jpg, 1.jpg]
 categories: ["Motokaravan"]
-tags: ["15m3", "Citroen", "Jumper"]
-excerpt: "Stepne destekli 15 m3 citroen jumper karavan dönüşümü"
+tags: ["13m3", "Citroen", "Jumper"]
+excerpt: "Stepne destekli 13 m3 citroen jumper karavan dönüşümü"
 make: Citroen
 model: Jumper
 year: 2007
